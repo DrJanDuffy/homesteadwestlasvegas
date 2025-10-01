@@ -259,19 +259,21 @@ export default function Plan3704Page() {
           </div>
         </section>
 
-        {/* Century Communities Sales Office */}
-        <section className="py-16 bg-gray-50">
+        {/* Dr. Jan Duffy - Your Real Estate Expert */}
+        <section className="py-16 bg-blue-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Century Communities Sales Office</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Dr. Jan Duffy - Your Real Estate Expert</h2>
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">Sales Information</h3>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Contact Dr. Jan Duffy</h3>
                   <div className="space-y-3">
-                    <p><span className="font-semibold">Phone:</span> (702) 936-3014</p>
-                    <p><span className="font-semibold">Address:</span> 5592 Dapple Gray Rd, Las Vegas, NV 89149</p>
-                    <p><span className="font-semibold">Hours:</span> Monday-Sunday, 10:00 AM - 6:00 PM</p>
+                    <p><span className="font-semibold">Phone:</span> (702) 222-1988</p>
+                    <p><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
+                    <p><span className="font-semibold">Office:</span> Century Communities Sales Office</p>
+                    <p><span className="font-semibold">Address:</span> 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
+                    <p><span className="font-semibold">License:</span> Nevada S.0197614</p>
                   </div>
                 </div>
                 
@@ -282,7 +284,7 @@ export default function Plan3704Page() {
                     <li>• Office located at Century Communities sales office</li>
                     <li>• Direct access to builder information and resources</li>
                     <li>• Market expertise and negotiation power</li>
-                    <li>• Nevada License S.0197614</li>
+                    <li>• Las Vegas real estate specialist</li>
                   </ul>
                 </div>
               </div>

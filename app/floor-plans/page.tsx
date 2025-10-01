@@ -337,27 +337,28 @@ export default function FloorPlansPage() {
                 </div>
               </div>
 
-              {/* Dr. Jan's Office Location */}
+              {/* Dr. Jan Duffy - Your Real Estate Expert */}
               <div className="bg-blue-50 rounded-lg p-8 mb-12">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">🏢</span>
+                    <span className="text-white text-2xl">👩‍💼</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan Duffy's Office</h3>
-                  <p className="text-lg text-gray-700 mb-4">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan Duffy - Your Real Estate Expert</h3>
+                  <p className="text-lg text-gray-700 mb-6">
                     Dr. Jan Duffy maintains an office at the Century Communities sales office, 
                     providing you with direct access to builder information while representing YOUR interests.
                   </p>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="text-left">
+                      <h4 className="font-bold text-gray-900 mb-2">Contact Dr. Jan Duffy:</h4>
+                      <p className="text-gray-700 font-semibold">Phone: (702) 222-1988</p>
+                      <p className="text-gray-700 font-semibold">Email: DrJanSells@HomesteadWestLasVegas.com</p>
+                      <p className="text-gray-700">Nevada License: S.0197614</p>
+                    </div>
+                    <div className="text-left">
                       <h4 className="font-bold text-gray-900 mb-2">Office Location:</h4>
                       <p className="text-gray-700">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
                       <p className="text-gray-700">Century Communities Sales Office</p>
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-bold text-gray-900 mb-2">Contact Dr. Jan:</h4>
-                      <p className="text-gray-700">Phone: (702) 222-1988</p>
-                      <p className="text-gray-700">Email: DrJanSells@HomesteadWestLasVegas.com</p>
                     </div>
                   </div>
                 </div>
