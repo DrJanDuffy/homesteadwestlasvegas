@@ -201,34 +201,54 @@ export default function RootLayout({
         '@type': 'PropertyValue',
         name: 'Zip Code',
         value: '89149'
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Home Type',
-        value: 'Single-story ranch'
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Lot Size',
-        value: 'Pool-sized'
       }
     ],
-    sameAs: [
-      'https://www.facebook.com/homesteadwestlasvegas',
-      'https://www.instagram.com/homesteadwestlasvegas',
-      'https://www.linkedin.com/company/homestead-west-las-vegas'
-    ],
-    hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149'
+    nearbyPlaces: [
+      {
+        '@type': 'TouristAttraction',
+        name: 'Red Rock Canyon National Conservation Area',
+        description: '9 miles away'
+      },
+      {
+        '@type': 'Place',
+        name: 'Downtown Las Vegas',
+        description: '18 miles away'
+      },
+      {
+        '@type': 'Place',
+        name: 'Mount Charleston',
+        description: '23 miles away'
+      }
+    ]
+  };
+
+  const breadcrumbData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://homesteadwestlasvegas.com'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Homestead West Las Vegas',
+        item: 'https://homesteadwestlasvegas.com'
+      }
+    ]
   };
 
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics 4 */}
+        {/* Google Analytics */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-        />
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -239,26 +259,24 @@ export default function RootLayout({
             `,
           }}
         />
-        
-        {/* Google Search Console Verification */}
-        <meta name="google-site-verification" content="your-google-verification-code" />
-        
-        {/* Additional SEO Meta Tags */}
-        <meta name="geo.region" content="US-NV" />
-        <meta name="geo.placename" content="Las Vegas" />
-        <meta name="geo.position" content="36.2738;-115.3089" />
-        <meta name="ICBM" content="36.2738, -115.3089" />
-        
-        {/* Business Hours for Google Business Profile */}
-        <meta name="business:hours" content="Monday-Friday: 9:00 AM - 6:00 PM, Saturday: 10:00 AM - 4:00 PM, Sunday: Closed" />
-        
-        {/* Structured Data */}
+
+        {/* Structured Data - RealEstateListing */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+
+        {/* Structured Data - BreadcrumbList */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbData),
+          }}
         />
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>
