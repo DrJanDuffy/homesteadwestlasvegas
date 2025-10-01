@@ -134,35 +134,49 @@ export default function Plan3704Page() {
                     </div>
                   </div>
 
-                  <div className="space-y-6">
+                    <div className="space-y-6">
                     <h3 className="text-2xl font-bold text-gray-900">Key Features</h3>
                     <ul className="space-y-4">
                       <li className="flex items-start">
                         <span className="text-green-600 mr-3 text-2xl">✓</span>
                         <div>
-                          <p className="font-semibold text-gray-900">Separate Formal Dining Room</p>
-                          <p className="text-gray-600">Perfect for entertaining guests and special occasions</p>
+                          <p className="font-semibold text-gray-900">Expansive Primary Suite</p>
+                          <p className="text-gray-600">Free-standing bathtub, dual vanities, and expansive walk-in closet</p>
                         </div>
                       </li>
                       <li className="flex items-start">
                         <span className="text-green-600 mr-3 text-2xl">✓</span>
                         <div>
-                          <p className="font-semibold text-gray-900">All Bedrooms with En-Suite Bathrooms</p>
+                          <p className="font-semibold text-gray-900">Separate Dining Room</p>
+                          <p className="text-gray-600">Perfect for special occasions and formal entertaining</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-green-600 mr-3 text-2xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">Great Room for Entertaining</p>
+                          <p className="text-gray-600">Spacious living area with breakfast nook and well-appointed kitchen</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-green-600 mr-3 text-2xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">Kitchen with Island & Walk-in Pantry</p>
+                          <p className="text-gray-600">Modern kitchen design with island and spacious pantry storage</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-green-600 mr-3 text-2xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">Four Bedrooms with En-Suite Bathrooms</p>
                           <p className="text-gray-600">Privacy and convenience for every family member</p>
                         </div>
                       </li>
                       <li className="flex items-start">
                         <span className="text-green-600 mr-3 text-2xl">✓</span>
                         <div>
-                          <p className="font-semibold text-gray-900">Spacious Mudroom & Breakfast Nook</p>
-                          <p className="text-gray-600">Functional entry space and casual dining area</p>
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-3 text-2xl">✓</span>
-                        <div>
-                          <p className="font-semibold text-gray-900">Extended Patio Options</p>
-                          <p className="text-gray-600">12' or 14' extended patios for outdoor living</p>
+                          <p className="font-semibold text-gray-900">Sizeable Mudroom & 3-Bay Garage</p>
+                          <p className="text-gray-600">Functional entry space and generous parking</p>
                         </div>
                       </li>
                     </ul>
@@ -194,13 +208,16 @@ export default function Plan3704Page() {
                   <div className="bg-blue-50 rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-4 text-gray-900">About This Plan</h3>
                     <p className="text-gray-700 mb-4">
-                      Plan 3704 is our most popular floor plan, offering the perfect balance of space, 
-                      functionality, and luxury. This single-story ranch home features a formal dining room 
-                      for entertaining, spacious bedrooms with private bathrooms, and flexible outdoor living options.
+                      Experience elegance at its finest with Residence 3704 at Homestead West—a stunning single-story home 
+                      featuring 3,700 square feet of precise craftsmanship. The welcoming foyer ushers you into the great room, 
+                      perfect for entertaining, with a spacious living area, breakfast nook, and a well-appointed kitchen 
+                      featuring an island and walk-in pantry.
                     </p>
                     <p className="text-gray-700">
-                      Built by Century Communities, one of America's top 10 homebuilders, this plan 
-                      represents the pinnacle of modern ranch home design in Northwest Las Vegas.
+                      For special occasions, enjoy meals in the separate dining room. Four bedrooms, each with its own 
+                      en-suite bathroom, offer plenty of privacy, but the primary suite's bathroom stands out with a 
+                      free-standing bathtub, dual vanities, and an expansive walk-in closet. Completing the space, a 
+                      sizeable mudroom and 3-bay garage perfectly blend luxury with functionality.
                     </p>
                   </div>
                 </div>
@@ -242,6 +259,36 @@ export default function Plan3704Page() {
           </div>
         </section>
 
+        {/* Century Communities Sales Office */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Century Communities Sales Office</h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Sales Information</h3>
+                  <div className="space-y-3">
+                    <p><span className="font-semibold">Phone:</span> (702) 936-3014</p>
+                    <p><span className="font-semibold">Address:</span> 5592 Dapple Gray Rd, Las Vegas, NV 89149</p>
+                    <p><span className="font-semibold">Hours:</span> Monday-Sunday, 10:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan Duffy?</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Independent real estate expert representing YOUR interests</li>
+                    <li>• Century Communities partnership for insider access</li>
+                    <li>• Market expertise and negotiation power</li>
+                    <li>• Nevada License S.0197614</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact CTA */}
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4">
@@ -256,7 +303,7 @@ export default function Plan3704Page() {
                   href="tel:7022221988"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                 >
-                  📞 Call (702) 222-1988
+                  📞 Call Dr. Jan: (702) 222-1988
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"
@@ -270,6 +317,10 @@ export default function Plan3704Page() {
                 <p className="text-lg font-semibold">Dr. Jan Duffy</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
+                <p className="mt-4 text-sm">
+                  Independent real estate agent providing expert guidance to home buyers. 
+                  Not affiliated with or endorsed by Century Communities.
+                </p>
               </div>
             </div>
           </div>
