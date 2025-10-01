@@ -279,7 +279,8 @@ export default function Plan3704Page() {
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan Duffy?</h3>
                   <ul className="space-y-2 text-gray-700">
                     <li>• Independent real estate expert representing YOUR interests</li>
-                    <li>• Century Communities partnership for insider access</li>
+                    <li>• Office located at Century Communities sales office</li>
+                    <li>• Direct access to builder information and resources</li>
                     <li>• Market expertise and negotiation power</li>
                     <li>• Nevada License S.0197614</li>
                   </ul>
