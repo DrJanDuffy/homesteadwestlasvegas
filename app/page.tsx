@@ -430,7 +430,7 @@ export default function HomePage() {
               <div>
                 <h3 className="text-white font-bold text-lg mb-4">Century Communities</h3>
                 <p className="mb-2">One of America's Top 10 Homebuilders</p>
-                <p className="mb-2">Sales Office: (702) 936-3014</p>
+                <p className="mb-2">Dr. Jan Duffy's Office Location</p>
                 <p>Monday-Sunday: 10:00 AM - 6:00 PM</p>
               </div>
             </div>
