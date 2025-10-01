@@ -337,16 +337,19 @@ export default function FloorPlansPage() {
                 </div>
               </div>
 
-              {/* Dr. Jan Duffy - Your Real Estate Expert */}
-              <div className="bg-blue-50 rounded-lg p-8 mb-12">
+              {/* Dr. Jan Duffy - VIP Century Communities Specialist */}
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 mb-12 border-2 border-yellow-400">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">👩‍💼</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan Duffy - Your Real Estate Expert</h3>
+                  <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
+                    ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan Duffy - VIP Century Communities Specialist</h3>
                   <p className="text-lg text-gray-700 mb-6">
-                    Dr. Jan Duffy maintains an office at the Century Communities sales office, 
-                    providing you with direct access to builder information while representing YOUR interests.
+                    Elite builder relationship delivers exclusive access, priority lot selection, 
+                    and expert negotiation backed by premier relationships.
                   </p>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="text-left">

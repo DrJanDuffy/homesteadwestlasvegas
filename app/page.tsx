@@ -322,16 +322,57 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Why Work With Dr. Jan - Trust Building */}
-        <section className="py-16 bg-blue-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                Why Work With Dr. Jan Duffy?
-              </h2>
-              <p className="text-xl text-center text-gray-700 mb-12">
-                Get expert, unbiased guidance—I'm your trusted advisor, not the builder's sales agent
-              </p>
+            {/* VIP Century Communities Partnership */}
+            <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+              <div className="container mx-auto px-4">
+                <div className="max-w-4xl mx-auto text-center">
+                  <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6">
+                    ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                  </div>
+                  <h2 className="text-4xl font-bold mb-6">
+                    Elite Builder Relationship = Your Advantage
+                  </h2>
+                  <p className="text-xl mb-8 text-blue-100">
+                    Dr. Jan Duffy's VIP Century Communities partnership delivers exclusive access, 
+                    priority lot selection, and expert negotiation backed by premier relationships.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6 mb-8">
+                    <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                      <div className="text-3xl mb-3">🚀</div>
+                      <h3 className="text-lg font-bold mb-2">Early Phase Access</h3>
+                      <p className="text-sm text-blue-100">First access to new phases before public release</p>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                      <div className="text-3xl mb-3">⚡</div>
+                      <h3 className="text-lg font-bold mb-2">Priority Treatment</h3>
+                      <p className="text-sm text-blue-100">VIP status throughout the entire process</p>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                      <div className="text-3xl mb-3">🎯</div>
+                      <h3 className="text-lg font-bold mb-2">Expert Negotiation</h3>
+                      <p className="text-sm text-blue-100">Premier relationship-backed negotiation power</p>
+                    </div>
+                  </div>
+                  <a
+                    href="/century-communities-vip"
+                    className="inline-block bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors"
+                  >
+                    Learn More About VIP Partnership
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            {/* Why Work With Dr. Jan - Trust Building */}
+            <section className="py-16 bg-blue-50">
+              <div className="container mx-auto px-4">
+                <div className="max-w-4xl mx-auto">
+                  <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
+                    Why Work With Dr. Jan Duffy?
+                  </h2>
+                  <p className="text-xl text-center text-gray-700 mb-12">
+                    Get expert, unbiased guidance—I'm your trusted advisor, not the builder's sales agent
+                  </p>
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-md">

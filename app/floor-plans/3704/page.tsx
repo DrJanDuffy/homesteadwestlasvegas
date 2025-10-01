@@ -259,11 +259,19 @@ export default function Plan3704Page() {
           </div>
         </section>
 
-        {/* Dr. Jan Duffy - Your Real Estate Expert */}
-        <section className="py-16 bg-blue-50">
+        {/* Dr. Jan Duffy - VIP Century Communities Specialist */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Dr. Jan Duffy - Your Real Estate Expert</h2>
+              <div className="text-center mb-8">
+                <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
+                  ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                </div>
+                <h2 className="text-3xl font-bold text-gray-900">Dr. Jan Duffy - VIP Century Communities Specialist</h2>
+                <p className="text-lg text-gray-700 mt-4">
+                  Elite builder relationship delivers exclusive access, priority lot selection, and expert negotiation
+                </p>
+              </div>
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white p-6 rounded-lg shadow-sm">

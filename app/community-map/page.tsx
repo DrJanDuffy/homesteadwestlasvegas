@@ -180,13 +180,17 @@ export default function CommunityMapPage() {
           </div>
         </section>
 
-        {/* Dr. Jan Duffy Contact */}
-        <section className="py-16 bg-blue-50">
+        {/* Dr. Jan Duffy VIP Partnership */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Ready to Find Your Perfect Lot?</h2>
+              <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
+                ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+              </div>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Access to Perfect Lot Selection</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Contact Dr. Jan Duffy for expert guidance on lot selection and floor plan placement
+                Dr. Jan Duffy's elite Century Communities partnership delivers priority lot access, 
+                expert guidance, and exclusive builder relationships
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">

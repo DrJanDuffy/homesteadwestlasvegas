@@ -107,31 +107,33 @@ export default function HomebuyingProcessPage() {
           </div>
         </header>
 
-        {/* Introduction */}
-        <section className="py-16 bg-gray-50">
+        {/* VIP Partnership Introduction */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Your Journey to Homeownership</h2>
+              <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
+                ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+              </div>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Homebuying Journey</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Whether it's your first time buying a new home or you're looking for your next dream home, 
-                Dr. Jan Duffy is here to walk you through every step of the process—ensuring you're prepared 
-                and informed throughout your Homestead West home purchase.
+                Dr. Jan Duffy's elite Century Communities partnership delivers exclusive access, 
+                priority treatment, and expert guidance throughout your entire homebuying process.
               </p>
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan Duffy?</h3>
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-bold mb-4 text-gray-900">VIP Partnership Advantages</h3>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
                     <ul className="space-y-2 text-gray-700">
-                      <li>• Independent agent representing YOUR interests</li>
-                      <li>• Office at Century Communities sales office</li>
-                      <li>• Nevada License S.0197614</li>
+                      <li>• Early access to new phases</li>
+                      <li>• Priority lot selection</li>
+                      <li>• Direct builder contact</li>
                     </ul>
                   </div>
                   <div>
                     <ul className="space-y-2 text-gray-700">
-                      <li>• Direct access to builder information</li>
-                      <li>• Market expertise and negotiation power</li>
-                      <li>• Las Vegas real estate specialist</li>
+                      <li>• Expert negotiation power</li>
+                      <li>• VIP portal access</li>
+                      <li>• Premier relationship backing</li>
                     </ul>
                   </div>
                 </div>
