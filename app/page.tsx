@@ -15,12 +15,9 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'RealEstateAgent',
-    name: 'Dr. Jan Duffy',
-    description: 'Expert Las Vegas real estate agent specializing in residential and commercial properties',
-    url: 'https://homesteadwestlasvegas.com',
-    telephone: '+17022221988',
-    email: 'DrJanSells@HomesteadWestLasVegas.com',
+    '@type': 'RealEstateListing',
+    name: 'Homestead West | Homes by Dr Jan Duffy',
+    description: '$910K+ ranch-style homes on pool-sized lots in Northwest Las Vegas',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '5592 N Dapple Gray Rd',
@@ -29,17 +26,34 @@ export default function HomePage() {
       postalCode: '89149',
       addressCountry: 'US'
     },
-    licenseNumber: 'S.0197614',
-    areaServed: {
-      '@type': 'City',
-      name: 'Las Vegas',
-      '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+    telephone: '+17022221988',
+    email: 'DrJanSells@HomesteadWestLasVegas.com',
+    url: 'https://homesteadwestlasvegas.com',
+    agent: {
+      '@type': 'RealEstateAgent',
+      name: 'Dr. Jan Duffy',
+      telephone: '+17022221988',
+      email: 'DrJanSells@HomesteadWestLasVegas.com',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Las Vegas',
+        addressRegion: 'NV',
+        postalCode: '89149',
+        addressCountry: 'US'
+      },
+      areaServed: {
+        '@type': 'City',
+        name: 'Las Vegas',
+        '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+      }
     },
-    serviceType: ['Real Estate Sales', 'Property Management', 'Real Estate Investment Consulting'],
-    openingHours: [
-      'Mo-Fr 09:00-18:00',
-      'Sa 10:00-16:00'
-    ]
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: '910990',
+      highPrice: '940990',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock'
+    }
   };
 
   return (
