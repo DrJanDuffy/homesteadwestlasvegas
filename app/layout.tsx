@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navigation from "../components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -241,44 +242,45 @@ export default function RootLayout({
     ]
   };
 
-  return (
-    <html lang="en">
-      <head>
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GA_MEASUREMENT_ID');
-            `,
-          }}
-        />
+      return (
+        <html lang="en">
+          <head>
+            {/* Google Analytics */}
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+            ></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'GA_MEASUREMENT_ID');
+                `,
+              }}
+            />
 
-        {/* Structured Data - RealEstateListing */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
-        />
+            {/* Structured Data - RealEstateListing */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(structuredData),
+              }}
+            />
 
-        {/* Structured Data - BreadcrumbList */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbData),
-          }}
-        />
-      </head>
-      <body className={inter.className}>
-        {children}
-      </body>
-    </html>
-  );
+            {/* Structured Data - BreadcrumbList */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(breadcrumbData),
+              }}
+            />
+          </head>
+          <body className={inter.className}>
+            <Navigation />
+            {children}
+          </body>
+        </html>
+      );
 }
