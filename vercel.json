@@ -1,16 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/sitemap.xml",
-      "destination": "https://www.homesteadwestlasvegas.com/sitemap.xml",
-      "permanent": true
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "https://www.homesteadwestlasvegas.com/robots.txt",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/sitemap.xml",
