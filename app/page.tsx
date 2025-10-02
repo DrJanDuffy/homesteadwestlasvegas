@@ -174,11 +174,11 @@ export default function HomePage() {
                       <li className="flex items-start">
                         <span className="text-green-600 mr-2">✓</span>
                         <span>Walk-in pantry & spacious laundry room</span>
-                      </li>
+          </li>
                       <li className="flex items-start">
                         <span className="text-green-600 mr-2">✓</span>
                         <span>Optional detached pool house or casita</span>
-                      </li>
+          </li>
                     </ul>
                   </div>
 
@@ -252,8 +252,8 @@ export default function HomePage() {
                     className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
                   >
                     Learn More About Plan 3704
-                  </a>
-                </div>
+          </a>
+        </div>
               </div>
             </div>
           </div>

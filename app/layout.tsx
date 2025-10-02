@@ -15,21 +15,27 @@ export const metadata: Metadata = {
   
   description: "Homestead West by Century Communities: 3,336-3,704 sq ft luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy. Starting at $910,990. Call (702) 222-1988.",
   
-  keywords: [
-    "Homestead West",
-    "Homestead West Las Vegas", 
-    "Century Communities Las Vegas",
-    "Northwest Las Vegas homes",
-    "Las Vegas ranch homes",
-    "new homes Las Vegas",
-    "pool-sized lots Las Vegas",
-    "single story homes Las Vegas",
-    "luxury homes Las Vegas",
-    "5592 N Dapple Gray Rd",
-    "Dr. Jan Duffy",
-    "Las Vegas real estate",
-    "89149 zip code homes"
-  ],
+      keywords: [
+        "Homestead West",
+        "Homestead West Las Vegas",
+        "Century Communities Las Vegas",
+        "Northwest Las Vegas homes",
+        "Las Vegas ranch homes",
+        "new homes Las Vegas",
+        "pool-sized lots Las Vegas",
+        "single story homes Las Vegas",
+        "luxury homes Las Vegas",
+        "5592 N Dapple Gray Rd",
+        "Dr. Jan Duffy",
+        "Las Vegas real estate",
+        "89149 zip code homes",
+        "VIP Century Communities partnership",
+        "new construction Las Vegas",
+        "Las Vegas homebuyer guide",
+        "Century Communities VIP agent",
+        "Las Vegas real estate expert",
+        "Nevada real estate license S.0197614"
+      ],
 
   authors: [{ name: "Dr. Jan Duffy" }],
   creator: "Dr. Jan Duffy",
@@ -71,9 +77,9 @@ export const metadata: Metadata = {
     images: ['/twitter-image.jpg'],
   },
 
-  verification: {
-    google: 'your-google-verification-code-here',
-  },
+      verification: {
+        google: process.env.GOOGLE_SITE_VERIFICATION || 'your-google-verification-code-here',
+      },
 
   alternates: {
     canonical: 'https://homesteadwestlasvegas.com',
@@ -122,36 +128,67 @@ export default function RootLayout({
       value: '3336-3704',
       unitText: 'square feet'
     },
-    agent: {
-      '@type': 'RealEstateAgent',
-      name: 'Dr. Jan Duffy',
-      telephone: '+17022221988',
-      email: 'DrJanSells@HomesteadWestLasVegas.com',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Las Vegas',
-        addressRegion: 'NV',
-        postalCode: '89149',
-        addressCountry: 'US'
-      },
-      areaServed: {
-        '@type': 'City',
-        name: 'Las Vegas',
-        '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
-      },
-      knowsAbout: [
-        'Homestead West',
-        'Century Communities',
-        'Northwest Las Vegas Real Estate',
-        'Luxury Ranch Homes',
-        'New Construction Homes'
-      ],
-      jobTitle: 'Las Vegas Real Estate Expert',
-      worksFor: {
-        '@type': 'Organization',
-        name: 'Homestead West | Homes by Dr Jan Duffy'
-      }
-    },
+        agent: {
+          '@type': 'RealEstateAgent',
+          name: 'Dr. Jan Duffy',
+          telephone: '+17022221988',
+          email: 'DrJanSells@HomesteadWestLasVegas.com',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '5592 N Dapple Gray Rd',
+            addressLocality: 'Las Vegas',
+            addressRegion: 'NV',
+            postalCode: '89149',
+            addressCountry: 'US'
+          },
+          areaServed: [
+            {
+              '@type': 'City',
+              name: 'Las Vegas',
+              '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+            },
+            {
+              '@type': 'City',
+              name: 'Henderson',
+              '@id': 'https://en.wikipedia.org/wiki/Henderson,_Nevada'
+            },
+            {
+              '@type': 'City',
+              name: 'North Las Vegas',
+              '@id': 'https://en.wikipedia.org/wiki/North_Las_Vegas,_Nevada'
+            }
+          ],
+          knowsAbout: [
+            'Homestead West',
+            'Century Communities',
+            'Northwest Las Vegas Real Estate',
+            'Luxury Ranch Homes',
+            'New Construction Homes',
+            'VIP Builder Partnerships',
+            'Cadence Henderson',
+            'Las Vegas Market Analysis'
+          ],
+          jobTitle: 'VIP Century Communities Specialist',
+          hasCredential: {
+            '@type': 'EducationalOccupationalCredential',
+            name: 'Nevada Real Estate License',
+            credentialCategory: 'license',
+            credentialId: 'S.0197614',
+            recognizedBy: {
+              '@type': 'Organization',
+              name: 'Nevada Real Estate Division'
+            }
+          },
+          worksFor: {
+            '@type': 'Organization',
+            name: 'Homestead West | Homes by Dr Jan Duffy'
+          },
+          alumniOf: 'Century Communities VIP Partner Program',
+          memberOf: {
+            '@type': 'Organization',
+            name: 'Las Vegas Association of Realtors'
+          }
+        },
     offers: {
       '@type': 'AggregateOffer',
       lowPrice: '910990',
@@ -204,43 +241,133 @@ export default function RootLayout({
         value: '89149'
       }
     ],
-    nearbyPlaces: [
-      {
-        '@type': 'TouristAttraction',
-        name: 'Red Rock Canyon National Conservation Area',
-        description: '9 miles away'
-      },
-      {
-        '@type': 'Place',
-        name: 'Downtown Las Vegas',
-        description: '18 miles away'
-      },
-      {
-        '@type': 'Place',
-        name: 'Mount Charleston',
-        description: '23 miles away'
-      }
-    ]
+        nearbyPlaces: [
+          {
+            '@type': 'TouristAttraction',
+            name: 'Red Rock Canyon National Conservation Area',
+            description: '9 miles away'
+          },
+          {
+            '@type': 'Place',
+            name: 'Downtown Las Vegas',
+            description: '18 miles away'
+          },
+          {
+            '@type': 'Place',
+            name: 'Mount Charleston',
+            description: '23 miles away'
+          },
+          {
+            '@type': 'School',
+            name: 'Dean Lamar Allen Elementary',
+            description: '2.1 miles away'
+          },
+          {
+            '@type': 'School',
+            name: 'Centennial High School',
+            description: '4.1 miles away'
+          },
+          {
+            '@type': 'Hospital',
+            name: 'Centennial Hills Hospital',
+            description: '3.8 miles away'
+          }
+        ],
+        hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
+        sameAs: [
+          'https://homesteadwestlasvegas.com',
+          'https://homesteadwestlasvegas.com/century-communities-vip',
+          'https://homesteadwestlasvegas.com/about'
+        ]
   };
 
-  const breadcrumbData = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://homesteadwestlasvegas.com'
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Homestead West Las Vegas',
-        item: 'https://homesteadwestlasvegas.com'
-      }
-    ]
-  };
+      const breadcrumbData = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://homesteadwestlasvegas.com'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Homestead West Las Vegas',
+            item: 'https://homesteadwestlasvegas.com'
+          }
+        ]
+      };
+
+      const organizationData = {
+        '@context': 'https://schema.org',
+        '@type': 'RealEstateAgent',
+        name: 'Dr. Jan Duffy',
+        description: 'VIP Century Communities Specialist and Las Vegas Real Estate Expert',
+        url: 'https://homesteadwestlasvegas.com',
+        telephone: '+17022221988',
+        email: 'DrJanSells@HomesteadWestLasVegas.com',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '5592 N Dapple Gray Rd',
+          addressLocality: 'Las Vegas',
+          addressRegion: 'NV',
+          postalCode: '89149',
+          addressCountry: 'US'
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 36.2738,
+          longitude: -115.3089
+        },
+        areaServed: [
+          {
+            '@type': 'City',
+            name: 'Las Vegas',
+            '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+          },
+          {
+            '@type': 'City',
+            name: 'Henderson',
+            '@id': 'https://en.wikipedia.org/wiki/Henderson,_Nevada'
+          },
+          {
+            '@type': 'City',
+            name: 'North Las Vegas',
+            '@id': 'https://en.wikipedia.org/wiki/North_Las_Vegas,_Nevada'
+          }
+        ],
+        serviceType: [
+          'Real Estate Sales',
+          'New Construction Home Buying',
+          'VIP Builder Partnership Services',
+          'Real Estate Investment Consulting'
+        ],
+        hasCredential: {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Nevada Real Estate License',
+          credentialCategory: 'license',
+          credentialId: 'S.0197614',
+          recognizedBy: {
+            '@type': 'Organization',
+            name: 'Nevada Real Estate Division'
+          }
+        },
+        memberOf: {
+          '@type': 'Organization',
+          name: 'Las Vegas Association of Realtors'
+        },
+        knowsAbout: [
+          'Century Communities',
+          'Homestead West',
+          'New Construction Homes',
+          'VIP Builder Partnerships',
+          'Las Vegas Real Estate Market',
+          'Northwest Las Vegas',
+          'Cadence Henderson'
+        ]
+      };
 
       return (
         <html lang="en">
@@ -248,7 +375,7 @@ export default function RootLayout({
             {/* Google Analytics */}
             <script
               async
-              src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}`}
             ></script>
             <script
               dangerouslySetInnerHTML={{
@@ -256,7 +383,7 @@ export default function RootLayout({
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', 'GA_MEASUREMENT_ID');
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}');
                 `,
               }}
             />
@@ -274,6 +401,14 @@ export default function RootLayout({
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify(breadcrumbData),
+              }}
+            />
+
+            {/* Structured Data - Organization */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(organizationData),
               }}
             />
           </head>

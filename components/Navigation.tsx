@@ -89,6 +89,12 @@ export default function Navigation() {
               {activeDropdown === 'community' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
                   <Link 
+                    href="/community" 
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Community Guide
+                  </Link>
+                  <Link 
                     href="/community-map" 
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
@@ -167,6 +173,12 @@ export default function Navigation() {
               {activeDropdown === 'resources' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
                   <Link 
+                    href="/buyers-guide" 
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Buyer's Guide
+                  </Link>
+                  <Link 
                     href="/homebuying-process" 
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
@@ -183,6 +195,18 @@ export default function Navigation() {
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     Blog & News
+                  </Link>
+                  <Link 
+                    href="/testimonials" 
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Testimonials
+                  </Link>
+                  <Link 
+                    href="/faq" 
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    FAQ
                   </Link>
                   <Link 
                     href="/properties" 
@@ -271,6 +295,12 @@ export default function Navigation() {
                 <div className="font-medium text-gray-900 mb-2">Community</div>
                 <div className="ml-4 space-y-1">
                   <Link 
+                    href="/community" 
+                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    Community Guide
+                  </Link>
+                  <Link 
                     href="/community-map" 
                     className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
                   >
@@ -325,6 +355,12 @@ export default function Navigation() {
                 <div className="font-medium text-gray-900 mb-2">Resources</div>
                 <div className="ml-4 space-y-1">
                   <Link 
+                    href="/buyers-guide" 
+                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    Buyer's Guide
+                  </Link>
+                  <Link 
                     href="/homebuying-process" 
                     className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
                   >
@@ -341,6 +377,18 @@ export default function Navigation() {
                     className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Blog & News
+                  </Link>
+                  <Link 
+                    href="/testimonials" 
+                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    Testimonials
+                  </Link>
+                  <Link 
+                    href="/faq" 
+                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    FAQ
                   </Link>
                   <Link 
                     href="/properties" 
