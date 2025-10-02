@@ -19,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://homesteadwestlasvegas.com/sitemap.xml',
+    sitemap: 'https://www.homesteadwestlasvegas.com/sitemap.xml',
   }
 }
