@@ -94,10 +94,10 @@ export default function VIPBuyerProgramPage() {
                 </div>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                VIP Berkshire Hathaway HomeServices Buyer Program
+                VIP Berkshire Hathaway HomeServices Buyer Program for Homestead West
               </h1>
               <p className="text-2xl md:text-3xl mb-8 text-blue-100 font-semibold">
-                Exclusive Access to Las Vegas New Construction Homes
+                Exclusive Access to Homestead West Las Vegas New Construction Homes
               </p>
               <p className="text-xl text-blue-200 mb-12 max-w-4xl mx-auto">
                 Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation 
@@ -126,7 +126,7 @@ export default function VIPBuyerProgramPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">What VIP Partnership Means for YOU</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">What VIP Partnership Means for Homestead West Buyers</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                   Dr. Jan Duffy's elite builder relationships deliver exclusive advantages 
                   that regular agents simply cannot provide.
@@ -138,9 +138,9 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">🚀</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Early Phase Access</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Early Phase Access to Homestead West</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Get first access to new phases before public release. Secure the best lots, 
+                    Get first access to new Homestead West phases before public release. Secure the best Homestead West lots, 
                     prime locations, and preferred floor plans while others wait.
                   </p>
                 </div>
@@ -149,10 +149,10 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">⚡</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Inside Track on Spec Homes</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Inside Track on Homestead West Spec Homes</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Direct access to quick move-in homes and spec inventory. Get notified 
-                    immediately when new homes become available.
+                    Direct access to quick move-in Homestead West homes and spec inventory. Get notified 
+                    immediately when new Homestead West homes become available.
                   </p>
                 </div>
 
@@ -160,10 +160,10 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">📞</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Direct Builder Contact</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Direct Homestead West Builder Contact</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Faster answers, quicker problem-solving, and direct communication with 
-                    builder management and sales teams.
+                    Homestead West builder management and sales teams.
                   </p>
                 </div>
 
@@ -171,10 +171,10 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">💰</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Stack Buyer Incentives</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Stack Homestead West Buyer Incentives</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Expert knowledge of all available incentives and how to combine them 
-                    effectively for maximum savings on your new home.
+                    Expert knowledge of all available Homestead West incentives and how to combine them 
+                    effectively for maximum savings on your new Homestead West home.
                   </p>
                 </div>
 
@@ -182,10 +182,10 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">🎯</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Expert Negotiation</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Expert Negotiation for Homestead West</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Premier relationship-backed negotiation power. Get upgrades, 
-                    concessions, and terms that others simply cannot achieve.
+                    Premier relationship-backed negotiation power for Homestead West. Get upgrades, 
+                    concessions, and terms that others simply cannot achieve at Homestead West.
                   </p>
                 </div>
 
@@ -193,10 +193,10 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">🏆</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Priority Treatment</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Priority Treatment at Homestead West</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    VIP status throughout the entire process—from lot selection 
-                    to closing. Experience the difference of working with a premier partner.
+                    VIP status throughout the entire Homestead West process—from lot selection 
+                    to closing. Experience the difference of working with a premier Homestead West partner.
                   </p>
                 </div>
               </div>
@@ -209,15 +209,15 @@ export default function VIPBuyerProgramPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">Proven Track Record</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">Proven Track Record with Homestead West</h2>
                 <p className="text-xl text-gray-600">
-                  Dr. Jan Duffy's new construction expertise spans multiple Las Vegas communities
+                  Dr. Jan Duffy's new construction expertise spans multiple Las Vegas communities including Homestead West
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-12 mb-16">
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
-                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Active Communities</h3>
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Active Communities Including Homestead West</h3>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
@@ -244,7 +244,7 @@ export default function VIPBuyerProgramPage() {
                 </div>
 
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
-                  <h3 className="text-3xl font-bold mb-6 text-gray-900">VIP Portal Access</h3>
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">VIP Portal Access for Homestead West</h3>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-green-600 rounded-full mr-4"></div>
@@ -298,7 +298,7 @@ export default function VIPBuyerProgramPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">New Construction Communities Las Vegas</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">New Construction Communities Las Vegas: Homestead West and More</h2>
                 <p className="text-xl text-gray-600">
                   Dr. Jan Duffy's VIP access spans multiple premier communities across the Las Vegas Valley
                 </p>
@@ -345,7 +345,7 @@ export default function VIPBuyerProgramPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">Register Your Buyer - Fast-Track Process</h2>
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">Register Your Buyer for Homestead West - Fast-Track Process</h2>
               <p className="text-xl text-gray-600 mb-12">
                 Dr. Jan Duffy's VIP partnership includes a streamlined registration process 
                 that gets your buyers priority treatment from day one.
@@ -354,23 +354,23 @@ export default function VIPBuyerProgramPage() {
               <div className="grid md:grid-cols-4 gap-8 mb-12">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">1</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">Initial Consultation</h3>
-                  <p className="text-gray-600 text-sm">Discuss needs, budget, and preferences</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">Initial Consultation for Homestead West</h3>
+                  <p className="text-gray-600 text-sm">Discuss needs, budget, and preferences for Homestead West</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration</h3>
-                  <p className="text-gray-600 text-sm">Register with VIP buyer program portal</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration for Homestead West</h3>
+                  <p className="text-gray-600 text-sm">Register with VIP buyer program portal for Homestead West</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">3</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">Priority Access</h3>
-                  <p className="text-gray-600 text-sm">Get early access to new phases and lots</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">Priority Access to Homestead West</h3>
+                  <p className="text-gray-600 text-sm">Get early access to new Homestead West phases and lots</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">4</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">Expert Guidance</h3>
-                  <p className="text-gray-600 text-sm">Navigate the entire process with VIP treatment</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">Expert Guidance for Homestead West</h3>
+                  <p className="text-gray-600 text-sm">Navigate the entire Homestead West process with VIP treatment</p>
                 </div>
               </div>
             </div>
