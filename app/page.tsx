@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: 'Dr. Jan Duffy - Las Vegas Real Estate Expert | Homestead West',
   description: 'Expert Las Vegas real estate agent Dr. Jan Duffy (License S.0197614) helps you buy, sell, and invest in Las Vegas properties. Professional service with local market expertise.',
   keywords: 'Las Vegas real estate, Dr. Jan Duffy, real estate agent, Las Vegas homes, property sales, real estate investment, Homestead West',
+  alternates: {
+    canonical: 'https://www.homesteadwestlasvegas.com/',
+  },
   openGraph: {
     title: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
     description: 'Expert Las Vegas real estate agent Dr. Jan Duffy helps you buy, sell, and invest in Las Vegas properties.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com',
+    url: 'https://www.homesteadwestlasvegas.com/',
   },
 };
 

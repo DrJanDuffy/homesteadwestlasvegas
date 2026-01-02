@@ -83,7 +83,7 @@ export const metadata: Metadata = {
       },
 
   alternates: {
-    canonical: 'https://www.homesteadwestlasvegas.com',
+    canonical: 'https://www.homesteadwestlasvegas.com/',
   },
 
   other: {
