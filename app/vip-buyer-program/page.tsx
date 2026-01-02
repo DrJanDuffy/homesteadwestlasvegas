@@ -97,11 +97,10 @@ export default function VIPBuyerProgramPage() {
                 VIP Berkshire Hathaway HomeServices Buyer Program for Homestead West
               </h1>
               <p className="text-2xl md:text-3xl mb-8 text-blue-100 font-semibold">
-                Exclusive Access to Homestead West Las Vegas New Construction Homes
+                Premier New Home Buyer Program for Homestead West Las Vegas
               </p>
               <p className="text-xl text-blue-200 mb-12 max-w-4xl mx-auto">
-                Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation 
-                backed by her elite builder relationships—giving YOU the ultimate advantage.
+                The VIP Berkshire Hathaway HomeServices New Home Buyer Program provides exclusive access to Homestead West Las Vegas new construction homes. Through Dr. Jan Duffy's elite builder partnerships, you receive insider access, priority lot selection, and expert negotiation—giving YOU the ultimate advantage when purchasing your new Homestead West home.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a

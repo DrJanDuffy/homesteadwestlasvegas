@@ -451,26 +451,26 @@ export default function HomePage() {
                     VIP Berkshire Hathaway HomeServices Buyer Program for Homestead West
                   </h2>
                   <p className="text-xl mb-8 text-blue-100">
-                    Exclusive Access to Las Vegas New Construction Homes at Homestead West
+                    Premier New Home Buyer Program for Homestead West Las Vegas
                   </p>
                   <p className="text-lg mb-8 text-blue-200">
-                    This is a VIP Berkshire Hathaway HomeServices Buyer Program for <strong>Homestead West</strong>—exclusive access to Las Vegas new construction homes. Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation backed by her elite builder relationships—giving YOU the ultimate advantage.
+                    The VIP Berkshire Hathaway HomeServices New Home Buyer Program provides <strong>Homestead West</strong> buyers with exclusive access to Las Vegas new construction homes through Dr. Jan Duffy's elite builder partnerships. This premier program delivers insider access, priority lot selection, and expert negotiation—giving YOU the ultimate advantage when purchasing your new Homestead West home.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🚀</div>
-                      <h3 className="text-lg font-bold mb-2">Early Phase Access to Homestead West</h3>
-                      <p className="text-sm text-blue-100">First access to new Homestead West phases before public release</p>
+                      <h3 className="text-lg font-bold mb-2">Early Phase Access Through VIP Program</h3>
+                      <p className="text-sm text-blue-100">First access to new Homestead West phases before public release through the Berkshire Hathaway HomeServices program</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">⚡</div>
-                      <h3 className="text-lg font-bold mb-2">Priority Lot Selection at Homestead West</h3>
-                      <p className="text-sm text-blue-100">VIP status throughout the entire Homestead West process</p>
+                      <h3 className="text-lg font-bold mb-2">Priority Lot Selection Benefits</h3>
+                      <p className="text-sm text-blue-100">VIP program status ensures priority treatment throughout the entire Homestead West homebuying process</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🎯</div>
-                      <h3 className="text-lg font-bold mb-2">Expert Negotiation for Homestead West</h3>
-                      <p className="text-sm text-blue-100">Elite builder relationship-backed negotiation power for Homestead West</p>
+                      <h3 className="text-lg font-bold mb-2">Expert Negotiation Power</h3>
+                      <p className="text-sm text-blue-100">Elite builder relationships backed by Berkshire Hathaway HomeServices deliver superior negotiation results for Homestead West buyers</p>
                     </div>
                   </div>
                   <a
