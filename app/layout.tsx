@@ -120,8 +120,8 @@ export default function RootLayout({
     },
     telephone: '+17022221988',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
-    url: 'https://homesteadwestlasvegas.com',
-    image: 'https://homesteadwestlasvegas.com/og-image.jpg',
+    url: 'https://www.homesteadwestlasvegas.com',
+    image: 'https://www.homesteadwestlasvegas.com/og-image.jpg',
     priceRange: '$910,990 - $940,990',
     numberOfRooms: '4-5',
     floorSize: {
@@ -270,9 +270,9 @@ export default function RootLayout({
         ],
         hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
         sameAs: [
-          'https://homesteadwestlasvegas.com',
-          'https://homesteadwestlasvegas.com/vip-buyer-program',
-          'https://homesteadwestlasvegas.com/about'
+          'https://www.homesteadwestlasvegas.com',
+          'https://www.homesteadwestlasvegas.com/vip-buyer-program',
+          'https://www.homesteadwestlasvegas.com/about'
         ]
   };
 
@@ -284,13 +284,13 @@ export default function RootLayout({
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://homesteadwestlasvegas.com'
+            item: 'https://www.homesteadwestlasvegas.com'
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Homestead West Las Vegas',
-            item: 'https://homesteadwestlasvegas.com'
+            item: 'https://www.homesteadwestlasvegas.com'
           }
         ]
       };
@@ -300,7 +300,7 @@ export default function RootLayout({
         '@type': 'RealEstateAgent',
         name: 'Dr. Jan Duffy',
         description: 'VIP New Construction Specialist and Las Vegas Real Estate Expert',
-        url: 'https://homesteadwestlasvegas.com',
+        url: 'https://www.homesteadwestlasvegas.com',
         telephone: '+17022221988',
         email: 'DrJanSells@HomesteadWestLasVegas.com',
         address: {
