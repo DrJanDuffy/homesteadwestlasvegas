@@ -67,10 +67,22 @@ export default function HomePage() {
       
       <div className="min-h-screen bg-white">
         {/* Hero Section - Above the Fold */}
-        <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
+        <section className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-blue-900 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
+          {/* Animated background elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-700"></div>
+            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+          </div>
           <div className="relative container mx-auto px-4 py-24 md:py-32">
             <div className="max-w-4xl mx-auto text-center">
+              {/* VIP Badge */}
+              <div className="mb-8">
+                <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6 animate-bounce">
+                  ⭐ VIP BUILDER PARTNERSHIP ⭐
+                </div>
+              </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Homestead West Las Vegas
               </h1>
@@ -80,23 +92,37 @@ export default function HomePage() {
               <p className="text-xl mb-8 text-blue-50">
                 Expert Guidance from Dr. Jan Duffy | VIP Berkshire Hathaway HomeServices Buyer Program
               </p>
+              
+              {/* Trust Indicators */}
+              <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm md:text-base">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span className="text-2xl">🏆</span>
+                  <span>500+ Families Helped</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span className="text-2xl">⭐</span>
+                  <span>Elite Builder Access</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span className="text-2xl">📍</span>
+                  <span>5592 N Dapple Gray Rd, Las Vegas, NV 89149</span>
+                </div>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="tel:7022221988"
-                  className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl"
+                  className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   📞 Call: (702) 222-1988
-          </a>
-          <a
+                </a>
+                <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"
-                  className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all shadow-lg border-2 border-white"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all shadow-lg border-2 border-white transform hover:scale-105"
                 >
                   📧 Email Dr. Jan
                 </a>
               </div>
-              <p className="mt-6 text-sm text-blue-200">
-                5592 N Dapple Gray Rd, Las Vegas, NV 89149
-              </p>
             </div>
           </div>
         </section>
