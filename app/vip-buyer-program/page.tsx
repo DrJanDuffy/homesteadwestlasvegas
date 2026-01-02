@@ -90,7 +90,7 @@ export default function VIPBuyerProgramPage() {
             <div className="max-w-6xl mx-auto text-center">
               <div className="mb-8">
                 <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6">
-                  ⭐ VIP BUILDER PARTNERSHIP ⭐
+                  ⭐ VIP Berkshire Hathaway HomeServices Buyer Program ⭐
                 </div>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">

@@ -80,7 +80,7 @@ export default function HomePage() {
               {/* VIP Badge */}
               <div className="mb-8">
                 <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6 animate-bounce">
-                  ⭐ VIP BUILDER PARTNERSHIP ⭐
+                  ⭐ VIP Berkshire Hathaway HomeServices Buyer Program ⭐
                 </div>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -400,7 +400,7 @@ export default function HomePage() {
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center">
                   <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6">
-                    ⭐ VIP BUILDER PARTNERSHIP ⭐
+                    ⭐ VIP Berkshire Hathaway HomeServices Buyer Program ⭐
                   </div>
                   <h2 className="text-4xl font-bold mb-6">
                     VIP Berkshire Hathaway HomeServices Buyer Program
