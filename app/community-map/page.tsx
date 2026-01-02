@@ -96,9 +96,9 @@ export default function CommunityMapPage() {
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">📍</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">Available Lots</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Available Lots</h3>
                   <p className="text-gray-600">
-                    Click on available lots to see pricing, floor plan options, and lot specifications.
+                    Click on available Homestead West lots to see pricing, floor plan options, and lot specifications.
                   </p>
                 </div>
 
@@ -106,9 +106,9 @@ export default function CommunityMapPage() {
                   <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">🏡</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">Floor Plan Locations</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Floor Plan Locations</h3>
                   <p className="text-gray-600">
-                    See where Plan 3336 and Plan 3704 homes can be built throughout the community.
+                    See where Plan 3336 and Plan 3704 homes can be built throughout the Homestead West community.
                   </p>
                 </div>
 
@@ -116,7 +116,7 @@ export default function CommunityMapPage() {
                   <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">🗺️</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">Community Layout</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Community Layout</h3>
                   <p className="text-gray-600">
                     Understand the overall community design and proximity to amenities.
                   </p>
@@ -130,11 +130,11 @@ export default function CommunityMapPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Lot Features & Amenities</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Homestead West Lot Features & Amenities</h2>
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">Lot Characteristics</h3>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Homestead West Lot Characteristics</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>

@@ -67,10 +67,10 @@ export default function VirtualTourPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold mb-4">Interactive 3D Property Tour</h2>
+                <h2 className="text-3xl font-bold mb-4">Homestead West Interactive 3D Property Tour</h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Explore Homestead West luxury ranch homes from anywhere with our immersive virtual tour. 
-                  Navigate through the properties and experience the space as if you were there in person.
+                  Navigate through the Homestead West properties and experience the space as if you were there in person.
                 </p>
               </div>
 
@@ -95,9 +95,9 @@ export default function VirtualTourPage() {
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">🖱️</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Click to Navigate</h3>
+                  <h3 className="text-xl font-semibold mb-2">Click to Navigate Homestead West</h3>
                   <p className="text-gray-600">
-                    Click on the white dots to move through different rooms and areas of the home.
+                    Click on the white dots to move through different rooms and areas of the Homestead West home.
                   </p>
                 </div>
 
@@ -105,9 +105,9 @@ export default function VirtualTourPage() {
                   <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">📱</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                  <h3 className="text-xl font-semibold mb-2">Mobile Friendly Homestead West Tour</h3>
                   <p className="text-gray-600">
-                    Works perfectly on desktop, tablet, and mobile devices for viewing anywhere.
+                    Works perfectly on desktop, tablet, and mobile devices for viewing Homestead West anywhere.
                   </p>
                 </div>
 
@@ -115,16 +115,16 @@ export default function VirtualTourPage() {
                   <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">🔍</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Detailed Views</h3>
+                  <h3 className="text-xl font-semibold mb-2">Detailed Homestead West Views</h3>
                   <p className="text-gray-600">
-                    Zoom in to see details, measurements, and features throughout the home.
+                    Zoom in to see details, measurements, and features throughout the Homestead West home.
                   </p>
                 </div>
               </div>
 
               {/* Floor Plans Reference */}
               <div className="bg-gray-50 rounded-lg p-8 mb-12">
-                <h3 className="text-2xl font-bold mb-6 text-center">Available Floor Plans</h3>
+                <h3 className="text-2xl font-bold mb-6 text-center">Available Homestead West Floor Plans</h3>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <h4 className="text-xl font-semibold mb-2">Plan 3336</h4>
@@ -154,7 +154,7 @@ export default function VirtualTourPage() {
                 <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
                   ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
                 </div>
-                <h3 className="text-3xl font-bold mb-4">Ready to Experience VIP Treatment?</h3>
+                <h3 className="text-3xl font-bold mb-4">Ready to Experience Homestead West VIP Treatment?</h3>
                 <p className="text-xl mb-8 text-blue-100">
                   Schedule an in-person tour with Dr. Jan Duffy's VIP new construction partnership 
                   for exclusive access and expert guidance
