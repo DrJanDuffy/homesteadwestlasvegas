@@ -1,24 +1,28 @@
-import React from 'react';
+'use client';
 
-// Type definition for RealScout web component
-interface RealScoutOfficeListingsProps extends React.HTMLAttributes<HTMLElement> {
-  'agent-encoded-id'?: string;
-  'sort-order'?: string;
-  'listing-status'?: string;
-  'property-types'?: string;
-  'price-min'?: string;
-  'price-max'?: string;
-}
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'realscout-office-listings': RealScoutOfficeListingsProps;
-    }
-  }
-}
+import React, { useEffect, useRef } from 'react';
 
 export default function RealScoutListings() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      // Clear any existing content
+      containerRef.current.innerHTML = '';
+      
+      // Create the web component element
+      const element = document.createElement('realscout-office-listings');
+      element.setAttribute('agent-encoded-id', 'QWdlbnQtMjI1MDUw');
+      element.setAttribute('sort-order', 'PRICE_HIGH');
+      element.setAttribute('listing-status', 'For Sale');
+      element.setAttribute('property-types', ',SFR');
+      element.setAttribute('price-min', '400000');
+      element.setAttribute('price-max', '700000');
+      
+      containerRef.current.appendChild(element);
+    }
+  }, []);
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -29,16 +33,7 @@ export default function RealScoutListings() {
           Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
         </p>
         
-        <div className="max-w-7xl mx-auto">
-          <realscout-office-listings 
-            agent-encoded-id="QWdlbnQtMjI1MDUw" 
-            sort-order="PRICE_HIGH" 
-            listing-status="For Sale" 
-            property-types=",SFR" 
-            price-min="400000" 
-            price-max="700000"
-          />
-        </div>
+        <div className="max-w-7xl mx-auto" ref={containerRef} />
       </div>
     </section>
   );
