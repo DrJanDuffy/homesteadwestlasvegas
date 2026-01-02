@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Floor Plans | Homestead West Las Vegas | Luxury Ranch Homes',
@@ -376,14 +377,7 @@ export default function FloorPlansPage() {
                   Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
                 </p>
                 <div className="max-w-7xl mx-auto">
-                  <realscout-office-listings 
-                    agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                    sort-order="PRICE_HIGH" 
-                    listing-status="For Sale" 
-                    property-types=",SFR" 
-                    price-min="400000" 
-                    price-max="700000"
-                  />
+                  <RealScoutListings />
                 </div>
               </div>
 

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
+import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Dr. Jan Duffy - Las Vegas Real Estate Expert | Homestead West',
@@ -130,14 +131,7 @@ export default function HomePage() {
             </p>
             
             <div className="max-w-7xl mx-auto">
-              <realscout-office-listings 
-                agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                sort-order="PRICE_HIGH" 
-                listing-status="For Sale" 
-                property-types=",SFR" 
-                price-min="400000" 
-                price-max="700000"
-              />
+              <RealScoutListings />
             </div>
           </div>
         </section>

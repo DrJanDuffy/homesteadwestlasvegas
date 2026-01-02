@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Blog | Las Vegas Real Estate News & Market Updates | Dr. Jan Duffy',
@@ -347,14 +348,7 @@ export default function BlogPage() {
             </p>
             
             <div className="max-w-7xl mx-auto">
-              <realscout-office-listings 
-                agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                sort-order="PRICE_HIGH" 
-                listing-status="For Sale" 
-                property-types=",SFR" 
-                price-min="400000" 
-                price-max="700000"
-              />
+              <RealScoutListings />
             </div>
           </div>
         </section>

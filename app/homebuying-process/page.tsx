@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Homebuying Process | Homestead West Las Vegas | Expert Guidance by Dr. Jan Duffy',
@@ -436,14 +437,7 @@ export default function HomebuyingProcessPage() {
             </p>
             
             <div className="max-w-7xl mx-auto">
-              <realscout-office-listings 
-                agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                sort-order="PRICE_HIGH" 
-                listing-status="For Sale" 
-                property-types=",SFR" 
-                price-min="400000" 
-                price-max="700000"
-              />
+              <RealScoutListings />
             </div>
           </div>
         </section>
