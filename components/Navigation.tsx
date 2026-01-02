@@ -18,15 +18,15 @@ export default function Navigation() {
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">H</span>
+          {/* Phone Number */}
+          <a href="tel:7022221988" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+            <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+              <span className="text-white text-xl">📞</span>
             </div>
             <div className="text-xl font-bold text-gray-900">
-              Homestead West
+              (702) 222-1988
             </div>
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
