@@ -255,10 +255,10 @@ export default function HomebuyingProcessPage() {
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
                     <a
-                      href="/floor-plans"
+                      href="/properties"
                       className="bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                     >
-                      View Floor Plans
+                      View Available Homes
                     </a>
                     <a
                       href="/virtual-tour"

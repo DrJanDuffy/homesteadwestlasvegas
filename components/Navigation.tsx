@@ -38,41 +38,13 @@ export default function Navigation() {
               Home
             </Link>
 
-            {/* Floor Plans Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => handleMouseEnter('floor-plans')}
-              onMouseLeave={handleMouseLeave}
+            {/* Available Homes */}
+            <Link 
+              href="/properties" 
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
-              <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors flex items-center">
-                Floor Plans
-                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {activeDropdown === 'floor-plans' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
-                  <Link 
-                    href="/floor-plans" 
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                  >
-                    All Floor Plans
-                  </Link>
-                  <Link 
-                    href="/floor-plans/3336" 
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                  >
-                    Plan 3336 (3,336 sq ft)
-                  </Link>
-                  <Link 
-                    href="/floor-plans/3704" 
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                  >
-                    Plan 3704 (3,704 sq ft)
-                  </Link>
-                </div>
-              )}
-            </div>
+              Available Homes
+            </Link>
 
             {/* Community Dropdown */}
             <div 
@@ -273,29 +245,12 @@ export default function Navigation() {
                 Home
               </Link>
               
-              <div className="px-4 py-2">
-                <div className="font-medium text-gray-900 mb-2">Floor Plans</div>
-                <div className="ml-4 space-y-1">
-                  <Link 
-                    href="/floor-plans" 
-                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    All Floor Plans
-                  </Link>
-                  <Link 
-                    href="/floor-plans/3336" 
-                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    Plan 3336
-                  </Link>
-                  <Link 
-                    href="/floor-plans/3704" 
-                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    Plan 3704
-                  </Link>
-                </div>
-              </div>
+              <Link 
+                href="/properties" 
+                className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+              >
+                Available Homes
+              </Link>
 
               <div className="px-4 py-2">
                 <div className="font-medium text-gray-900 mb-2">Community</div>
