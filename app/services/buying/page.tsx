@@ -115,7 +115,7 @@ export default function BuyingServicePage() {
                     </span>
                     <div>
                       <p className="font-semibold">Call Now</p>
-                      <p className="text-blue-600">(702) 222-1988</p>
+                      <p className="text-blue-600">(702) 299-6607</p>
                     </div>
                   </div>
                   

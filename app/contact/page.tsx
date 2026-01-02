@@ -3,7 +3,7 @@ import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent | Homestead West',
-  description: 'Contact Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Call (702) 222-1988 or visit our office at 5592 N Dapple Gray Rd.',
+  description: 'Contact Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Call (702) 299-6607 or visit our office at 5592 N Dapple Gray Rd.',
   keywords: 'contact Dr. Jan Duffy, Las Vegas real estate agent, Homestead West contact, real estate consultation Las Vegas',
   openGraph: {
     title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent',
@@ -99,7 +99,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Homestead West Phone</h3>
-                      <p className="text-lg">(702) 222-1988</p>
+                      <p className="text-lg">(702) 299-6607</p>
                       <p className="text-gray-600">Available Monday-Friday 9AM-6PM, Saturday 10AM-4PM for Homestead West</p>
                     </div>
                   </div>

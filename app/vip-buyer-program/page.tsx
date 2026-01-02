@@ -107,7 +107,7 @@ export default function VIPBuyerProgramPage() {
                   href="tel:7022221988"
                   className="bg-yellow-500 text-black px-10 py-5 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-all shadow-2xl hover:shadow-3xl"
                 >
-                  📞 Call Dr. Jan: (702) 222-1988
+                  📞 Call Dr. Jan: (702) 299-6607
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"
@@ -410,7 +410,7 @@ export default function VIPBuyerProgramPage() {
                   href="tel:7022221988"
                   className="bg-yellow-500 text-black px-10 py-5 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-all shadow-2xl"
                 >
-                  📞 Call Dr. Jan: (702) 222-1988
+                  📞 Call Dr. Jan: (702) 299-6607
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"
@@ -424,7 +424,7 @@ export default function VIPBuyerProgramPage() {
                 <h4 className="text-2xl font-bold mb-4">Dr. Jan Duffy - VIP New Construction Specialist</h4>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
-                    <p className="mb-2"><span className="font-semibold">Phone:</span> (702) 222-1988</p>
+                    <p className="mb-2"><span className="font-semibold">Phone:</span> (702) 299-6607</p>
                     <p className="mb-2"><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
                     <p className="mb-2"><span className="font-semibold">License:</span> Nevada S.0197614</p>
                   </div>

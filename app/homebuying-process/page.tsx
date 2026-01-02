@@ -198,7 +198,7 @@ export default function HomebuyingProcessPage() {
                       href="tel:7022221988"
                       className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                     >
-                      📞 Call Dr. Jan: (702) 222-1988
+                      📞 Call Dr. Jan: (702) 299-6607
                     </a>
                   </div>
                 </div>
@@ -403,7 +403,7 @@ export default function HomebuyingProcessPage() {
                   href="tel:7022221988"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                 >
-                  📞 Call Dr. Jan: (702) 222-1988
+                  📞 Call Dr. Jan: (702) 299-6607
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"

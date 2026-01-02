@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Homestead West Las Vegas</h3>
             <p className="mb-2">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
-            <p>(702) 222-1988</p>
+            <p>(702) 299-6607</p>
           </div>
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Dr. Jan Duffy</h3>

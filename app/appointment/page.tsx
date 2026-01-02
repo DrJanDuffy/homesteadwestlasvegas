@@ -346,7 +346,7 @@ export default function AppointmentPage() {
                 className="flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <span className="mr-2">📞</span>
-                (702) 222-1988
+                (702) 299-6607
               </a>
               <a
                 href="mailto:DrJanSells@HomesteadWestLasVegas.com"

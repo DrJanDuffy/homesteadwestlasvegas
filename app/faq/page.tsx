@@ -151,7 +151,7 @@ export default function FAQPage() {
         },
         {
           question: 'How do I get started with Dr. Jan Duffy?',
-          answer: 'Contact Dr. Jan Duffy at (702) 222-1988 or DrJanSells@HomesteadWestLasVegas.com. She\'ll provide a free consultation, connect you with preferred lenders for pre-approval, and guide you through the VIP new construction home buying process with exclusive advantages.'
+          answer: 'Contact Dr. Jan Duffy at (702) 299-6607 or DrJanSells@HomesteadWestLasVegas.com. She\'ll provide a free consultation, connect you with preferred lenders for pre-approval, and guide you through the VIP new construction home buying process with exclusive advantages.'
         }
       ]
     }
@@ -262,7 +262,7 @@ export default function FAQPage() {
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-gray-900">Call Dr. Jan About Homestead West</h3>
                     <a href="tel:7022221988" className="text-blue-600 font-semibold text-lg hover:text-blue-800">
-                      (702) 222-1988
+                      (702) 299-6607
                     </a>
                   </div>
                   
@@ -304,7 +304,7 @@ export default function FAQPage() {
                   href="tel:7022221988"
                   className="bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors"
                 >
-                  📞 Call Dr. Jan: (702) 222-1988
+                  📞 Call Dr. Jan: (702) 299-6607
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"

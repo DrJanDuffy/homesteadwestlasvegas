@@ -110,7 +110,7 @@ export default function HomePage() {
                   href="tel:7022221988"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  📞 Call: (702) 222-1988
+                  📞 Call: (702) 299-6607
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"
@@ -694,7 +694,7 @@ export default function HomePage() {
                   href="tel:7022221988"
                   className="text-3xl font-bold hover:text-blue-200 transition-colors"
                 >
-                  (702) 222-1988
+                  (702) 299-6607
                 </a>
               </div>
               <div className="hidden sm:block w-px h-16 bg-blue-400"></div>

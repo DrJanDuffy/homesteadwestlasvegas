@@ -160,7 +160,7 @@ export default function FloorPlansPage() {
                   href="tel:7022221988"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                 >
-                  📞 Call (702) 222-1988
+                  📞 Call (702) 299-6607
                 </a>
                 <a
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"

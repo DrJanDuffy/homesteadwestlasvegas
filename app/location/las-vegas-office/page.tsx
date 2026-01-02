@@ -88,7 +88,7 @@ export default function LasVegasOfficePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Homestead West Phone</h3>
-                      <p>(702) 222-1988</p>
+                      <p>(702) 299-6607</p>
                     </div>
                   </div>
                   
@@ -239,7 +239,7 @@ export default function LasVegasOfficePage() {
                 href="tel:7022221988"
                 className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
               >
-                📞 Call (702) 222-1988
+                📞 Call (702) 299-6607
               </a>
             </div>
             <p className="text-blue-200 mt-6 max-w-2xl mx-auto">

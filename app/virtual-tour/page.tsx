@@ -164,7 +164,7 @@ export default function VirtualTourPage() {
                     href="tel:7022221988"
                     className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
-                    📞 Call (702) 222-1988
+                    📞 Call (702) 299-6607
                   </a>
                   <a
                     href="mailto:DrJanSells@HomesteadWestLasVegas.com"

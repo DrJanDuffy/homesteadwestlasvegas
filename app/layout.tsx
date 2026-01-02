@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Homestead West Las Vegas"
   },
   
-  description: "Homestead West: 3,336-3,704 sq ft luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy. Starting at $910,990. Call (702) 222-1988.",
+  description: "Homestead West: 3,336-3,704 sq ft luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy. Starting at $910,990. Call (702) 299-6607.",
   
       keywords: [
         "Homestead West",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     url: 'https://homesteadwestlasvegas.com',
     siteName: 'Homestead West Las Vegas',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
-    description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 222-1988.',
+    description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 299-6607.',
     images: [
       {
         url: '/og-image.jpg',
