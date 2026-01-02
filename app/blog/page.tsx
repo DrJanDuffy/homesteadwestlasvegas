@@ -192,7 +192,7 @@ export default function BlogPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Latest Posts</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Latest Homestead West Posts</h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {blogPosts.map((post) => (

@@ -146,10 +146,10 @@ export default function BuyersGuidePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP Buyer Advantages</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">Homestead West VIP Buyer Advantages</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP new construction partnership delivers exclusive advantages 
-                  throughout your entire new construction home buying journey.
+                  Dr. Jan Duffy's VIP new construction partnership delivers exclusive Homestead West advantages 
+                  throughout your entire Homestead West new construction home buying journey.
                 </p>
               </div>
 
@@ -158,24 +158,24 @@ export default function BuyersGuidePage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🚀</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Early Access</h3>
-                  <p className="text-gray-700">First access to new phases and premium lots</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Early Access to Homestead West</h3>
+                  <p className="text-gray-700">First access to new Homestead West phases and premium lots</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">💰</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Better Pricing</h3>
-                  <p className="text-gray-700">VIP incentives and negotiation advantages</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Better Homestead West Pricing</h3>
+                  <p className="text-gray-700">Homestead West VIP incentives and negotiation advantages</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">⚡</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Priority Service</h3>
-                  <p className="text-gray-700">Faster responses and priority treatment</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Priority Service</h3>
+                  <p className="text-gray-700">Faster Homestead West responses and priority treatment</p>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function BuyersGuidePage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">9-Step New Construction Process</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">9-Step Homestead West New Construction Process</h2>
               
               <div className="space-y-8">
                 {/* Step 1 */}

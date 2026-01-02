@@ -190,7 +190,7 @@ export default function TestimonialsPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">5-Star VIP Service</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">5-Star Homestead West VIP Service</h2>
                 <div className="flex items-center justify-center mb-6">
                   <div className="flex text-yellow-400 text-4xl mr-4">
                     <span>⭐⭐⭐⭐⭐</span>
@@ -199,7 +199,7 @@ export default function TestimonialsPage() {
                 </div>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
                   Based on 47+ verified reviews from families who experienced Dr. Jan Duffy's 
-                  VIP new construction partnership advantages.
+                  Homestead West VIP new construction partnership advantages.
                 </p>
               </div>
 
@@ -208,24 +208,24 @@ export default function TestimonialsPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏆</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">VIP Advantages</h3>
-                  <p className="text-gray-700">Early access, priority treatment, and exclusive incentives</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West VIP Advantages</h3>
+                  <p className="text-gray-700">Early Homestead West access, priority treatment, and exclusive incentives</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">💰</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Significant Savings</h3>
-                  <p className="text-gray-700">Average $15,000+ in incentives and negotiation advantages</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Significant Savings</h3>
+                  <p className="text-gray-700">Average $15,000+ in Homestead West incentives and negotiation advantages</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">⚡</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Faster Process</h3>
-                  <p className="text-gray-700">Priority scheduling and expedited service throughout</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Faster Process</h3>
+                  <p className="text-gray-700">Priority Homestead West scheduling and expedited service throughout</p>
                 </div>
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function TestimonialsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What Our Clients Say</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What Our Homestead West Clients Say</h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {testimonials.map((testimonial) => (
@@ -299,7 +299,7 @@ export default function TestimonialsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Video Testimonials</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Video Testimonials</h2>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gray-200 h-64 rounded-xl flex items-center justify-center">
@@ -330,7 +330,7 @@ export default function TestimonialsPage() {
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Experience VIP Service?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Experience Homestead West VIP Service?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Join hundreds of satisfied families who chose Dr. Jan Duffy's VIP new construction partnership
               </p>
@@ -363,7 +363,7 @@ export default function TestimonialsPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties

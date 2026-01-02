@@ -115,13 +115,13 @@ export default function HomebuyingProcessPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Homebuying Journey</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Homestead West VIP Homebuying Journey</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's elite new construction partnership delivers exclusive access, 
-                priority treatment, and expert guidance throughout your entire homebuying process.
+                Dr. Jan Duffy's elite new construction partnership delivers exclusive Homestead West access, 
+                priority Homestead West treatment, and expert Homestead West guidance throughout your entire homebuying process.
               </p>
               <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">VIP Partnership Advantages</h3>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">Homestead West VIP Partnership Advantages</h3>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
                     <ul className="space-y-2 text-gray-700">
@@ -151,9 +151,9 @@ export default function HomebuyingProcessPage() {
                 <div>
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">1</div>
-                    <h2 className="text-3xl font-bold text-gray-900">Prequalify</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Homestead West Prequalify</h2>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Get a No-Strings-Attached Financial Assessment</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Get a No-Strings-Attached Homestead West Financial Assessment</h3>
                   <p className="text-lg text-gray-700 mb-6">
                     This no-commitment, knowledge-building exercise gives you insight into how much home you could probably afford, 
                     as well as which home loan type might be your best fit. All it requires is for a lender to take a snapshot 
@@ -240,9 +240,9 @@ export default function HomebuyingProcessPage() {
                 <div>
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">2</div>
-                    <h2 className="text-3xl font-bold text-gray-900">House Hunt</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Homestead West House Hunt</h2>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Search On-Site or Online</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Search Homestead West On-Site or Online</h3>
                   <p className="text-lg text-gray-700 mb-6">
                     Once you've prequalified and know your price range, you're ready to go shopping. Depending on what's most 
                     convenient for you, you could browse online, tour communities in person, or a combination of both! This is 
@@ -281,9 +281,9 @@ export default function HomebuyingProcessPage() {
                 <div>
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">3</div>
-                    <h2 className="text-3xl font-bold text-gray-900">Contract</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Homestead West Contract</h2>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Make a Preliminary Commitment to Buy</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Make a Preliminary Commitment to Buy Homestead West</h3>
                   <p className="text-lg text-gray-700 mb-6">
                     One of the great advantages of new home construction is that it's first-come, first-served. As long as 
                     you're a qualified buyer, the house is yours if you're the one who got there first. When you've found a 
@@ -371,9 +371,9 @@ export default function HomebuyingProcessPage() {
                 <div>
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">4</div>
-                    <h2 className="text-3xl font-bold text-gray-900">Close</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Homestead West Close</h2>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Put a Bow on It and Grab the Keys</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">Put a Bow on It and Grab the Homestead West Keys</h3>
                   <p className="text-lg text-gray-700 mb-6">
                     This is your big day to sign final paperwork and breathe a sigh of satisfaction, because you've officially 
                     bought a home. And whether it's your first house, or one of several, the feeling never gets old. You'll also 
@@ -393,7 +393,7 @@ export default function HomebuyingProcessPage() {
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Start Your Homebuying Journey?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Start Your Homestead West Homebuying Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Contact Dr. Jan Duffy for expert guidance through every step of your Homestead West home purchase
               </p>
@@ -430,7 +430,7 @@ export default function HomebuyingProcessPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
