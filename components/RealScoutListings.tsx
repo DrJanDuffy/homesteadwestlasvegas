@@ -1,3 +1,23 @@
+import React from 'react';
+
+// Type definition for RealScout web component
+interface RealScoutOfficeListingsProps extends React.HTMLAttributes<HTMLElement> {
+  'agent-encoded-id'?: string;
+  'sort-order'?: string;
+  'listing-status'?: string;
+  'property-types'?: string;
+  'price-min'?: string;
+  'price-max'?: string;
+}
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'realscout-office-listings': RealScoutOfficeListingsProps;
+    }
+  }
+}
+
 export default function RealScoutListings() {
   return (
     <section className="py-16 bg-gray-50">
