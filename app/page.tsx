@@ -438,6 +438,113 @@ export default function HomePage() {
               </div>
             </section>
 
+            {/* Register Your Buyer - Fast-Track Process */}
+            <section className="py-16 bg-white">
+              <div className="container mx-auto px-4">
+                <div className="max-w-6xl mx-auto">
+                  <div className="text-center mb-12">
+                    <h2 className="text-4xl font-bold mb-4 text-gray-900">
+                      Register Your Buyer - Fast-Track Process
+                    </h2>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                      Dr. Jan Duffy's VIP partnership includes a streamlined registration process that gets your buyers priority treatment from day one.
+                    </p>
+                  </div>
+
+                  {/* Process Steps */}
+                  <div className="grid md:grid-cols-4 gap-6">
+                    {/* Step 1 */}
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 h-full border-2 border-blue-200">
+                        <div className="flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full text-2xl font-bold mb-4 mx-auto">
+                          1
+                        </div>
+                        <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
+                          Initial Consultation
+                        </h3>
+                        <p className="text-gray-700 text-center">
+                          Discuss needs, budget, and preferences
+                        </p>
+                      </div>
+                      {/* Connector Arrow */}
+                      <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                        <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Step 2 */}
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 h-full border-2 border-purple-200">
+                        <div className="flex items-center justify-center w-16 h-16 bg-purple-600 text-white rounded-full text-2xl font-bold mb-4 mx-auto">
+                          2
+                        </div>
+                        <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
+                          VIP Registration
+                        </h3>
+                        <p className="text-gray-700 text-center">
+                          Register with VIP buyer program portal
+                        </p>
+                      </div>
+                      {/* Connector Arrow */}
+                      <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                        <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Step 3 */}
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 h-full border-2 border-green-200">
+                        <div className="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4 mx-auto">
+                          3
+                        </div>
+                        <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
+                          Priority Access
+                        </h3>
+                        <p className="text-gray-700 text-center">
+                          Get early access to new phases and lots
+                        </p>
+                      </div>
+                      {/* Connector Arrow */}
+                      <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                        <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Step 4 */}
+                    <div>
+                      <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 h-full border-2 border-yellow-200">
+                        <div className="flex items-center justify-center w-16 h-16 bg-yellow-500 text-black rounded-full text-2xl font-bold mb-4 mx-auto">
+                          4
+                        </div>
+                        <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
+                          Expert Guidance
+                        </h3>
+                        <p className="text-gray-700 text-center">
+                          Navigate the entire process with VIP treatment
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CTA Button */}
+                  <div className="text-center mt-12">
+                    <a
+                      href="/vip-buyer-program"
+                      className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg"
+                    >
+                      Start Your VIP Registration
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Why Work With Dr. Jan - Trust Building */}
             <section className="py-16 bg-blue-50">
               <div className="container mx-auto px-4">
