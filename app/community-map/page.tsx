@@ -59,7 +59,6 @@ export default function CommunityMapPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl font-bold mb-4">Homestead West Community Map</h1>
               <p className="text-xl text-blue-100">Explore Available Lots & Homesites</p>
-              <p className="text-lg text-blue-200 mt-2">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
             </div>
           </div>
         </header>

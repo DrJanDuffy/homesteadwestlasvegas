@@ -281,8 +281,8 @@ export default function FAQPage() {
                       <span className="text-3xl">📍</span>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-gray-900">Visit Homestead West Office</h3>
-                    <p className="text-gray-700">5592 N Dapple Gray Rd</p>
                     <p className="text-gray-700">Homestead West Builder Sales Office</p>
+                    <p className="text-gray-700">See footer for address</p>
                   </div>
                 </div>
               </div>

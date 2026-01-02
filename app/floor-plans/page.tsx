@@ -61,7 +61,6 @@ export default function FloorPlansPage() {
           <div className="container mx-auto px-4">
             <h1 className="text-5xl font-bold mb-4">Available Homestead West Homes</h1>
             <p className="text-xl text-blue-100">Homestead West Las Vegas MLS Listings - Updated Daily</p>
-            <p className="text-lg text-blue-200 mt-2">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
           </div>
         </header>
 

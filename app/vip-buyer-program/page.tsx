@@ -434,7 +434,6 @@ export default function VIPBuyerProgramPage() {
                   </div>
                   <div>
                     <p className="mb-2"><span className="font-semibold">Office:</span> Builder Sales Office</p>
-                    <p className="mb-2"><span className="font-semibold">Address:</span> 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
                     <p className="mb-2"><span className="font-semibold">Specialty:</span> VIP Builder Partnerships</p>
                   </div>
                 </div>

@@ -103,10 +103,6 @@ export default function HomePage() {
                   <span className="text-2xl">⭐</span>
                   <span>Elite Builder Access</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span className="text-2xl">📍</span>
-                  <span>5592 N Dapple Gray Rd, Las Vegas, NV 89149</span>
-                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -147,7 +143,7 @@ export default function HomePage() {
                   <strong>Homestead West</strong> offers exceptional <strong>new homes for sale in Las Vegas, NV</strong>. This prestigious Northwest Las Vegas community features a luxurious lineup of <strong>single-story ranch-style homes</strong> on <strong>pool-sized lots</strong>, with optional detached casitas and multi-generational layouts. Homestead West represents the pinnacle of luxury living in Las Vegas, combining sophisticated design with the natural beauty of the Nevada landscape.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Located at <strong>5592 N Dapple Gray Rd, Las Vegas, NV 89149</strong>, Homestead West combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>US 95 & CC 215</strong> provides easy connectivity to downtown Las Vegas, Red Rock Canyon, and Mount Charleston. The Homestead West community is strategically positioned to offer residents the perfect balance between urban convenience and natural serenity.
+                  Homestead West combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>US 95 & CC 215</strong> provides easy connectivity to downtown Las Vegas, Red Rock Canyon, and Mount Charleston. The Homestead West community is strategically positioned to offer residents the perfect balance between urban convenience and natural serenity.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   When you choose Homestead West, you're selecting more than just a home—you're investing in a lifestyle. The Homestead West development showcases meticulous attention to detail, from the architectural design to the premium finishes throughout each residence. Homestead West homes are built to the highest standards, ensuring that your investment will provide lasting value and enjoyment for years to come.

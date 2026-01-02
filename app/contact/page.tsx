@@ -121,7 +121,6 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Homestead West Office Address</h3>
-                      <p className="text-lg">5592 N Dapple Gray Rd<br />Las Vegas, NV 89149</p>
                       <p className="text-gray-600">By appointment only for Homestead West</p>
                     </div>
                   </div>

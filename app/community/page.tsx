@@ -81,7 +81,6 @@ export default function CommunityPage() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Homestead West Community & Neighborhood</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Homestead West Las Vegas</p>
-              <p className="text-xl text-blue-200">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
             </div>
           </div>
         </header>

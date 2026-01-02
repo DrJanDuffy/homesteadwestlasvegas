@@ -78,7 +78,7 @@ export default function LasVegasOfficePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Homestead West Address</h3>
-                      <p>5592 N Dapple Gray Rd<br />Las Vegas, NV 89149</p>
+                      <p>See footer for address</p>
                     </div>
                   </div>
                   
@@ -171,7 +171,7 @@ export default function LasVegasOfficePage() {
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Why Our Homestead West Office Location Matters</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-gray-700 mb-6">
-                  Our Homestead West office at 5592 N Dapple Gray Rd is strategically located in the heart of Northwest Las Vegas, 
+                  Our Homestead West office is strategically located in the heart of Northwest Las Vegas, 
                   providing convenient access to the Homestead West community and surrounding areas. This Homestead West office 
                   location allows Dr. Jan Duffy to maintain close relationships with Homestead West builders, stay current on 
                   Homestead West market conditions, and provide responsive service to Homestead West clients throughout the 
