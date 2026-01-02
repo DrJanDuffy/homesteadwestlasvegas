@@ -33,7 +33,7 @@ export default function HomePage() {
     },
     telephone: '+17022221988',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
-    url: 'https://homesteadwestlasvegas.com',
+    url: 'https://www.homesteadwestlasvegas.com',
     agent: {
       '@type': 'RealEstateAgent',
       name: 'Dr. Jan Duffy',
