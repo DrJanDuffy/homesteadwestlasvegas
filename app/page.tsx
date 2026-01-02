@@ -493,7 +493,7 @@ export default function HomePage() {
                 <div className="max-w-6xl mx-auto">
                   <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                      Register Your Buyer for New Homes - Fast-Track Process
+                      Register as a New Home Buyer for New Homes - Dr. Jan Duffy Fast-Track Process
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                       Dr. Jan Duffy's VIP Berkshire Hathaway HomeServices partnership includes a streamlined registration process that gets your buyers priority treatment from day one for new construction homes.
