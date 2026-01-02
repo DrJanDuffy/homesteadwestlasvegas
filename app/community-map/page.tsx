@@ -206,7 +206,7 @@ export default function CommunityMapPage() {
                 </div>
                 
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan?</h3>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan for Homestead West?</h3>
                   <ul className="space-y-2 text-gray-700 text-left">
                     <li>• Independent agent representing YOUR interests</li>
                     <li>• Office at builder sales office</li>
