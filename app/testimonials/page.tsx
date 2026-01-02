@@ -337,7 +337,7 @@ export default function TestimonialsPage() {
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors"
                 >
                   📞 Call Dr. Jan: (702) 299-6607

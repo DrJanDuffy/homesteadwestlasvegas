@@ -41,7 +41,7 @@ export default function PropertiesPage() {
         realEstateAgent: {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
-          telephone: '+17022221988',
+          telephone: '+17022996607',
           licenseNumber: 'S.0197614'
         }
       },
@@ -65,7 +65,7 @@ export default function PropertiesPage() {
         realEstateAgent: {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
-          telephone: '+17022221988',
+          telephone: '+17022996607',
           licenseNumber: 'S.0197614'
         }
       },
@@ -89,7 +89,7 @@ export default function PropertiesPage() {
         realEstateAgent: {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
-          telephone: '+17022221988',
+          telephone: '+17022996607',
           licenseNumber: 'S.0197614'
         }
       }

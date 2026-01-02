@@ -22,7 +22,7 @@ export default function ContactPage() {
     mainEntity: {
       '@type': 'RealEstateAgent',
       name: 'Dr. Jan Duffy',
-      telephone: '+17022221988',
+      telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
       address: {
         '@type': 'PostalAddress',

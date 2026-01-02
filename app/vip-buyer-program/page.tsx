@@ -28,7 +28,7 @@ export default function VIPBuyerProgramPage() {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy',
-    telephone: '+17022221988',
+    telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
       '@type': 'PostalAddress',
@@ -104,7 +104,7 @@ export default function VIPBuyerProgramPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-yellow-500 text-black px-10 py-5 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-all shadow-2xl hover:shadow-3xl"
                 >
                   📞 Call Dr. Jan: (702) 299-6607
@@ -407,7 +407,7 @@ export default function VIPBuyerProgramPage() {
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 <a
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-yellow-500 text-black px-10 py-5 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-all shadow-2xl"
                 >
                   📞 Call Dr. Jan: (702) 299-6607

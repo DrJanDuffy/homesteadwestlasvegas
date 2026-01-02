@@ -26,7 +26,7 @@ export default function FloorPlansPage() {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy',
-    telephone: '+17022221988',
+    telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
       '@type': 'PostalAddress',
@@ -157,7 +157,7 @@ export default function FloorPlansPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                 >
                   📞 Call (702) 299-6607

@@ -195,7 +195,7 @@ export default function HomebuyingProcessPage() {
                   </ul>
                   <div className="mt-6">
                     <a
-                      href="tel:7022221988"
+                      href="tel:7022996607"
                       className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                     >
                       📞 Call Dr. Jan: (702) 299-6607
@@ -400,7 +400,7 @@ export default function HomebuyingProcessPage() {
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                 >
                   📞 Call Dr. Jan: (702) 299-6607

@@ -161,7 +161,7 @@ export default function VirtualTourPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="tel:7022221988"
+                    href="tel:7022996607"
                     className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
                     📞 Call (702) 299-6607

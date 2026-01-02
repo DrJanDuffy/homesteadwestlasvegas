@@ -217,7 +217,7 @@ export default function CommunityMapPage() {
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors"
                 >
                   📞 Call Dr. Jan: (702) 299-6607

@@ -31,13 +31,13 @@ export default function HomePage() {
       postalCode: '89149',
       addressCountry: 'US'
     },
-    telephone: '+17022221988',
+    telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     url: 'https://www.homesteadwestlasvegas.com',
     agent: {
       '@type': 'RealEstateAgent',
       name: 'Dr. Jan Duffy',
-      telephone: '+17022221988',
+      telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
       address: {
         '@type': 'PostalAddress',
@@ -110,7 +110,7 @@ export default function HomePage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   📞 Call: (702) 299-6607
@@ -694,7 +694,7 @@ export default function HomePage() {
               <div className="text-center">
                 <p className="text-sm font-semibold text-blue-200 mb-2">CALL NOW</p>
                 <a 
-                  href="tel:7022221988"
+                  href="tel:7022996607"
                   className="text-3xl font-bold hover:text-blue-200 transition-colors"
                 >
                   (702) 299-6607

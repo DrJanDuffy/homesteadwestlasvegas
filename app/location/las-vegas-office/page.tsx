@@ -20,7 +20,7 @@ export default function LasVegasOfficePage() {
     name: 'Dr. Jan Duffy',
     description: 'Expert Las Vegas real estate agent specializing in Northwest Las Vegas properties',
     url: 'https://homesteadwestlasvegas.com/location/las-vegas-office',
-    telephone: '+17022221988',
+    telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
       '@type': 'PostalAddress',
@@ -236,7 +236,7 @@ export default function LasVegasOfficePage() {
                 Schedule Appointment
               </a>
               <a
-                href="tel:7022221988"
+                href="tel:7022996607"
                 className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
               >
                 📞 Call (702) 299-6607
