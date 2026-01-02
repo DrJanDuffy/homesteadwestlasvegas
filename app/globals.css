@@ -143,3 +143,70 @@ body {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+
+/* Enhanced button and dropdown animations */
+@layer utilities {
+  /* Smooth dropdown animations */
+  .dropdown-enter {
+    animation: dropdownEnter 200ms ease-out forwards;
+  }
+
+  .dropdown-exit {
+    animation: dropdownExit 200ms ease-out forwards;
+  }
+
+  @keyframes dropdownEnter {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes dropdownExit {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+  }
+
+  /* Prevent layout shift on button hover */
+  button,
+  a[role="button"] {
+    transform-origin: center;
+  }
+
+  /* Smooth mobile menu transitions */
+  .mobile-menu-enter {
+    animation: slideInRight 300ms ease-out forwards;
+  }
+
+  .mobile-menu-exit {
+    animation: slideOutRight 300ms ease-out forwards;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
