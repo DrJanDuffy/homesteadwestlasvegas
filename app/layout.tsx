@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://homesteadwestlasvegas.com'),
+  metadataBase: new URL('https://www.homesteadwestlasvegas.com'),
   
   title: {
     default: "Homestead West Las Vegas | $910K+ Ranch Homes | Dr. Jan Duffy Real Estate",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://homesteadwestlasvegas.com',
+    url: 'https://www.homesteadwestlasvegas.com',
     siteName: 'Homestead West Las Vegas',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
     description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 299-6607.',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
       },
 
   alternates: {
-    canonical: 'https://homesteadwestlasvegas.com',
+    canonical: 'https://www.homesteadwestlasvegas.com',
   },
 
   other: {
