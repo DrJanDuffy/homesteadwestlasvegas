@@ -118,7 +118,7 @@ export default function RootLayout({
       latitude: 36.2738,
       longitude: -115.3089
     },
-    telephone: '+17022221988',
+    telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     url: 'https://www.homesteadwestlasvegas.com',
     image: 'https://www.homesteadwestlasvegas.com/og-image.jpg',
@@ -132,7 +132,7 @@ export default function RootLayout({
         agent: {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
-          telephone: '+17022221988',
+          telephone: '+17022996607',
           email: 'DrJanSells@HomesteadWestLasVegas.com',
           address: {
             '@type': 'PostalAddress',
@@ -301,7 +301,7 @@ export default function RootLayout({
         name: 'Dr. Jan Duffy',
         description: 'VIP New Construction Specialist and Las Vegas Real Estate Expert',
         url: 'https://www.homesteadwestlasvegas.com',
-        telephone: '+17022221988',
+        telephone: '+17022996607',
         email: 'DrJanSells@HomesteadWestLasVegas.com',
         address: {
           '@type': 'PostalAddress',
@@ -404,6 +404,138 @@ export default function RootLayout({
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify(organizationData),
+              }}
+            />
+
+            {/* Structured Data - @graph (RealEstateAgent, LocalBusiness, FAQPage, WebSite) */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  '@context': 'https://schema.org',
+                  '@graph': [
+                    {
+                      '@type': 'RealEstateAgent',
+                      '@id': 'https://www.homesteadwestlasvegas.com/#agent',
+                      name: 'Dr. Jan Duffy',
+                      description: 'Las Vegas Real Estate Expert with 30+ years experience, Ph.D. in Market Research & Consumer Behavior, $127M+ in sales serving 500+ Vegas families',
+                      telephone: '(702) 299-6607',
+                      email: 'DrJanSells@HomesteadWestLasVegas.com',
+                      url: 'https://www.homesteadwestlasvegas.com',
+                      image: 'https://www.homesteadwestlasvegas.com/images/dr-jan-duffy.jpg',
+                      priceRange: '$850,000-$990,000',
+                      areaServed: {
+                        '@type': 'City',
+                        name: 'Las Vegas',
+                        containedInPlace: {
+                          '@type': 'State',
+                          name: 'Nevada'
+                        }
+                      },
+                      knowsAbout: ['New Construction Homes', 'New Construction Partnership', 'Northwest Las Vegas', 'Homestead West', 'Luxury Ranch Homes'],
+                      hasCredential: [
+                        {
+                          '@type': 'EducationalOccupationalCredential',
+                          credentialCategory: 'degree',
+                          educationalLevel: 'Ph.D. in Market Research & Consumer Behavior'
+                        },
+                        {
+                          '@type': 'EducationalOccupationalCredential',
+                          credentialCategory: 'license',
+                          name: 'Nevada Real Estate License S.0197614'
+                        }
+                      ],
+                      memberOf: {
+                        '@type': 'Organization',
+                        name: 'Berkshire Hathaway HomeServices Nevada Properties'
+                      }
+                    },
+                    {
+                      '@type': 'LocalBusiness',
+                      '@id': 'https://www.homesteadwestlasvegas.com/#business',
+                      name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
+                      description: 'Expert guidance for Homestead West luxury ranch homes by New Construction Partnership in Northwest Las Vegas',
+                      telephone: '(702) 299-6607',
+                      email: 'DrJanSells@HomesteadWestLasVegas.com',
+                      url: 'https://www.homesteadwestlasvegas.com',
+                      address: {
+                        '@type': 'PostalAddress',
+                        streetAddress: '5592 N Dapple Gray Rd',
+                        addressLocality: 'Las Vegas',
+                        addressRegion: 'NV',
+                        postalCode: '89149',
+                        addressCountry: 'US'
+                      },
+                      geo: {
+                        '@type': 'GeoCoordinates',
+                        latitude: 36.2839,
+                        longitude: -115.2936
+                      },
+                      openingHoursSpecification: {
+                        '@type': 'OpeningHoursSpecification',
+                        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                        opens: '10:00',
+                        closes: '18:00'
+                      }
+                    },
+                    {
+                      '@type': 'FAQPage',
+                      '@id': 'https://www.homesteadwestlasvegas.com/#faq',
+                      mainEntity: [
+                        {
+                          '@type': 'Question',
+                          name: 'What are Homestead West home prices in 2026?',
+                          acceptedAnswer: {
+                            '@type': 'Answer',
+                            text: 'Homestead West by the builder starts at $910,990 for Plan 3336 (3,336 sq ft, 4-5 beds, 4.5 baths) and $940,990 for Plan 3704 (3,704 sq ft, 4 beds, 4.5 baths). Both are single-story luxury ranch homes on pool-sized lots with optional detached casitas.'
+                          }
+                        },
+                        {
+                          '@type': 'Question',
+                          name: 'Where is Homestead West located in Las Vegas?',
+                          acceptedAnswer: {
+                            '@type': 'Answer',
+                            text: 'Homestead West is located at 5592 N Dapple Gray Rd, Las Vegas, NV 89149, in Northwest Las Vegas. The community offers quick access to US 95 and CC 215, is 9 miles to Red Rock Canyon, 18 miles to downtown Las Vegas, and 23 miles to Mount Charleston.'
+                          }
+                        },
+                        {
+                          '@type': 'Question',
+                          name: 'Do I need a real estate agent to buy at Homestead West?',
+                          acceptedAnswer: {
+                            '@type': 'Answer',
+                            text: 'While not required, working with an independent real estate agent like Dr. Jan Duffy provides buyer representation, expert negotiation, and VIP access through her New Construction Partnership—at no additional cost to buyers. Dr. Jan represents YOUR interests, not the builder\'s.'
+                          }
+                        },
+                        {
+                          '@type': 'Question',
+                          name: 'What floor plans are available at Homestead West?',
+                          acceptedAnswer: {
+                            '@type': 'Answer',
+                            text: 'Homestead West offers two single-story ranch home designs: Plan 3336 (3,336 sq ft, 4-5 beds, 4.5 baths, 3-5 car garage, from $910,990) and Plan 3704 (3,704 sq ft, 4 beds, 4.5 baths, 3-5 car garage, from $940,990). Both feature pool-sized lots with optional detached pool houses or casitas.'
+                          }
+                        },
+                        {
+                          '@type': 'Question',
+                          name: 'Who is the builder of Homestead West?',
+                          acceptedAnswer: {
+                            '@type': 'Answer',
+                            text: 'Homestead West is built by a New Construction Partnership, one of the nation\'s top 10 homebuilders. Known for quality construction, attractive pricing, and a streamlined online homebuying process.'
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      '@type': 'WebSite',
+                      '@id': 'https://www.homesteadwestlasvegas.com/#website',
+                      url: 'https://www.homesteadwestlasvegas.com',
+                      name: 'Homestead West Las Vegas - Dr. Jan Duffy',
+                      description: 'Expert guidance for Homestead West luxury ranch homes by New Construction Partnership',
+                      publisher: {
+                        '@id': 'https://www.homesteadwestlasvegas.com/#agent'
+                      }
+                    }
+                  ]
+                }),
               }}
             />
 
