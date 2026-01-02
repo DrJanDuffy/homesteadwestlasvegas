@@ -79,7 +79,7 @@ export default function CommunityPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION COMMUNITY ⭐
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Community & Neighborhood</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Homestead West Community & Neighborhood</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Homestead West Las Vegas</p>
               <p className="text-xl text-blue-200">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
             </div>
@@ -91,7 +91,7 @@ export default function CommunityPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Community Access</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Homestead West Community Access</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
                   Dr. Jan Duffy's VIP new construction partnership provides insider knowledge 
                   of Homestead West community amenities, local services, and neighborhood advantages.
@@ -103,24 +103,24 @@ export default function CommunityPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏡</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Community Features</h3>
-                  <p className="text-gray-700">Pool-sized lots, ranch homes, optional casitas</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Community Features</h3>
+                  <p className="text-gray-700">Homestead West pool-sized lots, ranch homes, optional casitas</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">📍</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Prime Location</h3>
-                  <p className="text-gray-700">Northwest Las Vegas with easy access to amenities</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Prime Location</h3>
+                  <p className="text-gray-700">Homestead West in Northwest Las Vegas with easy access to amenities</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🎯</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">VIP Insights</h3>
-                  <p className="text-gray-700">Insider knowledge of local services and amenities</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West VIP Insights</h3>
+                  <p className="text-gray-700">Insider knowledge of Homestead West local services and amenities</p>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function CommunityPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Local Schools</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Local Schools</h2>
               
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-gray-50 p-6 rounded-xl">
@@ -140,7 +140,7 @@ export default function CommunityPage() {
                       <span className="text-2xl">🎒</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Dean Lamar Allen Elementary</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Dean Lamar Allen Elementary Near Homestead West</h3>
                       <p className="text-gray-600">Grades K-5</p>
                     </div>
                   </div>
@@ -157,13 +157,13 @@ export default function CommunityPage() {
                       <span className="text-2xl">🏫</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Justice Myron E. Leavitt Middle</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Justice Myron E. Leavitt Middle Near Homestead West</h3>
                       <p className="text-gray-600">Grades 6-8</p>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <p className="text-gray-700"><span className="font-semibold">Rating:</span> 7/10 (GreatSchools)</p>
-                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 3.2 miles</p>
+                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 3.2 miles from Homestead West</p>
                     <p className="text-gray-700"><span className="font-semibold">Address:</span> 4701 Quadrel Dr</p>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function CommunityPage() {
                       <span className="text-2xl">🎓</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Centennial High School</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Centennial High School Near Homestead West</h3>
                       <p className="text-gray-600">Grades 9-12</p>
                     </div>
                   </div>
@@ -193,11 +193,11 @@ export default function CommunityPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Shopping & Dining</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Shopping & Dining</h2>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Shopping Centers</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Homestead West Shopping Centers</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <span className="text-blue-600 mr-3 text-xl">🛒</span>
@@ -231,7 +231,7 @@ export default function CommunityPage() {
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Restaurants</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Homestead West Restaurants</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🍽️</span>
@@ -298,12 +298,12 @@ export default function CommunityPage() {
                       <span className="text-2xl">👨‍⚕️</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Northwest Medical Center</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Northwest Medical Center Near Homestead West</h3>
                       <p className="text-gray-600">Urgent care & primary care</p>
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 2.9 miles</p>
+                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 2.9 miles from Homestead West</p>
                     <p className="text-gray-700"><span className="font-semibold">Services:</span> Urgent Care, Primary Care</p>
                     <p className="text-gray-700"><span className="font-semibold">Address:</span> 8402 W Centennial Pkwy</p>
                   </div>
@@ -315,7 +315,7 @@ export default function CommunityPage() {
                       <span className="text-2xl">💊</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">CVS Pharmacy</h3>
+                      <h3 className="text-xl font-bold text-gray-900">CVS Pharmacy Near Homestead West</h3>
                       <p className="text-gray-600">Pharmacy & health services</p>
                     </div>
                   </div>
@@ -334,11 +334,11 @@ export default function CommunityPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Recreation & Parks</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Recreation & Parks</h2>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Local Parks</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Homestead West Local Parks</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🌳</span>
@@ -365,7 +365,7 @@ export default function CommunityPage() {
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Nearby Attractions</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Homestead West Nearby Attractions</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <span className="text-purple-600 mr-3 text-xl">🏔️</span>
@@ -399,7 +399,7 @@ export default function CommunityPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
