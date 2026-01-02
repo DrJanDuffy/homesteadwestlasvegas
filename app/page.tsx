@@ -78,7 +78,7 @@ export default function HomePage() {
                 $910K+ Luxury Ranch Homes on Pool-Sized Lots
               </p>
               <p className="text-xl mb-8 text-blue-50">
-                Expert Guidance from Dr. Jan Duffy | New Construction Partnership
+                Expert Guidance from Dr. Jan Duffy | VIP Berkshire Hathaway HomeServices Buyer Program
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
@@ -361,19 +361,22 @@ export default function HomePage() {
           </div>
         </section>
 
-            {/* VIP New Construction Partnership */}
+            {/* VIP Berkshire Hathaway HomeServices Buyer Program */}
             <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center">
                   <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6">
-                    ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
+                    ⭐ VIP BUILDER PARTNERSHIP ⭐
                   </div>
                   <h2 className="text-4xl font-bold mb-6">
-                    Elite Builder Relationship = Your Advantage
+                    VIP Berkshire Hathaway HomeServices Buyer Program
                   </h2>
                   <p className="text-xl mb-8 text-blue-100">
-                    Dr. Jan Duffy's VIP new construction partnership delivers exclusive access, 
-                    priority lot selection, and expert negotiation backed by premier relationships.
+                    Exclusive Access to Las Vegas New Construction Homes
+                  </p>
+                  <p className="text-lg mb-8 text-blue-200">
+                    Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation 
+                    backed by her elite builder relationships—giving YOU the ultimate advantage.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
@@ -383,20 +386,20 @@ export default function HomePage() {
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">⚡</div>
-                      <h3 className="text-lg font-bold mb-2">Priority Treatment</h3>
+                      <h3 className="text-lg font-bold mb-2">Priority Lot Selection</h3>
                       <p className="text-sm text-blue-100">VIP status throughout the entire process</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🎯</div>
                       <h3 className="text-lg font-bold mb-2">Expert Negotiation</h3>
-                      <p className="text-sm text-blue-100">Premier relationship-backed negotiation power</p>
+                      <p className="text-sm text-blue-100">Elite builder relationship-backed negotiation power</p>
                     </div>
                   </div>
                   <a
                     href="/vip-buyer-program"
                     className="inline-block bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors"
                   >
-                    Learn More About VIP Partnership
+                    Learn More About VIP Buyer Program
                   </a>
                 </div>
               </div>
