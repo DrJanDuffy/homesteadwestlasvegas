@@ -50,8 +50,8 @@ export default function ServicesPage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Real Estate Services</h1>
-            <p className="text-xl">Comprehensive real estate solutions by Dr. Jan Duffy</p>
+            <h1 className="text-4xl font-bold mb-4">Homestead West Real Estate Services</h1>
+            <p className="text-xl">Comprehensive real estate solutions for Homestead West by Dr. Jan Duffy</p>
           </div>
         </header>
 
@@ -59,7 +59,7 @@ export default function ServicesPage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-6">Our Services</h2>
+              <h2 className="text-3xl font-bold mb-6">Our Homestead West Services</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Dr. Jan Duffy provides comprehensive real estate services throughout Las Vegas, 
                 helping clients achieve their property goals with expertise, integrity, and 
@@ -72,9 +72,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl">🏠</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Buying Homes</h3>
+                <h3 className="text-xl font-semibold mb-4">Buying Homestead West Homes</h3>
                 <p className="text-gray-600 mb-6">
-                  Expert guidance through the home buying process, from first-time buyers to luxury properties.
+                  Expert guidance through the Homestead West home buying process, from first-time buyers to luxury properties.
                 </p>
                 <a
                   href="/services/buying"
@@ -88,9 +88,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl">💰</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Selling Homes</h3>
+                <h3 className="text-xl font-semibold mb-4">Selling Homestead West Homes</h3>
                 <p className="text-gray-600 mb-6">
-                  Maximize your home's value with professional marketing and negotiation expertise.
+                  Maximize your Homestead West home's value with professional marketing and negotiation expertise.
                 </p>
                 <a
                   href="/services/selling"
@@ -104,9 +104,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl">📈</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Investment Consulting</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Investment Consulting</h3>
                 <p className="text-gray-600 mb-6">
-                  Strategic real estate investment advice to build wealth through smart property decisions.
+                  Strategic Homestead West real estate investment advice to build wealth through smart property decisions.
                 </p>
                 <a
                   href="/services/investment"
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl">🔧</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Property Management</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Property Management</h3>
                 <p className="text-gray-600 mb-6">
                   Professional property management services for rental properties and investment portfolios.
                 </p>
@@ -138,13 +138,13 @@ export default function ServicesPage() {
         {/* Why Choose Dr. Jan Duffy */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Dr. Jan Duffy?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Dr. Jan Duffy for Homestead West?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">🎯</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Local Expertise</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Local Expertise</h3>
                 <p className="text-gray-600">
                   Deep knowledge of the Las Vegas real estate market, including Northwest Las Vegas 
                   and surrounding communities.
@@ -155,9 +155,9 @@ export default function ServicesPage() {
                 <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">🤝</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Personalized Service</h3>
+                <h3 className="text-xl font-semibold mb-4">Personalized Homestead West Service</h3>
                 <p className="text-gray-600">
-                  Every client receives individualized attention and customized strategies 
+                  Every Homestead West client receives individualized attention and customized strategies 
                   tailored to their specific real estate goals.
                 </p>
               </div>
@@ -166,10 +166,10 @@ export default function ServicesPage() {
                 <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">📊</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Market Knowledge</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Market Knowledge</h3>
                 <p className="text-gray-600">
-                  Up-to-date market analysis and trends to help you make informed decisions 
-                  about your real estate investments.
+                  Up-to-date Homestead West market analysis and trends to help you make informed decisions 
+                  about your Homestead West real estate investments.
                 </p>
               </div>
             </div>
@@ -179,15 +179,15 @@ export default function ServicesPage() {
         {/* Service Process */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Process</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Our Homestead West Process</h2>
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   1
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Consultation</h3>
+                <h3 className="text-lg font-semibold mb-2">Homestead West Consultation</h3>
                 <p className="text-gray-600">
-                  Initial meeting to understand your goals and requirements
+                  Initial meeting to understand your Homestead West goals and requirements
                 </p>
               </div>
               
@@ -195,9 +195,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   2
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Strategy</h3>
+                <h3 className="text-lg font-semibold mb-2">Homestead West Strategy</h3>
                 <p className="text-gray-600">
-                  Develop a customized plan based on your specific needs
+                  Develop a customized Homestead West plan based on your specific needs
                 </p>
               </div>
               
@@ -205,9 +205,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   3
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Execution</h3>
+                <h3 className="text-lg font-semibold mb-2">Homestead West Execution</h3>
                 <p className="text-gray-600">
-                  Implement the plan with professional guidance and support
+                  Implement the Homestead West plan with professional guidance and support
                 </p>
               </div>
               
@@ -215,9 +215,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   4
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Follow-up</h3>
+                <h3 className="text-lg font-semibold mb-2">Homestead West Follow-up</h3>
                 <p className="text-gray-600">
-                  Ongoing support and relationship building for future needs
+                  Ongoing Homestead West support and relationship building for future needs
                 </p>
               </div>
             </div>
@@ -227,7 +227,7 @@ export default function ServicesPage() {
         {/* CTA Section */}
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to Get Started with Homestead West?</h2>
             <p className="text-xl mb-8">
               Contact Dr. Jan Duffy today to discuss your real estate needs
             </p>
