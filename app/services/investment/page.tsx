@@ -27,8 +27,8 @@ export default function InvestmentConsultingPage() {
       <header className="bg-blue-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-4">Investment Consulting</h1>
-            <p className="text-xl text-blue-100">Strategic Real Estate Investment Guidance</p>
+            <h1 className="text-5xl font-bold mb-4">Homestead West Investment Consulting</h1>
+            <p className="text-xl text-blue-100">Strategic Homestead West Real Estate Investment Guidance</p>
             <p className="text-lg text-blue-200 mt-2">Dr. Jan Duffy | Nevada License S.0197614</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function InvestmentConsultingPage() {
             <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
               ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
             </div>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Investment Access</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Homestead West Investment Access</h2>
             <p className="text-xl text-gray-700 mb-8">
               Dr. Jan Duffy's VIP new construction partnership delivers exclusive investment opportunities, 
               early access to new developments, and expert market analysis for maximum returns.
@@ -163,7 +163,7 @@ export default function InvestmentConsultingPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            Available Homes in Las Vegas
+            Available Homestead West Homes and Las Vegas MLS Listings
           </h2>
           <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
             Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -179,7 +179,7 @@ export default function InvestmentConsultingPage() {
       <section className="py-16 bg-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Invest in Las Vegas?</h2>
+            <h2 className="text-4xl font-bold mb-6">Ready to Invest in Homestead West Las Vegas?</h2>
             <p className="text-xl mb-8 text-blue-100">
               Contact Dr. Jan Duffy for expert investment consulting with VIP new construction partnership
             </p>

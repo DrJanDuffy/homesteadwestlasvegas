@@ -27,8 +27,8 @@ export default function HomeSellingPage() {
       <header className="bg-blue-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-4">Home Selling Services</h1>
-            <p className="text-xl text-blue-100">Expert Guidance for Maximum Home Value</p>
+            <h1 className="text-5xl font-bold mb-4">Homestead West Home Selling Services</h1>
+            <p className="text-xl text-blue-100">Expert Guidance for Maximum Homestead West Home Value</p>
             <p className="text-lg text-blue-200 mt-2">Dr. Jan Duffy | Nevada License S.0197614</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function HomeSellingPage() {
             <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
               ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
             </div>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Selling Services</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Homestead West Selling Services</h2>
             <p className="text-xl text-gray-700 mb-8">
               Dr. Jan Duffy's VIP new construction partnership delivers exclusive market access, 
               premium buyer connections, and expert negotiation for maximum home value.
@@ -54,16 +54,16 @@ export default function HomeSellingPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Comprehensive Selling Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Comprehensive Homestead West Selling Services</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📊</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Market Analysis</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Market Analysis</h3>
                 <p className="text-gray-700">
-                  Comprehensive market analysis and competitive pricing strategy for maximum home value.
+                  Comprehensive Homestead West market analysis and competitive pricing strategy for maximum home value.
                 </p>
               </div>
 
@@ -71,9 +71,9 @@ export default function HomeSellingPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📸</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Professional Marketing</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Professional Marketing</h3>
                 <p className="text-gray-700">
-                  Professional photography, virtual tours, and comprehensive marketing strategy.
+                  Professional Homestead West photography, virtual tours, and comprehensive marketing strategy.
                 </p>
               </div>
 
@@ -81,9 +81,9 @@ export default function HomeSellingPage() {
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Buyer Network</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Buyer Network</h3>
                 <p className="text-gray-700">
-                  Access to VIP new construction buyer network and premium connections.
+                  Access to VIP Homestead West new construction buyer network and premium connections.
                 </p>
               </div>
 
@@ -91,9 +91,9 @@ export default function HomeSellingPage() {
                 <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">💰</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Negotiation</h3>
                 <p className="text-gray-700">
-                  Expert negotiation backed by premier builder relationships.
+                  Expert Homestead West negotiation backed by premier builder relationships.
                 </p>
               </div>
 
@@ -101,9 +101,9 @@ export default function HomeSellingPage() {
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📋</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Transaction Management</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Transaction Management</h3>
                 <p className="text-gray-700">
-                  Complete transaction management from listing to closing with VIP treatment.
+                  Complete Homestead West transaction management from listing to closing with VIP treatment.
                 </p>
               </div>
 
@@ -111,9 +111,9 @@ export default function HomeSellingPage() {
                 <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🏠</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Staging & Prep</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Staging & Prep</h3>
                 <p className="text-gray-700">
-                  Professional staging recommendations and home preparation guidance.
+                  Professional Homestead West staging recommendations and home preparation guidance.
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function HomeSellingPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            Available Homes in Las Vegas
+            Available Homestead West Homes and Las Vegas MLS Listings
           </h2>
           <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
             Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -141,7 +141,7 @@ export default function HomeSellingPage() {
       <section className="py-16 bg-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Sell Your Home?</h2>
+            <h2 className="text-4xl font-bold mb-6">Ready to Sell Your Homestead West Home?</h2>
             <p className="text-xl mb-8 text-blue-100">
               Contact Dr. Jan Duffy for expert selling services with VIP new construction partnership
             </p>

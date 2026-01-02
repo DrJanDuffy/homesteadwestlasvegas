@@ -58,8 +58,8 @@ export default function PropertyManagementPage() {
         <header className="bg-blue-900 text-white py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-4">Property Management Services</h1>
-              <p className="text-xl text-blue-100">Professional Property Management Solutions</p>
+              <h1 className="text-5xl font-bold mb-4">Homestead West Property Management Services</h1>
+              <p className="text-xl text-blue-100">Professional Homestead West Property Management Solutions</p>
               <p className="text-lg text-blue-200 mt-2">Dr. Jan Duffy | Nevada License S.0197614</p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function PropertyManagementPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Property Management</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Homestead West Property Management</h2>
               <p className="text-xl text-gray-700 mb-8">
                 Dr. Jan Duffy's VIP new construction partnership delivers exclusive property management 
                 services with premium tenant screening, maintenance coordination, and investment optimization.
@@ -85,16 +85,16 @@ export default function PropertyManagementPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Comprehensive Management Services</h2>
+              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Comprehensive Homestead West Management Services</h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-2xl">🔍</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Tenant Screening</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Tenant Screening</h3>
                   <p className="text-gray-700">
-                    Comprehensive background checks, credit verification, and rental history analysis.
+                    Comprehensive background checks, credit verification, and rental history analysis for Homestead West.
                   </p>
                 </div>
 
@@ -102,9 +102,9 @@ export default function PropertyManagementPage() {
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-2xl">💰</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Rent Collection</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Rent Collection</h3>
                   <p className="text-gray-700">
-                    Automated rent collection, late fee management, and financial reporting.
+                    Automated Homestead West rent collection, late fee management, and financial reporting.
                   </p>
                 </div>
 
@@ -112,9 +112,9 @@ export default function PropertyManagementPage() {
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-2xl">🔧</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Maintenance</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Maintenance</h3>
                   <p className="text-gray-700">
-                    24/7 maintenance coordination with trusted contractors and vendors.
+                    24/7 Homestead West maintenance coordination with trusted contractors and vendors.
                   </p>
                 </div>
 
@@ -122,9 +122,9 @@ export default function PropertyManagementPage() {
                   <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-2xl">📊</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Financial Reporting</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Financial Reporting</h3>
                   <p className="text-gray-700">
-                    Detailed monthly reports, expense tracking, and tax documentation.
+                    Detailed Homestead West monthly reports, expense tracking, and tax documentation.
                   </p>
                 </div>
 
@@ -132,9 +132,9 @@ export default function PropertyManagementPage() {
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-2xl">📋</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Lease Management</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Lease Management</h3>
                   <p className="text-gray-700">
-                    Lease preparation, renewal negotiations, and legal compliance.
+                    Homestead West lease preparation, renewal negotiations, and legal compliance.
                   </p>
                 </div>
 
@@ -142,9 +142,9 @@ export default function PropertyManagementPage() {
                   <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-2xl">🏠</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Property Marketing</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Property Marketing</h3>
                   <p className="text-gray-700">
-                    Professional marketing, photography, and tenant acquisition.
+                    Professional Homestead West marketing, photography, and tenant acquisition.
                   </p>
                 </div>
               </div>
@@ -156,20 +156,20 @@ export default function PropertyManagementPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Property Types We Manage</h2>
+              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Property Types We Manage Including Homestead West</h2>
               
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏡</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Single Family Homes</h3>
-                  <p className="text-gray-600 mb-4">Complete management for rental homes</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Single Family Homes</h3>
+                  <p className="text-gray-600 mb-4">Complete management for Homestead West rental homes</p>
                   <ul className="text-sm text-gray-500 text-left">
-                    <li>• Tenant screening & placement</li>
-                    <li>• Rent collection & accounting</li>
-                    <li>• Maintenance coordination</li>
-                    <li>• Property inspections</li>
+                    <li>• Homestead West tenant screening & placement</li>
+                    <li>• Homestead West rent collection & accounting</li>
+                    <li>• Homestead West maintenance coordination</li>
+                    <li>• Homestead West property inspections</li>
                   </ul>
                 </div>
 
@@ -177,13 +177,13 @@ export default function PropertyManagementPage() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏢</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Investment Properties</h3>
-                  <p className="text-gray-600 mb-4">Specialized investment property management</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Investment Properties</h3>
+                  <p className="text-gray-600 mb-4">Specialized Homestead West investment property management</p>
                   <ul className="text-sm text-gray-500 text-left">
-                    <li>• ROI optimization</li>
-                    <li>• Market analysis</li>
-                    <li>• Investment reporting</li>
-                    <li>• Portfolio management</li>
+                    <li>• Homestead West ROI optimization</li>
+                    <li>• Homestead West market analysis</li>
+                    <li>• Homestead West investment reporting</li>
+                    <li>• Homestead West portfolio management</li>
                   </ul>
                 </div>
 
@@ -191,13 +191,13 @@ export default function PropertyManagementPage() {
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏗️</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">New Construction</h3>
-                  <p className="text-gray-600 mb-4">VIP new construction properties</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West New Construction</h3>
+                  <p className="text-gray-600 mb-4">VIP Homestead West new construction properties</p>
                   <ul className="text-sm text-gray-500 text-left">
-                    <li>• Pre-construction management</li>
-                    <li>• Builder coordination</li>
-                    <li>• Warranty management</li>
-                    <li>• Premium tenant placement</li>
+                    <li>• Homestead West pre-construction management</li>
+                    <li>• Homestead West builder coordination</li>
+                    <li>• Homestead West warranty management</li>
+                    <li>• Homestead West premium tenant placement</li>
                   </ul>
                 </div>
               </div>
@@ -209,15 +209,15 @@ export default function PropertyManagementPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Our Management Process</h2>
+              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Our Homestead West Management Process</h2>
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                     1
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Property Assessment</h3>
+                  <h3 className="text-lg font-semibold mb-2">Homestead West Property Assessment</h3>
                   <p className="text-gray-600">
-                    Comprehensive property evaluation and market analysis
+                    Comprehensive Homestead West property evaluation and market analysis
                   </p>
                 </div>
                 
@@ -225,9 +225,9 @@ export default function PropertyManagementPage() {
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                     2
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Tenant Placement</h3>
+                  <h3 className="text-lg font-semibold mb-2">Homestead West Tenant Placement</h3>
                   <p className="text-gray-600">
-                    Professional marketing and qualified tenant screening
+                    Professional Homestead West marketing and qualified tenant screening
                   </p>
                 </div>
                 
@@ -235,9 +235,9 @@ export default function PropertyManagementPage() {
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                     3
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Ongoing Management</h3>
+                  <h3 className="text-lg font-semibold mb-2">Homestead West Ongoing Management</h3>
                   <p className="text-gray-600">
-                    Day-to-day operations and tenant relationship management
+                    Day-to-day Homestead West operations and tenant relationship management
                   </p>
                 </div>
                 
@@ -245,9 +245,9 @@ export default function PropertyManagementPage() {
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                     4
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Performance Optimization</h3>
+                  <h3 className="text-lg font-semibold mb-2">Homestead West Performance Optimization</h3>
                   <p className="text-gray-600">
-                    Continuous improvement and ROI maximization
+                    Continuous Homestead West improvement and ROI maximization
                   </p>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function PropertyManagementPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -275,7 +275,7 @@ export default function PropertyManagementPage() {
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready for Professional Property Management?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready for Professional Homestead West Property Management?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Contact Dr. Jan Duffy for expert property management services with VIP new construction partnership
               </p>
