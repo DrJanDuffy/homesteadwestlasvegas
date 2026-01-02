@@ -164,11 +164,64 @@ export default function LasVegasOfficePage() {
           </div>
         </section>
 
+        {/* About the Homestead West Office Location */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Why Our Homestead West Office Location Matters</h2>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-xl text-gray-700 mb-6">
+                  Our Homestead West office at 5592 N Dapple Gray Rd is strategically located in the heart of Northwest Las Vegas, 
+                  providing convenient access to the Homestead West community and surrounding areas. This Homestead West office 
+                  location allows Dr. Jan Duffy to maintain close relationships with Homestead West builders, stay current on 
+                  Homestead West market conditions, and provide responsive service to Homestead West clients throughout the 
+                  homebuying process.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  The Homestead West office location offers easy access from major highways including US 95 and CC 215, making it 
+                  convenient for Homestead West clients to visit for consultations, document signings, and meetings. Whether you're 
+                  coming from downtown Las Vegas, Summerlin, or other areas of the valley, the Homestead West office is easily 
+                  accessible and provides a professional environment for discussing your Homestead West real estate needs.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Local Market Knowledge</h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  Being located in Northwest Las Vegas gives Dr. Jan Duffy firsthand knowledge of the Homestead West community, 
+                  local market trends, and neighborhood developments. This Homestead West office location enables regular visits 
+                  to Homestead West properties, builder meetings, and community events that keep Dr. Jan Duffy informed about the 
+                  latest Homestead West opportunities and market conditions.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  The Homestead West office serves as a hub for real estate activity in Northwest Las Vegas, allowing Dr. Jan Duffy 
+                  to maintain relationships with Homestead West builders, other real estate professionals, and service providers who 
+                  support the Homestead West homebuying process. This Homestead West network benefits clients through access to 
+                  exclusive information, preferred pricing, and streamlined transactions.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Community Access</h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  The proximity of our Homestead West office to the actual Homestead West community means Dr. Jan Duffy can quickly 
+                  respond to new listings, schedule property viewings, and attend Homestead West community events. This Homestead 
+                  West accessibility ensures that Homestead West clients receive timely information and can act quickly when 
+                  Homestead West opportunities arise.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  Homestead West buyers benefit from having a real estate professional who is deeply familiar with the community, 
+                  its amenities, and its development plans. The Homestead West office location facilitates this local expertise, 
+                  enabling Dr. Jan Duffy to provide detailed information about Homestead West schools, shopping, dining, and 
+                  recreational opportunities that enhance the Homestead West living experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Work With Us for Homestead West?</h2>
-            <p className="text-xl mb-8">Contact Dr. Jan Duffy for expert Homestead West real estate services in Las Vegas</p>
+            <h2 className="text-4xl font-bold mb-6">Ready to Work With Us for Homestead West?</h2>
+            <p className="text-xl mb-8">
+              Contact Dr. Jan Duffy for expert Homestead West real estate services in Las Vegas. Visit our Homestead West office 
+              for in-person consultations, or schedule a phone or video meeting to discuss your Homestead West real estate needs.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
@@ -182,7 +235,18 @@ export default function LasVegasOfficePage() {
               >
                 Schedule Appointment
               </a>
+              <a
+                href="tel:7022221988"
+                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+              >
+                📞 Call (702) 222-1988
+              </a>
             </div>
+            <p className="text-blue-200 mt-6 max-w-2xl mx-auto">
+              Our Homestead West office is open Monday through Friday from 9:00 AM to 6:00 PM, and Saturday from 10:00 AM to 
+              4:00 PM. We're closed on Sundays but available for Homestead West emergencies. For Homestead West inquiries or to 
+              schedule a Homestead West consultation, please call, email, or visit our Homestead West office location.
+            </p>
           </div>
         </section>
 

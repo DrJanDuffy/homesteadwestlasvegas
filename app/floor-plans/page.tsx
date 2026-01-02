@@ -81,13 +81,80 @@ export default function FloorPlansPage() {
           </div>
         </section>
 
-        {/* Contact CTA */}
+        {/* About Homestead West Listings */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center bg-blue-900 text-white py-12 rounded-lg">
-              <h3 className="text-3xl font-bold mb-4">Ready to Find Your Homestead West Dream Home?</h3>
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Understanding Homestead West MLS Listings</h2>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-xl text-gray-700 mb-6">
+                  The Homestead West MLS listings you see above are updated daily from the Las Vegas Multiple Listing Service, 
+                  ensuring you have access to the most current available Homestead West homes. These Homestead West listings 
+                  include both new construction homes and resale properties within the Homestead West community, giving you a 
+                  comprehensive view of all available options in this premier Northwest Las Vegas neighborhood.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  Homestead West MLS listings provide detailed information about each property, including square footage, lot size, 
+                  number of bedrooms and bathrooms, and key features. As your Homestead West real estate expert, Dr. Jan Duffy 
+                  can help you interpret these Homestead West listings, schedule viewings, and provide additional context about 
+                  each Homestead West property that may not be immediately apparent from the listing details.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West New Construction vs. Resale</h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  Homestead West MLS listings include both brand new construction homes and resale properties. New construction 
+                  Homestead West homes offer the advantage of modern design, energy-efficient features, and the ability to customize 
+                  finishes and selections. Resale Homestead West properties may offer immediate availability and potentially 
+                  established landscaping, but may require updates or renovations. Dr. Jan Duffy can help you evaluate which 
+                  Homestead West option best fits your timeline, budget, and preferences.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  When considering Homestead West new construction, your consultation with Dr. Jan Duffy will cover the construction 
+                  timeline, available upgrades, and lot selection process. For Homestead West resale properties, Dr. Jan Duffy 
+                  provides market analysis, comparable sales data, and negotiation strategies to help you secure the best possible 
+                  price for your Homestead West home purchase.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Price Range and Market Trends</h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  Homestead West homes typically range from $400,000 to $700,000, offering luxury living at various price points. 
+                  The Homestead West MLS listings above are filtered to show properties within this range, ensuring you see 
+                  relevant Homestead West options that match your budget. Dr. Jan Duffy's VIP partnership often provides access 
+                  to Homestead West pricing incentives and special offers that may not be reflected in standard MLS listings.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  Understanding Homestead West market trends is crucial for making informed purchasing decisions. Dr. Jan Duffy 
+                  tracks Homestead West sales data, price appreciation, and inventory levels to provide you with current market 
+                  insights. This Homestead West market knowledge helps you understand whether it's a good time to buy, what to expect 
+                  in terms of appreciation, and how Homestead West compares to other Northwest Las Vegas communities.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Property Features and Amenities</h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  Homestead West homes feature single-story ranch designs on pool-sized lots, with optional detached casitas and 
+                  multi-generational layouts. The Homestead West community offers luxury living with attention to detail in every 
+                  aspect of design and construction. When viewing Homestead West MLS listings, consider not just the home itself, 
+                  but also the lot characteristics, community amenities, and proximity to key features like schools, shopping, 
+                  and transportation.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  Dr. Jan Duffy's Homestead West expertise includes detailed knowledge of floor plans, lot premiums, and community 
+                  features that may influence your decision. During your Homestead West consultation, you'll learn about the 
+                  specific advantages of different Homestead West lots, available upgrades, and community amenities that enhance 
+                  your Homestead West living experience. This comprehensive Homestead West knowledge helps you make the best 
+                  choice for your lifestyle and investment goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <section className="py-16 bg-blue-900 text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-4">Ready to Find Your Homestead West Dream Home?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Contact Dr. Jan Duffy for expert guidance on your Homestead West Las Vegas home search
+                Contact Dr. Jan Duffy for expert guidance on your Homestead West Las Vegas home search. Schedule a consultation 
+                to learn more about available Homestead West properties, VIP program benefits, and how to navigate the Homestead 
+                West homebuying process with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -101,6 +168,12 @@ export default function FloorPlansPage() {
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors"
                 >
                   📧 Email Dr. Jan
+                </a>
+                <a
+                  href="/appointment"
+                  className="bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-colors"
+                >
+                  📅 Schedule Consultation
                 </a>
               </div>
             </div>
