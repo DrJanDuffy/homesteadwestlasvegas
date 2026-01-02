@@ -172,7 +172,7 @@ export default function FAQPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION FAQ ⭐
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Homestead West Frequently Asked Questions</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">New Construction Home Buying</p>
               <p className="text-xl text-blue-200">Expert Answers from VIP New Construction Specialist</p>
             </div>
@@ -224,7 +224,7 @@ export default function FAQPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Common Questions</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Common Homestead West Questions</h2>
               
               <div className="space-y-12">
                 {faqs.map((category, categoryIndex) => (
@@ -250,9 +250,9 @@ export default function FAQPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Still Have Questions?</h2>
+                <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Still Have Questions About Homestead West?</h2>
                 <p className="text-xl text-center text-gray-700 mb-8">
-                  Dr. Jan Duffy is here to answer all your new construction questions with VIP expertise
+                  Dr. Jan Duffy is here to answer all your Homestead West new construction questions with VIP expertise
                 </p>
                 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -260,7 +260,7 @@ export default function FAQPage() {
                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-3xl">📞</span>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">Call Dr. Jan</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">Call Dr. Jan About Homestead West</h3>
                     <a href="tel:7022221988" className="text-blue-600 font-semibold text-lg hover:text-blue-800">
                       (702) 222-1988
                     </a>
@@ -270,7 +270,7 @@ export default function FAQPage() {
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-3xl">📧</span>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">Email Dr. Jan</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">Email Dr. Jan About Homestead West</h3>
                     <a href="mailto:DrJanSells@HomesteadWestLasVegas.com" className="text-blue-600 font-semibold text-lg hover:text-blue-800 break-all">
                       DrJanSells@HomesteadWestLasVegas.com
                     </a>
@@ -280,9 +280,9 @@ export default function FAQPage() {
                     <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-3xl">📍</span>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">Visit Office</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">Visit Homestead West Office</h3>
                     <p className="text-gray-700">5592 N Dapple Gray Rd</p>
-                    <p className="text-gray-700">Builder Sales Office</p>
+                    <p className="text-gray-700">Homestead West Builder Sales Office</p>
                   </div>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export default function FAQPage() {
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Start Your VIP Journey?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Start Your Homestead West VIP Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Let Dr. Jan Duffy's VIP new construction partnership guide you to your dream home
               </p>

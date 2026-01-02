@@ -51,7 +51,7 @@ export default function ContactPage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Contact Dr. Jan Duffy</h1>
+            <h1 className="text-4xl font-bold mb-4">Contact Dr. Jan Duffy for Homestead West</h1>
             <p className="text-xl">Las Vegas Real Estate Expert | License S.0197614</p>
           </div>
         </header>
@@ -61,11 +61,11 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+                <h2 className="text-3xl font-bold mb-8">Get In Touch About Homestead West</h2>
                 <p className="text-lg mb-8">
-                  Ready to buy, sell, or invest in Las Vegas real estate? Contact Dr. Jan Duffy for 
-                  expert guidance and personalized service. We're here to help you achieve your 
-                  real estate goals.
+                  Ready to buy, sell, or invest in Homestead West Las Vegas real estate? Contact Dr. Jan Duffy for 
+                  expert Homestead West guidance and personalized service. We're here to help you achieve your 
+                  Homestead West real estate goals.
                 </p>
                 
                 <div className="space-y-6">
@@ -74,9 +74,9 @@ export default function ContactPage() {
                       <span className="text-white text-xl">📞</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Phone</h3>
+                      <h3 className="text-xl font-semibold mb-2">Homestead West Phone</h3>
                       <p className="text-lg">(702) 222-1988</p>
-                      <p className="text-gray-600">Available Monday-Friday 9AM-6PM, Saturday 10AM-4PM</p>
+                      <p className="text-gray-600">Available Monday-Friday 9AM-6PM, Saturday 10AM-4PM for Homestead West</p>
                     </div>
                   </div>
                   
@@ -85,9 +85,9 @@ export default function ContactPage() {
                       <span className="text-white text-xl">✉️</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Email</h3>
+                      <h3 className="text-xl font-semibold mb-2">Homestead West Email</h3>
                       <p className="text-lg">DrJanSells@HomesteadWestLasVegas.com</p>
-                      <p className="text-gray-600">We respond within 24 hours</p>
+                      <p className="text-gray-600">We respond within 24 hours about Homestead West</p>
                     </div>
                   </div>
                   
@@ -96,16 +96,16 @@ export default function ContactPage() {
                       <span className="text-white text-xl">📍</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Office Address</h3>
+                      <h3 className="text-xl font-semibold mb-2">Homestead West Office Address</h3>
                       <p className="text-lg">5592 N Dapple Gray Rd<br />Las Vegas, NV 89149</p>
-                      <p className="text-gray-600">By appointment only</p>
+                      <p className="text-gray-600">By appointment only for Homestead West</p>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
+                <h3 className="text-2xl font-bold mb-6">Send Us a Message About Homestead West</h3>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -210,7 +210,7 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Office Hours</h2>
+                <h2 className="text-3xl font-bold mb-6">Homestead West Office Hours</h2>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span className="font-medium">Monday - Friday</span>
@@ -280,7 +280,7 @@ export default function ContactPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties

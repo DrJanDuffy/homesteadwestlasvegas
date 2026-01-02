@@ -91,7 +91,7 @@ export default function AboutPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION SPECIALIST ⭐
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Jan Duffy</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Jan Duffy - Homestead West Real Estate Expert</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">VIP New Construction Specialist</p>
               <p className="text-xl text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
             </div>
@@ -103,10 +103,10 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Builder Partnership</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Homestead West Builder Partnership</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy maintains an exclusive VIP partnership with the builder, 
-                  one of America's top 10 homebuilders, delivering unparalleled access and 
+                  Dr. Jan Duffy maintains an exclusive VIP partnership with the Homestead West builder, 
+                  one of America's top 10 homebuilders, delivering unparalleled Homestead West access and 
                   negotiation power for her clients.
                 </p>
               </div>
@@ -116,24 +116,24 @@ export default function AboutPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏆</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">VIP Status</h3>
-                  <p className="text-gray-700">Elite new construction partnership with exclusive access</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West VIP Status</h3>
+                  <p className="text-gray-700">Elite Homestead West new construction partnership with exclusive access</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">📞</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Direct Access</h3>
-                  <p className="text-gray-700">Direct communication with builder management</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Direct Homestead West Access</h3>
+                  <p className="text-gray-700">Direct communication with Homestead West builder management</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🎯</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Power</h3>
-                  <p className="text-gray-700">Premier relationship-backed negotiation advantages</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Negotiation Power</h3>
+                  <p className="text-gray-700">Premier Homestead West relationship-backed negotiation advantages</p>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h2 className="text-4xl font-bold mb-6 text-gray-900">Professional Background</h2>
+                  <h2 className="text-4xl font-bold mb-6 text-gray-900">Dr. Jan Duffy's Professional Background</h2>
                   <div className="space-y-6 text-lg text-gray-700">
                     <p>
                       Dr. Jan Duffy is a distinguished real estate professional specializing in 
@@ -169,7 +169,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Credentials & Achievements</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Dr. Jan Duffy's Credentials & Achievements</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>
@@ -217,29 +217,29 @@ export default function AboutPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Proven Track Record</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Proven Track Record with Homestead West</h2>
               
               <div className="grid md:grid-cols-4 gap-8 mb-12">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-                  <p className="text-gray-700 font-semibold">Families Helped</p>
+                  <p className="text-gray-700 font-semibold">Homestead West Families Helped</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-green-600 mb-2">$2M+</div>
-                  <p className="text-gray-700 font-semibold">Average Home Value</p>
+                  <p className="text-gray-700 font-semibold">Average Homestead West Home Value</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-purple-600 mb-2">98%</div>
-                  <p className="text-gray-700 font-semibold">Client Satisfaction</p>
+                  <p className="text-gray-700 font-semibold">Homestead West Client Satisfaction</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-yellow-600 mb-2">VIP</div>
-                  <p className="text-gray-700 font-semibold">Builder Partnership</p>
+                  <p className="text-gray-700 font-semibold">Homestead West Builder Partnership</p>
                 </div>
               </div>
 
               <div className="bg-blue-900 text-white rounded-xl p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4">Why Choose Dr. Jan Duffy?</h3>
+                <h3 className="text-2xl font-bold mb-4">Why Choose Dr. Jan Duffy for Homestead West?</h3>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
                     <ul className="space-y-3">
@@ -336,7 +336,7 @@ export default function AboutPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -352,7 +352,7 @@ export default function AboutPage() {
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Work with a VIP Specialist?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Work with a Homestead West VIP Specialist?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Experience the difference of working with Dr. Jan Duffy's elite new construction partnership
               </p>
