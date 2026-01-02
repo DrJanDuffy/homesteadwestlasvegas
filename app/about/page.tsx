@@ -348,6 +348,30 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Available Homes Section */}
+        <section id="available-homes" className="py-12 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-6">
+                <h2 className="text-3xl font-bold mb-3 text-gray-900">View Available Homes</h2>
+                <p className="text-lg text-gray-600">Explore live MLS listings at Homestead West</p>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <iframe 
+                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
+                  title="Homestead West Listings"
+                  width="100%"
+                  height="700"
+                  frameBorder="0"
+                  loading="lazy"
+                  className="w-full border-0 block"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact CTA */}
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">

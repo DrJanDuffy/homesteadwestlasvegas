@@ -40,7 +40,7 @@ export default function Navigation() {
 
             {/* Available Homes */}
             <Link 
-              href="/properties" 
+              href="/#available-homes" 
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Available Homes
@@ -246,7 +246,7 @@ export default function Navigation() {
               </Link>
               
               <Link 
-                href="/properties" 
+                href="/#available-homes" 
                 className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
               >
                 Available Homes

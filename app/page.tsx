@@ -401,6 +401,49 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Available Homes Section - Live MLS Feed */}
+        <section id="available-homes" className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">Available Homes at Homestead West</h2>
+                <p className="text-xl text-gray-600">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">$910K+</span>
+                  <span className="text-sm">Starting Price</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">3,336–3,704</span>
+                  <span className="text-sm">Sq Ft</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">4 Bed / 4+ Bath</span>
+                  <span className="text-sm">Bed & Bath</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">89149</span>
+                  <span className="text-sm">Zip Code</span>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <iframe 
+                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
+                  title="Homestead West Las Vegas - Live MLS Listings"
+                  width="100%"
+                  height="800"
+                  frameBorder="0"
+                  loading="lazy"
+                  className="w-full border-0 block"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
             {/* VIP Berkshire Hathaway HomeServices Buyer Program */}
             <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
               <div className="container mx-auto px-4">

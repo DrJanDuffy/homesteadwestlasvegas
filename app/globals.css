@@ -131,3 +131,15 @@ body {
 .powered-by {
   display: none;
 }
+
+/* Mobile CSS for MLS iframe sections */
+@media (max-width: 768px) {
+  #available-homes iframe,
+  #homes-preview iframe {
+    height: 500px !important;
+  }
+  
+  #available-homes div[style*="grid-template-columns: repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
