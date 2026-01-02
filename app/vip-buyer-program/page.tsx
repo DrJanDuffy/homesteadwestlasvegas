@@ -137,10 +137,9 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">🚀</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Early Phase Access to Homestead West</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Early Phase Access Through VIP Program</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Get first access to new Homestead West phases before public release. Secure the best Homestead West lots, 
-                    prime locations, and preferred floor plans while others wait.
+                    The VIP Berkshire Hathaway HomeServices New Home Buyer Program provides first access to new Homestead West phases before public release. Secure the best Homestead West lots, prime locations, and preferred floor plans while others wait.
                   </p>
                 </div>
 
@@ -181,10 +180,9 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">🎯</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Expert Negotiation for Homestead West</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Expert Negotiation Power</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Premier relationship-backed negotiation power for Homestead West. Get upgrades, 
-                    concessions, and terms that others simply cannot achieve at Homestead West.
+                    The VIP Berkshire Hathaway HomeServices program delivers elite builder relationship-backed negotiation power for Homestead West. Get upgrades, concessions, and terms that others simply cannot achieve through the standard homebuying process.
                   </p>
                 </div>
 
@@ -192,10 +190,9 @@ export default function VIPBuyerProgramPage() {
                   <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
                     <span className="text-3xl">🏆</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Priority Treatment at Homestead West</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Priority Lot Selection Benefits</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    VIP status throughout the entire Homestead West process—from lot selection 
-                    to closing. Experience the difference of working with a premier Homestead West partner.
+                    The VIP Berkshire Hathaway HomeServices New Home Buyer Program ensures priority treatment throughout the entire Homestead West process—from lot selection to closing. Experience the difference of working with a premier program partner.
                   </p>
                 </div>
               </div>
