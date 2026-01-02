@@ -121,9 +121,10 @@ export default function PropertiesPage() {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
                   <select className="w-full px-4 py-2 border border-gray-300 rounded-lg" title="Select price range">
+                    <option>$850K - $900K</option>
                     <option>$900K - $950K</option>
-                    <option>$950K - $1M</option>
-                    <option>$1M+</option>
+                    <option>$950K - $999K</option>
+                    <option>$999K+</option>
                   </select>
                 </div>
                 <div>

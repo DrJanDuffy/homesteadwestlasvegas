@@ -274,9 +274,11 @@ export default function HomePage() {
                           <option value="600000">$600,000</option>
                           <option value="700000">$700,000</option>
                           <option value="800000">$800,000</option>
+                          <option value="850000">$850,000</option>
                           <option value="900000">$900,000</option>
+                          <option value="950000">$950,000</option>
+                          <option value="999000">$999,000</option>
                           <option value="1000000">$1,000,000</option>
-                          <option value="1100000">$1,100,000</option>
                           <option value="1200000">$1,200,000</option>
                         </select> 
                         <select 
@@ -286,9 +288,11 @@ export default function HomePage() {
                           style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
                         >
                           <option value="">Max Price</option>
+                          <option value="850000">$850,000</option>
                           <option value="900000">$900,000</option>
+                          <option value="950000">$950,000</option>
+                          <option value="999000">$999,000</option>
                           <option value="1000000">$1,000,000</option>
-                          <option value="1100000">$1,100,000</option>
                           <option value="1200000">$1,200,000</option>
                           <option value="1500000">$1,500,000</option>
                           <option value="2000000">$2,000,000</option>
