@@ -54,16 +54,16 @@ export default function InvestmentConsultingPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Investment Consulting Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Homestead West Investment Consulting Services</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📈</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Market Analysis</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Market Analysis</h3>
                 <p className="text-gray-700">
-                  Comprehensive market analysis and investment opportunity identification.
+                  Comprehensive Homestead West market analysis and investment opportunity identification.
                 </p>
               </div>
 
@@ -71,9 +71,9 @@ export default function InvestmentConsultingPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🏗️</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">New Construction</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West New Construction</h3>
                 <p className="text-gray-700">
-                  Early access to new construction investment opportunities.
+                  Early access to Homestead West new construction investment opportunities.
                 </p>
               </div>
 
@@ -81,9 +81,9 @@ export default function InvestmentConsultingPage() {
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">💰</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">ROI Analysis</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West ROI Analysis</h3>
                 <p className="text-gray-700">
-                  Detailed ROI analysis and investment strategy development.
+                  Detailed Homestead West ROI analysis and investment strategy development.
                 </p>
               </div>
 
@@ -91,9 +91,9 @@ export default function InvestmentConsultingPage() {
                 <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🏠</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Rental Properties</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Rental Properties</h3>
                 <p className="text-gray-700">
-                  Investment property selection and rental market analysis.
+                  Homestead West investment property selection and rental market analysis.
                 </p>
               </div>
 
@@ -101,9 +101,9 @@ export default function InvestmentConsultingPage() {
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📊</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Portfolio Management</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Portfolio Management</h3>
                 <p className="text-gray-700">
-                  Strategic portfolio management and diversification guidance.
+                  Strategic Homestead West portfolio management and diversification guidance.
                 </p>
               </div>
 
@@ -111,9 +111,9 @@ export default function InvestmentConsultingPage() {
                 <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Exit Strategies</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Exit Strategies</h3>
                 <p className="text-gray-700">
-                  Investment exit strategies and timing optimization.
+                  Homestead West investment exit strategies and timing optimization.
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function InvestmentConsultingPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Prime Investment Areas</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Prime Investment Areas Including Homestead West</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-lg text-center">
