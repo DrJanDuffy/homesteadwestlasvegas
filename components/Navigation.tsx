@@ -173,6 +173,12 @@ export default function Navigation() {
               {activeDropdown === 'resources' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
                   <Link 
+                    href="/#search-homes" 
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Search Listings
+                  </Link>
+                  <Link 
                     href="/buyers-guide" 
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
@@ -185,7 +191,7 @@ export default function Navigation() {
                     Homebuying Process
                   </Link>
                   <Link 
-                    href="/century-communities-vip" 
+                    href="/vip-buyer-program" 
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                   >
                     VIP Partnership
@@ -236,7 +242,7 @@ export default function Navigation() {
 
             {/* VIP Partnership Badge */}
             <Link 
-              href="/century-communities-vip"
+              href="/vip-buyer-program"
               className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm hover:from-yellow-500 hover:to-yellow-600 transition-all shadow-lg"
             >
               ⭐ VIP ACCESS
@@ -355,6 +361,12 @@ export default function Navigation() {
                 <div className="font-medium text-gray-900 mb-2">Resources</div>
                 <div className="ml-4 space-y-1">
                   <Link 
+                    href="/#search-homes" 
+                    className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    Search Listings
+                  </Link>
+                  <Link 
                     href="/buyers-guide" 
                     className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
                   >
@@ -367,7 +379,7 @@ export default function Navigation() {
                     Homebuying Process
                   </Link>
                   <Link 
-                    href="/century-communities-vip" 
+                    href="/vip-buyer-program" 
                     className="block py-1 text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     VIP Partnership
@@ -414,7 +426,7 @@ export default function Navigation() {
               </Link>
 
               <Link 
-                href="/century-communities-vip"
+                href="/vip-buyer-program"
                 className="block mx-4 mt-4 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm text-center"
               >
                 ⭐ VIP ACCESS
