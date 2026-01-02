@@ -56,6 +56,30 @@ export default function ContactPage() {
           </div>
         </header>
 
+        {/* Current Listings Preview */}
+        <section id="homes-preview" className="py-10 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-5">
+                <h2 className="text-2xl font-bold mb-2 text-gray-900">Current Homestead West Listings</h2>
+                <p className="text-gray-600 text-sm">Review available homes, then contact Dr. Jan for a private tour</p>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <iframe 
+                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
+                  title="Homestead West Available Homes"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  loading="lazy"
+                  className="w-full border-0 block"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Information */}
         <section className="py-16">
           <div className="container mx-auto px-4">
@@ -103,39 +127,8 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Current Listings Preview */}
-        <section id="homes-preview" className="py-10 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-5">
-                <h2 className="text-2xl font-bold mb-2 text-gray-900">Current Homestead West Listings</h2>
-                <p className="text-gray-600 text-sm">Review available homes, then contact Dr. Jan for a private tour</p>
-              </div>
-
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <iframe 
-                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
-                  title="Homestead West Available Homes"
-                  width="100%"
-                  height="600"
-                  frameBorder="0"
-                  loading="lazy"
-                  className="w-full border-0 block"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Form */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white p-8 rounded-lg">
+              
+              <div className="bg-gray-50 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold mb-6">Send Us a Message About Homestead West</h3>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
