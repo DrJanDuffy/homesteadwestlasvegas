@@ -152,10 +152,10 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP Market Intelligence</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">Homestead West VIP Market Intelligence</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP new construction partnership provides exclusive market insights, 
-                  builder updates, and insider knowledge you won't find anywhere else.
+                  Dr. Jan Duffy's VIP new construction partnership provides exclusive Homestead West market insights, 
+                  Homestead West builder updates, and insider Homestead West knowledge you won't find anywhere else.
                 </p>
               </div>
 
@@ -164,24 +164,24 @@ export default function BlogPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">📊</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Market Updates</h3>
-                  <p className="text-gray-700">Latest Las Vegas real estate trends and pricing insights</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Market Updates</h3>
+                  <p className="text-gray-700">Latest Homestead West Las Vegas real estate trends and pricing insights</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏗️</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Builder Insights</h3>
-                  <p className="text-gray-700">Exclusive new construction updates and announcements</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Builder Insights</h3>
+                  <p className="text-gray-700">Exclusive Homestead West new construction updates and announcements</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">💡</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Expert Tips</h3>
-                  <p className="text-gray-700">Professional guidance for new construction buyers</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Expert Tips</h3>
+                  <p className="text-gray-700">Professional guidance for Homestead West new construction buyers</p>
                 </div>
               </div>
             </div>
