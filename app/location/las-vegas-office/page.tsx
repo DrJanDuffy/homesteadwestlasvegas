@@ -60,7 +60,7 @@ export default function LasVegasOfficePage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Las Vegas Real Estate Office</h1>
+            <h1 className="text-4xl font-bold mb-4">Homestead West Las Vegas Real Estate Office</h1>
             <p className="text-xl">Homestead West | Homes by Dr Jan Duffy</p>
           </div>
         </header>
@@ -70,14 +70,14 @@ export default function LasVegasOfficePage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Visit Our Office</h2>
+                <h2 className="text-3xl font-bold mb-6">Visit Our Homestead West Office</h2>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">
                       <span className="text-white text-sm">📍</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Address</h3>
+                      <h3 className="font-semibold">Homestead West Address</h3>
                       <p>5592 N Dapple Gray Rd<br />Las Vegas, NV 89149</p>
                     </div>
                   </div>
@@ -87,7 +87,7 @@ export default function LasVegasOfficePage() {
                       <span className="text-white text-sm">📞</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Phone</h3>
+                      <h3 className="font-semibold">Homestead West Phone</h3>
                       <p>(702) 222-1988</p>
                     </div>
                   </div>
@@ -97,7 +97,7 @@ export default function LasVegasOfficePage() {
                       <span className="text-white text-sm">✉️</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Email</h3>
+                      <h3 className="font-semibold">Homestead West Email</h3>
                       <p>DrJanSells@HomesteadWestLasVegas.com</p>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ export default function LasVegasOfficePage() {
                       <span className="text-white text-sm">🕒</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Office Hours</h3>
+                      <h3 className="font-semibold">Homestead West Office Hours</h3>
                       <p>Monday-Friday: 9:00 AM - 6:00 PM<br />
                       Saturday: 10:00 AM - 4:00 PM<br />
                       Sunday: Closed</p>
@@ -117,7 +117,7 @@ export default function LasVegasOfficePage() {
               </div>
               
               <div>
-                <h2 className="text-3xl font-bold mb-6">Get Directions</h2>
+                <h2 className="text-3xl font-bold mb-6">Get Directions to Homestead West</h2>
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-6">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.5!2d-115.1398!3d36.1699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDEwJzExLjYiTiAxMTXCsDA4JzIzLjMiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
@@ -146,19 +146,19 @@ export default function LasVegasOfficePage() {
         {/* Services Offered */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Services at This Location</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Homestead West Services at This Location</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center p-6 border rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Real Estate Sales</h3>
-                <p>Buying and selling residential and commercial properties in Northwest Las Vegas</p>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Real Estate Sales</h3>
+                <p>Buying and selling residential and commercial Homestead West properties in Northwest Las Vegas</p>
               </div>
               <div className="text-center p-6 border rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Property Management</h3>
-                <p>Professional property management services for Las Vegas area properties</p>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Property Management</h3>
+                <p>Professional Homestead West property management services for Las Vegas area properties</p>
               </div>
               <div className="text-center p-6 border rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Investment Consulting</h3>
-                <p>Real estate investment advice and consultation services</p>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Investment Consulting</h3>
+                <p>Homestead West real estate investment advice and consultation services</p>
               </div>
             </div>
           </div>
@@ -167,8 +167,8 @@ export default function LasVegasOfficePage() {
         {/* CTA Section */}
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Work With Us?</h2>
-            <p className="text-xl mb-8">Contact Dr. Jan Duffy for expert real estate services in Las Vegas</p>
+            <h2 className="text-3xl font-bold mb-6">Ready to Work With Us for Homestead West?</h2>
+            <p className="text-xl mb-8">Contact Dr. Jan Duffy for expert Homestead West real estate services in Las Vegas</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
@@ -190,7 +190,7 @@ export default function LasVegasOfficePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties

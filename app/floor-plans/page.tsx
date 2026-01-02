@@ -59,8 +59,8 @@ export default function FloorPlansPage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-12">
           <div className="container mx-auto px-4">
-            <h1 className="text-5xl font-bold mb-4">Available Homes</h1>
-            <p className="text-xl text-blue-100">Las Vegas MLS Listings - Updated Daily</p>
+            <h1 className="text-5xl font-bold mb-4">Available Homestead West Homes</h1>
+            <p className="text-xl text-blue-100">Homestead West Las Vegas MLS Listings - Updated Daily</p>
             <p className="text-lg text-blue-200 mt-2">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
           </div>
         </header>
@@ -70,7 +70,7 @@ export default function FloorPlansPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-                Available Homes in Las Vegas
+                Available Homestead West Homes and Las Vegas MLS Listings
               </h2>
               <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
                 Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -85,9 +85,9 @@ export default function FloorPlansPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center bg-blue-900 text-white py-12 rounded-lg">
-              <h3 className="text-3xl font-bold mb-4">Ready to Find Your Dream Home?</h3>
+              <h3 className="text-3xl font-bold mb-4">Ready to Find Your Homestead West Dream Home?</h3>
               <p className="text-xl mb-8 text-blue-100">
-                Contact Dr. Jan Duffy for expert guidance on your Las Vegas home search
+                Contact Dr. Jan Duffy for expert guidance on your Homestead West Las Vegas home search
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

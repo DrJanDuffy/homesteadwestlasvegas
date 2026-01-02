@@ -365,14 +365,14 @@ export default function BuyersGuidePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Typical Timeline</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Typical Timeline</h2>
               
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">📅</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Pre-Construction</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Pre-Construction</h3>
                   <p className="text-gray-700 mb-2">Steps 1-6</p>
                   <p className="text-sm text-gray-600">2-4 weeks</p>
                 </div>
@@ -381,7 +381,7 @@ export default function BuyersGuidePage() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏗️</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Construction</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Construction</h3>
                   <p className="text-gray-700 mb-2">Steps 7-8</p>
                   <p className="text-sm text-gray-600">4-6 months</p>
                 </div>
@@ -390,7 +390,7 @@ export default function BuyersGuidePage() {
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏠</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Closing</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Closing</h3>
                   <p className="text-gray-700 mb-2">Step 9</p>
                   <p className="text-sm text-gray-600">1-2 weeks</p>
                 </div>
@@ -403,7 +403,7 @@ export default function BuyersGuidePage() {
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Start Your New Construction Journey?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Start Your Homestead West New Construction Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Let Dr. Jan Duffy's VIP new construction partnership guide you through every step
               </p>
@@ -436,7 +436,7 @@ export default function BuyersGuidePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties

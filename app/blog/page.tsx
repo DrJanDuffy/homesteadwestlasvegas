@@ -234,39 +234,39 @@ export default function BlogPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Blog Categories</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Blog Categories</h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">📈</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Market Updates</h3>
-                  <p className="text-gray-600 text-sm">Las Vegas real estate trends and pricing</p>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West Market Updates</h3>
+                  <p className="text-gray-600 text-sm">Homestead West Las Vegas real estate trends and pricing</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏠</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Buyer Guide</h3>
-                  <p className="text-gray-600 text-sm">Tips and strategies for homebuyers</p>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West Buyer Guide</h3>
+                  <p className="text-gray-600 text-sm">Tips and strategies for Homestead West homebuyers</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏗️</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Builder Profile</h3>
-                  <p className="text-gray-600 text-sm">New construction insights and updates</p>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West Builder Profile</h3>
+                  <p className="text-gray-600 text-sm">Homestead West new construction insights and updates</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">🏘️</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Community</h3>
-                  <p className="text-gray-600 text-sm">Local amenities and neighborhood info</p>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West Community</h3>
+                  <p className="text-gray-600 text-sm">Homestead West local amenities and neighborhood info</p>
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function BlogPage() {
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Stay Updated with VIP Insights</h2>
+              <h2 className="text-4xl font-bold mb-6">Stay Updated with Homestead West VIP Insights</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Get exclusive market updates and new construction news delivered to your inbox
               </p>
@@ -308,7 +308,7 @@ export default function BlogPage() {
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Work with a VIP Specialist?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Work with a Homestead West VIP Specialist?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Let Dr. Jan Duffy's VIP new construction partnership guide your real estate journey
               </p>
@@ -341,7 +341,7 @@ export default function BlogPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties

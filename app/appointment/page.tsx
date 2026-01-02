@@ -44,8 +44,8 @@ export default function AppointmentPage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Schedule Your Appointment</h1>
-            <p className="text-xl">Book a consultation with Dr. Jan Duffy</p>
+            <h1 className="text-4xl font-bold mb-4">Schedule Your Homestead West Appointment</h1>
+            <p className="text-xl">Book a consultation with Dr. Jan Duffy for Homestead West</p>
           </div>
         </header>
 
@@ -54,10 +54,10 @@ export default function AppointmentPage() {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Book Your Consultation</h2>
+                <h2 className="text-3xl font-bold mb-6">Book Your Homestead West Consultation</h2>
                 <p className="text-lg mb-8">
-                  Schedule a personalized consultation with Dr. Jan Duffy to discuss your real estate needs. 
-                  We offer flexible scheduling to accommodate your busy lifestyle.
+                  Schedule a personalized Homestead West consultation with Dr. Jan Duffy to discuss your Homestead West real estate needs. 
+                  We offer flexible scheduling to accommodate your busy lifestyle for Homestead West buyers.
                 </p>
                 
                 <div className="space-y-6">
@@ -66,8 +66,8 @@ export default function AppointmentPage() {
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Free Initial Consultation</h3>
-                      <p>No obligation, expert advice on your real estate goals</p>
+                      <h3 className="font-semibold">Free Initial Homestead West Consultation</h3>
+                      <p>No obligation, expert advice on your Homestead West real estate goals</p>
                     </div>
                   </div>
                   
@@ -76,8 +76,8 @@ export default function AppointmentPage() {
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Flexible Scheduling</h3>
-                      <p>Available evenings and weekends by appointment</p>
+                      <h3 className="font-semibold">Flexible Homestead West Scheduling</h3>
+                      <p>Available evenings and weekends by appointment for Homestead West</p>
                     </div>
                   </div>
                   
@@ -86,8 +86,8 @@ export default function AppointmentPage() {
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold">Multiple Options</h3>
-                      <p>In-person, phone, or video consultations available</p>
+                      <h3 className="font-semibold">Multiple Homestead West Options</h3>
+                      <p>In-person, phone, or video consultations available for Homestead West</p>
                     </div>
                   </div>
                 </div>
@@ -224,7 +224,7 @@ export default function AppointmentPage() {
         {/* Contact Information */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Prefer to Call?</h2>
+            <h2 className="text-3xl font-bold mb-6">Prefer to Call for Homestead West?</h2>
             <p className="text-lg mb-8">You can also reach us directly for immediate assistance</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a
@@ -249,7 +249,7 @@ export default function AppointmentPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
