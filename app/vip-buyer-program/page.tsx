@@ -341,32 +341,32 @@ export default function VIPBuyerProgramPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">Register Your Buyer for Homestead West - Fast-Track Process</h2>
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">Register Your Buyer for New Homes - Fast-Track Process</h2>
               <p className="text-xl text-gray-600 mb-12">
-                Dr. Jan Duffy's VIP partnership includes a streamlined registration process 
-                that gets your buyers priority treatment from day one.
+                Dr. Jan Duffy's VIP Berkshire Hathaway HomeServices partnership includes a streamlined registration process 
+                that gets your buyers priority treatment from day one for new construction homes.
               </p>
 
               <div className="grid md:grid-cols-4 gap-8 mb-12">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">1</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">Initial Consultation for Homestead West</h3>
-                  <p className="text-gray-600 text-sm">Discuss needs, budget, and preferences for Homestead West</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">Initial Consultation for New Homes</h3>
+                  <p className="text-gray-600 text-sm">Discuss needs, budget, and preferences for new construction homes</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration for Homestead West</h3>
-                  <p className="text-gray-600 text-sm">Register with VIP buyer program portal for Homestead West</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration for New Homes</h3>
+                  <p className="text-gray-600 text-sm">Register with VIP Berkshire Hathaway HomeServices buyer program portal</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">3</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">Priority Access to Homestead West</h3>
-                  <p className="text-gray-600 text-sm">Get early access to new Homestead West phases and lots</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">Priority Access to New Homes</h3>
+                  <p className="text-gray-600 text-sm">Get early access to new construction phases and lots</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">4</div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-900">Expert Guidance for Homestead West</h3>
-                  <p className="text-gray-600 text-sm">Navigate the entire Homestead West process with VIP treatment</p>
+                  <h3 className="text-lg font-bold mb-2 text-gray-900">Expert Guidance for New Homes</h3>
+                  <p className="text-gray-600 text-sm">Navigate the entire new construction process with VIP treatment</p>
                 </div>
               </div>
             </div>

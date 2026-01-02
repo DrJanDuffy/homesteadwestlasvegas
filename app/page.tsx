@@ -406,7 +406,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold mb-4 text-gray-900">Available Homes at Homestead West</h2>
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">Available New Homes</h2>
                 <p className="text-xl text-gray-600">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
               </div>
 
@@ -493,10 +493,10 @@ export default function HomePage() {
                 <div className="max-w-6xl mx-auto">
                   <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                      Register Your Buyer for Homestead West - Fast-Track Process
+                      Register Your Buyer for New Homes - Fast-Track Process
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                      Dr. Jan Duffy's VIP partnership includes a streamlined registration process that gets your buyers priority treatment from day one.
+                      Dr. Jan Duffy's VIP Berkshire Hathaway HomeServices partnership includes a streamlined registration process that gets your buyers priority treatment from day one for new construction homes.
                     </p>
                   </div>
 
@@ -509,10 +509,10 @@ export default function HomePage() {
                           1
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          Initial Consultation for Homestead West
+                          Initial Consultation for New Homes
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Discuss needs, budget, and preferences for Homestead West homes
+                          Discuss needs, budget, and preferences for new construction homes
                         </p>
                       </div>
                       {/* Connector Arrow */}
@@ -530,10 +530,10 @@ export default function HomePage() {
                           2
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          VIP Registration for Homestead West
+                          VIP Registration for New Homes
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Register with VIP buyer program portal for Homestead West
+                          Register with VIP Berkshire Hathaway HomeServices buyer program portal
                         </p>
                       </div>
                       {/* Connector Arrow */}
@@ -551,10 +551,10 @@ export default function HomePage() {
                           3
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          Priority Access to Homestead West
+                          Priority Access to New Homes
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Get early access to new Homestead West phases and lots
+                          Get early access to new construction phases and lots
                         </p>
                       </div>
                       {/* Connector Arrow */}
@@ -572,10 +572,10 @@ export default function HomePage() {
                           4
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          Expert Guidance for Homestead West
+                          Expert Guidance for New Homes
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Navigate the entire Homestead West process with VIP treatment
+                          Navigate the entire new construction process with VIP treatment
                         </p>
                       </div>
                     </div>
