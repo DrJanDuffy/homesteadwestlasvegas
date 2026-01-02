@@ -122,6 +122,14 @@ export default function HomePage() {
                 >
                   📧 Email Dr. Jan
                 </a>
+                <a
+                  href="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west-in-las-vegas-nv/194163"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-all shadow-lg border-2 border-white transform hover:scale-105"
+                >
+                  🏠 View on ShowingNew
+                </a>
               </div>
             </div>
           </div>
