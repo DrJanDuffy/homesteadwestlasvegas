@@ -372,11 +372,10 @@ export default function HomePage() {
                     VIP Berkshire Hathaway HomeServices Buyer Program
                   </h2>
                   <p className="text-xl mb-8 text-blue-100">
-                    Exclusive Access to Las Vegas New Construction Homes
+                    Exclusive Access to Las Vegas New Construction Homes at Homestead West
                   </p>
                   <p className="text-lg mb-8 text-blue-200">
-                    Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation 
-                    backed by her elite builder relationships—giving YOU the ultimate advantage.
+                    This is a VIP Berkshire Hathaway HomeServices Buyer Program for <strong>Homestead West</strong>—exclusive access to Las Vegas new construction homes. Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation backed by her elite builder relationships—giving YOU the ultimate advantage.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
