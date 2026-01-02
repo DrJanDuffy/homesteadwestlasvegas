@@ -1,27 +1,28 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'VIP Century Communities Partnership | Dr. Jan Duffy | Las Vegas New Construction Expert',
-  description: 'Get VIP access to Century Communities homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, direct builder contact, and expert negotiation. 500+ Vegas families helped.',
+  title: 'VIP Berkshire Hathaway HomeServices Buyer Program | Dr. Jan Duffy | Las Vegas New Construction Expert',
+  description: 'Get VIP access to new construction homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, direct builder contact, and expert negotiation. 500+ Vegas families helped.',
   keywords: [
-    'Century Communities Las Vegas',
+    'luxury new construction Las Vegas',
     'new construction Henderson',
     'Cadence homes realtor',
     'North Las Vegas new builds',
     'VIP builder partnership',
-    'Dr. Jan Duffy Century Communities',
+    'Dr. Jan Duffy new construction',
     'Las Vegas new construction expert',
-    'Century Communities VIP access'
+    'VIP buyer program',
+    'new construction buyer access'
   ],
   openGraph: {
-    title: 'VIP Century Communities Partnership | Dr. Jan Duffy',
-    description: 'Get VIP access to Century Communities homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, and expert negotiation.',
+    title: 'VIP Berkshire Hathaway HomeServices Buyer Program | Dr. Jan Duffy',
+    description: 'Get VIP access to new construction homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, and expert negotiation.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/century-communities-vip',
+    url: 'https://homesteadwestlasvegas.com/vip-buyer-program',
   },
 };
 
-export default function CenturyCommunitiesVIPPage() {
+export default function VIPBuyerProgramPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
@@ -51,13 +52,14 @@ export default function CenturyCommunitiesVIPPage() {
       }
     ],
     knowsAbout: [
-      'Century Communities',
       'New Construction Homes',
       'VIP Builder Partnership',
       'Cadence Henderson',
-      'Homestead West Las Vegas'
+      'Homestead West Las Vegas',
+      'Luxury Ranch Homes',
+      'Northwest Las Vegas Real Estate'
     ],
-    jobTitle: 'VIP Century Communities Specialist',
+    jobTitle: 'VIP New Construction Specialist',
     worksFor: {
       '@type': 'Organization',
       name: 'Homestead West | Homes by Dr Jan Duffy'
@@ -91,14 +93,14 @@ export default function CenturyCommunitiesVIPPage() {
                 </div>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                VIP Access to Century Communities Homes in Las Vegas
+                VIP Berkshire Hathaway HomeServices Buyer Program
               </h1>
               <p className="text-2xl md:text-3xl mb-8 text-blue-100 font-semibold">
-                Exclusive Partnership Status with Nevada's Premier Homebuilder
+                Exclusive Access to Las Vegas New Construction Homes
               </p>
               <p className="text-xl text-blue-200 mb-12 max-w-4xl mx-auto">
                 Dr. Jan Duffy delivers insider access, priority lot selection, and expert negotiation 
-                backed by her elite Century Communities partnership—giving YOU the ultimate advantage.
+                backed by her elite builder relationships—giving YOU the ultimate advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
@@ -125,7 +127,7 @@ export default function CenturyCommunitiesVIPPage() {
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">What VIP Partnership Means for YOU</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Dr. Jan Duffy's elite Century Communities relationship delivers exclusive advantages 
+                  Dr. Jan Duffy's elite builder relationships deliver exclusive advantages 
                   that regular agents simply cannot provide.
                 </p>
               </div>
@@ -160,7 +162,7 @@ export default function CenturyCommunitiesVIPPage() {
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">Direct Builder Contact</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Faster answers, quicker problem-solving, and direct communication with 
-                    Century Communities management and sales teams.
+                    builder management and sales teams.
                   </p>
                 </div>
 
@@ -208,7 +210,7 @@ export default function CenturyCommunitiesVIPPage() {
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">Proven Track Record</h2>
                 <p className="text-xl text-gray-600">
-                  Dr. Jan Duffy's Century Communities expertise spans multiple Las Vegas communities
+                  Dr. Jan Duffy's new construction expertise spans multiple Las Vegas communities
                 </p>
               </div>
 
@@ -290,12 +292,12 @@ export default function CenturyCommunitiesVIPPage() {
           </div>
         </section>
 
-        {/* Century Communities Map */}
+        {/* New Construction Communities Map */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">Century Communities Las Vegas</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">New Construction Communities Las Vegas</h2>
                 <p className="text-xl text-gray-600">
                   Dr. Jan Duffy's VIP access spans multiple premier communities across the Las Vegas Valley
                 </p>
@@ -357,7 +359,7 @@ export default function CenturyCommunitiesVIPPage() {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
                   <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration</h3>
-                  <p className="text-gray-600 text-sm">Register with Century Communities VIP portal</p>
+                  <p className="text-gray-600 text-sm">Register with VIP buyer program portal</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">3</div>
@@ -379,15 +381,15 @@ export default function CenturyCommunitiesVIPPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Buying a Century Communities Home?
+                Buying a New Construction Home?
               </h2>
               <h3 className="text-2xl md:text-3xl font-bold mb-8 text-yellow-400">
                 Get VIP Treatment from Start to Close
               </h3>
               <p className="text-xl mb-12 text-blue-100 max-w-3xl mx-auto">
                 Don't settle for ordinary. Experience the difference of working with Dr. Jan Duffy's 
-                elite Century Communities partnership. Get insider access, priority treatment, 
-                and expert negotiation backed by premier relationships.
+                elite builder relationships. Get insider access, priority treatment, 
+                and expert negotiation backed by premier partnerships.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
@@ -406,7 +408,7 @@ export default function CenturyCommunitiesVIPPage() {
               </div>
 
               <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
-                <h4 className="text-2xl font-bold mb-4">Dr. Jan Duffy - VIP Century Communities Specialist</h4>
+                <h4 className="text-2xl font-bold mb-4">Dr. Jan Duffy - VIP New Construction Specialist</h4>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
                     <p className="mb-2"><span className="font-semibold">Phone:</span> (702) 222-1988</p>
@@ -414,14 +416,14 @@ export default function CenturyCommunitiesVIPPage() {
                     <p className="mb-2"><span className="font-semibold">License:</span> Nevada S.0197614</p>
                   </div>
                   <div>
-                    <p className="mb-2"><span className="font-semibold">Office:</span> Century Communities Sales Office</p>
+                    <p className="mb-2"><span className="font-semibold">Office:</span> Builder Sales Office</p>
                     <p className="mb-2"><span className="font-semibold">Address:</span> 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
                     <p className="mb-2"><span className="font-semibold">Specialty:</span> VIP Builder Partnerships</p>
                   </div>
                 </div>
                 <p className="mt-6 text-sm text-blue-200">
-                  Independent real estate agent providing VIP access to Century Communities homes. 
-                  Not affiliated with or endorsed by Century Communities.
+                  Independent real estate agent providing VIP access to new construction homes. 
+                  Not affiliated with or endorsed by the builder.
                 </p>
               </div>
             </div>

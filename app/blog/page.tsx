@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Blog | Las Vegas Real Estate News & Market Updates | Dr. Jan Duffy',
-  description: 'Stay informed with Las Vegas real estate market updates, new construction insights, and Century Communities news from VIP specialist Dr. Jan Duffy.',
+  description: 'Stay informed with Las Vegas real estate market updates, new construction insights, and builder news from VIP specialist Dr. Jan Duffy.',
   keywords: [
     'Las Vegas real estate blog',
     'Las Vegas market updates',
     'new construction Las Vegas',
-    'Century Communities news',
+    'new construction news',
     'Homestead West updates',
     'Dr. Jan Duffy blog',
     'Las Vegas real estate trends'
@@ -31,7 +31,7 @@ export default function BlogPage() {
     publisher: {
       '@type': 'Person',
       name: 'Dr. Jan Duffy',
-      jobTitle: 'VIP Century Communities Specialist'
+      jobTitle: 'VIP New Construction Specialist'
     },
     blogPost: [
       {
@@ -56,7 +56,7 @@ export default function BlogPage() {
       },
       {
         '@type': 'BlogPosting',
-        headline: 'Century Communities Builder Profile: America\'s Top 10 Homebuilder',
+        headline: 'New Construction Builder Profile: Premier Homebuilder',
         url: 'https://homesteadwestlasvegas.com/blog/century-communities-builder-profile',
         datePublished: '2024-11-01',
         author: {
@@ -88,8 +88,8 @@ export default function BlogPage() {
     },
     {
       id: 'century-communities-builder-profile',
-      title: 'Century Communities Builder Profile: America\'s Top 10 Homebuilder',
-      excerpt: 'Learn about Century Communities\' history, quality standards, and why they\'re a top choice for Las Vegas homebuyers.',
+      title: 'New Construction Builder Profile: Premier Homebuilder',
+      excerpt: 'Learn about the builder\'s history, quality standards, and why they\'re a top choice for Las Vegas homebuyers.',
       date: 'November 1, 2024',
       category: 'Builder Profile',
       readTime: '6 min read',
@@ -137,11 +137,11 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES INSIGHTS ⭐
+                ⭐ VIP NEW CONSTRUCTION INSIGHTS ⭐
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Real Estate Blog</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Las Vegas Market Updates</p>
-              <p className="text-xl text-blue-200">Expert Insights from VIP Century Communities Specialist</p>
+              <p className="text-xl text-blue-200">Expert Insights from VIP New Construction Specialist</p>
             </div>
           </div>
         </header>
@@ -153,7 +153,7 @@ export default function BlogPage() {
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP Market Intelligence</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP Century Communities partnership provides exclusive market insights, 
+                  Dr. Jan Duffy's VIP new construction partnership provides exclusive market insights, 
                   builder updates, and insider knowledge you won't find anywhere else.
                 </p>
               </div>
@@ -172,7 +172,7 @@ export default function BlogPage() {
                     <span className="text-3xl">🏗️</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Builder Insights</h3>
-                  <p className="text-gray-700">Exclusive Century Communities updates and announcements</p>
+                  <p className="text-gray-700">Exclusive new construction updates and announcements</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -257,7 +257,7 @@ export default function BlogPage() {
                     <span className="text-3xl">🏗️</span>
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Builder Profile</h3>
-                  <p className="text-gray-600 text-sm">Century Communities insights and updates</p>
+                  <p className="text-gray-600 text-sm">New construction insights and updates</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -278,7 +278,7 @@ export default function BlogPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Stay Updated with VIP Insights</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Get exclusive market updates and Century Communities news delivered to your inbox
+                Get exclusive market updates and new construction news delivered to your inbox
               </p>
               
               <div className="bg-white rounded-lg p-8 max-w-2xl mx-auto">
@@ -309,7 +309,7 @@ export default function BlogPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Work with a VIP Specialist?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP Century Communities partnership guide your real estate journey
+                Let Dr. Jan Duffy's VIP new construction partnership guide your real estate journey
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -328,7 +328,7 @@ export default function BlogPage() {
               </div>
               
               <div className="mt-8 text-blue-200">
-                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP Century Communities Specialist</p>
+                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>

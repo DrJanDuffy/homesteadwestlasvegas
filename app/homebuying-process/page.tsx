@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   keywords: [
     'homebuying process Las Vegas',
     'new home buying guide',
-    'Century Communities homebuying',
+    'new construction homebuying',
     'Homestead West homebuying',
     'Dr. Jan Duffy homebuying guide',
     'Las Vegas new home process',
@@ -112,11 +112,11 @@ export default function HomebuyingProcessPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Homebuying Journey</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's elite Century Communities partnership delivers exclusive access, 
+                Dr. Jan Duffy's elite new construction partnership delivers exclusive access, 
                 priority treatment, and expert guidance throughout your entire homebuying process.
               </p>
               <div className="bg-white rounded-lg p-6 shadow-lg">
@@ -316,7 +316,7 @@ export default function HomebuyingProcessPage() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <span>Coordinate with Century Communities</span>
+                      <span>Coordinate with the builder</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>
@@ -379,7 +379,7 @@ export default function HomebuyingProcessPage() {
                     love the peace of mind that comes with a new home warranty, providing coverage on major items and repairs.
                   </p>
                   <p className="text-lg text-gray-700 mb-6">
-                    At Homestead West, you'll be closing on a luxury ranch home built by Century Communities, one of America's 
+                    At Homestead West, you'll be closing on a luxury ranch home built by the builder. 
                     top 10 homebuilders. Dr. Jan Duffy will be there every step of the way to ensure a smooth closing process.
                   </p>
                 </div>
@@ -418,7 +418,7 @@ export default function HomebuyingProcessPage() {
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
                 <p className="mt-4 text-sm">
                   Independent real estate agent providing expert guidance to home buyers. 
-                  Not affiliated with or endorsed by Century Communities.
+                  Not affiliated with or endorsed by the builder.
                 </p>
               </div>
             </div>

@@ -24,3 +24,116 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ShowingNew Widget Styles */
+#widget-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#pro-search-box-widget #home-search-form {
+  font-family: 'Muli', sans-serif;
+  color: #fff;
+  background: #001D31;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#pro-search-box-widget #titleText {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+#pro-search-box-widget .homes-type-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+#pro-search-box-widget .homes-type-field--input {
+  margin-right: 5px;
+}
+
+#pro-search-box-widget .homes-type-field--label {
+  color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#pro-search-box-widget .homes-type-field--link {
+  color: #f58220;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+
+#pro-search-box-widget .homes-type-field--link:hover {
+  text-decoration: underline;
+}
+
+#pro-search-box-widget .homes-type-field--link--svg {
+  width: 16px;
+  height: 16px;
+}
+
+#pro-search-box-widget .search-field {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#pro-search-box-widget #SearchTextWidget {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccdbe4;
+  font-size: 16px;
+}
+
+#pro-search-box-widget #HomeSearchBtnWidget {
+  background-color: #f58220;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+#pro-search-box-widget #HomeSearchBtnWidget:hover {
+  background-color: #e6731a;
+}
+
+#pro-search-box-widget #home-search-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+#pro-search-box-widget #home-search-options select {
+  flex: 1;
+  min-width: 100px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccdbe4;
+  background: #fff;
+  color: #333;
+}
+
+/* Hide "Powered by" if desired */
+.powered-by {
+  display: none;
+}
+
+/* RealScout Widget Styles */
+realscout-office-listings {
+  --rs-listing-divider-color: #0e64c8;
+  width: 100%;
+}

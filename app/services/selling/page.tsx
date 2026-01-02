@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Home Selling Services | Dr. Jan Duffy | Las Vegas Real Estate Expert',
-  description: 'Expert home selling services in Las Vegas with Dr. Jan Duffy. VIP Century Communities partnership, market expertise, and professional guidance for maximum home value.',
+  description: 'Expert home selling services in Las Vegas with Dr. Jan Duffy. VIP new construction partnership, market expertise, and professional guidance for maximum home value.',
   keywords: [
     'home selling Las Vegas',
     'Dr. Jan Duffy selling services',
     'Las Vegas real estate agent',
     'sell home Las Vegas',
     'home valuation Las Vegas',
-    'Century Communities selling'
+    'new construction selling'
   ],
   openGraph: {
     title: 'Home Selling Services | Dr. Jan Duffy',
-    description: 'Expert home selling services in Las Vegas with VIP Century Communities partnership.',
+    description: 'Expert home selling services in Las Vegas with VIP new construction partnership.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/services/selling',
   },
@@ -38,11 +38,11 @@ export default function HomeSellingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-              ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+              ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
             </div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Selling Services</h2>
             <p className="text-xl text-gray-700 mb-8">
-              Dr. Jan Duffy's VIP Century Communities partnership delivers exclusive market access, 
+              Dr. Jan Duffy's VIP new construction partnership delivers exclusive market access, 
               premium buyer connections, and expert negotiation for maximum home value.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function HomeSellingPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">Buyer Network</h3>
                 <p className="text-gray-700">
-                  Access to VIP Century Communities buyer network and premium connections.
+                  Access to VIP new construction buyer network and premium connections.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export default function HomeSellingPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation</h3>
                 <p className="text-gray-700">
-                  Expert negotiation backed by premier Century Communities relationships.
+                  Expert negotiation backed by premier builder relationships.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ export default function HomeSellingPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Sell Your Home?</h2>
             <p className="text-xl mb-8 text-blue-100">
-              Contact Dr. Jan Duffy for expert selling services with VIP Century Communities partnership
+              Contact Dr. Jan Duffy for expert selling services with VIP new construction partnership
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

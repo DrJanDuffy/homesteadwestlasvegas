@@ -153,94 +153,25 @@ export default function PropertiesPage() {
           </div>
         </section>
 
-        {/* Featured Properties */}
-        <section className="py-16">
+        {/* RealScout Office Listings Carousel */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Featured Properties</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Property 1 */}
-              <div className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                <div className="h-64 bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg">Property Image</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Ranch Home - Northwest Las Vegas</h3>
-                  <p className="text-2xl font-bold text-blue-600 mb-2">$910,990</p>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <span className="mr-4">3 bed</span>
-                    <span className="mr-4">2 bath</span>
-                    <span>2,400 sq ft</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">
-                    Beautiful ranch-style home on pool-sized lot in Northwest Las Vegas. 
-                    Perfect for families looking for space and privacy.
-                  </p>
-                  <div className="flex gap-2">
-                    <button className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                      View Details
-                    </button>
-                    <button className="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors">
-                      Schedule Tour
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Property 2 */}
-              <div className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                <div className="h-64 bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg">Property Image</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Ranch Home - Premium Lot</h3>
-                  <p className="text-2xl font-bold text-blue-600 mb-2">$925,990</p>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <span className="mr-4">4 bed</span>
-                    <span className="mr-4">3 bath</span>
-                    <span>2,800 sq ft</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">
-                    Spacious ranch home with premium pool-sized lot. Features updated 
-                    kitchen and master suite with walk-in closet.
-                  </p>
-                  <div className="flex gap-2">
-                    <button className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                      View Details
-                    </button>
-                    <button className="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors">
-                      Schedule Tour
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Property 3 */}
-              <div className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                <div className="h-64 bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg">Property Image</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Ranch Home - Executive Lot</h3>
-                  <p className="text-2xl font-bold text-blue-600 mb-2">$940,990</p>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <span className="mr-4">4 bed</span>
-                    <span className="mr-4">3 bath</span>
-                    <span>3,200 sq ft</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">
-                    Executive ranch home with oversized pool lot. Luxury finishes throughout 
-                    and open-concept living areas.
-                  </p>
-                  <div className="flex gap-2">
-                    <button className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                      View Details
-                    </button>
-                    <button className="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors">
-                      Schedule Tour
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+              Available Homes in Las Vegas
+            </h2>
+            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
+            </p>
+            
+            <div className="max-w-7xl mx-auto">
+              <realscout-office-listings 
+                agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                sort-order="PRICE_HIGH" 
+                listing-status="For Sale" 
+                property-types=",SFR" 
+                price-min="400000" 
+                price-max="700000"
+              />
             </div>
           </div>
         </section>

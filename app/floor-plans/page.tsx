@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Floor Plans | Homestead West Las Vegas | Century Communities Ranch Homes',
-  description: 'Explore Homestead West floor plans: Plan 3336 (3,336 sq ft) and Plan 3704 (3,704 sq ft) luxury ranch homes by Century Communities. Download official floor plans and specifications.',
+  title: 'Floor Plans | Homestead West Las Vegas | Luxury Ranch Homes',
+  description: 'Explore Homestead West floor plans: Plan 3336 (3,336 sq ft) and Plan 3704 (3,704 sq ft) luxury ranch homes. Download official floor plans and specifications.',
   keywords: [
     'Homestead West floor plans',
-    'Century Communities floor plans',
+    'luxury new construction floor plans',
     'Las Vegas ranch home plans',
     'Plan 3336 Homestead West',
     'Plan 3704 Homestead West',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Floor Plans | Homestead West Las Vegas',
-    description: 'Explore Homestead West floor plans: Plan 3336 and Plan 3704 luxury ranch homes by Century Communities.',
+    description: 'Explore Homestead West floor plans: Plan 3336 and Plan 3704 luxury ranch homes.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/floor-plans',
   },
@@ -36,7 +36,7 @@ export default function FloorPlansPage() {
           description: '3,336 square foot single-story ranch home',
           brand: {
             '@type': 'Brand',
-            name: 'Century Communities'
+            name: 'the builder'
           },
           offers: {
             '@type': 'Offer',
@@ -77,7 +77,7 @@ export default function FloorPlansPage() {
           description: '3,704 square foot single-story ranch home',
           brand: {
             '@type': 'Brand',
-            name: 'Century Communities'
+            name: 'the builder'
           },
           offers: {
             '@type': 'Offer',
@@ -124,7 +124,7 @@ export default function FloorPlansPage() {
         <header className="bg-blue-900 text-white py-12">
           <div className="container mx-auto px-4">
             <h1 className="text-5xl font-bold mb-4">Floor Plans</h1>
-            <p className="text-xl text-blue-100">Luxury Ranch Homes by Century Communities</p>
+            <p className="text-xl text-blue-100">Luxury Ranch Homes</p>
             <p className="text-lg text-blue-200 mt-2">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
           </div>
         </header>
@@ -310,7 +310,7 @@ export default function FloorPlansPage() {
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-4xl">🏗️</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Century Communities Quality</h3>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Builder Quality</h3>
                   <p className="text-gray-600">
                     One of America's top 10 homebuilders with a reputation for quality construction and innovative design.
                   </p>
@@ -337,16 +337,16 @@ export default function FloorPlansPage() {
                 </div>
               </div>
 
-              {/* Dr. Jan Duffy - VIP Century Communities Specialist */}
+              {/* Dr. Jan Duffy - VIP New Construction Specialist */}
               <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 mb-12 border-2 border-yellow-400">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">👩‍💼</span>
                   </div>
                   <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
-                    ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                    ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan Duffy - VIP Century Communities Specialist</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan Duffy - VIP New Construction Specialist</h3>
                   <p className="text-lg text-gray-700 mb-6">
                     Elite builder relationship delivers exclusive access, priority lot selection, 
                     and expert negotiation backed by premier relationships.
@@ -361,9 +361,29 @@ export default function FloorPlansPage() {
                     <div className="text-left">
                       <h4 className="font-bold text-gray-900 mb-2">Office Location:</h4>
                       <p className="text-gray-700">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
-                      <p className="text-gray-700">Century Communities Sales Office</p>
+                      <p className="text-gray-700">Builder Sales Office</p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* RealScout Office Listings Carousel */}
+              <div className="mb-12">
+                <h3 className="text-3xl font-bold text-center mb-6 text-gray-900">
+                  Available Homes in Las Vegas
+                </h3>
+                <p className="text-lg text-center text-gray-600 mb-8">
+                  Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
+                </p>
+                <div className="max-w-7xl mx-auto">
+                  <realscout-office-listings 
+                    agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                    sort-order="PRICE_HIGH" 
+                    listing-status="For Sale" 
+                    property-types=",SFR" 
+                    price-min="400000" 
+                    price-max="700000"
+                  />
                 </div>
               </div>
 

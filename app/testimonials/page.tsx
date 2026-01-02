@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Client Testimonials & Reviews | Dr. Jan Duffy | VIP Century Communities Specialist',
-  description: 'Read real client testimonials and reviews from families who worked with Dr. Jan Duffy\'s VIP Century Communities partnership. 5-star reviews from Homestead West homeowners.',
+  title: 'Client Testimonials & Reviews | Dr. Jan Duffy | VIP New Construction Specialist',
+  description: 'Read real client testimonials and reviews from families who worked with Dr. Jan Duffy\'s VIP new construction partnership. 5-star reviews from Homestead West homeowners.',
   keywords: [
     'Dr. Jan Duffy testimonials',
-    'Century Communities reviews',
+    'new construction reviews',
     'Homestead West testimonials',
     'Las Vegas real estate reviews',
     'new construction testimonials',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Client Testimonials & Reviews | Dr. Jan Duffy',
-    description: 'Read real client testimonials from families who worked with Dr. Jan Duffy\'s VIP Century Communities partnership.',
+    description: 'Read real client testimonials from families who worked with Dr. Jan Duffy\'s VIP new construction partnership.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/testimonials',
   },
@@ -25,7 +25,7 @@ export default function TestimonialsPage() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Dr. Jan Duffy',
-    description: 'VIP Century Communities Specialist with excellent client reviews',
+    description: 'VIP New Construction Specialist with excellent client reviews',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',
@@ -45,7 +45,7 @@ export default function TestimonialsPage() {
           '@type': 'Person',
           name: 'Sarah & Mike Johnson'
         },
-        reviewBody: 'Dr. Jan Duffy\'s VIP partnership with Century Communities made all the difference. We got early access to the best lots and saved thousands through her expert negotiation.',
+        reviewBody: 'Dr. Jan Duffy\'s VIP partnership with the builder made all the difference. We got early access to the best lots and saved thousands through her expert negotiation.',
         datePublished: '2024-11-15'
       },
       {
@@ -59,7 +59,7 @@ export default function TestimonialsPage() {
           '@type': 'Person',
           name: 'David & Lisa Chen'
         },
-        reviewBody: 'Dr. Jan\'s knowledge of Century Communities\' process and her direct builder contacts saved us months of delays. Her VIP status gave us priority treatment throughout.',
+        reviewBody: 'Dr. Jan\'s knowledge of the builder\'s process and her direct builder contacts saved us months of delays. Her VIP status gave us priority treatment throughout.',
         datePublished: '2024-11-01'
       },
       {
@@ -73,7 +73,7 @@ export default function TestimonialsPage() {
           '@type': 'Person',
           name: 'Robert & Maria Garcia'
         },
-        reviewBody: 'Working with Dr. Jan Duffy was like having an insider at Century Communities. Her VIP partnership meant we got upgrades and incentives others couldn\'t access.',
+        reviewBody: 'Working with Dr. Jan Duffy was like having an insider at the builder. Her VIP partnership meant we got upgrades and incentives others couldn\'t access.',
         datePublished: '2024-10-20'
       }
     ]
@@ -86,7 +86,7 @@ export default function TestimonialsPage() {
       location: 'Homestead West Homeowners',
       rating: 5,
       date: 'November 15, 2024',
-      text: 'Dr. Jan Duffy\'s VIP partnership with Century Communities made all the difference. We got early access to the best lots and saved thousands through her expert negotiation. Her knowledge of the Homestead West community and Century Communities\' process was invaluable.',
+      text: 'Dr. Jan Duffy\'s VIP partnership with the builder made all the difference. We got early access to the best lots and saved thousands through her expert negotiation. Her knowledge of the Homestead West community and the builder\'s process was invaluable.',
       homeType: 'Plan 3704 - 3,704 sq ft',
       savings: '$15,000 in incentives'
     },
@@ -96,7 +96,7 @@ export default function TestimonialsPage() {
       location: 'Cadence Henderson Homeowners',
       rating: 5,
       date: 'November 1, 2024',
-      text: 'Dr. Jan\'s knowledge of Century Communities\' process and her direct builder contacts saved us months of delays. Her VIP status gave us priority treatment throughout the entire construction process. We couldn\'t have asked for better representation.',
+      text: 'Dr. Jan\'s knowledge of the builder\'s process and her direct builder contacts saved us months of delays. Her VIP status gave us priority treatment throughout the entire construction process. We couldn\'t have asked for better representation.',
       homeType: 'Cadence Community Home',
       savings: '3 months faster closing'
     },
@@ -106,7 +106,7 @@ export default function TestimonialsPage() {
       location: 'North Las Vegas Homeowners',
       rating: 5,
       date: 'October 20, 2024',
-      text: 'Working with Dr. Jan Duffy was like having an insider at Century Communities. Her VIP partnership meant we got upgrades and incentives others couldn\'t access. She truly represents her clients\' interests while leveraging her builder relationships.',
+      text: 'Working with Dr. Jan Duffy was like having an insider at the builder. Her VIP partnership meant we got upgrades and incentives others couldn\'t access. She truly represents her clients\' interests while leveraging her builder relationships.',
       homeType: 'North Las Vegas Development',
       savings: '$12,000 in upgrades'
     },
@@ -116,7 +116,7 @@ export default function TestimonialsPage() {
       location: 'Homestead West Homeowners',
       rating: 5,
       date: 'October 5, 2024',
-      text: 'Dr. Jan Duffy\'s expertise in new construction is unmatched. Her VIP Century Communities partnership gave us access to information and opportunities that regular buyers don\'t get. She guided us through every step with professionalism and care.',
+      text: 'Dr. Jan Duffy\'s expertise in new construction is unmatched. Her VIP new construction partnership gave us access to information and opportunities that regular buyers don\'t get. She guided us through every step with professionalism and care.',
       homeType: 'Plan 3336 - 3,336 sq ft',
       savings: 'Priority lot selection'
     },
@@ -126,7 +126,7 @@ export default function TestimonialsPage() {
       location: 'First-Time Homebuyers',
       rating: 5,
       date: 'September 20, 2024',
-      text: 'As first-time homebuyers, we were overwhelmed by the new construction process. Dr. Jan Duffy\'s VIP partnership with Century Communities made everything smooth and stress-free. Her expertise and builder relationships were game-changers.',
+      text: 'As first-time homebuyers, we were overwhelmed by the new construction process. Dr. Jan Duffy\'s VIP partnership with the builder made everything smooth and stress-free. Her expertise and builder relationships were game-changers.',
       homeType: 'Homestead West Ranch Home',
       savings: 'First-time buyer incentives'
     },
@@ -136,8 +136,8 @@ export default function TestimonialsPage() {
       location: 'Relocating from California',
       rating: 5,
       date: 'September 10, 2024',
-      text: 'Moving from California to Las Vegas was daunting, but Dr. Jan Duffy\'s VIP Century Communities partnership made our transition seamless. Her local market knowledge and builder relationships helped us find the perfect home quickly.',
-      homeType: 'Century Communities Home',
+      text: 'Moving from California to Las Vegas was daunting, but Dr. Jan Duffy\'s VIP new construction partnership made our transition seamless. Her local market knowledge and builder relationships helped us find the perfect home quickly.',
+      homeType: 'New Construction Home',
       savings: 'Relocation incentives'
     },
     {
@@ -146,7 +146,7 @@ export default function TestimonialsPage() {
       location: 'Homestead West Homeowners',
       rating: 5,
       date: 'August 25, 2024',
-      text: 'Dr. Jan Duffy\'s VIP status with Century Communities gave us advantages we never expected. Early access to new phases, better pricing, and priority service throughout construction. She\'s truly a VIP specialist.',
+      text: 'Dr. Jan Duffy\'s VIP status with the builder gave us advantages we never expected. Early access to new phases, better pricing, and priority service throughout construction. She\'s truly a VIP specialist.',
       homeType: 'Plan 3704 with Casita',
       savings: '$18,000 total savings'
     },
@@ -156,8 +156,8 @@ export default function TestimonialsPage() {
       location: 'Investment Property Buyers',
       rating: 5,
       date: 'August 15, 2024',
-      text: 'We purchased multiple Century Communities properties as investments. Dr. Jan Duffy\'s VIP partnership provided us with insider market information and builder incentives that maximized our returns. Highly recommend her services.',
-      homeType: 'Multiple Century Communities',
+      text: 'We purchased multiple new construction properties as investments. Dr. Jan Duffy\'s VIP partnership provided us with insider market information and builder incentives that maximized our returns. Highly recommend her services.',
+      homeType: 'Multiple New Construction',
       savings: 'Investment incentives'
     }
   ];
@@ -175,11 +175,11 @@ export default function TestimonialsPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES TESTIMONIALS ⭐
+                ⭐ VIP NEW CONSTRUCTION TESTIMONIALS ⭐
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Client Testimonials</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Real Success Stories</p>
-              <p className="text-xl text-blue-200">From VIP Century Communities Partnership</p>
+              <p className="text-xl text-blue-200">From VIP New Construction Partnership</p>
             </div>
           </div>
         </header>
@@ -198,7 +198,7 @@ export default function TestimonialsPage() {
                 </div>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
                   Based on 47+ verified reviews from families who experienced Dr. Jan Duffy's 
-                  VIP Century Communities partnership advantages.
+                  VIP new construction partnership advantages.
                 </p>
               </div>
 
@@ -331,7 +331,7 @@ export default function TestimonialsPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Experience VIP Service?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Join hundreds of satisfied families who chose Dr. Jan Duffy's VIP Century Communities partnership
+                Join hundreds of satisfied families who chose Dr. Jan Duffy's VIP new construction partnership
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -350,7 +350,7 @@ export default function TestimonialsPage() {
               </div>
               
               <div className="mt-8 text-blue-200">
-                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP Century Communities Specialist</p>
+                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>

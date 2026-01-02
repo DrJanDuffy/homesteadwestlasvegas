@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // VIP Partnership - High Priority (Key Differentiator)
     {
-      url: `${baseUrl}/century-communities-vip`,
+      url: `${baseUrl}/vip-buyer-program`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.95,

@@ -1,20 +1,20 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Dr. Jan Duffy | VIP Century Communities Specialist | Las Vegas Real Estate Expert',
-  description: 'Meet Dr. Jan Duffy, VIP Century Communities specialist and Las Vegas real estate expert. 500+ families helped, Nevada License S.0197614, elite builder partnerships.',
+  title: 'About Dr. Jan Duffy | VIP New Construction Specialist | Las Vegas Real Estate Expert',
+  description: 'Meet Dr. Jan Duffy, VIP new construction specialist and Las Vegas real estate expert. 500+ families helped, Nevada License S.0197614, elite builder partnerships.',
   keywords: [
     'Dr. Jan Duffy Las Vegas',
     'Las Vegas real estate agent',
-    'Century Communities specialist',
+    'new construction specialist',
     'VIP builder partnership',
     'Nevada real estate license',
     'Las Vegas new construction expert',
     'Homestead West realtor'
   ],
   openGraph: {
-    title: 'About Dr. Jan Duffy | VIP Century Communities Specialist',
-    description: 'Meet Dr. Jan Duffy, VIP Century Communities specialist and Las Vegas real estate expert with 500+ families helped.',
+    title: 'About Dr. Jan Duffy | VIP New Construction Specialist',
+    description: 'Meet Dr. Jan Duffy, VIP new construction specialist and Las Vegas real estate expert with 500+ families helped.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/about',
   },
@@ -25,8 +25,8 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Dr. Jan Duffy',
-    jobTitle: 'VIP Century Communities Specialist',
-    description: 'Las Vegas real estate expert with elite Century Communities partnership',
+    jobTitle: 'VIP New Construction Specialist',
+    description: 'Las Vegas real estate expert with elite new construction partnership',
     telephone: '+17022221988',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
@@ -52,7 +52,7 @@ export default function AboutPage() {
       }
     },
     knowsAbout: [
-      'Century Communities',
+      'New Construction Homes',
       'New Construction Homes',
       'VIP Builder Partnerships',
       'Las Vegas Real Estate',
@@ -88,10 +88,10 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES SPECIALIST ⭐
+                ⭐ VIP NEW CONSTRUCTION SPECIALIST ⭐
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Jan Duffy</h1>
-              <p className="text-2xl md:text-3xl mb-4 text-blue-100">VIP Century Communities Specialist</p>
+              <p className="text-2xl md:text-3xl mb-4 text-blue-100">VIP New Construction Specialist</p>
               <p className="text-xl text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Builder Partnership</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy maintains an exclusive VIP partnership with Century Communities, 
+                  Dr. Jan Duffy maintains an exclusive VIP partnership with the builder, 
                   one of America's top 10 homebuilders, delivering unparalleled access and 
                   negotiation power for her clients.
                 </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                     <span className="text-3xl">🏆</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">VIP Status</h3>
-                  <p className="text-gray-700">Elite Century Communities partnership with exclusive access</p>
+                  <p className="text-gray-700">Elite new construction partnership with exclusive access</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -124,7 +124,7 @@ export default function AboutPage() {
                     <span className="text-3xl">📞</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Direct Access</h3>
-                  <p className="text-gray-700">Direct communication with Century Communities management</p>
+                  <p className="text-gray-700">Direct communication with builder management</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -149,14 +149,14 @@ export default function AboutPage() {
                   <div className="space-y-6 text-lg text-gray-700">
                     <p>
                       Dr. Jan Duffy is a distinguished real estate professional specializing in 
-                      new construction homes and Century Communities developments throughout 
-                      the Las Vegas Valley. With her VIP Century Communities partnership, 
+                      new construction homes and developments throughout 
+                      the Las Vegas Valley. With her VIP new construction partnership, 
                       she delivers exclusive access and expert guidance to homebuyers.
                     </p>
                     <p>
                       Her expertise spans multiple premier communities including Homestead West 
                       in Northwest Las Vegas, Cadence in Henderson, and various North Las Vegas 
-                      developments. Dr. Jan's deep understanding of Century Communities' 
+                      developments. Dr. Jan's deep understanding of the builder's 
                       processes, floor plans, and pricing gives her clients a significant advantage.
                     </p>
                     <p>
@@ -180,7 +180,7 @@ export default function AboutPage() {
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>
                       <div>
-                        <p className="font-semibold text-gray-900">VIP Century Communities Partnership</p>
+                        <p className="font-semibold text-gray-900">VIP New Construction Partnership</p>
                         <p className="text-gray-600">Elite builder relationship status</p>
                       </div>
                     </div>
@@ -194,7 +194,7 @@ export default function AboutPage() {
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>
                       <div>
-                        <p className="font-semibold text-gray-900">Office at Century Communities</p>
+                        <p className="font-semibold text-gray-900">Office at Builder</p>
                         <p className="text-gray-600">Professional on-site presence</p>
                       </div>
                     </div>
@@ -244,7 +244,7 @@ export default function AboutPage() {
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <span className="text-yellow-400 mr-3 text-xl">⭐</span>
-                        <span>VIP Century Communities partnership</span>
+                        <span>VIP new construction partnership</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-yellow-400 mr-3 text-xl">⭐</span>
@@ -252,7 +252,7 @@ export default function AboutPage() {
                       </li>
                       <li className="flex items-start">
                         <span className="text-yellow-400 mr-3 text-xl">⭐</span>
-                        <span>Office at Century Communities sales office</span>
+                        <span>Office at builder sales office</span>
                       </li>
                     </ul>
                   </div>
@@ -292,7 +292,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4 italic">
-                    "Dr. Jan Duffy's VIP partnership with Century Communities made all the difference. 
+                    "Dr. Jan Duffy's VIP partnership with the builder made all the difference. 
                     We got early access to the best lots and saved thousands through her expert negotiation."
                   </p>
                   <p className="font-semibold text-gray-900">- Sarah & Mike Johnson</p>
@@ -306,7 +306,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4 italic">
-                    "Dr. Jan's knowledge of Century Communities' process and her direct builder contacts 
+                    "Dr. Jan's knowledge of the builder's process and her direct builder contacts 
                     saved us months of delays. Her VIP status gave us priority treatment throughout."
                   </p>
                   <p className="font-semibold text-gray-900">- David & Lisa Chen</p>
@@ -320,7 +320,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4 italic">
-                    "Working with Dr. Jan Duffy was like having an insider at Century Communities. 
+                    "Working with Dr. Jan Duffy was like having an insider at the builder. 
                     Her VIP partnership meant we got upgrades and incentives others couldn't access."
                   </p>
                   <p className="font-semibold text-gray-900">- Robert & Maria Garcia</p>
@@ -331,13 +331,36 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* RealScout Office Listings Carousel */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+              Available Homes in Las Vegas
+            </h2>
+            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
+            </p>
+            
+            <div className="max-w-7xl mx-auto">
+              <realscout-office-listings 
+                agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                sort-order="PRICE_HIGH" 
+                listing-status="For Sale" 
+                property-types=",SFR" 
+                price-min="400000" 
+                price-max="700000"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Contact CTA */}
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Work with a VIP Specialist?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Experience the difference of working with Dr. Jan Duffy's elite Century Communities partnership
+                Experience the difference of working with Dr. Jan Duffy's elite new construction partnership
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -356,12 +379,12 @@ export default function AboutPage() {
               </div>
               
               <div className="mt-8 text-blue-200">
-                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP Century Communities Specialist</p>
+                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
                 <p className="mt-4 text-sm">
-                  Independent real estate agent providing VIP access to Century Communities homes. 
-                  Not affiliated with or endorsed by Century Communities.
+                  Independent real estate agent providing VIP access to new construction homes. 
+                  Not affiliated with or endorsed by the builder.
                 </p>
               </div>
             </div>

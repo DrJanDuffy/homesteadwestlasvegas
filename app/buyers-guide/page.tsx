@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy | Las Vegas Real Estate Expert",
-  description: "Complete buyer's guide to new construction homes in Las Vegas. Step-by-step process with Dr. Jan Duffy's VIP Century Communities partnership. Expert guidance for first-time buyers.",
+  description: "Complete buyer's guide to new construction homes in Las Vegas. Step-by-step process with Dr. Jan Duffy's VIP new construction partnership. Expert guidance for first-time buyers.",
   keywords: [
     'new construction buyer guide',
     'Las Vegas new home process',
-    'Century Communities buyer guide',
+    'new construction buyer guide',
     'first time home buyer Las Vegas',
     'new construction process',
     'Dr. Jan Duffy buyer guide',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy",
-    description: "Complete buyer's guide to new construction homes in Las Vegas with VIP Century Communities partnership.",
+    description: "Complete buyer's guide to new construction homes in Las Vegas with VIP new construction partnership.",
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/buyers-guide',
   },
@@ -70,7 +70,7 @@ export default function BuyersGuidePage() {
       {
         '@type': 'HowToStep',
         name: 'Choose Your Community',
-        text: 'Select the perfect Century Communities development for your lifestyle and needs.',
+        text: 'Select the perfect new construction development for your lifestyle and needs.',
         url: 'https://homesteadwestlasvegas.com/buyers-guide#community'
       },
       {
@@ -94,7 +94,7 @@ export default function BuyersGuidePage() {
       {
         '@type': 'HowToStep',
         name: 'Design Center Selection',
-        text: 'Choose finishes, colors, and upgrades at the Century Communities Design Center.',
+        text: 'Choose finishes, colors, and upgrades at the builder Design Center.',
         url: 'https://homesteadwestlasvegas.com/buyers-guide#design'
       },
       {
@@ -112,7 +112,7 @@ export default function BuyersGuidePage() {
       {
         '@type': 'HowToStep',
         name: 'Closing',
-        text: 'Sign final documents and receive keys to your new Century Communities home.',
+        text: 'Sign final documents and receive keys to your new construction home.',
         url: 'https://homesteadwestlasvegas.com/buyers-guide#closing'
       }
     ]
@@ -131,11 +131,11 @@ export default function BuyersGuidePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES BUYER'S GUIDE ⭐
+                ⭐ VIP NEW CONSTRUCTION BUYER'S GUIDE ⭐
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Complete Buyer's Guide</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">New Construction Process</p>
-              <p className="text-xl text-blue-200">Expert Guidance with VIP Century Communities Partnership</p>
+              <p className="text-xl text-blue-200">Expert Guidance with VIP New Construction Partnership</p>
             </div>
           </div>
         </header>
@@ -147,7 +147,7 @@ export default function BuyersGuidePage() {
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP Buyer Advantages</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP Century Communities partnership delivers exclusive advantages 
+                  Dr. Jan Duffy's VIP new construction partnership delivers exclusive advantages 
                   throughout your entire new construction home buying journey.
                 </p>
               </div>
@@ -196,13 +196,13 @@ export default function BuyersGuidePage() {
                   </div>
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
-                      Before you start shopping, get pre-approved for a mortgage. This shows Century Communities 
+                      Before you start shopping, get pre-approved for a mortgage. This shows the builder 
                       you're a serious buyer and helps you understand your budget. Dr. Jan Duffy can connect you 
                       with trusted lenders who understand new construction financing.
                     </p>
                     <div className="bg-blue-100 rounded-lg p-4">
                       <h4 className="font-bold text-gray-900 mb-2">VIP Advantage:</h4>
-                      <p className="text-gray-700">Access to Century Communities preferred lenders with special rates and programs.</p>
+                      <p className="text-gray-700">Access to builder preferred lenders with special rates and programs.</p>
                     </div>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function BuyersGuidePage() {
                   </div>
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
-                      Select from Century Communities' premier developments. Dr. Jan Duffy's VIP access includes 
+                      Select from premier new construction developments. Dr. Jan Duffy's VIP access includes 
                       Homestead West (luxury ranch homes), Cadence Henderson (master-planned community), 
                       and North Las Vegas developments.
                     </p>
@@ -234,7 +234,7 @@ export default function BuyersGuidePage() {
                   </div>
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
-                      Choose from Century Communities' floor plans. At Homestead West, select between 
+                      Choose from the builder's floor plans. At Homestead West, select between 
                       Plan 3336 (3,336 sq ft) or Plan 3704 (3,704 sq ft). Consider your family's needs, 
                       lifestyle, and future plans.
                     </p>
@@ -254,7 +254,7 @@ export default function BuyersGuidePage() {
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
                       Select your homesite from available lots. Consider lot size, orientation, views, 
-                      and proximity to amenities. Century Communities offers pool-sized lots perfect for 
+                      and proximity to amenities. The builder offers pool-sized lots perfect for 
                       outdoor living and detached casitas.
                     </p>
                     <div className="bg-blue-100 rounded-lg p-4">
@@ -277,7 +277,7 @@ export default function BuyersGuidePage() {
                     </p>
                     <div className="bg-blue-100 rounded-lg p-4">
                       <h4 className="font-bold text-gray-900 mb-2">VIP Advantage:</h4>
-                      <p className="text-gray-700">Expert contract review and negotiation backed by premier Century Communities relationships.</p>
+                      <p className="text-gray-700">Expert contract review and negotiation backed by premier builder relationships.</p>
                     </div>
                   </div>
                 </div>
@@ -290,7 +290,7 @@ export default function BuyersGuidePage() {
                   </div>
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
-                      Visit the Century Communities Design Center to select finishes, colors, and upgrades. 
+                      Visit the builder Design Center to select finishes, colors, and upgrades. 
                       Choose flooring, countertops, cabinets, lighting, and other design elements to personalize your home.
                     </p>
                     <div className="bg-blue-100 rounded-lg p-4">
@@ -308,7 +308,7 @@ export default function BuyersGuidePage() {
                   </div>
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
-                      Monitor construction progress with regular updates from Century Communities. 
+                      Monitor construction progress with regular updates from the builder. 
                       Dr. Jan Duffy will coordinate walk-throughs at key construction milestones 
                       to ensure everything meets your expectations.
                     </p>
@@ -328,7 +328,7 @@ export default function BuyersGuidePage() {
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
                       Complete final walkthrough to inspect your new home and create a punch list of any items 
-                      that need attention. Century Communities will address these items before closing.
+                      that need attention. The builder will address these items before closing.
                     </p>
                     <div className="bg-blue-100 rounded-lg p-4">
                       <h4 className="font-bold text-gray-900 mb-2">VIP Advantage:</h4>
@@ -345,7 +345,7 @@ export default function BuyersGuidePage() {
                   </div>
                   <div className="ml-18">
                     <p className="text-lg text-gray-700 mb-4">
-                      Sign final documents and receive keys to your new Century Communities home! 
+                      Sign final documents and receive keys to your new construction home! 
                       Dr. Jan Duffy will be there to ensure a smooth closing process and celebrate 
                       your new home purchase.
                     </p>
@@ -404,7 +404,7 @@ export default function BuyersGuidePage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Start Your New Construction Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP Century Communities partnership guide you through every step
+                Let Dr. Jan Duffy's VIP new construction partnership guide you through every step
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -423,7 +423,7 @@ export default function BuyersGuidePage() {
               </div>
               
               <div className="mt-8 text-blue-200">
-                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP Century Communities Specialist</p>
+                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>

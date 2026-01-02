@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Las Vegas healthcare facilities',
     'Las Vegas parks and recreation',
     '89149 zip code',
-    'Century Communities Las Vegas'
+    'luxury new construction Las Vegas'
   ],
   openGraph: {
     title: 'Community & Neighborhood | Homestead West Las Vegas',
@@ -25,7 +25,7 @@ export default function CommunityPage() {
     '@context': 'https://schema.org',
     '@type': 'Place',
     name: 'Homestead West Community',
-    description: 'Luxury ranch home community in Northwest Las Vegas by Century Communities',
+    description: 'Luxury ranch home community in Northwest Las Vegas',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '5592 N Dapple Gray Rd',
@@ -76,7 +76,7 @@ export default function CommunityPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES COMMUNITY ⭐
+                ⭐ VIP NEW CONSTRUCTION COMMUNITY ⭐
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Community & Neighborhood</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Homestead West Las Vegas</p>
@@ -92,7 +92,7 @@ export default function CommunityPage() {
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Community Access</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP Century Communities partnership provides insider knowledge 
+                  Dr. Jan Duffy's VIP new construction partnership provides insider knowledge 
                   of Homestead West community amenities, local services, and neighborhood advantages.
                 </p>
               </div>
@@ -394,13 +394,36 @@ export default function CommunityPage() {
           </div>
         </section>
 
+        {/* RealScout Office Listings Carousel */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+              Available Homes in Las Vegas
+            </h2>
+            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
+            </p>
+            
+            <div className="max-w-7xl mx-auto">
+              <realscout-office-listings 
+                agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                sort-order="PRICE_HIGH" 
+                listing-status="For Sale" 
+                property-types=",SFR" 
+                price-min="400000" 
+                price-max="700000"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Contact CTA */}
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Call Homestead West Home?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP Century Communities partnership guide you to the perfect community
+                Let Dr. Jan Duffy's VIP new construction partnership guide you to the perfect community
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -419,7 +442,7 @@ export default function CommunityPage() {
               </div>
               
               <div className="mt-8 text-blue-200">
-                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP Century Communities Specialist</p>
+                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>

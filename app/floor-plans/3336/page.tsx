@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Plan 3336 Floor Plan | Homestead West Las Vegas | Dr. Jan Duffy',
-  description: 'Explore Plan 3336 at Homestead West Las Vegas. Luxury ranch home with premium features. Dr. Jan Duffy VIP Century Communities partnership.',
+  description: 'Explore Plan 3336 at Homestead West Las Vegas. Luxury ranch home with premium features. Dr. Jan Duffy VIP new construction partnership.',
   keywords: [
     'Plan 3336 Homestead West',
-    'Century Communities floor plan',
+    'luxury new construction floor plan',
     'Las Vegas new construction',
     'Dr. Jan Duffy VIP partnership',
     'Homestead West floor plans',
@@ -27,7 +27,7 @@ export default function Plan3336Page() {
     description: 'Luxury ranch home floor plan at Homestead West Las Vegas',
     brand: {
       '@type': 'Brand',
-      name: 'Century Communities'
+      name: 'the builder'
     },
     category: 'Real Estate',
     offers: {
@@ -85,11 +85,11 @@ export default function Plan3336Page() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Exclusive Access to Plan 3336</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's VIP Century Communities partnership provides exclusive access to Plan 3336 
+                Dr. Jan Duffy's VIP new construction partnership provides exclusive access to Plan 3336 
                 with insider pricing, priority lot selection, and personalized service.
               </p>
             </div>
@@ -227,7 +227,7 @@ export default function Plan3336Page() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Interested in Plan 3336?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Contact Dr. Jan Duffy for exclusive access to Plan 3336 with VIP Century Communities partnership
+                Contact Dr. Jan Duffy for exclusive access to Plan 3336 with VIP new construction partnership
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

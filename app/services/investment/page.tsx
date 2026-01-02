@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Investment Consulting | Dr. Jan Duffy | Las Vegas Real Estate Investment Expert',
-  description: 'Expert real estate investment consulting in Las Vegas with Dr. Jan Duffy. VIP Century Communities partnership, market analysis, and investment strategy guidance.',
+  description: 'Expert real estate investment consulting in Las Vegas with Dr. Jan Duffy. VIP new construction partnership, market analysis, and investment strategy guidance.',
   keywords: [
     'real estate investment Las Vegas',
     'Dr. Jan Duffy investment consulting',
     'Las Vegas investment properties',
     'real estate investment strategy',
-    'Century Communities investment',
+    'new construction investment',
     'Las Vegas rental properties'
   ],
   openGraph: {
     title: 'Investment Consulting | Dr. Jan Duffy',
-    description: 'Expert real estate investment consulting in Las Vegas with VIP Century Communities partnership.',
+    description: 'Expert real estate investment consulting in Las Vegas with VIP new construction partnership.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/services/investment',
   },
@@ -38,11 +38,11 @@ export default function InvestmentConsultingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-              ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+              ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
             </div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Investment Access</h2>
             <p className="text-xl text-gray-700 mb-8">
-              Dr. Jan Duffy's VIP Century Communities partnership delivers exclusive investment opportunities, 
+              Dr. Jan Duffy's VIP new construction partnership delivers exclusive investment opportunities, 
               early access to new developments, and expert market analysis for maximum returns.
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function InvestmentConsultingPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">New Construction</h3>
                 <p className="text-gray-700">
-                  Early access to Century Communities new construction investment opportunities.
+                  Early access to new construction investment opportunities.
                 </p>
               </div>
 
@@ -164,7 +164,7 @@ export default function InvestmentConsultingPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Invest in Las Vegas?</h2>
             <p className="text-xl mb-8 text-blue-100">
-              Contact Dr. Jan Duffy for expert investment consulting with VIP Century Communities partnership
+              Contact Dr. Jan Duffy for expert investment consulting with VIP new construction partnership
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

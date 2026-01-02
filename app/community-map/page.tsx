@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Community Map | Homestead West Las Vegas | Available Lots & Homesites',
-  description: 'Explore Homestead West community map with available lots and homesites. Interactive map showing pool-sized lots, floor plan locations, and community layout by Century Communities.',
+  description: 'Explore Homestead West community map with available lots and homesites. Interactive map showing pool-sized lots, floor plan locations, and community layout.',
   keywords: [
     'Homestead West community map',
     'Las Vegas homesites map',
-    'Century Communities lots',
+    'new construction lots',
     'Homestead West available lots',
     'Las Vegas new home lots',
     'pool-sized lots Las Vegas'
   ],
   openGraph: {
     title: 'Community Map | Homestead West Las Vegas',
-    description: 'Explore Homestead West community map with available lots and homesites by Century Communities.',
+    description: 'Explore Homestead West community map with available lots and homesites.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/community-map',
   },
@@ -28,7 +28,7 @@ export default function CommunityMapPage() {
     url: 'https://homesteadwestlasvegas.com/community-map',
     provider: {
       '@type': 'Organization',
-      name: 'Century Communities'
+      name: 'the builder'
     },
     about: {
       '@type': 'RealEstateListing',
@@ -74,7 +74,7 @@ export default function CommunityMapPage() {
                 </p>
               </div>
 
-              {/* Century Communities Interactive Map */}
+              {/* New Construction Interactive Map */}
               <div className="bg-gray-100 rounded-lg p-4 mb-8">
                 <div className="aspect-video rounded-lg overflow-hidden">
                   <iframe
@@ -185,11 +185,11 @@ export default function CommunityMapPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Access to Perfect Lot Selection</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's elite Century Communities partnership delivers priority lot access, 
+                Dr. Jan Duffy's elite new construction partnership delivers priority lot access, 
                 expert guidance, and exclusive builder relationships
               </p>
               
@@ -199,7 +199,7 @@ export default function CommunityMapPage() {
                   <div className="space-y-3">
                     <p><span className="font-semibold">Phone:</span> (702) 222-1988</p>
                     <p><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
-                    <p><span className="font-semibold">Office:</span> Century Communities Sales Office</p>
+                    <p><span className="font-semibold">Office:</span> Builder Sales Office</p>
                     <p><span className="font-semibold">License:</span> Nevada S.0197614</p>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export default function CommunityMapPage() {
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan?</h3>
                   <ul className="space-y-2 text-gray-700 text-left">
                     <li>• Independent agent representing YOUR interests</li>
-                    <li>• Office at Century Communities sales office</li>
+                    <li>• Office at builder sales office</li>
                     <li>• Direct access to lot availability and pricing</li>
                     <li>• Market expertise and negotiation power</li>
                   </ul>

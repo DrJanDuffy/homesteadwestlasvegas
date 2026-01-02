@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Plan 3704 | Homestead West Las Vegas | 3,704 Sq Ft Ranch Home',
-  description: 'Plan 3704: 3,704 square foot luxury ranch home by Century Communities. 4 bedrooms, 4.5 bathrooms, formal dining room. Starting at $940,990. Download official floor plan PDF.',
+  description: 'Plan 3704: 3,704 square foot luxury ranch home. 4 bedrooms, 4.5 bathrooms, formal dining room. Starting at $940,990. Download official floor plan PDF.',
   keywords: [
     'Plan 3704 Homestead West',
     '3704 floor plan Las Vegas',
-    'Century Communities Plan 3704',
+    'luxury new construction Plan 3704',
     '3,704 sq ft ranch home',
     'Las Vegas luxury home plan',
     'single story home 3704'
   ],
   openGraph: {
     title: 'Plan 3704 | Homestead West Las Vegas',
-    description: 'Plan 3704: 3,704 square foot luxury ranch home by Century Communities. Starting at $940,990.',
+    description: 'Plan 3704: 3,704 square foot luxury ranch home. Starting at $940,990.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/floor-plans/3704',
   },
@@ -24,14 +24,14 @@ export default function Plan3704Page() {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: 'Plan 3704 - Homestead West',
-    description: '3,704 square foot single-story ranch home by Century Communities',
+    description: '3,704 square foot single-story ranch home',
     brand: {
       '@type': 'Brand',
-      name: 'Century Communities'
+      name: 'the builder'
     },
     manufacturer: {
       '@type': 'Organization',
-      name: 'Century Communities'
+      name: 'the builder'
     },
     offers: {
       '@type': 'Offer',
@@ -192,7 +192,7 @@ export default function Plan3704Page() {
                       <div className="text-center">
                         <p className="text-6xl mb-4">📄</p>
                         <p className="text-xl font-semibold text-gray-700 mb-2">Official Floor Plan PDF</p>
-                        <p className="text-gray-500 mb-4">Download the detailed floor plan from Century Communities</p>
+                        <p className="text-gray-500 mb-4">Download the detailed floor plan from the builder</p>
                         <a
                           href="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/homestead-ranch/3704/3704-print-1.pdf"
                           target="_blank"
@@ -259,15 +259,15 @@ export default function Plan3704Page() {
           </div>
         </section>
 
-        {/* Dr. Jan Duffy - VIP Century Communities Specialist */}
+        {/* Dr. Jan Duffy - VIP New Construction Specialist */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
                 <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
-                  ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                  ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Dr. Jan Duffy - VIP Century Communities Specialist</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Dr. Jan Duffy - VIP New Construction Specialist</h2>
                 <p className="text-lg text-gray-700 mt-4">
                   Elite builder relationship delivers exclusive access, priority lot selection, and expert negotiation
                 </p>
@@ -279,7 +279,7 @@ export default function Plan3704Page() {
                   <div className="space-y-3">
                     <p><span className="font-semibold">Phone:</span> (702) 222-1988</p>
                     <p><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
-                    <p><span className="font-semibold">Office:</span> Century Communities Sales Office</p>
+                    <p><span className="font-semibold">Office:</span> Builder Sales Office</p>
                     <p><span className="font-semibold">Address:</span> 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
                     <p><span className="font-semibold">License:</span> Nevada S.0197614</p>
                   </div>
@@ -289,7 +289,7 @@ export default function Plan3704Page() {
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Why Work With Dr. Jan Duffy?</h3>
                   <ul className="space-y-2 text-gray-700">
                     <li>• Independent real estate expert representing YOUR interests</li>
-                    <li>• Office located at Century Communities sales office</li>
+                    <li>• Office located at builder sales office</li>
                     <li>• Direct access to builder information and resources</li>
                     <li>• Market expertise and negotiation power</li>
                     <li>• Las Vegas real estate specialist</li>
@@ -330,7 +330,7 @@ export default function Plan3704Page() {
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
                 <p className="mt-4 text-sm">
                   Independent real estate agent providing expert guidance to home buyers. 
-                  Not affiliated with or endorsed by Century Communities.
+                  Not affiliated with or endorsed by the builder.
                 </p>
               </div>
             </div>

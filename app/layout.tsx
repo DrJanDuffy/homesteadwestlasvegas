@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     template: "%s | Homestead West Las Vegas"
   },
   
-  description: "Homestead West by Century Communities: 3,336-3,704 sq ft luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy. Starting at $910,990. Call (702) 222-1988.",
+  description: "Homestead West: 3,336-3,704 sq ft luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy. Starting at $910,990. Call (702) 222-1988.",
   
       keywords: [
         "Homestead West",
         "Homestead West Las Vegas",
-        "Century Communities Las Vegas",
+        "luxury new construction Las Vegas",
         "Northwest Las Vegas homes",
         "Las Vegas ranch homes",
         "new homes Las Vegas",
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
         "Dr. Jan Duffy",
         "Las Vegas real estate",
         "89149 zip code homes",
-        "VIP Century Communities partnership",
+        "VIP new construction partnership",
         "new construction Las Vegas",
         "Las Vegas homebuyer guide",
-        "Century Communities VIP agent",
+        "VIP buyer program",
         "Las Vegas real estate expert",
         "Nevada real estate license S.0197614"
       ],
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://homesteadwestlasvegas.com',
     siteName: 'Homestead West Las Vegas',
-    title: 'Homestead West Las Vegas | $910K+ Ranch Homes by Century Communities',
+    title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
     description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 222-1988.',
     images: [
       {
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
-    description: 'Luxury ranch homes on pool-sized lots in Northwest Las Vegas by Century Communities. Expert real estate guidance from Dr. Jan Duffy.',
+    description: 'Luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert real estate guidance from Dr. Jan Duffy.',
     images: ['/twitter-image.jpg'],
   },
 
@@ -160,7 +160,6 @@ export default function RootLayout({
           ],
           knowsAbout: [
             'Homestead West',
-            'Century Communities',
             'Northwest Las Vegas Real Estate',
             'Luxury Ranch Homes',
             'New Construction Homes',
@@ -168,7 +167,7 @@ export default function RootLayout({
             'Cadence Henderson',
             'Las Vegas Market Analysis'
           ],
-          jobTitle: 'VIP Century Communities Specialist',
+          jobTitle: 'VIP New Construction Specialist',
           hasCredential: {
             '@type': 'EducationalOccupationalCredential',
             name: 'Nevada Real Estate License',
@@ -183,7 +182,7 @@ export default function RootLayout({
             '@type': 'Organization',
             name: 'Homestead West | Homes by Dr Jan Duffy'
           },
-          alumniOf: 'Century Communities VIP Partner Program',
+          alumniOf: 'VIP Builder Partner Program',
           memberOf: {
             '@type': 'Organization',
             name: 'Las Vegas Association of Realtors'
@@ -225,11 +224,6 @@ export default function RootLayout({
       }
     ],
     additionalProperty: [
-      {
-        '@type': 'PropertyValue',
-        name: 'Builder',
-        value: 'Century Communities'
-      },
       {
         '@type': 'PropertyValue',
         name: 'Community',
@@ -276,7 +270,7 @@ export default function RootLayout({
         hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
         sameAs: [
           'https://homesteadwestlasvegas.com',
-          'https://homesteadwestlasvegas.com/century-communities-vip',
+          'https://homesteadwestlasvegas.com/vip-buyer-program',
           'https://homesteadwestlasvegas.com/about'
         ]
   };
@@ -304,7 +298,7 @@ export default function RootLayout({
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
         name: 'Dr. Jan Duffy',
-        description: 'VIP Century Communities Specialist and Las Vegas Real Estate Expert',
+        description: 'VIP New Construction Specialist and Las Vegas Real Estate Expert',
         url: 'https://homesteadwestlasvegas.com',
         telephone: '+17022221988',
         email: 'DrJanSells@HomesteadWestLasVegas.com',
@@ -359,13 +353,13 @@ export default function RootLayout({
           name: 'Las Vegas Association of Realtors'
         },
         knowsAbout: [
-          'Century Communities',
           'Homestead West',
           'New Construction Homes',
           'VIP Builder Partnerships',
           'Las Vegas Real Estate Market',
           'Northwest Las Vegas',
-          'Cadence Henderson'
+          'Cadence Henderson',
+          'Luxury Ranch Homes'
         ]
       };
 
@@ -410,6 +404,12 @@ export default function RootLayout({
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify(organizationData),
               }}
+            />
+
+            {/* RealScout Widget Script */}
+            <script 
+              src="https://em.realscout.com/widgets/realscout-web-components.umd.js" 
+              type="module"
             />
           </head>
           <body className={inter.className}>

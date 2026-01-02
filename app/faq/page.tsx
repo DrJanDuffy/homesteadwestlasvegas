@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'FAQ | Frequently Asked Questions | Dr. Jan Duffy | VIP Century Communities Specialist',
-  description: 'Get answers to common questions about buying new construction homes in Las Vegas. FAQ about Century Communities, Homestead West, and Dr. Jan Duffy\'s VIP partnership.',
+  title: 'FAQ | Frequently Asked Questions | Dr. Jan Duffy | VIP New Construction Specialist',
+  description: 'Get answers to common questions about buying new construction homes in Las Vegas. FAQ about new construction, Homestead West, and Dr. Jan Duffy\'s VIP partnership.',
   keywords: [
     'new construction FAQ',
-    'Century Communities questions',
+    'new construction questions',
     'Homestead West FAQ',
     'Las Vegas home buying questions',
     'Dr. Jan Duffy FAQ',
@@ -27,10 +27,10 @@ export default function FAQPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is Dr. Jan Duffy\'s VIP Century Communities partnership?',
+        name: 'What is Dr. Jan Duffy\'s VIP new construction partnership?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Dr. Jan Duffy maintains an exclusive VIP partnership with Century Communities, one of America\'s top 10 homebuilders. This elite relationship provides her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers.'
+          text: 'Dr. Jan Duffy maintains an exclusive VIP partnership with the builder. This elite relationship provides her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers.'
         }
       },
       {
@@ -54,7 +54,7 @@ export default function FAQPage() {
         name: 'Do I need a real estate agent for new construction?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. Her VIP Century Communities partnership provides additional advantages including early access, priority treatment, and expert negotiation backed by premier relationships.'
+          text: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. Her VIP new construction partnership provides additional advantages including early access, priority treatment, and expert negotiation backed by premier relationships.'
         }
       },
       {
@@ -62,7 +62,7 @@ export default function FAQPage() {
         name: 'What financing options are available for new construction?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Century Communities offers various financing options including conventional loans, FHA, VA, and USDA loans. Dr. Jan Duffy can connect you with Century Communities\' preferred lenders who offer special rates and programs. Pre-approval is recommended before starting your home search.'
+          text: 'The builder offers various financing options including conventional loans, FHA, VA, and USDA loans. Dr. Jan Duffy can connect you with the builder\'s preferred lenders who offer special rates and programs. Pre-approval is recommended before starting your home search.'
         }
       }
     ]
@@ -73,16 +73,16 @@ export default function FAQPage() {
       category: 'VIP Partnership',
       questions: [
         {
-          question: 'What is Dr. Jan Duffy\'s VIP Century Communities partnership?',
-          answer: 'Dr. Jan Duffy maintains an exclusive VIP partnership with Century Communities, one of America\'s top 10 homebuilders. This elite relationship provides her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers.'
+          question: 'What is Dr. Jan Duffy\'s VIP new construction partnership?',
+          answer: 'Dr. Jan Duffy maintains an exclusive VIP partnership with the builder. This elite relationship provides her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers.'
         },
         {
           question: 'How does the VIP partnership benefit me as a buyer?',
-          answer: 'The VIP partnership delivers early access to new phases before public release, priority lot selection and holds, direct communication with Century Communities management, expert negotiation backed by premier relationships, and exclusive incentives and upgrade packages.'
+          answer: 'The VIP partnership delivers early access to new phases before public release, priority lot selection and holds, direct communication with builder management, expert negotiation backed by premier relationships, and exclusive incentives and upgrade packages.'
         },
         {
-          question: 'Is Dr. Jan Duffy affiliated with Century Communities?',
-          answer: 'Dr. Jan Duffy is an independent real estate agent who represents YOUR interests exclusively, not the builder\'s. Her VIP partnership provides insider access while maintaining complete client advocacy. She\'s not employed by Century Communities but maintains elite relationships with their management.'
+          question: 'Is Dr. Jan Duffy affiliated with the builder?',
+          answer: 'Dr. Jan Duffy is an independent real estate agent who represents YOUR interests exclusively, not the builder\'s. Her VIP partnership provides insider access while maintaining complete client advocacy. She\'s not employed by the builder but maintains elite relationships with their management.'
         }
       ]
     },
@@ -99,7 +99,7 @@ export default function FAQPage() {
         },
         {
           question: 'Can I customize my new construction home?',
-          answer: 'Yes! Century Communities offers extensive customization options through their Design Center. You can choose finishes, colors, flooring, countertops, cabinets, lighting, and structural options. Dr. Jan Duffy\'s VIP partnership provides access to exclusive upgrade packages and priority Design Center appointments.'
+          answer: 'Yes! The builder offers extensive customization options through their Design Center. You can choose finishes, colors, flooring, countertops, cabinets, lighting, and structural options. Dr. Jan Duffy\'s VIP partnership provides access to exclusive upgrade packages and priority Design Center appointments.'
         }
       ]
     },
@@ -108,7 +108,7 @@ export default function FAQPage() {
       questions: [
         {
           question: 'What financing options are available for new construction?',
-          answer: 'Century Communities offers various financing options including conventional loans, FHA, VA, and USDA loans. Dr. Jan Duffy can connect you with Century Communities\' preferred lenders who offer special rates and programs. Pre-approval is recommended before starting your home search.'
+          answer: 'The builder offers various financing options including conventional loans, FHA, VA, and USDA loans. Dr. Jan Duffy can connect you with the builder\'s preferred lenders who offer special rates and programs. Pre-approval is recommended before starting your home search.'
         },
         {
           question: 'How much earnest money is required?',
@@ -116,7 +116,7 @@ export default function FAQPage() {
         },
         {
           question: 'What incentives are available for buyers?',
-          answer: 'Century Communities offers various incentives including closing cost assistance, rate buydowns, design center credits, and upgrade packages. Dr. Jan Duffy\'s VIP partnership provides access to exclusive incentives not available to general buyers, often totaling $15,000+ in savings.'
+          answer: 'The builder offers various incentives including closing cost assistance, rate buydowns, design center credits, and upgrade packages. Dr. Jan Duffy\'s VIP partnership provides access to exclusive incentives not available to general buyers, often totaling $15,000+ in savings.'
         }
       ]
     },
@@ -142,15 +142,15 @@ export default function FAQPage() {
       questions: [
         {
           question: 'Do I need a real estate agent for new construction?',
-          answer: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. Her VIP Century Communities partnership provides additional advantages including early access, priority treatment, and expert negotiation backed by premier relationships.'
+          answer: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. Her VIP new construction partnership provides additional advantages including early access, priority treatment, and expert negotiation backed by premier relationships.'
         },
         {
           question: 'What makes Dr. Jan Duffy different from other agents?',
-          answer: 'Dr. Jan Duffy combines independent client advocacy with VIP Century Communities partnership access. She has an office at the Century Communities sales office, direct builder relationships, 500+ families helped, and Nevada License S.0197614. Her expertise spans multiple Century Communities developments.'
+          answer: 'Dr. Jan Duffy combines independent client advocacy with VIP new construction partnership access. She has an office at the builder sales office, direct builder relationships, 500+ families helped, and Nevada License S.0197614. Her expertise spans multiple new construction developments.'
         },
         {
           question: 'How do I get started with Dr. Jan Duffy?',
-          answer: 'Contact Dr. Jan Duffy at (702) 222-1988 or DrJanSells@HomesteadWestLasVegas.com. She\'ll provide a free consultation, connect you with preferred lenders for pre-approval, and guide you through the VIP Century Communities home buying process with exclusive advantages.'
+          answer: 'Contact Dr. Jan Duffy at (702) 222-1988 or DrJanSells@HomesteadWestLasVegas.com. She\'ll provide a free consultation, connect you with preferred lenders for pre-approval, and guide you through the VIP new construction home buying process with exclusive advantages.'
         }
       ]
     }
@@ -169,11 +169,11 @@ export default function FAQPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES FAQ ⭐
+                ⭐ VIP NEW CONSTRUCTION FAQ ⭐
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">New Construction Home Buying</p>
-              <p className="text-xl text-blue-200">Expert Answers from VIP Century Communities Specialist</p>
+              <p className="text-xl text-blue-200">Expert Answers from VIP New Construction Specialist</p>
             </div>
           </div>
         </header>
@@ -185,7 +185,7 @@ export default function FAQPage() {
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP Partnership Advantages</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP Century Communities partnership provides exclusive advantages 
+                  Dr. Jan Duffy's VIP new construction partnership provides exclusive advantages 
                   throughout your new construction home buying journey.
                 </p>
               </div>
@@ -281,7 +281,7 @@ export default function FAQPage() {
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-gray-900">Visit Office</h3>
                     <p className="text-gray-700">5592 N Dapple Gray Rd</p>
-                    <p className="text-gray-700">Century Communities Sales Office</p>
+                    <p className="text-gray-700">Builder Sales Office</p>
                   </div>
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function FAQPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Start Your VIP Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP Century Communities partnership guide you to your dream home
+                Let Dr. Jan Duffy's VIP new construction partnership guide you to your dream home
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -314,7 +314,7 @@ export default function FAQPage() {
               </div>
               
               <div className="mt-8 text-blue-200">
-                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP Century Communities Specialist</p>
+                <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>

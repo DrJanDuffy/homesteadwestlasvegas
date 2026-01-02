@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Property Management Services | Dr. Jan Duffy | Las Vegas Real Estate',
-  description: 'Professional property management services in Las Vegas with Dr. Jan Duffy. VIP Century Communities partnership, rental management, and investment property services.',
+  description: 'Professional property management services in Las Vegas with Dr. Jan Duffy. VIP new construction partnership, rental management, and investment property services.',
   keywords: [
     'property management Las Vegas',
     'Dr. Jan Duffy property management',
     'rental property management',
     'investment property management',
-    'Century Communities management',
+    'new construction management',
     'Las Vegas property management'
   ],
   openGraph: {
     title: 'Property Management Services | Dr. Jan Duffy',
-    description: 'Professional property management services in Las Vegas with VIP Century Communities partnership.',
+    description: 'Professional property management services in Las Vegas with VIP new construction partnership.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/services/property-management',
   },
@@ -69,11 +69,11 @@ export default function PropertyManagementPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
-                ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Property Management</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's VIP Century Communities partnership delivers exclusive property management 
+                Dr. Jan Duffy's VIP new construction partnership delivers exclusive property management 
                 services with premium tenant screening, maintenance coordination, and investment optimization.
               </p>
             </div>
@@ -191,7 +191,7 @@ export default function PropertyManagementPage() {
                     <span className="text-3xl">🏗️</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">New Construction</h3>
-                  <p className="text-gray-600 mb-4">VIP Century Communities properties</p>
+                  <p className="text-gray-600 mb-4">VIP new construction properties</p>
                   <ul className="text-sm text-gray-500 text-left">
                     <li>• Pre-construction management</li>
                     <li>• Builder coordination</li>
@@ -260,7 +260,7 @@ export default function PropertyManagementPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready for Professional Property Management?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Contact Dr. Jan Duffy for expert property management services with VIP Century Communities partnership
+                Contact Dr. Jan Duffy for expert property management services with VIP new construction partnership
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

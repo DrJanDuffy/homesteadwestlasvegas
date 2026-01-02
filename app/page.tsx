@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import SearchWidgetScript from '@/components/SearchWidgetScript';
 
 export const metadata: Metadata = {
   title: 'Dr. Jan Duffy - Las Vegas Real Estate Expert | Homestead West',
@@ -76,7 +77,7 @@ export default function HomePage() {
                 $910K+ Luxury Ranch Homes on Pool-Sized Lots
               </p>
               <p className="text-xl mb-8 text-blue-50">
-                Expert Guidance from Dr. Jan Duffy | Century Communities Partnership
+                Expert Guidance from Dr. Jan Duffy | New Construction Partnership
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
@@ -104,11 +105,11 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                About Homestead West by Century Communities
+                About Homestead West
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  From <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—<strong>Homestead West</strong> offers exceptional <strong>new homes for sale in Las Vegas, NV</strong>. This prestigious Northwest Las Vegas community features a luxurious lineup of <strong>single-story ranch-style homes</strong> on <strong>pool-sized lots</strong>, with optional detached casitas and multi-generational layouts.
+                  <strong>Homestead West</strong> offers exceptional <strong>new homes for sale in Las Vegas, NV</strong>. This prestigious Northwest Las Vegas community features a luxurious lineup of <strong>single-story ranch-style homes</strong> on <strong>pool-sized lots</strong>, with optional detached casitas and multi-generational layouts.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Located at <strong>5592 N Dapple Gray Rd, Las Vegas, NV 89149</strong>, Homestead West combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>US 95 & CC 215</strong> provides easy connectivity to downtown Las Vegas, Red Rock Canyon, and Mount Charleston.
@@ -118,142 +119,186 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Floor Plans Comparison - Rich SEO Content */}
+        {/* RealScout Office Listings Carousel */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Homestead West Floor Plans
+              Available Homes in Las Vegas
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Choose from two stunning single-story ranch home designs, each featuring expansive living spaces, premium finishes, and room for customization
+              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* Plan 3336 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
-                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                  <div className="text-center">
-                    <p className="text-6xl mb-2">🏡</p>
-                    <p className="text-gray-700 font-semibold">Residence 3336</p>
-                  </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-2 text-gray-900">Plan 3336</h3>
-                  <p className="text-3xl font-bold text-blue-600 mb-4">From $910,990</p>
-                  
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">3,336</p>
-                      <p className="text-sm text-gray-600">Square Feet</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">4-5</p>
-                      <p className="text-sm text-gray-600">Bedrooms</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">4.5</p>
-                      <p className="text-sm text-gray-600">Bathrooms</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">3-5</p>
-                      <p className="text-sm text-gray-600">Car Garage</p>
-                    </div>
-                  </div>
+            <div className="max-w-7xl mx-auto">
+              <realscout-office-listings 
+                agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                sort-order="PRICE_HIGH" 
+                listing-status="For Sale" 
+                property-types=",SFR" 
+                price-min="400000" 
+                price-max="700000"
+              />
+            </div>
+          </div>
+        </section>
 
-                  <div className="space-y-3 mb-6">
-                    <h4 className="font-bold text-gray-900">Key Features:</h4>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Open-concept great room with kitchen island</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Primary suite with free-standing tub & dual vanities</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Walk-in pantry & spacious laundry room</span>
-          </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Optional detached pool house or casita</span>
-          </li>
-                    </ul>
-                  </div>
-
-                  <a 
-                    href="tel:7022221988"
-                    className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+        {/* MLS Search Widget Section */}
+        <section id="search-homes" className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-4 text-gray-900">
+                Search Available Homes
+              </h2>
+              <p className="text-gray-600 mb-8 text-lg">
+                Explore new construction listings in Northwest Las Vegas
+              </p>
+              
+              <div className="flex justify-center">
+                {/* ShowingNew Widget */}
+                <div id="widget-box" className="w-full max-w-2xl">
+                  <form 
+                    action="https://www.showingnew.com/skyecanyon/home/redirecttoresultspage" 
+                    className="pro-search-box" 
+                    encType="multipart/form-data" 
+                    id="pro-search-box-widget" 
+                    method="post" 
+                    name="pro-search-box" 
+                    target="_blank"
                   >
-                    Learn More About Plan 3336
-          </a>
-        </div>
-              </div>
-
-              {/* Plan 3704 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow border-2 border-blue-500">
-                <div className="bg-blue-600 text-white text-center py-2 font-bold text-sm">
-                  MOST POPULAR
+                    <div id="home-search-form" className="clearfix home-search-form">
+                      <h2 id="titleText">Search New Construction Home Listings</h2>
+                      <fieldset id="widget-home-search-location" style={{border:0,padding:0}}>
+                        <p id="HomesTypeField" className="flex m-0 homes-type-field">
+                          <input 
+                            className="homes-type-field--input" 
+                            id="AllNew" 
+                            name="QuickMoveIn" 
+                            type="radio" 
+                            value="0" 
+                            defaultChecked
+                          /> 
+                          <label className="homes-type-field--label" htmlFor="AllNew">All New Homes</label> 
+                          <input 
+                            className="homes-type-field--input" 
+                            id="QMIOnly" 
+                            name="QuickMoveIn" 
+                            type="radio" 
+                            value="1"
+                          /> 
+                          <label className="homes-type-field--label" htmlFor="QMIOnly">Inventory Homes</label> 
+                          <a 
+                            className="homes-type-field--link" 
+                            href="https://www.showingnew.com/skyecanyon/new-homes-today" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          > 
+                            <b>See What&apos;s New Today</b> 
+                            <svg 
+                              className="homes-type-field--link--svg" 
+                              xmlns="http://www.w3.org/2000/svg" 
+                              viewBox="0 0 492.004 492.004" 
+                              fill="#f58220"
+                            >
+                              <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04s2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836a26.74 26.74 0 0 0 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
+                            </svg>
+                          </a>
+                        </p>
+                        <p className="flex ac search-field" style={{display: 'flex', alignItems: 'center'}}>
+                          <label htmlFor="SearchTextWidget"></label> 
+                          <input 
+                            autoComplete="off" 
+                            id="SearchTextWidget" 
+                            aria-label="SearchTextWidget" 
+                            maxLength={100} 
+                            name="SearchText" 
+                            placeholder="Enter City, Zip Code, School District or Community Name" 
+                            type="text" 
+                            defaultValue="Homestead West, Las Vegas, NV" 
+                            style={{fontSize:'16px', flex: 1, padding: '14px 16px', borderRadius: '4px 0 0 4px', border: '1px solid #ccdbe4'}}
+                          /> 
+                          <input 
+                            type="submit" 
+                            className="btn HomeSearchBtn" 
+                            id="HomeSearchBtnWidget" 
+                            value="Find Homes"
+                            style={{backgroundColor: '#f58220', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600}}
+                          />
+                        </p>
+                      </fieldset>
+                      <p 
+                        id="WidgetSearchValidationError" 
+                        className="field-validation-error SearchValidationError text-red-600 font-semibold mt-2" 
+                        style={{display:'none'}}
+                      >
+                        <strong>Oops!</strong> Please enter a valid location.
+                      </p>
+                      <div id="home-search-options" className="flex flex-wrap gap-2 mt-4" style={{display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px'}}>
+                        <select 
+                          aria-label="PriceLow" 
+                          id="PriceLow" 
+                          name="PriceLow"
+                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
+                        >
+                          <option value="">Min Price</option>
+                          <option value="500000">$500,000</option>
+                          <option value="600000">$600,000</option>
+                          <option value="700000">$700,000</option>
+                          <option value="800000">$800,000</option>
+                          <option value="900000">$900,000</option>
+                          <option value="1000000">$1,000,000</option>
+                          <option value="1100000">$1,100,000</option>
+                          <option value="1200000">$1,200,000</option>
+                        </select> 
+                        <select 
+                          aria-label="PriceHigh" 
+                          id="PriceHigh" 
+                          name="PriceHigh"
+                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
+                        >
+                          <option value="">Max Price</option>
+                          <option value="900000">$900,000</option>
+                          <option value="1000000">$1,000,000</option>
+                          <option value="1100000">$1,100,000</option>
+                          <option value="1200000">$1,200,000</option>
+                          <option value="1500000">$1,500,000</option>
+                          <option value="2000000">$2,000,000</option>
+                        </select> 
+                        <select 
+                          aria-label="BedRooms" 
+                          id="BedRooms" 
+                          name="BedRooms"
+                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
+                        >
+                          <option value="-1">Beds</option>
+                          <option value="3">3+</option>
+                          <option value="4">4+</option>
+                          <option value="5">5+</option>
+                        </select> 
+                        <select 
+                          aria-label="Bathrooms" 
+                          id="Bathrooms" 
+                          name="Bathrooms"
+                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
+                        >
+                          <option value="-1">Baths</option>
+                          <option value="3">3+</option>
+                          <option value="4">4+</option>
+                        </select> 
+                        <select 
+                          aria-label="SqFtLow" 
+                          id="SqFtLow" 
+                          name="SqFtLow"
+                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
+                        >
+                          <option value="0">Square Feet</option>
+                          <option value="3000">3000+</option>
+                          <option value="3500">3500+</option>
+                          <option value="4000">4000+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div className="h-64 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                  <div className="text-center">
-                    <p className="text-6xl mb-2">🏰</p>
-                    <p className="text-gray-700 font-semibold">Residence 3704</p>
-                  </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-2 text-gray-900">Plan 3704</h3>
-                  <p className="text-3xl font-bold text-blue-600 mb-4">From $940,990</p>
-                  
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">3,704</p>
-                      <p className="text-sm text-gray-600">Square Feet</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">4</p>
-                      <p className="text-sm text-gray-600">Bedrooms</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">4.5</p>
-                      <p className="text-sm text-gray-600">Bathrooms</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg">
-                      <p className="text-2xl font-bold text-gray-900">3-5</p>
-                      <p className="text-sm text-gray-600">Car Garage</p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3 mb-6">
-                    <h4 className="font-bold text-gray-900">Key Features:</h4>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Separate formal dining room for entertaining</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>All 4 bedrooms with en-suite bathrooms</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Spacious mudroom & breakfast nook</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>12' or 14' extended patio options</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <a 
-                    href="tel:7022221988"
-                    className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
-                  >
-                    Learn More About Plan 3704
-          </a>
-        </div>
               </div>
             </div>
           </div>
@@ -322,18 +367,18 @@ export default function HomePage() {
           </div>
         </section>
 
-            {/* VIP Century Communities Partnership */}
+            {/* VIP New Construction Partnership */}
             <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center">
                   <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6">
-                    ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+                    ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
                   </div>
                   <h2 className="text-4xl font-bold mb-6">
                     Elite Builder Relationship = Your Advantage
                   </h2>
                   <p className="text-xl mb-8 text-blue-100">
-                    Dr. Jan Duffy's VIP Century Communities partnership delivers exclusive access, 
+                    Dr. Jan Duffy's VIP new construction partnership delivers exclusive access, 
                     priority lot selection, and expert negotiation backed by premier relationships.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -354,7 +399,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <a
-                    href="/century-communities-vip"
+                    href="/vip-buyer-program"
                     className="inline-block bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors"
                   >
                     Learn More About VIP Partnership
@@ -379,9 +424,9 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">🤝</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Century Communities Partnership</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Builder Relationship</h3>
                   <p className="text-gray-700">
-                    I work directly with Century Communities to give you insider access while representing YOUR interests, not theirs.
+                    I work directly with the builder to give you insider access while representing YOUR interests, not theirs.
                   </p>
                 </div>
 
@@ -468,25 +513,20 @@ export default function HomePage() {
                 <p className="mb-2">Nevada License: S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>
-              <div>
-                <h3 className="text-white font-bold text-lg mb-4">Century Communities</h3>
-                <p className="mb-2">One of America's Top 10 Homebuilders</p>
-                <p className="mb-2">Dr. Jan Duffy's Office Location</p>
-                <p>Monday-Sunday: 10:00 AM - 6:00 PM</p>
-              </div>
             </div>
             <div className="border-t border-gray-700 pt-8 text-center text-sm">
               <p className="mb-2">
                 © 2025 Homestead West | Homes by Dr Jan Duffy. All rights reserved.
               </p>
               <p className="text-gray-400">
-                Independent real estate resource. Not affiliated with or endorsed by Century Communities. 
+                Independent real estate resource. Not affiliated with or endorsed by the builder. 
                 Dr. Jan Duffy is an independent real estate agent providing expert guidance to home buyers.
               </p>
             </div>
           </div>
       </footer>
     </div>
+    <SearchWidgetScript />
     </>
   );
 }
