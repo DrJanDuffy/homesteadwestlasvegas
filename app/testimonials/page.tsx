@@ -178,7 +178,7 @@ export default function TestimonialsPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION TESTIMONIALS ⭐
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Client Testimonials</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Homestead West Client Testimonials</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Real Success Stories</p>
               <p className="text-xl text-blue-200">From VIP New Construction Partnership</p>
             </div>

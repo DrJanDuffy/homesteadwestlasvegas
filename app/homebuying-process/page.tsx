@@ -101,7 +101,7 @@ export default function HomebuyingProcessPage() {
         <header className="bg-blue-900 text-white py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-4">Homebuying Process</h1>
+              <h1 className="text-5xl font-bold mb-4">Homestead West Homebuying Process</h1>
               <p className="text-xl text-blue-100">Expert Guidance Through Every Step</p>
               <p className="text-lg text-blue-200 mt-2">Homestead West Las Vegas | Dr. Jan Duffy</p>
             </div>
