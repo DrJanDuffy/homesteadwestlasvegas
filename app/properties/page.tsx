@@ -107,7 +107,7 @@ export default function PropertiesPage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Las Vegas Properties for Sale</h1>
+            <h1 className="text-4xl font-bold mb-4">Homestead West Las Vegas Properties for Sale</h1>
             <p className="text-xl">Ranch-style homes on pool-sized lots in Northwest Las Vegas</p>
           </div>
         </header>
@@ -116,7 +116,7 @@ export default function PropertiesPage() {
         <section className="py-8 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h1 className="text-4xl font-bold mb-6">Find Your Perfect Homestead West Home</h1>
+              <h2 className="text-3xl font-bold mb-6">Find Your Perfect Homestead West Home</h2>
               <div className="grid md:grid-cols-4 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
@@ -173,16 +173,16 @@ export default function PropertiesPage() {
         {/* Property Features */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Properties?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Homestead West Properties?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">🏠</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Ranch-Style Design</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Ranch-Style Design</h3>
                 <p className="text-gray-600">
                   Single-story living with open floor plans perfect for modern families 
-                  and easy maintenance.
+                  and easy maintenance at Homestead West.
                 </p>
               </div>
               
@@ -190,9 +190,9 @@ export default function PropertiesPage() {
                 <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">🏊</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Pool-Sized Lots</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Pool-Sized Lots</h3>
                 <p className="text-gray-600">
-                  Generous lot sizes perfect for pools, outdoor living, and future expansions 
+                  Generous Homestead West lot sizes perfect for pools, outdoor living, and future expansions 
                   in desirable Northwest Las Vegas.
                 </p>
               </div>
@@ -201,9 +201,9 @@ export default function PropertiesPage() {
                 <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">📍</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Prime Location</h3>
+                <h3 className="text-xl font-semibold mb-4">Homestead West Prime Location</h3>
                 <p className="text-gray-600">
-                  Located in Northwest Las Vegas with easy access to shopping, dining, 
+                  Homestead West is located in Northwest Las Vegas with easy access to shopping, dining, 
                   entertainment, and excellent schools.
                 </p>
               </div>
@@ -214,10 +214,10 @@ export default function PropertiesPage() {
         {/* Market Information */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Las Vegas Market Insights</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Homestead West and Las Vegas Market Insights</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Current Market Trends</h3>
+                <h3 className="text-2xl font-semibold mb-6">Current Market Trends for Homestead West</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span className="font-medium">Average Home Price</span>
@@ -239,7 +239,7 @@ export default function PropertiesPage() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Why Northwest Las Vegas?</h3>
+                <h3 className="text-2xl font-semibold mb-6">Why Choose Homestead West in Northwest Las Vegas?</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2"></span>
@@ -270,7 +270,7 @@ export default function PropertiesPage() {
         {/* CTA Section */}
         <section className="py-16 bg-blue-900 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Interested in These Properties?</h2>
+            <h2 className="text-3xl font-bold mb-6">Interested in Homestead West Properties?</h2>
             <p className="text-xl mb-8">
               Contact Dr. Jan Duffy for private showings and detailed information
             </p>
