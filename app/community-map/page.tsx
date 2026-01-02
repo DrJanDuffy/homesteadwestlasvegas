@@ -57,7 +57,7 @@ export default function CommunityMapPage() {
         <header className="bg-blue-900 text-white py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-4">Community Map</h1>
+              <h1 className="text-5xl font-bold mb-4">Homestead West Community Map</h1>
               <p className="text-xl text-blue-100">Explore Available Lots & Homesites</p>
               <p className="text-lg text-blue-200 mt-2">5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
             </div>

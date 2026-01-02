@@ -57,7 +57,7 @@ export default function VirtualTourPage() {
         {/* Header */}
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Virtual Tour</h1>
+            <h1 className="text-4xl font-bold mb-4">Homestead West Virtual Tour</h1>
             <p className="text-xl">Experience Homestead West in 3D</p>
           </div>
         </header>
