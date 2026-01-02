@@ -84,7 +84,7 @@ export default function HomePage() {
                 </div>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Homestead West Las Vegas
+                Homestead West Las Vegas: Luxury Ranch Homes in Northwest Las Vegas
               </h1>
               <p className="text-2xl md:text-3xl mb-4 font-semibold text-blue-100">
                 $910K+ Luxury Ranch Homes on Pool-Sized Lots
@@ -140,14 +140,20 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                About Homestead West
+                Discover Homestead West: Premier New Construction Community in Las Vegas
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  <strong>Homestead West</strong> offers exceptional <strong>new homes for sale in Las Vegas, NV</strong>. This prestigious Northwest Las Vegas community features a luxurious lineup of <strong>single-story ranch-style homes</strong> on <strong>pool-sized lots</strong>, with optional detached casitas and multi-generational layouts.
+                  <strong>Homestead West</strong> offers exceptional <strong>new homes for sale in Las Vegas, NV</strong>. This prestigious Northwest Las Vegas community features a luxurious lineup of <strong>single-story ranch-style homes</strong> on <strong>pool-sized lots</strong>, with optional detached casitas and multi-generational layouts. Homestead West represents the pinnacle of luxury living in Las Vegas, combining sophisticated design with the natural beauty of the Nevada landscape.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Located at <strong>5592 N Dapple Gray Rd, Las Vegas, NV 89149</strong>, Homestead West combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>US 95 & CC 215</strong> provides easy connectivity to downtown Las Vegas, Red Rock Canyon, and Mount Charleston.
+                  Located at <strong>5592 N Dapple Gray Rd, Las Vegas, NV 89149</strong>, Homestead West combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>US 95 & CC 215</strong> provides easy connectivity to downtown Las Vegas, Red Rock Canyon, and Mount Charleston. The Homestead West community is strategically positioned to offer residents the perfect balance between urban convenience and natural serenity.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  When you choose Homestead West, you're selecting more than just a home—you're investing in a lifestyle. The Homestead West development showcases meticulous attention to detail, from the architectural design to the premium finishes throughout each residence. Homestead West homes are built to the highest standards, ensuring that your investment will provide lasting value and enjoyment for years to come.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  The Homestead West community is designed with modern families in mind, offering spacious floor plans that accommodate various lifestyles. Whether you're looking for a primary residence, a vacation home, or an investment property, Homestead West provides the perfect foundation for your Las Vegas real estate goals. The community's thoughtful planning ensures that every Homestead West homeowner enjoys privacy, security, and access to world-class amenities.
                 </p>
               </div>
             </div>
@@ -158,7 +164,7 @@ export default function HomePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
+              Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -175,7 +181,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                Search Available Homes
+                Search Homestead West Available Homes and New Construction Listings
               </h2>
               <p className="text-gray-600 mb-8 text-lg">
                 Explore new construction listings in Northwest Las Vegas
@@ -336,7 +342,7 @@ export default function HomePage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-              Northwest Las Vegas Location
+              Homestead West Location: Prime Northwest Las Vegas Real Estate
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
@@ -344,9 +350,9 @@ export default function HomePage() {
                 <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">🏔️</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">9 Miles to Red Rock Canyon</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West: 9 Miles to Red Rock Canyon</h3>
                 <p className="text-gray-600">
-                  World-class hiking, climbing, and scenic drives at your doorstep
+                  World-class hiking, climbing, and scenic drives at your doorstep from Homestead West
                 </p>
               </div>
 
@@ -354,9 +360,9 @@ export default function HomePage() {
                 <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">🌆</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">18 Miles to Downtown Las Vegas</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West: 18 Miles to Downtown Las Vegas</h3>
                 <p className="text-gray-600">
-                  Easy access to world-class entertainment, dining, and culture
+                  Easy access to world-class entertainment, dining, and culture from Homestead West
                 </p>
               </div>
 
@@ -364,15 +370,15 @@ export default function HomePage() {
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">⛰️</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">23 Miles to Mount Charleston</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Homestead West: 23 Miles to Mount Charleston</h3>
                 <p className="text-gray-600">
-                  Alpine escape with skiing, hiking, and 20°F cooler temperatures
+                  Alpine escape with skiing, hiking, and 20°F cooler temperatures near Homestead West
                 </p>
               </div>
             </div>
 
             <div className="max-w-4xl mx-auto bg-gray-50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Nearby Amenities</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Homestead West Nearby Amenities and Local Attractions</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-bold text-lg mb-3 text-gray-900">📍 Parks & Recreation</h4>
@@ -403,7 +409,7 @@ export default function HomePage() {
                     ⭐ VIP Berkshire Hathaway HomeServices Buyer Program ⭐
                   </div>
                   <h2 className="text-4xl font-bold mb-6">
-                    VIP Berkshire Hathaway HomeServices Buyer Program
+                    VIP Berkshire Hathaway HomeServices Buyer Program for Homestead West
                   </h2>
                   <p className="text-xl mb-8 text-blue-100">
                     Exclusive Access to Las Vegas New Construction Homes at Homestead West
@@ -414,18 +420,18 @@ export default function HomePage() {
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🚀</div>
-                      <h3 className="text-lg font-bold mb-2">Early Phase Access</h3>
-                      <p className="text-sm text-blue-100">First access to new phases before public release</p>
+                      <h3 className="text-lg font-bold mb-2">Early Phase Access to Homestead West</h3>
+                      <p className="text-sm text-blue-100">First access to new Homestead West phases before public release</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">⚡</div>
-                      <h3 className="text-lg font-bold mb-2">Priority Lot Selection</h3>
-                      <p className="text-sm text-blue-100">VIP status throughout the entire process</p>
+                      <h3 className="text-lg font-bold mb-2">Priority Lot Selection at Homestead West</h3>
+                      <p className="text-sm text-blue-100">VIP status throughout the entire Homestead West process</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🎯</div>
-                      <h3 className="text-lg font-bold mb-2">Expert Negotiation</h3>
-                      <p className="text-sm text-blue-100">Elite builder relationship-backed negotiation power</p>
+                      <h3 className="text-lg font-bold mb-2">Expert Negotiation for Homestead West</h3>
+                      <p className="text-sm text-blue-100">Elite builder relationship-backed negotiation power for Homestead West</p>
                     </div>
                   </div>
                   <a
@@ -444,7 +450,7 @@ export default function HomePage() {
                 <div className="max-w-6xl mx-auto">
                   <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                      Register Your Buyer - Fast-Track Process
+                      Register Your Buyer for Homestead West - Fast-Track Process
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                       Dr. Jan Duffy's VIP partnership includes a streamlined registration process that gets your buyers priority treatment from day one.
@@ -460,10 +466,10 @@ export default function HomePage() {
                           1
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          Initial Consultation
+                          Initial Consultation for Homestead West
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Discuss needs, budget, and preferences
+                          Discuss needs, budget, and preferences for Homestead West homes
                         </p>
                       </div>
                       {/* Connector Arrow */}
@@ -481,10 +487,10 @@ export default function HomePage() {
                           2
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          VIP Registration
+                          VIP Registration for Homestead West
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Register with VIP buyer program portal
+                          Register with VIP buyer program portal for Homestead West
                         </p>
                       </div>
                       {/* Connector Arrow */}
@@ -502,10 +508,10 @@ export default function HomePage() {
                           3
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          Priority Access
+                          Priority Access to Homestead West
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Get early access to new phases and lots
+                          Get early access to new Homestead West phases and lots
                         </p>
                       </div>
                       {/* Connector Arrow */}
@@ -523,10 +529,10 @@ export default function HomePage() {
                           4
                         </div>
                         <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                          Expert Guidance
+                          Expert Guidance for Homestead West
                         </h3>
                         <p className="text-gray-700 text-center">
-                          Navigate the entire process with VIP treatment
+                          Navigate the entire Homestead West process with VIP treatment
                         </p>
                       </div>
                     </div>
@@ -550,7 +556,7 @@ export default function HomePage() {
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
                   <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                    Why Work With Dr. Jan Duffy?
+                    Why Work With Dr. Jan Duffy for Your Homestead West Home Purchase?
                   </h2>
                   <p className="text-xl text-center text-gray-700 mb-12">
                     Get expert, unbiased guidance—I'm your trusted advisor, not the builder's sales agent
@@ -561,9 +567,9 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">🤝</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Builder Relationship</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Builder Relationship</h3>
                   <p className="text-gray-700">
-                    I work directly with the builder to give you insider access while representing YOUR interests, not theirs.
+                    I work directly with the Homestead West builder to give you insider access while representing YOUR interests, not theirs.
                   </p>
                 </div>
 
@@ -571,9 +577,9 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">📊</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Market Expertise</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Market Expertise</h3>
                   <p className="text-gray-700">
-                    I'll show you comparable communities and help you understand true market value—not just what the builder tells you.
+                    I'll show you comparable communities to Homestead West and help you understand true market value—not just what the builder tells you.
                   </p>
                 </div>
 
@@ -581,9 +587,9 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">💰</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Power</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Negotiation Power</h3>
                   <p className="text-gray-700">
-                    Even with new construction, there's room to negotiate. I know how to maximize your leverage and protect your interests.
+                    Even with new construction at Homestead West, there's room to negotiate. I know how to maximize your leverage and protect your interests.
                   </p>
                 </div>
 
@@ -591,11 +597,39 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">🎯</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Las Vegas Specialist</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Las Vegas Specialist</h3>
                   <p className="text-gray-700">
-                    Nevada License S.0197614. Deep knowledge of Northwest Las Vegas and the entire metro area.
+                    Nevada License S.0197614. Deep knowledge of Homestead West, Northwest Las Vegas, and the entire metro area.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Homestead West Content for SEO */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
+                Why Choose Homestead West for Your Las Vegas Home?
+              </h2>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  Homestead West stands out as one of Las Vegas's premier new construction communities, offering an unparalleled combination of luxury, location, and lifestyle. When you invest in a Homestead West home, you're choosing a property that represents the best of Northwest Las Vegas living. The Homestead West community has been carefully planned to provide residents with everything they need for a comfortable, sophisticated lifestyle.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West: A Community Built for Modern Living</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  The Homestead West development represents a new standard in Las Vegas residential construction. Each Homestead West home is designed with attention to detail, featuring premium finishes, energy-efficient systems, and thoughtful layouts that accommodate today's modern families. Homestead West homeowners enjoy the peace of mind that comes with new construction warranties, cutting-edge home technology, and the latest building standards.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Investment Potential</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  Investing in Homestead West real estate offers significant potential for appreciation. The Northwest Las Vegas area has shown consistent growth, and Homestead West's prime location positions it well for future value increases. Whether you're purchasing a Homestead West home as a primary residence or as an investment property, you can be confident that you're making a smart real estate decision in one of Las Vegas's most desirable neighborhoods.
+                </p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Lifestyle Benefits</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  Life at Homestead West offers residents the perfect balance between urban convenience and suburban tranquility. Homestead West homeowners enjoy easy access to major employment centers, world-class entertainment, and natural attractions, all while living in a peaceful, well-maintained community. The Homestead West location provides the ideal setting for families, professionals, and retirees who want the best that Las Vegas has to offer.
+                </p>
               </div>
             </div>
           </div>
@@ -605,7 +639,7 @@ export default function HomePage() {
         <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">
-              Ready to Explore Homestead West?
+              Ready to Explore Homestead West Las Vegas?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
               Call or email Dr. Jan Duffy today for a private tour and expert guidance on your Homestead West home purchase
