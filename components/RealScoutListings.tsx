@@ -16,8 +16,8 @@ export default function RealScoutListings() {
       element.setAttribute('sort-order', 'PRICE_HIGH');
       element.setAttribute('listing-status', 'For Sale');
       element.setAttribute('property-types', ',SFR');
-      element.setAttribute('price-min', '400000');
-      element.setAttribute('price-max', '700000');
+      element.setAttribute('price-min', '900000');
+      element.setAttribute('price-max', '1100000');
       
       containerRef.current.appendChild(element);
     }
