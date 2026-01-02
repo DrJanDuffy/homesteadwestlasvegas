@@ -156,7 +156,7 @@ export default function CommunityMapPage() {
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">Community Amenities</h3>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Homestead West Community Amenities</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <span className="text-blue-600 mr-3 text-xl">📍</span>
@@ -188,15 +188,15 @@ export default function CommunityMapPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
               </div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Access to Perfect Lot Selection</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Access to Perfect Homestead West Lot Selection</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's elite new construction partnership delivers priority lot access, 
-                expert guidance, and exclusive builder relationships
+                Dr. Jan Duffy's elite new construction partnership delivers priority Homestead West lot access, 
+                expert guidance, and exclusive Homestead West builder relationships
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">Contact Dr. Jan Duffy</h3>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Contact Dr. Jan Duffy for Homestead West</h3>
                   <div className="space-y-3">
                     <p><span className="font-semibold">Phone:</span> (702) 222-1988</p>
                     <p><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
