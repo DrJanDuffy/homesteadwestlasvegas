@@ -16,25 +16,51 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
       {/* Featured Image */}
-      <Link href={`/blog/${post.slug}`} className="block relative h-48 overflow-hidden">
+      <Link href={`/blog/${post.slug}`} className="block relative h-48 overflow-hidden bg-gray-100">
         {post.featuredImage ? (
-          <Image
-            src={post.featuredImage}
-            alt={post.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            loading="lazy"
-            onError={(e) => {
-              // Fallback to placeholder if image fails
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              const placeholder = target.parentElement?.querySelector('.image-placeholder');
-              if (placeholder) {
-                (placeholder as HTMLElement).style.display = 'flex';
-              }
-            }}
-          />
+          <>
+            <Image
+              src={post.featuredImage}
+              alt={post.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              loading="lazy"
+              unoptimized={post.featuredImage.includes('wp.com') || post.featuredImage.includes('simplifyingthemarket')}
+              onError={(e) => {
+                // Fallback to placeholder if image fails
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const placeholder = target.parentElement?.querySelector('.image-placeholder');
+                if (placeholder) {
+                  (placeholder as HTMLElement).style.display = 'flex';
+                }
+              }}
+            />
+            {/* Fallback img tag for images that Next.js Image can't handle */}
+            <img
+              src={post.featuredImage}
+              alt={post.title}
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 hidden"
+              loading="lazy"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const placeholder = target.parentElement?.querySelector('.image-placeholder');
+                if (placeholder) {
+                  (placeholder as HTMLElement).style.display = 'flex';
+                }
+              }}
+              onLoad={(e) => {
+                // If fallback img loads, hide Next.js Image and show this
+                const nextImage = (e.target as HTMLElement).previousElementSibling;
+                if (nextImage) {
+                  (nextImage as HTMLElement).style.display = 'none';
+                }
+                (e.target as HTMLElement).classList.remove('hidden');
+              }}
+            />
+          </>
         ) : null}
         <div className="image-placeholder w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center" style={{ display: post.featuredImage ? 'none' : 'flex' }}>
           <span className="text-white text-4xl">🏠</span>
