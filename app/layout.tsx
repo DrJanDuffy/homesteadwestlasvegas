@@ -423,6 +423,50 @@ export default function RootLayout({
                         latitude: 36.2839,
                         longitude: -115.2936
                       },
+                      openingHoursSpecification: [
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Monday',
+                          opens: '10:00',
+                          closes: '18:00'
+                        },
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Tuesday',
+                          opens: '10:00',
+                          closes: '18:00'
+                        },
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Wednesday',
+                          opens: '10:00',
+                          closes: '18:00'
+                        },
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Thursday',
+                          opens: '10:00',
+                          closes: '18:00'
+                        },
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Friday',
+                          opens: '10:00',
+                          closes: '18:00'
+                        },
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Saturday',
+                          opens: '10:00',
+                          closes: '16:00'
+                        },
+                        {
+                          '@type': 'OpeningHoursSpecification',
+                          dayOfWeek: 'Sunday',
+                          opens: '10:00',
+                          closes: '15:00'
+                        }
+                      ],
                       areaServed: {
                         '@type': 'City',
                         name: 'Las Vegas',
