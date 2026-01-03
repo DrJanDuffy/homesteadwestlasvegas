@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'VIP Berkshire Hathaway HomeServices Buyer Program | Dr. Jan Duffy | Las Vegas New Construction Expert',
@@ -61,6 +62,12 @@ export default function VIPBuyerProgramPage() {
       'Northwest Las Vegas Real Estate'
     ],
     jobTitle: 'VIP New Construction Specialist',
+    sameAs: [
+      'https://www.homesteadwestlasvegas.com',
+      'https://www.homesteadwestlasvegas.com/about',
+      'https://www.homesteadwestlasvegas.com/contact',
+      'https://www.homesteadwestlasvegas.com/floor-plans'
+    ]
     worksFor: {
       '@type': 'Organization',
       name: 'Homestead West | Homes by Dr Jan Duffy'
@@ -76,11 +83,20 @@ export default function VIPBuyerProgramPage() {
     }
   };
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
+    { name: 'VIP Buyer Program', url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program' }
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <div className="min-h-screen bg-white">
