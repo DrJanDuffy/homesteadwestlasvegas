@@ -153,10 +153,6 @@ export default async function BlogPostPage({
                 alt={post.title}
                 className="w-full h-auto rounded-xl shadow-lg"
                 loading="eager"
-                onError={(e) => {
-                  // Hide image if it fails to load
-                  (e.target as HTMLImageElement).style.display = 'none';
-                }}
               />
             </div>
           )}
