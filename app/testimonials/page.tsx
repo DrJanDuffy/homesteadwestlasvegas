@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Client Testimonials & Reviews | Dr. Jan Duffy | VIP New Construction Specialist',
-  description: 'Read real client testimonials and reviews from families who worked with Dr. Jan Duffy\'s VIP new construction partnership. 5-star reviews from Homestead West homeowners.',
+  description: 'Read authentic client testimonials and reviews from families who worked with Dr. Jan Duffy\'s VIP new construction partnership. Real 5-star reviews from Homestead West homeowners sharing their experiences buying new construction homes in Las Vegas.',
   keywords: [
     'Dr. Jan Duffy testimonials',
     'new construction reviews',
@@ -364,6 +364,41 @@ export default function TestimonialsPage() {
                 <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
                 <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More Resources</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/about" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
+                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise and VIP partnership</p>
+                </a>
+                <a href="/services" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>
+                  <p className="text-gray-600">Buying, selling, investment, and property management</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                </a>
+                <a href="/homebuying-process" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
+                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                </a>
+                <a href="/properties" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Properties</h3>
+                  <p className="text-gray-600">Browse available Homestead West homes</p>
+                </a>
+                <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
+                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                </a>
               </div>
             </div>
           </div>

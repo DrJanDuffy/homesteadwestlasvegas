@@ -5,7 +5,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Blog | Las Vegas Real Estate News & Market Updates | Dr. Jan Duffy',
-  description: 'Stay informed with Las Vegas real estate market updates, new construction insights, and builder news from VIP specialist Dr. Jan Duffy.',
+  description: 'Stay informed with Las Vegas real estate market updates, new construction insights, and builder news from VIP specialist Dr. Jan Duffy. Expert analysis on Homestead West, Northwest Las Vegas real estate trends, and new construction home buying tips.',
   keywords: [
     'Las Vegas real estate blog',
     'Las Vegas market updates',
@@ -300,6 +300,41 @@ export default function BlogPage() {
                 <p className="text-gray-600 text-sm mt-4">
                   We respect your privacy. Unsubscribe at any time.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More Resources</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/about" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
+                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise and VIP partnership</p>
+                </a>
+                <a href="/services" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>
+                  <p className="text-gray-600">Buying, selling, investment, and property management</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                </a>
+                <a href="/testimonials" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Testimonials</h3>
+                  <p className="text-gray-600">Read what clients say about working with Dr. Jan</p>
+                </a>
+                <a href="/faq" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">FAQ</h3>
+                  <p className="text-gray-600">Common questions about new construction</p>
+                </a>
+                <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
+                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                </a>
               </div>
             </div>
           </div>

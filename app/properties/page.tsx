@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Las Vegas Properties for Sale | Dr. Jan Duffy | Ranch Homes $910K+',
-  description: 'Browse Las Vegas properties for sale with Dr. Jan Duffy (License S.0197614). Ranch-style homes on pool-sized lots in Northwest Las Vegas starting at $910K.',
+  description: 'Browse Las Vegas properties for sale with Dr. Jan Duffy (License S.0197614). Discover ranch-style homes on pool-sized lots in Northwest Las Vegas starting at $910K. View available Homestead West homes and new construction listings.',
   keywords: 'Las Vegas properties for sale, ranch homes Las Vegas, Northwest Las Vegas homes, $910K homes Las Vegas, Dr. Jan Duffy listings',
   openGraph: {
     title: 'Las Vegas Properties for Sale | Dr. Jan Duffy',
@@ -273,6 +273,41 @@ export default function PropertiesPage() {
                     <span>Lower density than central Las Vegas with more space</span>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More About Homestead West</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/community" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Community Guide</h3>
+                  <p className="text-gray-600">Learn about Homestead West community and amenities</p>
+                </a>
+                <a href="/floor-plans" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
+                  <p className="text-gray-600">Explore available Homestead West home designs</p>
+                </a>
+                <a href="/virtual-tour" className="bg-white p-6 rounded-lg hover:bg-purple-50 transition-colors border-2 border-purple-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Virtual Tour</h3>
+                  <p className="text-gray-600">Take a 3D virtual tour of Homestead West homes</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-white p-6 rounded-lg hover:bg-yellow-50 transition-colors border-2 border-yellow-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Get exclusive access to Homestead West homes</p>
+                </a>
+                <a href="/homebuying-process" className="bg-white p-6 rounded-lg hover:bg-indigo-50 transition-colors border-2 border-indigo-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
+                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                </a>
+                <a href="/contact" className="bg-white p-6 rounded-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
+                  <p className="text-gray-600">Schedule a consultation about Homestead West</p>
+                </a>
               </div>
             </div>
           </div>
