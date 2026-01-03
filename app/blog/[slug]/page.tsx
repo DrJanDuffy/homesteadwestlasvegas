@@ -158,7 +158,7 @@ export default async function BlogPostPage({
             
             {/* Content */}
             <div 
-              className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600 prose-img:rounded-lg"
+              className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600 prose-img:rounded-lg prose-p:text-gray-700 prose-strong:text-gray-900 prose-ul:text-gray-700 prose-ol:text-gray-700 prose-li:text-gray-700"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
             
