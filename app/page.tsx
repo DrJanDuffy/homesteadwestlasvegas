@@ -4,7 +4,7 @@ import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Dr. Jan Duffy - Las Vegas Real Estate Expert | Homestead West',
-  description: 'Expert Las Vegas real estate agent Dr. Jan Duffy (License S.0197614) helps you buy, sell, and invest in Las Vegas properties. Professional service with local market expertise.',
+  description: 'Expert Las Vegas real estate agent Dr. Jan Duffy (License S.0197614) helps you buy, sell, and invest in Las Vegas properties. Specializing in Homestead West new construction homes, VIP builder partnerships, and Northwest Las Vegas real estate. Professional service with 30+ years experience and $127M+ in sales.',
   keywords: 'Las Vegas real estate, Dr. Jan Duffy, real estate agent, Las Vegas homes, property sales, real estate investment, Homestead West',
   alternates: {
     canonical: 'https://www.homesteadwestlasvegas.com/',

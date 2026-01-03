@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Available Homes | Homestead West Las Vegas | MLS Listings',
-  description: 'Browse current available homes in Las Vegas MLS. Updated daily with the latest properties from Homestead West and surrounding areas.',
+  title: 'Plan 3336 - 3,336 Sq Ft Ranch Home | Homestead West Las Vegas | Dr. Jan Duffy',
+  description: 'Explore Plan 3336 at Homestead West: 3,336 sq ft single-story ranch home with 4-5 bedrooms, 4.5 baths, 3-5 car garage, and pool-sized lot. Starting at $910,990. Expert guidance from Dr. Jan Duffy.',
   keywords: [
     'available homes Las Vegas',
     'Las Vegas MLS listings',
@@ -20,6 +21,43 @@ export const metadata: Metadata = {
 };
 
 export default function Plan3336Page() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
+    { name: 'Floor Plans', url: 'https://www.homesteadwestlasvegas.com/floor-plans' },
+    { name: 'Plan 3336', url: 'https://www.homesteadwestlasvegas.com/floor-plans/3336' }
+  ]);
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Homestead West Plan 3336 - Single-Story Ranch Home',
+    description: '3,336 sq ft single-story ranch home with 4-5 bedrooms, 4.5 baths, 3-5 car garage, and pool-sized lot. Starting at $910,990.',
+    brand: {
+      '@type': 'Brand',
+      name: 'Homestead West'
+    },
+    category: 'Real Estate',
+    offers: {
+      '@type': 'Offer',
+      price: '910990',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      priceValidUntil: '2026-12-31',
+      url: 'https://www.homesteadwestlasvegas.com/floor-plans/3336',
+      seller: {
+        '@type': 'RealEstateAgent',
+        name: 'Dr. Jan Duffy',
+        telephone: '+17022996607',
+        email: 'DrJanSells@HomesteadWestLasVegas.com'
+      }
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '50'
+    }
+  };
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
