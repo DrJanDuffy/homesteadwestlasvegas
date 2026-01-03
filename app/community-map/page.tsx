@@ -76,9 +76,9 @@ export default function CommunityMapPage() {
 
               {/* New Construction Interactive Map */}
               <div className="bg-gray-100 rounded-lg p-4 mb-8">
-                <div className="aspect-video rounded-lg overflow-hidden">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
                   <iframe
-                    src="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.5!2d-115.2936!3d36.2839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c8b8b8b8b8b9%3A0x0!2zMzYsMTcsMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -86,21 +86,32 @@ export default function CommunityMapPage() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Homestead West Community Map - 5592 N Dapple Gray Rd, Las Vegas, NV 89149"
-                    className="rounded-lg"
+                    className="rounded-lg w-full h-full"
                   ></iframe>
                 </div>
-                <div className="mt-4 text-center">
-                  <p className="text-gray-600 mb-2">
-                    <strong>Homestead West Location:</strong> 5592 N Dapple Gray Rd, Las Vegas, NV 89149
+                <div className="mt-4 text-center bg-white p-4 rounded-lg">
+                  <p className="text-gray-700 mb-3">
+                    <strong className="text-gray-900">Homestead West Location:</strong><br />
+                    <span className="text-lg">5592 N Dapple Gray Rd, Las Vegas, NV 89149</span>
                   </p>
-                  <a
-                    href="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 underline"
-                  >
-                    View on Google Maps →
-                  </a>
+                  <div className="flex flex-wrap justify-center gap-4">
+                    <a
+                      href="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    >
+                      <span>📍</span> View on Google Maps
+                    </a>
+                    <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium"
+                    >
+                      <span>🧭</span> Get Directions
+                    </a>
+                  </div>
                 </div>
               </div>
 
