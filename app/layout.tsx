@@ -264,7 +264,14 @@ export default function RootLayout({
           {
             '@type': 'Hospital',
             name: 'Centennial Hills Hospital',
-            description: '3.8 miles away'
+            description: '3.8 miles away',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Las Vegas',
+              addressRegion: 'NV',
+              postalCode: '89149',
+              addressCountry: 'US'
+            }
           }
         ],
         hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
@@ -350,6 +357,14 @@ export default function RootLayout({
                       url: 'https://www.homesteadwestlasvegas.com',
                       image: 'https://www.homesteadwestlasvegas.com/images/dr-jan-duffy.jpg',
                       priceRange: '$850,000-$990,000',
+                      address: {
+                        '@type': 'PostalAddress',
+                        streetAddress: '5592 N Dapple Gray Rd',
+                        addressLocality: 'Las Vegas',
+                        addressRegion: 'NV',
+                        postalCode: '89149',
+                        addressCountry: 'US'
+                      },
                       areaServed: {
                         '@type': 'City',
                         name: 'Las Vegas',
