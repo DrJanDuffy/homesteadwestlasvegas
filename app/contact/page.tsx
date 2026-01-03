@@ -291,6 +291,41 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* Related Pages Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More Resources</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/about" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
+                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise and VIP partnership</p>
+                </a>
+                <a href="/services" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>
+                  <p className="text-gray-600">Buying, selling, investment, and property management</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-white p-6 rounded-lg hover:bg-yellow-50 transition-colors border-2 border-yellow-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                </a>
+                <a href="/homebuying-process" className="bg-white p-6 rounded-lg hover:bg-purple-50 transition-colors border-2 border-purple-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
+                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                </a>
+                <a href="/testimonials" className="bg-white p-6 rounded-lg hover:bg-indigo-50 transition-colors border-2 border-indigo-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Testimonials</h3>
+                  <p className="text-gray-600">What clients say about working with Dr. Jan</p>
+                </a>
+                <a href="/faq" className="bg-white p-6 rounded-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">FAQ</h3>
+                  <p className="text-gray-600">Common questions about new construction</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* License Information */}
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
