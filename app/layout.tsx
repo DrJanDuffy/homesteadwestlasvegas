@@ -84,6 +84,9 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://www.homesteadwestlasvegas.com/',
+    types: {
+      'application/rss+xml': '/blog/rss.xml',
+    },
   },
 
   other: {
