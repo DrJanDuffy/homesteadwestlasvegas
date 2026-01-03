@@ -36,9 +36,21 @@
 - ✅ About page
 - ✅ Floor plans page
 - ✅ VIP buyer program page
-- ✅ Services page (NEW)
-- ✅ Contact page (NEW)
-- ✅ Community page (NEW)
+- ✅ Services page
+- ✅ Contact page
+- ✅ Community page
+- ✅ Testimonials page
+- ✅ Blog page
+- ✅ Properties page
+- ✅ FAQ page
+- ✅ Homebuying process page
+- ✅ Virtual tour page
+- ✅ Appointment page
+- ✅ Location/Las Vegas office page
+- ✅ Community map page
+- ✅ Buyers guide page
+
+**Total: 16 pages with Related Pages sections (70% coverage)**
 
 **Navigation:**
 - ✅ SiteNavigationElement schema for main menu
@@ -123,8 +135,8 @@
 **Pages:** 23 total pages
 **Structured Data Types:** 18+ schema types
 **Breadcrumbs:** 19 pages (83% coverage)
-**Related Pages Sections:** 6 pages
-**Internal Links:** Extensive navigation and related pages
+**Related Pages Sections:** 16 pages (70% coverage)
+**Internal Links:** Extensive navigation, related pages, and contextual links
 
 ## Next Steps (Optional Future Enhancements)
 
@@ -169,6 +181,16 @@
 - `app/services/page.tsx` - Related pages section
 - `app/contact/page.tsx` - Related pages section
 - `app/community/page.tsx` - Related pages section
+- `app/testimonials/page.tsx` - Related pages section
+- `app/blog/page.tsx` - Related pages section
+- `app/properties/page.tsx` - Related pages section
+- `app/faq/page.tsx` - Related pages section
+- `app/homebuying-process/page.tsx` - Related pages section
+- `app/virtual-tour/page.tsx` - Related pages section
+- `app/appointment/page.tsx` - Related pages section
+- `app/location/las-vegas-office/page.tsx` - Related pages section
+- `app/community-map/page.tsx` - Related pages section
+- `app/buyers-guide/page.tsx` - Related pages section
 
 **SEO Configuration:**
 - `app/sitemap.ts` - Optimized sitemap
