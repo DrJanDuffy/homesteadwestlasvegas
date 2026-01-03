@@ -17,7 +17,7 @@ interface DropdownProps {
 
 export function Dropdown({ label, items, id }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
