@@ -145,16 +145,21 @@ export default async function BlogPostPage({
               </div>
             </header>
             
-            {/* Featured Image */}
-            {post.featuredImage && (
-              <div className="mb-8">
-                <img
-                  src={post.featuredImage}
-                  alt={post.title}
-                  className="w-full h-auto rounded-xl shadow-lg"
-                />
-              </div>
-            )}
+          {/* Featured Image */}
+          {post.featuredImage && (
+            <div className="mb-8">
+              <img
+                src={post.featuredImage}
+                alt={post.title}
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="eager"
+                onError={(e) => {
+                  // Hide image if it fails to load
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
+              />
+            </div>
+          )}
             
             {/* Content */}
             <div 

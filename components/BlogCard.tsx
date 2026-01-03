@@ -24,12 +24,21 @@ export default function BlogCard({ post }: BlogCardProps) {
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+            onError={(e) => {
+              // Fallback to placeholder if image fails
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const placeholder = target.parentElement?.querySelector('.image-placeholder');
+              if (placeholder) {
+                (placeholder as HTMLElement).style.display = 'flex';
+              }
+            }}
           />
-        ) : (
-          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-            <span className="text-white text-4xl">🏠</span>
-          </div>
-        )}
+        ) : null}
+        <div className="image-placeholder w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center" style={{ display: post.featuredImage ? 'none' : 'flex' }}>
+          <span className="text-white text-4xl">🏠</span>
+        </div>
       </Link>
       
       {/* Content */}

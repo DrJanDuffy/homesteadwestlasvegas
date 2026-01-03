@@ -12,6 +12,8 @@ const parser = new Parser<{}, RSSItem>({
       ['media:content', 'mediaContent', { keepArray: false }],
     ],
   },
+  timeout: 10000, // 10 second timeout
+  maxRedirects: 5,
 });
 
 function generateSlug(title: string, guid: string): string {
@@ -28,9 +30,29 @@ function generateSlug(title: string, guid: string): string {
 }
 
 function extractFeaturedImage(content: string): string | undefined {
-  // Extract first image from content
-  const imgMatch = content.match(/<img[^>]+src="([^"]+)"/);
-  return imgMatch?.[1];
+  if (!content) return undefined;
+  
+  // Try multiple patterns for image extraction
+  const patterns = [
+    /<img[^>]+src=["']([^"']+)["']/i,  // Standard img src
+    /<img[^>]+src=([^\s>]+)/i,         // Without quotes
+    /<img[^>]+data-src=["']([^"']+)["']/i, // Lazy loaded images
+  ];
+  
+  for (const pattern of patterns) {
+    const match = content.match(pattern);
+    if (match && match[1]) {
+      let imageUrl = match[1];
+      // Clean up URL
+      imageUrl = imageUrl.replace(/^["']|["']$/g, '');
+      // Only return if it's a valid HTTP(S) URL
+      if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+        return imageUrl;
+      }
+    }
+  }
+  
+  return undefined;
 }
 
 function createExcerpt(content: string, maxLength: number = 160): string {
@@ -48,11 +70,16 @@ function createExcerpt(content: string, maxLength: number = 160): string {
   return truncated.slice(0, lastSpace) + '...';
 }
 
+// Cache for fallback posts (in case RSS feed fails)
+let cachedPosts: BlogPost[] = [];
+let cacheTimestamp: number = 0;
+const CACHE_DURATION = 3600000; // 1 hour in milliseconds
+
 export async function fetchKCMPosts(): Promise<BlogPost[]> {
   try {
     const feed = await parser.parseURL(KCM_RSS_URL);
     
-    return feed.items.map((item): BlogPost => ({
+    const posts = feed.items.map((item): BlogPost => ({
       slug: generateSlug(item.title || '', item.guid || item.link || ''),
       title: item.title || 'Untitled Post',
       excerpt: item.contentSnippet || createExcerpt(item.content || item['content:encoded'] || ''),
@@ -62,8 +89,22 @@ export async function fetchKCMPosts(): Promise<BlogPost[]> {
       categories: item.categories || [],
       featuredImage: extractFeaturedImage(item.content || item['content:encoded'] || ''),
     }));
+    
+    // Update cache on successful fetch
+    cachedPosts = posts;
+    cacheTimestamp = Date.now();
+    
+    return posts;
   } catch (error) {
     console.error('Error fetching KCM RSS feed:', error);
+    
+    // Return cached posts if available and not too old
+    if (cachedPosts.length > 0 && (Date.now() - cacheTimestamp) < CACHE_DURATION) {
+      console.warn('Using cached posts due to RSS feed error');
+      return cachedPosts;
+    }
+    
+    // Return empty array if no cache available
     return [];
   }
 }

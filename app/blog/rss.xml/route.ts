@@ -4,10 +4,29 @@ import { fetchKCMPosts } from '@/lib/rss-fetcher';
 export const revalidate = 3600; // 1 hour
 
 export async function GET() {
-  const posts = await fetchKCMPosts();
-  const siteUrl = 'https://www.homesteadwestlasvegas.com';
-  
-  const feed = new Feed({
+  try {
+    const posts = await fetchKCMPosts();
+    const siteUrl = 'https://www.homesteadwestlasvegas.com';
+    
+    if (!posts.length) {
+      // Return empty feed if no posts available
+      const emptyFeed = new Feed({
+        title: 'Homestead West Las Vegas Real Estate Blog',
+        description: 'Expert real estate insights, market updates, and home buying tips for Northwest Las Vegas from Dr. Jan Duffy.',
+        id: siteUrl,
+        link: siteUrl,
+        language: 'en',
+      });
+      
+      return new Response(emptyFeed.rss2(), {
+        headers: {
+          'Content-Type': 'application/rss+xml; charset=utf-8',
+          'Cache-Control': 'public, max-age=300, stale-while-revalidate=600',
+        },
+      });
+    }
+    
+    const feed = new Feed({
     title: 'Homestead West Las Vegas Real Estate Blog',
     description: 'Expert real estate insights, market updates, and home buying tips for Northwest Las Vegas from Dr. Jan Duffy.',
     id: siteUrl,
@@ -44,10 +63,30 @@ export async function GET() {
     });
   });
   
-  return new Response(feed.rss2(), {
-    headers: {
-      'Content-Type': 'application/rss+xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
-    },
-  });
+    return new Response(feed.rss2(), {
+      headers: {
+        'Content-Type': 'application/rss+xml; charset=utf-8',
+        'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
+      },
+    });
+  } catch (error) {
+    console.error('Error generating RSS feed:', error);
+    
+    // Return minimal valid RSS feed on error
+    const errorFeed = new Feed({
+      title: 'Homestead West Las Vegas Real Estate Blog',
+      description: 'Expert real estate insights, market updates, and home buying tips for Northwest Las Vegas from Dr. Jan Duffy.',
+      id: 'https://www.homesteadwestlasvegas.com',
+      link: 'https://www.homesteadwestlasvegas.com',
+      language: 'en',
+    });
+    
+    return new Response(errorFeed.rss2(), {
+      status: 200, // Return 200 to avoid breaking RSS readers
+      headers: {
+        'Content-Type': 'application/rss+xml; charset=utf-8',
+        'Cache-Control': 'public, max-age=300, stale-while-revalidate=600',
+      },
+    });
+  }
 }
