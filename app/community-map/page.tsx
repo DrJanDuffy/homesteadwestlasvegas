@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Community Map | Homestead West Las Vegas | Available Lots & Homesites',
@@ -45,11 +46,21 @@ export default function CommunityMapPage() {
     }
   };
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
+    { name: 'Community', url: 'https://www.homesteadwestlasvegas.com/community' },
+    { name: 'Community Map', url: 'https://www.homesteadwestlasvegas.com/community-map' }
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <div className="min-h-screen bg-white">

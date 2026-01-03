@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Buying Homes Las Vegas | Dr. Jan Duffy | First-Time Buyer Guide',
@@ -40,11 +41,21 @@ export default function BuyingServicePage() {
     }
   };
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
+    { name: 'Services', url: 'https://www.homesteadwestlasvegas.com/services' },
+    { name: 'Buying', url: 'https://www.homesteadwestlasvegas.com/services/buying' }
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <div className="min-h-screen bg-white">

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Investment Consulting | Dr. Jan Duffy | Las Vegas Real Estate Investment Expert',
@@ -202,5 +203,6 @@ export default function InvestmentConsultingPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
