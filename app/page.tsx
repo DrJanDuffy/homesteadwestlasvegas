@@ -42,8 +42,11 @@ export default function HomePage() {
       name: 'Dr. Jan Duffy',
       telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
+      image: 'https://www.homesteadwestlasvegas.com/images/dr-jan-duffy.jpg',
+      priceRange: '$850,000-$990,000',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: '5592 N Dapple Gray Rd',
         addressLocality: 'Las Vegas',
         addressRegion: 'NV',
         postalCode: '89149',
