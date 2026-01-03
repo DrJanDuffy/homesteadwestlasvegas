@@ -78,14 +78,29 @@ export default function CommunityMapPage() {
               <div className="bg-gray-100 rounded-lg p-4 mb-8">
                 <div className="aspect-video rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.centurycommunities.com/viewport-map/?brand=CCS&communityId=00011156"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.5!2d-115.2936!3d36.2839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzYsMTcsMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
                     width="100%"
                     height="100%"
-                    frameBorder="0"
+                    style={{ border: 0 }}
                     allowFullScreen
-                    title="Homestead West Community Map"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Homestead West Community Map - 5592 N Dapple Gray Rd, Las Vegas, NV 89149"
                     className="rounded-lg"
                   ></iframe>
+                </div>
+                <div className="mt-4 text-center">
+                  <p className="text-gray-600 mb-2">
+                    <strong>Homestead West Location:</strong> 5592 N Dapple Gray Rd, Las Vegas, NV 89149
+                  </p>
+                  <a
+                    href="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    View on Google Maps →
+                  </a>
                 </div>
               </div>
 
