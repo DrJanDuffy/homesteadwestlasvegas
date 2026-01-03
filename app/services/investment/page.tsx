@@ -22,7 +22,18 @@ export const metadata: Metadata = {
 };
 
 export default function InvestmentConsultingPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
+    { name: 'Services', url: 'https://www.homesteadwestlasvegas.com/services' },
+    { name: 'Investment', url: 'https://www.homesteadwestlasvegas.com/services/investment' }
+  ]);
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-blue-900 text-white py-16">
