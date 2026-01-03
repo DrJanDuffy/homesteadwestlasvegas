@@ -76,26 +76,25 @@ export default function HomePage() {
       
       <div className="min-h-screen bg-white">
         {/* Hero Section - Above the Fold */}
-        <section className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-blue-900 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20"></div>
-          {/* Animated background elements */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-            <div className="absolute top-40 right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-700"></div>
-            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+        <section className="relative bg-gradient-to-br from-[#1a365d] via-[#0f2439] to-[#1a365d] text-white overflow-hidden">
+          <div className="absolute inset-0 bg-black/10"></div>
+          {/* Subtle professional background elements */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[#d4af37] rounded-full mix-blend-multiply filter blur-xl"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-[#2c5282] rounded-full mix-blend-multiply filter blur-xl"></div>
           </div>
           <div className="relative container mx-auto px-4 py-24 md:py-32">
             <div className="max-w-4xl mx-auto text-center">
               {/* VIP Badge */}
               <div className="mb-8">
-                <div className="inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-lg mb-6 animate-bounce">
+                <div className="inline-block bg-[#d4af37] text-[#1a365d] px-6 py-2 rounded-full font-bold text-lg mb-6 shadow-lg">
                   ⭐ VIP Berkshire Hathaway HomeServices Buyer Program ⭐
                 </div>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Homestead West Las Vegas: Luxury Ranch Homes in Northwest Las Vegas
               </h1>
-              <p className="text-2xl md:text-3xl mb-4 font-semibold text-blue-100">
+              <p className="text-2xl md:text-3xl mb-4 font-semibold text-gray-200">
                 $910K+ Luxury Ranch Homes on Pool-Sized Lots
               </p>
               <p className="text-xl mb-8 text-blue-50">
@@ -463,27 +462,27 @@ export default function HomePage() {
                   <h2 className="text-4xl font-bold mb-6">
                     VIP Berkshire Hathaway HomeServices Buyer Program for Homestead West
                   </h2>
-                  <p className="text-xl mb-8 text-blue-100">
+                  <p className="text-xl mb-8 text-gray-200">
                     Premier New Home Buyer Program for Homestead West Las Vegas
                   </p>
-                  <p className="text-lg mb-8 text-blue-200">
+                  <p className="text-lg mb-8 text-gray-300">
                     The VIP Berkshire Hathaway HomeServices New Home Buyer Program provides <strong>Homestead West</strong> buyers with exclusive access to Las Vegas new construction homes through Dr. Jan Duffy's elite builder partnerships. This premier program delivers insider access, priority lot selection, and expert negotiation—giving YOU the ultimate advantage when purchasing your new Homestead West home.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🚀</div>
                       <h3 className="text-lg font-bold mb-2">Early Phase Access Through VIP Program</h3>
-                      <p className="text-sm text-blue-100">First access to new Homestead West phases before public release through the Berkshire Hathaway HomeServices program</p>
+                      <p className="text-sm text-gray-200">First access to new Homestead West phases before public release through the Berkshire Hathaway HomeServices program</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">⚡</div>
                       <h3 className="text-lg font-bold mb-2">Priority Lot Selection Benefits</h3>
-                      <p className="text-sm text-blue-100">VIP program status ensures priority treatment throughout the entire Homestead West homebuying process</p>
+                      <p className="text-sm text-gray-200">VIP program status ensures priority treatment throughout the entire Homestead West homebuying process</p>
                     </div>
                     <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                       <div className="text-3xl mb-3">🎯</div>
                       <h3 className="text-lg font-bold mb-2">Expert Negotiation Power</h3>
-                      <p className="text-sm text-blue-100">Elite builder relationships backed by Berkshire Hathaway HomeServices deliver superior negotiation results for Homestead West buyers</p>
+                      <p className="text-sm text-gray-200">Elite builder relationships backed by Berkshire Hathaway HomeServices deliver superior negotiation results for Homestead West buyers</p>
                     </div>
                   </div>
                   <a
@@ -688,30 +687,30 @@ export default function HomePage() {
         </section>
 
         {/* Strong CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+        <section className="py-20 bg-gradient-to-r from-[#1a365d] to-[#0f2439] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">
               Ready to Explore Homestead West Las Vegas?
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-200">
               Call or email Dr. Jan Duffy today for a private tour and expert guidance on your Homestead West home purchase
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <div className="text-center">
-                <p className="text-sm font-semibold text-blue-200 mb-2">CALL NOW</p>
+                <p className="text-sm font-semibold text-[#d4af37] mb-2">CALL NOW</p>
                 <a 
                   href="tel:7022996607"
-                  className="text-3xl font-bold hover:text-blue-200 transition-colors"
+                  className="text-3xl font-bold hover:text-[#d4af37] transition-colors"
                 >
                   (702) 299-6607
                 </a>
               </div>
-              <div className="hidden sm:block w-px h-16 bg-blue-400"></div>
+              <div className="hidden sm:block w-px h-16 bg-[#d4af37]"></div>
               <div className="text-center">
-                <p className="text-sm font-semibold text-blue-200 mb-2">EMAIL</p>
+                <p className="text-sm font-semibold text-[#d4af37] mb-2">EMAIL</p>
                 <a 
                   href="mailto:DrJanSells@HomesteadWestLasVegas.com"
-                  className="text-xl font-semibold hover:text-blue-200 transition-colors break-all"
+                  className="text-xl font-semibold hover:text-[#d4af37] transition-colors break-all"
                 >
                   DrJanSells@HomesteadWestLasVegas.com
                 </a>

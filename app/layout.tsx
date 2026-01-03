@@ -667,7 +667,10 @@ export default function RootLayout({
                   realscout-advanced-search {
                     --rs-as-button-text-color: #ffffff;
                     --rs-as-background-color: #ffffff;
-                    --rs-as-button-color: #4a90e2;
+                    --rs-as-button-color: #1a365d;
+                    --rs-as-button-hover-color: #0f2439;
+                    --rs-as-border-color: #e2e8f0;
+                    --rs-as-text-color: #1a365d;
                     --rs-as-widget-width: 100% !important;
                     max-width: 100% !important;
                     width: 100% !important;

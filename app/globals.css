@@ -4,6 +4,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Professional Color Palette - Expertise, Authority, Trust */
+  --navy-primary: #1a365d;      /* Deep navy - authority, trust */
+  --navy-dark: #0f2439;         /* Darker navy - sophistication */
+  --navy-light: #2c5282;        /* Lighter navy - approachability */
+  --gold-primary: #d4af37;       /* Premium gold - expertise */
+  --gold-light: #f4d03f;        /* Light gold - highlights */
+  --gray-professional: #4a5568; /* Professional gray */
+  --gray-light: #f7fafc;        /* Light background */
+  --gray-medium: #e2e8f0;       /* Medium gray */
 }
 
 @theme inline {

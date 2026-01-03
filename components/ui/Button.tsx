@@ -14,10 +14,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const buttonVariants = {
-  primary: 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 focus-visible:ring-blue-500',
-  secondary: 'bg-gray-100 text-gray-900 hover:bg-gray-200 active:bg-gray-300 focus-visible:ring-gray-500',
-  outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50 active:bg-blue-100 focus-visible:ring-blue-500',
-  ghost: 'text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-gray-500',
+  primary: 'bg-[#1a365d] text-white hover:bg-[#0f2439] active:bg-[#0a1f33] focus-visible:ring-[#d4af37] shadow-lg hover:shadow-xl',
+  secondary: 'bg-[#f7fafc] text-[#1a365d] hover:bg-[#e2e8f0] active:bg-[#cbd5e0] focus-visible:ring-[#d4af37] border border-[#e2e8f0]',
+  outline: 'border-2 border-[#1a365d] text-[#1a365d] hover:bg-[#1a365d] hover:text-white active:bg-[#0f2439] focus-visible:ring-[#d4af37]',
+  ghost: 'text-[#4a5568] hover:bg-[#f7fafc] active:bg-[#e2e8f0] focus-visible:ring-[#d4af37]',
+  gold: 'bg-[#d4af37] text-[#1a365d] hover:bg-[#f4d03f] active:bg-[#c9a227] focus-visible:ring-[#d4af37] font-bold shadow-lg hover:shadow-xl',
 };
 
 const buttonSizes = {

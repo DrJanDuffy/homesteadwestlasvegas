@@ -116,7 +116,7 @@ export default function PropertiesPage() {
       
       <div className="min-h-screen bg-white">
         {/* Header */}
-        <header className="bg-blue-900 text-white py-8">
+        <header className="bg-[#1a365d] text-white py-8">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Homestead West Las Vegas Properties for Sale</h1>
             <p className="text-xl">Ranch-style homes on pool-sized lots in Northwest Las Vegas</p>
