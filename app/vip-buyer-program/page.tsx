@@ -67,7 +67,7 @@ export default function VIPBuyerProgramPage() {
       'https://www.homesteadwestlasvegas.com/about',
       'https://www.homesteadwestlasvegas.com/contact',
       'https://www.homesteadwestlasvegas.com/floor-plans'
-    ]
+    ],
     worksFor: {
       '@type': 'Organization',
       name: 'Homestead West | Homes by Dr Jan Duffy'
