@@ -13,6 +13,11 @@ export interface RSSItem {
     url: string;
     type: string;
   };
+  mediaContent?: {
+    url?: string;
+    type?: string;
+    medium?: string;
+  };
 }
 
 export interface RSSFeed {

@@ -29,6 +29,22 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'keepingcurrentmatters.com',
       },
+      {
+        protocol: 'https',
+        hostname: '*.wp.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i0.wp.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i1.wp.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i2.wp.com',
+      },
     ],
   },
   

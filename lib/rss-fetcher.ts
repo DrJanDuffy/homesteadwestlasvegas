@@ -29,7 +29,22 @@ function generateSlug(title: string, guid: string): string {
   return `${baseSlug}-${hash}`;
 }
 
-function extractFeaturedImage(content: string): string | undefined {
+function extractFeaturedImage(
+  content: string, 
+  item?: RSSItem
+): string | undefined {
+  // First, check for enclosure (RSS feed standard for media)
+  if (item?.enclosure?.url && item.enclosure.type?.startsWith('image/')) {
+    return item.enclosure.url;
+  }
+  
+  // Check for media:content (Media RSS standard)
+  if (item?.mediaContent?.url && 
+      (item.mediaContent.type?.startsWith('image/') || item.mediaContent.medium === 'image')) {
+    return item.mediaContent.url;
+  }
+  
+  // Check content for images
   if (!content) return undefined;
   
   // Try multiple patterns for image extraction
@@ -37,6 +52,8 @@ function extractFeaturedImage(content: string): string | undefined {
     /<img[^>]+src=["']([^"']+)["']/i,  // Standard img src
     /<img[^>]+src=([^\s>]+)/i,         // Without quotes
     /<img[^>]+data-src=["']([^"']+)["']/i, // Lazy loaded images
+    /<img[^>]+data-lazy-src=["']([^"']+)["']/i, // WordPress lazy load
+    /background-image:\s*url\(["']?([^"')]+)["']?\)/i, // CSS background images
   ];
   
   for (const pattern of patterns) {
@@ -45,9 +62,15 @@ function extractFeaturedImage(content: string): string | undefined {
       let imageUrl = match[1];
       // Clean up URL
       imageUrl = imageUrl.replace(/^["']|["']$/g, '');
+      // Decode HTML entities
+      imageUrl = imageUrl.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
       // Only return if it's a valid HTTP(S) URL
       if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
         return imageUrl;
+      }
+      // Handle relative URLs (convert to absolute if base URL available)
+      if (imageUrl.startsWith('//')) {
+        return `https:${imageUrl}`;
       }
     }
   }
@@ -79,16 +102,19 @@ export async function fetchKCMPosts(): Promise<BlogPost[]> {
   try {
     const feed = await parser.parseURL(KCM_RSS_URL);
     
-    const posts = feed.items.map((item): BlogPost => ({
-      slug: generateSlug(item.title || '', item.guid || item.link || ''),
-      title: item.title || 'Untitled Post',
-      excerpt: item.contentSnippet || createExcerpt(item.content || item['content:encoded'] || ''),
-      content: item.content || item['content:encoded'] || item.contentSnippet || '',
-      publishedAt: new Date(item.isoDate || item.pubDate || Date.now()),
-      link: item.link || '',
-      categories: item.categories || [],
-      featuredImage: extractFeaturedImage(item.content || item['content:encoded'] || ''),
-    }));
+    const posts = feed.items.map((item): BlogPost => {
+      const content = item.content || item['content:encoded'] || item.contentSnippet || '';
+      return {
+        slug: generateSlug(item.title || '', item.guid || item.link || ''),
+        title: item.title || 'Untitled Post',
+        excerpt: item.contentSnippet || createExcerpt(content),
+        content: content,
+        publishedAt: new Date(item.isoDate || item.pubDate || Date.now()),
+        link: item.link || '',
+        categories: item.categories || [],
+        featuredImage: extractFeaturedImage(content, item),
+      };
+    });
     
     // Update cache on successful fetch
     cachedPosts = posts;
