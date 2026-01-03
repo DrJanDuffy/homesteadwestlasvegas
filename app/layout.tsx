@@ -269,6 +269,7 @@ export default function RootLayout({
             description: '3.8 miles away',
             address: {
               '@type': 'PostalAddress',
+              streetAddress: '6900 N Durango Dr',
               addressLocality: 'Las Vegas',
               addressRegion: 'NV',
               postalCode: '89149',
