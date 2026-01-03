@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
 };
 
+// Force revalidation to clear stale cache
+export const revalidate = 0; // Always revalidate (no static caching)
+
 export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
