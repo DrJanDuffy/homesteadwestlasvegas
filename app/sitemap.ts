@@ -83,6 +83,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     
+    // Contact - High Priority (Conversion Page)
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    
     // Content & SEO Pages
     {
       url: `${baseUrl}/blog`,
@@ -106,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/properties`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.75,
+      priority: 0.8,
     },
     
     // Services
@@ -114,40 +122,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/services`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/services/buying`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/services/selling`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/services/investment`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/services/property-management`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
     },
     
-    // Contact & Location
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // Location & Appointment
     {
       url: `${baseUrl}/location/las-vegas-office`,
       lastModified: now,
@@ -158,7 +160,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/appointment`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
   ]
 }
