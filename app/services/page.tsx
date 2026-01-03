@@ -40,6 +40,41 @@ export default function ServicesPage() {
     }
   };
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Homestead West | Homes by Dr Jan Duffy',
+    description: 'Las Vegas real estate services specializing in new construction homes, VIP builder partnerships, and expert real estate guidance',
+    url: 'https://www.homesteadwestlasvegas.com',
+    telephone: '+17022996607',
+    email: 'DrJanSells@HomesteadWestLasVegas.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '5592 N Dapple Gray Rd',
+      addressLocality: 'Las Vegas',
+      addressRegion: 'NV',
+      postalCode: '89149',
+      addressCountry: 'US'
+    },
+    founder: {
+      '@type': 'Person',
+      name: 'Dr. Jan Duffy',
+      jobTitle: 'VIP New Construction Specialist',
+      telephone: '+17022996607',
+      email: 'DrJanSells@HomesteadWestLasVegas.com'
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Las Vegas',
+      '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+    },
+    knowsAbout: ['New Construction Homes', 'Real Estate Sales', 'Property Management', 'Real Estate Investment', 'VIP Builder Partnerships'],
+    memberOf: {
+      '@type': 'Organization',
+      name: 'Las Vegas Association of Realtors'
+    }
+  };
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
     { name: 'Services', url: 'https://www.homesteadwestlasvegas.com/services' }
@@ -270,6 +305,41 @@ export default function ServicesPage() {
             
             <div className="max-w-7xl mx-auto">
               <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More Services & Resources</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/services/buying" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Home Buying Services</h3>
+                  <p className="text-gray-600">Expert guidance for first-time and experienced buyers</p>
+                </a>
+                <a href="/services/selling" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Home Selling Services</h3>
+                  <p className="text-gray-600">Maximize your home's value with professional marketing</p>
+                </a>
+                <a href="/services/investment" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Investment Consulting</h3>
+                  <p className="text-gray-600">Strategic real estate investment guidance</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                </a>
+                <a href="/about" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
+                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise</p>
+                </a>
+                <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Contact Us</h3>
+                  <p className="text-gray-600">Get in touch for a consultation</p>
+                </a>
+              </div>
             </div>
           </div>
         </section>

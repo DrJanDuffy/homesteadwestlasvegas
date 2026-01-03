@@ -536,6 +536,117 @@ export default function RootLayout({
                       publisher: {
                         '@id': 'https://www.homesteadwestlasvegas.com/#agent'
                       }
+                    },
+                    {
+                      '@type': 'SiteNavigationElement',
+                      '@id': 'https://www.homesteadwestlasvegas.com/#navigation',
+                      name: 'Main Navigation',
+                      url: 'https://www.homesteadwestlasvegas.com',
+                      hasPart: [
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Home',
+                          url: 'https://www.homesteadwestlasvegas.com'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Available Homes',
+                          url: 'https://www.homesteadwestlasvegas.com/#available-homes'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Community',
+                          hasPart: [
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Community Guide',
+                              url: 'https://www.homesteadwestlasvegas.com/community'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Community Map',
+                              url: 'https://www.homesteadwestlasvegas.com/community-map'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Virtual Tour',
+                              url: 'https://www.homesteadwestlasvegas.com/virtual-tour'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Location & Office',
+                              url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office'
+                            }
+                          ]
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Services',
+                          hasPart: [
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'All Services',
+                              url: 'https://www.homesteadwestlasvegas.com/services'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Home Buying',
+                              url: 'https://www.homesteadwestlasvegas.com/services/buying'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Home Selling',
+                              url: 'https://www.homesteadwestlasvegas.com/services/selling'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Investment Consulting',
+                              url: 'https://www.homesteadwestlasvegas.com/services/investment'
+                            }
+                          ]
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Resources',
+                          hasPart: [
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: "Buyer's Guide",
+                              url: 'https://www.homesteadwestlasvegas.com/buyers-guide'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Homebuying Process',
+                              url: 'https://www.homesteadwestlasvegas.com/homebuying-process'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'VIP Partnership',
+                              url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'FAQ',
+                              url: 'https://www.homesteadwestlasvegas.com/faq'
+                            },
+                            {
+                              '@type': 'SiteNavigationElement',
+                              name: 'Testimonials',
+                              url: 'https://www.homesteadwestlasvegas.com/testimonials'
+                            }
+                          ]
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'About Dr. Jan',
+                          url: 'https://www.homesteadwestlasvegas.com/about'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Contact',
+                          url: 'https://www.homesteadwestlasvegas.com/contact'
+                        }
+                      ]
                     }
                   ]
                 }),
