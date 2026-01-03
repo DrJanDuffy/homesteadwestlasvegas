@@ -128,8 +128,10 @@ export default function PropertiesPage() {
           <div className="container mx-auto px-4">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h2 className="text-3xl font-bold mb-6 text-center">Find Your Perfect Homestead West Home</h2>
-              <div className="flex justify-center">
-                <RealScoutAdvancedSearch />
+              <div className="flex justify-center w-full">
+                <div className="w-full max-w-4xl">
+                  <RealScoutAdvancedSearch />
+                </div>
               </div>
             </div>
           </div>

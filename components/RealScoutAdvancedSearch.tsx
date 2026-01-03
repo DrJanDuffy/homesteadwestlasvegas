@@ -19,6 +19,6 @@ export default function RealScoutAdvancedSearch() {
   }, []);
 
   return (
-    <div className="flex justify-center" ref={containerRef} />
+    <div className="flex justify-center w-full" ref={containerRef} style={{ width: '100%', maxWidth: '100%' }} />
   );
 }
