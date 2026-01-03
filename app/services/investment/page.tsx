@@ -22,6 +22,39 @@ export const metadata: Metadata = {
 };
 
 export default function InvestmentConsultingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Real Estate Investment Consulting',
+    description: 'Expert real estate investment consulting including market analysis, ROI evaluation, and investment strategy',
+    provider: {
+      '@type': 'RealEstateAgent',
+      name: 'Dr. Jan Duffy',
+      telephone: '+17022996607',
+      email: 'DrJanSells@HomesteadWestLasVegas.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '5592 N Dapple Gray Rd',
+        addressLocality: 'Las Vegas',
+        addressRegion: 'NV',
+        postalCode: '89149',
+        addressCountry: 'US'
+      },
+      licenseNumber: 'S.0197614'
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Las Vegas',
+      '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+    },
+    serviceType: ['Real Estate Investment Consulting', 'Market Analysis', 'Investment Strategy'],
+    offers: {
+      '@type': 'Offer',
+      description: 'Professional real estate investment consulting services',
+      priceCurrency: 'USD'
+    }
+  };
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
     { name: 'Services', url: 'https://www.homesteadwestlasvegas.com/services' },
@@ -30,6 +63,10 @@ export default function InvestmentConsultingPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

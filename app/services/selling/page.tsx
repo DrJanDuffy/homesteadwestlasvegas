@@ -22,6 +22,39 @@ export const metadata: Metadata = {
 };
 
 export default function HomeSellingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Home Selling Services',
+    description: 'Expert home selling services including market analysis, pricing strategy, and professional marketing',
+    provider: {
+      '@type': 'RealEstateAgent',
+      name: 'Dr. Jan Duffy',
+      telephone: '+17022996607',
+      email: 'DrJanSells@HomesteadWestLasVegas.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '5592 N Dapple Gray Rd',
+        addressLocality: 'Las Vegas',
+        addressRegion: 'NV',
+        postalCode: '89149',
+        addressCountry: 'US'
+      },
+      licenseNumber: 'S.0197614'
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Las Vegas',
+      '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
+    },
+    serviceType: ['Home Selling', 'Property Marketing', 'Real Estate Sales'],
+    offers: {
+      '@type': 'Offer',
+      description: 'Professional home selling services',
+      priceCurrency: 'USD'
+    }
+  };
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
     { name: 'Services', url: 'https://www.homesteadwestlasvegas.com/services' },
@@ -30,6 +63,10 @@ export default function HomeSellingPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

@@ -47,6 +47,35 @@ export default function VirtualTourPage() {
     }
   };
 
+  const videoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Homestead West Virtual 3D Tour',
+    description: 'Interactive 3D virtual tour of Homestead West luxury ranch homes in Northwest Las Vegas',
+    thumbnailUrl: 'https://www.homesteadwestlasvegas.com/images/virtual-tour-thumbnail.jpg',
+    uploadDate: '2024-01-01',
+    contentUrl: 'https://homesteadwestlasvegas.com/virtual-tour',
+    embedUrl: 'https://homesteadwestlasvegas.com/virtual-tour',
+    publisher: {
+      '@type': 'RealEstateAgent',
+      name: 'Dr. Jan Duffy',
+      telephone: '+17022996607',
+      email: 'DrJanSells@HomesteadWestLasVegas.com'
+    },
+    about: {
+      '@type': 'RealEstateListing',
+      name: 'Homestead West | Homes by Dr Jan Duffy',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '5592 N Dapple Gray Rd',
+        addressLocality: 'Las Vegas',
+        addressRegion: 'NV',
+        postalCode: '89149',
+        addressCountry: 'US'
+      }
+    }
+  };
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
     { name: 'Virtual Tour', url: 'https://www.homesteadwestlasvegas.com/virtual-tour' }
