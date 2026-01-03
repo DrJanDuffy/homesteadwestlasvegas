@@ -217,6 +217,41 @@ export default function CommunityMapPage() {
           </div>
         </section>
 
+        {/* Related Pages Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More About Homestead West</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/community" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Community Guide</h3>
+                  <p className="text-gray-600">Learn about Homestead West community and amenities</p>
+                </a>
+                <a href="/virtual-tour" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Virtual Tour</h3>
+                  <p className="text-gray-600">Take a 3D virtual tour of Homestead West homes</p>
+                </a>
+                <a href="/floor-plans" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
+                  <p className="text-gray-600">Explore available Homestead West home designs</p>
+                </a>
+                <a href="/properties" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Properties</h3>
+                  <p className="text-gray-600">Browse available Homestead West homes</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Get exclusive access to Homestead West homes</p>
+                </a>
+                <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
+                  <p className="text-gray-600">Schedule a consultation about Homestead West</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Dr. Jan Duffy VIP Partnership */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">

@@ -399,6 +399,41 @@ export default function BuyersGuidePage() {
           </div>
         </section>
 
+        {/* Related Pages Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More Resources</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/homebuying-process" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
+                  <p className="text-gray-600">Step-by-step guide to new construction home buying</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
+                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                </a>
+                <a href="/floor-plans" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
+                  <p className="text-gray-600">Explore available Homestead West home designs</p>
+                </a>
+                <a href="/faq" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">FAQ</h3>
+                  <p className="text-gray-600">Common questions about new construction</p>
+                </a>
+                <a href="/properties" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Properties</h3>
+                  <p className="text-gray-600">Browse available Homestead West homes</p>
+                </a>
+                <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
+                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact CTA */}
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
