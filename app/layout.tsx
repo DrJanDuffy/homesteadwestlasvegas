@@ -281,7 +281,13 @@ export default function RootLayout({
         sameAs: [
           'https://www.homesteadwestlasvegas.com',
           'https://www.homesteadwestlasvegas.com/vip-buyer-program',
-          'https://www.homesteadwestlasvegas.com/about'
+          'https://www.homesteadwestlasvegas.com/about',
+          'https://www.homesteadwestlasvegas.com/contact',
+          'https://www.homesteadwestlasvegas.com/floor-plans',
+          'https://www.homesteadwestlasvegas.com/community',
+          'https://www.homesteadwestlasvegas.com/services',
+          'https://www.homesteadwestlasvegas.com/buyers-guide',
+          'https://www.homesteadwestlasvegas.com/homebuying-process'
         ]
   };
 

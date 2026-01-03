@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Available Homes | Homestead West Las Vegas | MLS Listings',
@@ -45,14 +46,31 @@ export default function FloorPlansPage() {
       'MLS Listings',
       'New Construction Homes',
       'Homestead West'
+    ],
+    sameAs: [
+      'https://www.homesteadwestlasvegas.com',
+      'https://www.homesteadwestlasvegas.com/about',
+      'https://www.homesteadwestlasvegas.com/vip-buyer-program',
+      'https://www.homesteadwestlasvegas.com/contact',
+      'https://www.homesteadwestlasvegas.com/floor-plans/3336',
+      'https://www.homesteadwestlasvegas.com/floor-plans/3704'
     ]
   };
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
+    { name: 'Floor Plans', url: 'https://www.homesteadwestlasvegas.com/floor-plans' }
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <div className="min-h-screen bg-white">
@@ -173,6 +191,41 @@ export default function FloorPlansPage() {
                   className="bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-colors"
                 >
                   📅 Schedule Consultation
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More About Homestead West</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <a href="/floor-plans/3336" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Plan 3336</h3>
+                  <p className="text-gray-600">3,336 sq ft • 4-5 beds • From $910,990</p>
+                </a>
+                <a href="/floor-plans/3704" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Plan 3704</h3>
+                  <p className="text-gray-600">3,704 sq ft • 4 beds • From $940,990</p>
+                </a>
+                <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Program</h3>
+                  <p className="text-gray-600">Exclusive access and priority treatment</p>
+                </a>
+                <a href="/community" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Community Guide</h3>
+                  <p className="text-gray-600">Learn about Homestead West location</p>
+                </a>
+                <a href="/homebuying-process" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
+                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                </a>
+                <a href="/about" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
+                  <p className="text-gray-600">Meet your Las Vegas real estate expert</p>
                 </a>
               </div>
             </div>
