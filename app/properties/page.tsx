@@ -126,40 +126,9 @@ export default function PropertiesPage() {
         <section className="py-8 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h2 className="text-3xl font-bold mb-6">Find Your Perfect Homestead West Home</h2>
-              <div className="grid md:grid-cols-4 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg" title="Select price range">
-                    <option>$850K - $900K</option>
-                    <option>$900K - $950K</option>
-                    <option>$950K - $999K</option>
-                    <option>$999K+</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Bedrooms</label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg" title="Select number of bedrooms">
-                    <option>Any</option>
-                    <option>3+</option>
-                    <option>4+</option>
-                    <option>5+</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Bathrooms</label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg" title="Select number of bathrooms">
-                    <option>Any</option>
-                    <option>2+</option>
-                    <option>3+</option>
-                    <option>4+</option>
-                  </select>
-                </div>
-                <div className="flex items-end">
-                  <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                    Search Properties
-                  </button>
-                </div>
+              <h2 className="text-3xl font-bold mb-6 text-center">Find Your Perfect Homestead West Home</h2>
+              <div className="flex justify-center">
+                <RealScoutAdvancedSearch />
               </div>
             </div>
           </div>

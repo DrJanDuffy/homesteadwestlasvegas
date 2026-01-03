@@ -656,6 +656,23 @@ export default function RootLayout({
               }}
             />
 
+            {/* RealScout Advanced Search Widget Script */}
+            <script
+              src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+              type="module"
+            />
+            <style
+              dangerouslySetInnerHTML={{
+                __html: `
+                  realscout-advanced-search {
+                    --rs-as-button-text-color: #ffffff;
+                    --rs-as-background-color: #ffffff;
+                    --rs-as-button-color: #4a90e2;
+                    --rs-as-widget-width: 498px !important;
+                  }
+                `
+              }}
+            />
             {/* RealScout Widget Script */}
             <script 
               src="https://em.realscout.com/widgets/realscout-web-components.umd.js" 
