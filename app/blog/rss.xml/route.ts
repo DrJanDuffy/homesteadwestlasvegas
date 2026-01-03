@@ -16,6 +16,12 @@ export async function GET() {
         id: siteUrl,
         link: siteUrl,
         language: 'en',
+        copyright: `All rights reserved ${new Date().getFullYear()}, Dr. Jan Duffy`,
+        author: {
+          name: 'Dr. Jan Duffy',
+          email: 'DrJanSells@HomesteadWestLasVegas.com',
+          link: siteUrl,
+        },
       });
       
       return new Response(emptyFeed.rss2(), {
@@ -79,6 +85,12 @@ export async function GET() {
       id: 'https://www.homesteadwestlasvegas.com',
       link: 'https://www.homesteadwestlasvegas.com',
       language: 'en',
+      copyright: `All rights reserved ${new Date().getFullYear()}, Dr. Jan Duffy`,
+      author: {
+        name: 'Dr. Jan Duffy',
+        email: 'DrJanSells@HomesteadWestLasVegas.com',
+        link: 'https://www.homesteadwestlasvegas.com',
+      },
     });
     
     return new Response(errorFeed.rss2(), {
