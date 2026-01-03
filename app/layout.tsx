@@ -183,7 +183,6 @@ export default function RootLayout({
             '@type': 'Organization',
             name: 'Homestead West | Homes by Dr Jan Duffy'
           },
-          alumniOf: 'VIP Builder Partner Program',
           memberOf: {
             '@type': 'Organization',
             name: 'Las Vegas Association of Realtors'
@@ -295,74 +294,7 @@ export default function RootLayout({
         ]
       };
 
-      const organizationData = {
-        '@context': 'https://schema.org',
-        '@type': 'RealEstateAgent',
-        name: 'Dr. Jan Duffy',
-        description: 'VIP New Construction Specialist and Las Vegas Real Estate Expert',
-        url: 'https://www.homesteadwestlasvegas.com',
-        telephone: '+17022996607',
-        email: 'DrJanSells@HomesteadWestLasVegas.com',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: '5592 N Dapple Gray Rd',
-          addressLocality: 'Las Vegas',
-          addressRegion: 'NV',
-          postalCode: '89149',
-          addressCountry: 'US'
-        },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: 36.2738,
-          longitude: -115.3089
-        },
-        areaServed: [
-          {
-            '@type': 'City',
-            name: 'Las Vegas',
-            '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
-          },
-          {
-            '@type': 'City',
-            name: 'Henderson',
-            '@id': 'https://en.wikipedia.org/wiki/Henderson,_Nevada'
-          },
-          {
-            '@type': 'City',
-            name: 'North Las Vegas',
-            '@id': 'https://en.wikipedia.org/wiki/North_Las_Vegas,_Nevada'
-          }
-        ],
-        serviceType: [
-          'Real Estate Sales',
-          'New Construction Home Buying',
-          'VIP Builder Partnership Services',
-          'Real Estate Investment Consulting'
-        ],
-        hasCredential: {
-          '@type': 'EducationalOccupationalCredential',
-          name: 'Nevada Real Estate License',
-          credentialCategory: 'license',
-          credentialId: 'S.0197614',
-          recognizedBy: {
-            '@type': 'Organization',
-            name: 'Nevada Real Estate Division'
-          }
-        },
-        memberOf: {
-          '@type': 'Organization',
-          name: 'Las Vegas Association of Realtors'
-        },
-        knowsAbout: [
-          'Homestead West',
-          'New Construction Homes',
-          'VIP Builder Partnerships',
-          'Las Vegas Real Estate Market',
-          'Northwest Las Vegas',
-          'Cadence Henderson',
-          'Luxury Ranch Homes'
-        ]
-      };
+      // Removed duplicate RealEstateAgent - using @graph version instead
 
       return (
         <html lang="en">
@@ -399,13 +331,7 @@ export default function RootLayout({
               }}
             />
 
-            {/* Structured Data - Organization */}
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(organizationData),
-              }}
-            />
+            {/* Removed duplicate RealEstateAgent schema - consolidated in @graph */}
 
             {/* Structured Data - @graph (RealEstateAgent, LocalBusiness, FAQPage, WebSite) */}
             <script
@@ -451,7 +377,7 @@ export default function RootLayout({
                       }
                     },
                     {
-                      '@type': 'LocalBusiness',
+                      '@type': 'RealEstateAgent',
                       '@id': 'https://www.homesteadwestlasvegas.com/#business',
                       name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
                       description: 'Expert guidance for Homestead West luxury ranch homes by New Construction Partnership in Northwest Las Vegas',
@@ -471,11 +397,18 @@ export default function RootLayout({
                         latitude: 36.2839,
                         longitude: -115.2936
                       },
-                      openingHoursSpecification: {
-                        '@type': 'OpeningHoursSpecification',
-                        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                        opens: '10:00',
-                        closes: '18:00'
+                      areaServed: {
+                        '@type': 'City',
+                        name: 'Las Vegas',
+                        containedInPlace: {
+                          '@type': 'State',
+                          name: 'Nevada'
+                        }
+                      },
+                      hasCredential: {
+                        '@type': 'EducationalOccupationalCredential',
+                        credentialCategory: 'license',
+                        name: 'Nevada Real Estate License S.0197614'
                       }
                     },
                     {
