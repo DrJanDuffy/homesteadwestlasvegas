@@ -56,6 +56,14 @@ const nextConfig: NextConfig = {
   // Enable static optimization
   output: 'standalone',
   
+  // Optimize JavaScript bundles
+  swcMinify: true,
+  
+  // Compiler optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  
   // Headers for better SEO and security
   async headers() {
     return [

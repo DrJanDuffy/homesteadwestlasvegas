@@ -656,12 +656,7 @@ export default function RootLayout({
               }}
             />
 
-            {/* RealScout Widget Script - Deferred for better performance */}
-            <script
-              src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-              type="module"
-              defer
-            />
+            {/* RealScout Widget Script - Loaded asynchronously to prevent render blocking */}
             <style
               dangerouslySetInnerHTML={{
                 __html: `
@@ -694,6 +689,30 @@ export default function RootLayout({
             <Navigation />
             {children}
             <Footer />
+            {/* Load RealScout script asynchronously after page load to prevent blocking */}
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  (function() {
+                    if (typeof window !== 'undefined' && !document.querySelector('script[src*="realscout-web-components"]')) {
+                      // Load script after page is interactive
+                      if (document.readyState === 'complete') {
+                        loadRealScoutScript();
+                      } else {
+                        window.addEventListener('load', loadRealScoutScript);
+                      }
+                    }
+                    function loadRealScoutScript() {
+                      const script = document.createElement('script');
+                      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+                      script.type = 'module';
+                      script.async = true;
+                      document.head.appendChild(script);
+                    }
+                  })();
+                `,
+              }}
+            />
           </body>
         </html>
       );
