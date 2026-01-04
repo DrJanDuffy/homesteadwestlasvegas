@@ -11,10 +11,30 @@ export default function Footer() {
             <p>DrJanSells@HomesteadWestLasVegas.com</p>
           </div>
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Office Location</h3>
+            <h3 className="text-white font-bold text-lg mb-4">Map Location</h3>
             <p className="mb-2">5592 N Dapple Gray Rd</p>
             <p className="mb-2">Las Vegas, NV 89149</p>
-            <p className="mb-2">Sales Center Address</p>
+            <div className="mt-4 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.5!2d-115.2936!3d36.2839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c8b8b8b8b8b9%3A0x0!2zMzYsMTcsMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                width="100%"
+                height="200"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Homestead West Location - 5592 N Dapple Gray Rd, Las Vegas, NV 89149"
+                className="w-full"
+              />
+            </div>
+            <a
+              href="https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-3 text-yellow-400 hover:text-yellow-300 text-sm transition-colors"
+            >
+              Get Directions →
+            </a>
           </div>
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
@@ -34,11 +54,15 @@ export default function Footer() {
             alt="Berkshire Hathaway HomeServices Nevada" 
             className="h-12 w-auto"
           />
-          <img 
-            src="/images/equal-housing-logo.png" 
-            alt="Equal Housing Opportunity" 
-            className="h-12 w-auto"
-          />
+          <a
+            href="https://www.hud.gov/program_offices/fair_housing_equal_opp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-yellow-400 transition-colors text-sm font-semibold px-4 py-2 border border-white rounded"
+            aria-label="Equal Housing Opportunity"
+          >
+            Equal Housing Opportunity
+          </a>
         </div>
         
         <div className="border-t border-gray-700 pt-8 text-center text-sm">
