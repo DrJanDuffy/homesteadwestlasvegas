@@ -34,8 +34,9 @@ export const metadata: Metadata = {
   },
 };
 
-// Force revalidation to clear stale cache
-export const revalidate = 0; // Always revalidate (no static caching)
+// ISR: Revalidate every hour for fresh content while maintaining performance
+// RealScout listings load client-side, so this doesn't affect dynamic data
+export const revalidate = 3600; // 1 hour
 
 export default function HomePage() {
   const jsonLd = {
