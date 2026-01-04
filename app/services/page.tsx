@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -93,10 +94,30 @@ export default function ServicesPage() {
       
       <div className="min-h-screen bg-white">
         {/* Header */}
-        <header className="bg-blue-900 text-white py-8">
+        <header className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-20">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">Homestead West Real Estate Services</h1>
-            <p className="text-xl">Comprehensive real estate solutions for Homestead West by Dr. Jan Duffy</p>
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-8">
+                <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
+                  ⭐ VIP NEW CONSTRUCTION HOMES SPECIALIST ⭐
+                </div>
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">Real Estate Services</h1>
+                <p className="text-2xl md:text-3xl mb-4 text-blue-100">Comprehensive Solutions by Dr. Jan Duffy</p>
+                <p className="text-xl text-blue-200">VIP New Construction Homes Specialist | Nevada License S.0197614</p>
+              </div>
+              <div className="flex justify-center mt-8">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20">
+                  <Image
+                    src="/images/Dr. Duffy Blue_Headshot.jpg"
+                    alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
+                    fill
+                    className="object-cover object-center"
+                    style={{ objectPosition: 'center top' }}
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </header>
 
@@ -181,41 +202,43 @@ export default function ServicesPage() {
         </section>
 
         {/* Why Choose Dr. Jan Duffy */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Dr. Jan Duffy for Homestead West?</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-3xl">🎯</span>
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Why Choose Dr. Jan Duffy?</h2>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-white text-3xl">🎯</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Local Market Expertise</h3>
+                  <p className="text-gray-700">
+                    Deep knowledge of the Las Vegas real estate market, including Northwest Las Vegas, 
+                    Homestead West, and surrounding communities. 30+ years of experience.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Homestead West Local Expertise</h3>
-                <p className="text-gray-600">
-                  Deep knowledge of the Las Vegas real estate market, including Northwest Las Vegas 
-                  and surrounding communities.
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-3xl">🤝</span>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+                  <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-white text-3xl">🤝</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Buyer-First Representation</h3>
+                  <p className="text-gray-700">
+                    As a VIP New Construction Homes Specialist, Dr. Jan represents home buyers exclusively. 
+                    Every client receives individualized attention and customized strategies tailored to their goals.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Personalized Homestead West Service</h3>
-                <p className="text-gray-600">
-                  Every Homestead West client receives individualized attention and customized strategies 
-                  tailored to their specific real estate goals.
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-3xl">📊</span>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+                  <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-white text-3xl">📊</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Data-Driven Insights</h3>
+                  <p className="text-gray-700">
+                    Ph.D. in Market Research & Consumer Behavior brings data-driven insights to every transaction. 
+                    Up-to-date market analysis and trends to help you make informed decisions.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Homestead West Market Knowledge</h3>
-                <p className="text-gray-600">
-                  Up-to-date Homestead West market analysis and trends to help you make informed decisions 
-                  about your Homestead West real estate investments.
-                </p>
               </div>
             </div>
           </div>
