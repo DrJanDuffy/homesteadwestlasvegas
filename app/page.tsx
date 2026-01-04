@@ -266,6 +266,18 @@ export default function HomePage() {
                 Dr. Jan Duffy is proud to represent buyers through Berkshire Hathaway HomeServices Nevada—one of the most respected names in real estate.
               </p>
               
+              {/* BHHS Logo */}
+              <div className="flex justify-center mb-8">
+                <Image 
+                  src="/images/bhhs-logo.svg" 
+                  alt="Berkshire Hathaway HomeServices Nevada Properties" 
+                  width={250}
+                  height={80}
+                  className="h-16 md:h-20 w-auto"
+                  priority
+                />
+              </div>
+              
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="text-lg font-bold mb-3 text-gray-900">Global Network</h3>
@@ -296,18 +308,6 @@ export default function HomePage() {
                 <p className="text-gray-700">
                   The VIP Berkshire Hathaway HomeServices Buyer Program's builder relationships and VIP access get you first look at lots, unlisted inventory, and negotiating power that individual buyers don't have.
                 </p>
-              </div>
-              
-              {/* BHHS Logo Placeholder */}
-              <div className="flex justify-center">
-                <img 
-                  src="/images/bhhs-logo.svg" 
-                  alt="Berkshire Hathaway HomeServices Nevada" 
-                  width={200}
-                  height={64}
-                  className="h-16 w-auto"
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>
