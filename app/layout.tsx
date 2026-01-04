@@ -583,8 +583,9 @@ export default function RootLayout({
                       name: 'Homestead West Las Vegas - Dr. Jan Duffy',
                       description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist',
                       publisher: {
-                        '@id': 'https://www.homesteadwestlasvegas.com/#agent'
+                        '@id': 'https://www.homesteadwestlasvegas.com/#business'
                       },
+                      inLanguage: 'en-US',
                       potentialAction: {
                         '@type': 'SearchAction',
                         target: {
@@ -607,8 +608,15 @@ export default function RootLayout({
                         },
                         {
                           '@type': 'SiteNavigationElement',
-                          name: 'Available Homes',
-                          url: 'https://www.homesteadwestlasvegas.com/#available-homes'
+                          name: 'New Homes, Prime Locations',
+                          url: 'https://www.homesteadwestlasvegas.com/properties',
+                          description: 'Browse available Homestead West homes and Las Vegas MLS listings'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Single-Story & Two-Story Homes',
+                          url: 'https://www.homesteadwestlasvegas.com/floor-plans',
+                          description: 'Explore Homestead West floor plans: 3,336-3,704 sq ft luxury ranch homes'
                         },
                         {
                           '@type': 'SiteNavigationElement',
