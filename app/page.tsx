@@ -342,27 +342,53 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              
-              {/* Video Testimonial Placeholder */}
-              <div className="bg-gray-100 p-8 rounded-lg text-center">
-                <p className="text-gray-600 mb-4">[VIDEO TESTIMONIAL PLACEHOLDER: If available, embed 60-90 second video testimonial from [CLIENT NAME] discussing their experience]</p>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* RealScout Office Listings Carousel */}
-        <section className="py-16 bg-gray-50">
+        {/* Available Homes Section */}
+        <section id="available-homes" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes and Las Vegas MLS Listings
-            </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
-            </p>
-            
             <div className="max-w-7xl mx-auto">
-              <RealScoutListings />
+              <div className="text-center mb-8">
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">Available Homes and Las Vegas MLS Listings</h2>
+                <p className="text-xl text-gray-600 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">$910K+</span>
+                  <span className="text-sm">Starting Price</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">3,336–3,704</span>
+                  <span className="text-sm">Sq Ft</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">4 Bed / 4+ Bath</span>
+                  <span className="text-sm">Bed & Bath</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">89149</span>
+                  <span className="text-sm">Zip Code</span>
+                </div>
+              </div>
+              
+              <div className="max-w-7xl mx-auto mb-8">
+                <RealScoutListings />
+              </div>
+              
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <iframe 
+                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
+                  title="Las Vegas - Live MLS Listings"
+                  width="100%"
+                  height="800"
+                  frameBorder="0"
+                  loading="lazy"
+                  className="w-full border-0 block"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -595,123 +621,6 @@ export default function HomePage() {
                 >
                   View Available Homes
                 </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Media Gallery Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                Explore Homestead West Las Vegas
-              </h2>
-              
-              {/* Gallery Carousel Placeholder */}
-              <div className="grid md:grid-cols-3 gap-4 mb-8">
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    [IMAGE: Community entrance/streetscape<br />ALT: "Community entrance in Northwest Las Vegas"]
-                  </p>
-                </div>
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    [IMAGE: Single-story home exterior<br />ALT: "Single-story ranch home exterior"]
-                  </p>
-                </div>
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    [IMAGE: Open-concept kitchen/great room<br />ALT: "Modern open floor plan with kitchen island"]
-                  </p>
-                </div>
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    [IMAGE: Primary suite<br />ALT: "Spacious primary bedroom with en-suite bath"]
-                  </p>
-                </div>
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    [IMAGE: Pool-sized backyard lot<br />ALT: "Large backyard lot ready for pool installation"]
-                  </p>
-                </div>
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    [IMAGE: Additional community feature<br />ALT: "Community amenity or lifestyle image"]
-                  </p>
-                </div>
-              </div>
-              
-              {/* Community Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
-                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">3,336–3,704</span>
-                  <span className="text-sm text-gray-600">Square Feet</span>
-                </div>
-                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
-                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">4</span>
-                  <span className="text-sm text-gray-600">Bedrooms</span>
-                </div>
-                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
-                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">4+</span>
-                  <span className="text-sm text-gray-600">Bathrooms</span>
-                </div>
-                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
-                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">$910K+</span>
-                  <span className="text-sm text-gray-600">Starting Price</span>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <a
-                  href="/virtual-tour"
-                  className="inline-block bg-[#d4af37] text-[#1a365d] px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors shadow-lg"
-                >
-                  Take the Virtual Tour
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Available Homes Section - Live MLS Feed */}
-        <section id="available-homes" className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold mb-4 text-gray-900">Available New Homes</h2>
-                <p className="text-xl text-gray-600">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">$910K+</span>
-                  <span className="text-sm">Starting Price</span>
-                </div>
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">3,336–3,704</span>
-                  <span className="text-sm">Sq Ft</span>
-                </div>
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">4 Bed / 4+ Bath</span>
-                  <span className="text-sm">Bed & Bath</span>
-                </div>
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">89149</span>
-                  <span className="text-sm">Zip Code</span>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden shadow-xl">
-                <iframe 
-                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
-                  title="Las Vegas - Live MLS Listings"
-                  width="100%"
-                  height="800"
-                  frameBorder="0"
-                  loading="lazy"
-                  className="w-full border-0 block"
-                />
               </div>
             </div>
           </div>
