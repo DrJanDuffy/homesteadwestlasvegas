@@ -226,8 +226,8 @@ export default function TestimonialsPage() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">💰</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Significant Savings</h3>
-                  <p className="text-gray-700">Average $15,000+ in Homestead West incentives and negotiation advantages</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Significant Savings</h3>
+                  <p className="text-gray-700">Average $15,000+ in incentives and negotiation advantages</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -286,50 +286,19 @@ export default function TestimonialsPage() {
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-blue-600 mb-2">VIP</div>
-                  <p className="text-gray-700 font-semibold">Expert Negotiation & Advocacy</p>
+                  <p className="text-gray-700 font-semibold">Early Access & Priority Selection</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-green-600 mb-2">$15K+</div>
-                  <p className="text-gray-700 font-semibold">Average Savings</p>
+                  <p className="text-gray-700 font-semibold">Average Savings Per Transaction</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-purple-600 mb-2">98%</div>
-                  <p className="text-gray-700 font-semibold">Client Satisfaction</p>
+                  <p className="text-gray-700 font-semibold">Client Satisfaction Rate</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-                  <div className="text-4xl font-bold text-yellow-600 mb-2">VIP</div>
-                  <p className="text-gray-700 font-semibold">VIP New Construction Homes Specialist</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Video Testimonials Placeholder */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Video Testimonials</h2>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-gray-200 h-64 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-white text-2xl">▶️</span>
-                    </div>
-                    <p className="text-gray-600">Sarah & Mike Johnson</p>
-                    <p className="text-sm text-gray-500">Homestead West Homeowners</p>
-                  </div>
-                </div>
-                
-                <div className="bg-gray-200 h-64 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-white text-2xl">▶️</span>
-                    </div>
-                    <p className="text-gray-600">David & Lisa Chen</p>
-                    <p className="text-sm text-gray-500">Cadence Henderson Homeowners</p>
-                  </div>
+                  <div className="text-4xl font-bold text-yellow-600 mb-2">✓</div>
+                  <p className="text-gray-700 font-semibold">Complete Buyer Representation</p>
                 </div>
               </div>
             </div>
