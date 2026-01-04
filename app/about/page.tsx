@@ -203,46 +203,46 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Dr. Jan Duffy's Credentials & Achievements</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <div>
-                        <p className="font-semibold text-gray-900">Nevada Real Estate License</p>
-                        <p className="text-gray-600">License #S.0197614</p>
+                    <h3 className="text-2xl font-bold mb-6 text-gray-900">Dr. Jan Duffy's Credentials & Achievements</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <span className="text-green-600 mr-3 text-xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">Nevada Real Estate License</p>
+                          <p className="text-gray-600">License #S.0197614</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <div>
-                        <p className="font-semibold text-gray-900">VIP New Construction Homes Specialist</p>
-                        <p className="text-gray-600">Represents home buyers exclusively</p>
+                      <div className="flex items-start">
+                        <span className="text-green-600 mr-3 text-xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">VIP New Construction Homes Specialist</p>
+                          <p className="text-gray-600">Represents home buyers exclusively</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <div>
-                        <p className="font-semibold text-gray-900">500+ Families Helped</p>
-                        <p className="text-gray-600">Successful home purchases and sales</p>
+                      <div className="flex items-start">
+                        <span className="text-green-600 mr-3 text-xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">500+ Families Helped</p>
+                          <p className="text-gray-600">Successful home purchases and sales</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <div>
-                        <p className="font-semibold text-gray-900">Office at Builder</p>
-                        <p className="text-gray-600">Professional on-site presence</p>
+                      <div className="flex items-start">
+                        <span className="text-green-600 mr-3 text-xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">Office at Builder</p>
+                          <p className="text-gray-600">Professional on-site presence</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <div>
-                        <p className="font-semibold text-gray-900">Las Vegas Market Expert</p>
-                        <p className="text-gray-600">Deep local market knowledge</p>
+                      <div className="flex items-start">
+                        <span className="text-green-600 mr-3 text-xl">✓</span>
+                        <div>
+                          <p className="font-semibold text-gray-900">Las Vegas Market Expert</p>
+                          <p className="text-gray-600">Deep local market knowledge</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
