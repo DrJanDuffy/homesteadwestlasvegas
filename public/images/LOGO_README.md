@@ -21,6 +21,32 @@
 
 ## Equal Housing Opportunity Logo
 
+**Status:** Replaced with text link in Footer component (no image needed)
+
+## Dr. Jan Duffy Photo
+
+**Current Status:** Placeholder file in place
+
 **To obtain:**
-- Download from HUD.gov or Equal Housing Opportunity official resources
-- Save as: `/public/images/equal-housing-logo.png`
+- Use professional headshot of Dr. Jan Duffy
+- Recommended size: 400x400px minimum
+- Format: JPG or PNG
+- Save as: `/public/images/dr-jan-duffy.jpg`
+
+**Current Placeholder:**
+- File: `dr-jan-duffy.jpg` (placeholder)
+- Replace with actual photo when available
+
+## Virtual Tour Thumbnail
+
+**Current Status:** Placeholder file in place
+
+**To obtain:**
+- Create or obtain thumbnail image for virtual tour
+- Recommended size: 1280x720px (16:9 aspect ratio)
+- Format: JPG
+- Save as: `/public/images/virtual-tour-thumbnail.jpg`
+
+**Current Placeholder:**
+- File: `virtual-tour-thumbnail.jpg` (placeholder)
+- Replace with actual thumbnail when available

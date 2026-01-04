@@ -52,7 +52,7 @@ export default function VirtualTourPage() {
     '@type': 'VideoObject',
     name: 'Homestead West Virtual 3D Tour',
     description: 'Interactive 3D virtual tour of Homestead West luxury ranch homes in Northwest Las Vegas',
-    thumbnailUrl: 'https://www.homesteadwestlasvegas.com/images/virtual-tour-thumbnail.jpg',
+    // thumbnailUrl: 'https://www.homesteadwestlasvegas.com/images/virtual-tour-thumbnail.jpg', // TODO: Add when thumbnail is available
     uploadDate: '2024-01-01',
     contentUrl: 'https://homesteadwestlasvegas.com/virtual-tour',
     embedUrl: 'https://homesteadwestlasvegas.com/virtual-tour',
