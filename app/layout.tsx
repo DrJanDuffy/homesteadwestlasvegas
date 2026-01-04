@@ -656,10 +656,11 @@ export default function RootLayout({
               }}
             />
 
-            {/* RealScout Advanced Search Widget Script */}
+            {/* RealScout Widget Script - Deferred for better performance */}
             <script
               src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
               type="module"
+              defer
             />
             <style
               dangerouslySetInnerHTML={{
@@ -681,24 +682,13 @@ export default function RootLayout({
                       max-width: 800px !important;
                     }
                   }
+                  realscout-office-listings {
+                    --rs-listing-divider-color: #0e64c8;
+                    width: 100%;
+                  }
                 `
               }}
             />
-            {/* RealScout Widget Script */}
-            <script 
-              src="https://em.realscout.com/widgets/realscout-web-components.umd.js" 
-              type="module"
-            />
-            
-            {/* RealScout Widget Styles */}
-            <style dangerouslySetInnerHTML={{
-              __html: `
-                realscout-office-listings {
-                  --rs-listing-divider-color: #0e64c8;
-                  width: 100%;
-                }
-              `
-            }} />
           </head>
           <body className={inter.className}>
             <Navigation />

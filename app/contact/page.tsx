@@ -101,9 +101,11 @@ export default function ContactPage() {
                     <Image
                       src="/images/Dr. Duffy Blue_Headshot.jpg"
                       alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
-                      fill
-                      className="object-cover object-center"
+                      width={192}
+                      height={192}
+                      className="object-cover object-center rounded-full"
                       style={{ objectPosition: 'center top' }}
+                      sizes="192px"
                     />
                   </div>
                 </div>

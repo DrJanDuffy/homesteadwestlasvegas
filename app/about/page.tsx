@@ -98,10 +98,12 @@ export default function AboutPage() {
                   <Image
                     src="/images/Dr. Duffy Blue_Headshot.jpg"
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
-                    fill
-                    className="object-cover object-center"
+                    width={256}
+                    height={256}
+                    className="object-cover object-center rounded-full"
                     style={{ objectPosition: 'center top' }}
                     priority
+                    sizes="(max-width: 768px) 192px, 256px"
                   />
                 </div>
               </div>

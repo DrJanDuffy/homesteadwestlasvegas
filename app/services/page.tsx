@@ -110,10 +110,12 @@ export default function ServicesPage() {
                   <Image
                     src="/images/Dr. Duffy Blue_Headshot.jpg"
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
-                    fill
-                    className="object-cover object-center"
+                    width={192}
+                    height={192}
+                    className="object-cover object-center rounded-full"
                     style={{ objectPosition: 'center top' }}
                     priority
+                    sizes="(max-width: 768px) 160px, 192px"
                   />
                 </div>
               </div>
@@ -293,25 +295,35 @@ export default function ServicesPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-blue-900 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Get Started with Homestead West?</h2>
-            <p className="text-xl mb-8">
-              Contact Dr. Jan Duffy today to discuss your real estate needs
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Contact Us
-              </a>
-              <a
-                href="/appointment"
-                className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors"
-              >
-                Schedule Consultation
-              </a>
+        <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
+              <p className="text-xl md:text-2xl mb-4 text-blue-100">
+                Contact Dr. Jan Duffy, a VIP New Construction Homes Specialist
+              </p>
+              <p className="text-lg mb-8 text-blue-200">
+                Expert real estate services with buyer-first representation
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+                <a
+                  href="tel:7022996607"
+                  className="bg-yellow-500 text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors shadow-lg"
+                >
+                  📞 Call (702) 299-6607
+                </a>
+                <a
+                  href="/appointment"
+                  className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors"
+                >
+                  📅 Schedule Consultation
+                </a>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8">
+                <p className="text-lg font-semibold mb-2">Dr. Jan Duffy - VIP New Construction Homes Specialist</p>
+                <p className="text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+                <p className="text-blue-200 mt-1">DrJanSells@HomesteadWestLasVegas.com</p>
+              </div>
             </div>
           </div>
         </section>

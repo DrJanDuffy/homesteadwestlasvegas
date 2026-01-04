@@ -1,30 +1,76 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export default function RealScoutListings() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Lazy load the widget when it comes into view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '100px' } // Start loading 100px before it's visible
+    );
+
     if (containerRef.current) {
-      // Clear any existing content
-      containerRef.current.innerHTML = '';
-      
-      // Create the web component element
-      const element = document.createElement('realscout-office-listings');
-      element.setAttribute('agent-encoded-id', 'QWdlbnQtMjI1MDUw');
-      element.setAttribute('sort-order', 'PRICE_HIGH');
-      element.setAttribute('listing-status', 'For Sale');
-      element.setAttribute('property-types', ',SFR');
-      element.setAttribute('price-min', '850000');
-      element.setAttribute('price-max', '990000');
-      
-      containerRef.current.appendChild(element);
+      observer.observe(containerRef.current);
     }
+
+    return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (isVisible && containerRef.current) {
+      // Ensure RealScout script is loaded
+      const scriptExists = document.querySelector('script[src*="realscout-web-components"]');
+      if (!scriptExists) {
+        const script = document.createElement('script');
+        script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+        script.type = 'module';
+        script.async = true;
+        document.head.appendChild(script);
+      }
+
+      // Wait for script to load before creating element
+      const loadWidget = () => {
+        if (containerRef.current && customElements.get('realscout-office-listings')) {
+          containerRef.current.innerHTML = '';
+          
+          const element = document.createElement('realscout-office-listings');
+          element.setAttribute('agent-encoded-id', 'QWdlbnQtMjI1MDUw');
+          element.setAttribute('sort-order', 'PRICE_HIGH');
+          element.setAttribute('listing-status', 'For Sale');
+          element.setAttribute('property-types', ',SFR');
+          element.setAttribute('price-min', '850000');
+          element.setAttribute('price-max', '990000');
+          
+          containerRef.current.appendChild(element);
+        } else {
+          // Retry after a short delay if custom element not ready
+          setTimeout(loadWidget, 100);
+        }
+      };
+
+      loadWidget();
+    }
+  }, [isVisible]);
+
   return (
-    <div className="max-w-7xl mx-auto" ref={containerRef} />
+    <div className="max-w-7xl mx-auto min-h-[400px]" ref={containerRef}>
+      {!isVisible && (
+        <div className="flex items-center justify-center h-[400px] bg-gray-50 rounded-lg">
+          <p className="text-gray-500">Loading listings...</p>
+        </div>
+      )}
+    </div>
   );
 }
 
