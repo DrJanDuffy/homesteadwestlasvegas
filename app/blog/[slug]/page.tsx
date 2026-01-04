@@ -136,7 +136,7 @@ export default async function BlogPostPage({
                 {post.title}
               </h1>
               
-              <div className="flex items-center gap-4 text-gray-600">
+              <div className="flex items-center gap-4 text-gray-700">
                 <time dateTime={post.publishedAt.toISOString()}>
                   {formattedDate}
                 </time>

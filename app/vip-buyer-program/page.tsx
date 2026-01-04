@@ -142,7 +142,7 @@ export default function VIPBuyerProgramPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">What Working with a VIP New Construction Homes Specialist Means</h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <p className="text-xl text-gray-700 max-w-3xl mx-auto">
                   Dr. Jan Duffy's elite builder relationships deliver exclusive advantages 
                   that regular agents simply cannot provide.
                 </p>
@@ -222,7 +222,7 @@ export default function VIPBuyerProgramPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">Proven Track Record with Homestead West</h2>
-                <p className="text-xl text-gray-600">
+                <p className="text-xl text-gray-700">
                   Dr. Jan Duffy's new construction expertise spans multiple Las Vegas communities including Homestead West
                 </p>
               </div>
@@ -235,21 +235,21 @@ export default function VIPBuyerProgramPage() {
                       <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Homestead West Las Vegas</p>
-                        <p className="text-gray-600">Luxury ranch homes on pool-sized lots</p>
+                        <p className="text-gray-700">Luxury ranch homes on pool-sized lots</p>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-green-600 rounded-full mr-4"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Cadence Henderson</p>
-                        <p className="text-gray-600">Master-planned community with resort amenities</p>
+                        <p className="text-gray-700">Master-planned community with resort amenities</p>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-purple-600 rounded-full mr-4"></div>
                       <div>
                         <p className="font-semibold text-gray-900">North Las Vegas Developments</p>
-                        <p className="text-gray-600">New construction opportunities</p>
+                        <p className="text-gray-700">New construction opportunities</p>
                       </div>
                     </div>
                   </div>
@@ -262,21 +262,21 @@ export default function VIPBuyerProgramPage() {
                       <div className="w-4 h-4 bg-green-600 rounded-full mr-4"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Real-Time Pricing Updates</p>
-                        <p className="text-gray-600">Instant access to current pricing and incentives</p>
+                        <p className="text-gray-700">Instant access to current pricing and incentives</p>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Priority Lot Holds</p>
-                        <p className="text-gray-600">Secure your preferred lot before public release</p>
+                        <p className="text-gray-700">Secure your preferred lot before public release</p>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-purple-600 rounded-full mr-4"></div>
                       <div>
                         <p className="font-semibold text-gray-900">Exclusive Selections</p>
-                        <p className="text-gray-600">First choice on premium lots and floor plans</p>
+                        <p className="text-gray-700">First choice on premium lots and floor plans</p>
                       </div>
                     </div>
                   </div>
@@ -311,7 +311,7 @@ export default function VIPBuyerProgramPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">New Construction Communities Las Vegas: Homestead West and More</h2>
-                <p className="text-xl text-gray-600">
+                <p className="text-xl text-gray-700">
                   Dr. Jan Duffy's VIP access spans multiple premier communities across the Las Vegas Valley
                 </p>
               </div>
@@ -323,7 +323,7 @@ export default function VIPBuyerProgramPage() {
                       <span className="text-4xl">🏡</span>
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-gray-900">Homestead West</h3>
-                    <p className="text-gray-600 mb-4">Northwest Las Vegas</p>
+                    <p className="text-gray-700 mb-4">Northwest Las Vegas</p>
                     <p className="text-sm text-gray-500">Luxury ranch homes on pool-sized lots</p>
                     <p className="text-sm text-gray-500">Plan 3336 & 3704 available</p>
                   </div>
@@ -333,7 +333,7 @@ export default function VIPBuyerProgramPage() {
                       <span className="text-4xl">🏖️</span>
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-gray-900">Cadence</h3>
-                    <p className="text-gray-600 mb-4">Henderson</p>
+                    <p className="text-gray-700 mb-4">Henderson</p>
                     <p className="text-sm text-gray-500">Master-planned community</p>
                     <p className="text-sm text-gray-500">Resort-style amenities</p>
                   </div>
@@ -343,7 +343,7 @@ export default function VIPBuyerProgramPage() {
                       <span className="text-4xl">🏗️</span>
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-gray-900">North Las Vegas</h3>
-                    <p className="text-gray-600 mb-4">Multiple Developments</p>
+                    <p className="text-gray-700 mb-4">Multiple Developments</p>
                     <p className="text-sm text-gray-500">New construction opportunities</p>
                     <p className="text-sm text-gray-500">Growing communities</p>
                   </div>
@@ -358,7 +358,7 @@ export default function VIPBuyerProgramPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-8 text-gray-900">Register as a New Home Buyer for New Homes - Dr. Jan Duffy Fast-Track Process</h2>
-              <p className="text-xl text-gray-600 mb-12">
+              <p className="text-xl text-gray-700 mb-12">
                 As a VIP New Construction Homes Specialist, Dr. Jan Duffy's program includes a streamlined registration process 
                 that gets you priority treatment from day one for new construction homes. She represents YOU, the buyer, throughout the entire process.
               </p>
@@ -367,22 +367,22 @@ export default function VIPBuyerProgramPage() {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">1</div>
                   <h3 className="text-lg font-bold mb-2 text-gray-900">Initial Consultation for New Homes</h3>
-                  <p className="text-gray-600 text-sm">Discuss needs, budget, and preferences for new construction homes</p>
+                  <p className="text-gray-700 text-sm">Discuss needs, budget, and preferences for new construction homes</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
                   <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration for New Homes</h3>
-                  <p className="text-gray-600 text-sm">Register with VIP Berkshire Hathaway HomeServices buyer program by Calling Dr. Jan Duffy</p>
+                  <p className="text-gray-700 text-sm">Register with VIP Berkshire Hathaway HomeServices buyer program by Calling Dr. Jan Duffy</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">3</div>
                   <h3 className="text-lg font-bold mb-2 text-gray-900">Priority Access to New Homes</h3>
-                  <p className="text-gray-600 text-sm">Get early access to new construction phases and lots</p>
+                  <p className="text-gray-700 text-sm">Get early access to new construction phases and lots</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">4</div>
                   <h3 className="text-lg font-bold mb-2 text-gray-900">Expert Guidance for New Homes</h3>
-                  <p className="text-gray-600 text-sm">Navigate the entire new construction process with VIP treatment</p>
+                  <p className="text-gray-700 text-sm">Navigate the entire new construction process with VIP treatment</p>
                 </div>
               </div>
             </div>
@@ -395,7 +395,7 @@ export default function VIPBuyerProgramPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homes in Las Vegas
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
@@ -466,27 +466,27 @@ export default function VIPBuyerProgramPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/floor-plans" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
-                  <p className="text-gray-600">View available Homestead West home designs</p>
+                  <p className="text-gray-700">View available Homestead West home designs</p>
                 </a>
                 <a href="/homebuying-process" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
-                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                  <p className="text-gray-700">Step-by-step guide to new construction</p>
                 </a>
                 <a href="/about" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
-                  <p className="text-gray-600">Meet your Las Vegas real estate expert</p>
+                  <p className="text-gray-700">Meet your Las Vegas real estate expert</p>
                 </a>
                 <a href="/community" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community</h3>
-                  <p className="text-gray-600">Explore Homestead West location and amenities</p>
+                  <p className="text-gray-700">Explore Homestead West location and amenities</p>
                 </a>
                 <a href="/contact" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
-                  <p className="text-gray-600">Get in touch to start your VIP registration</p>
+                  <p className="text-gray-700">Get in touch to start your VIP registration</p>
                 </a>
                 <a href="/buyers-guide" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Buyer's Guide</h3>
-                  <p className="text-gray-600">Essential information for new home buyers</p>
+                  <p className="text-gray-700">Essential information for new home buyers</p>
                 </a>
               </div>
             </div>

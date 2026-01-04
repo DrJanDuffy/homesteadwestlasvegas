@@ -127,7 +127,7 @@ export default function ServicesPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-6">Our Homestead West Services</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                 Dr. Jan Duffy provides comprehensive real estate services throughout Las Vegas, 
                 helping clients achieve their property goals with expertise, integrity, and 
                 personalized attention.
@@ -140,7 +140,7 @@ export default function ServicesPage() {
                   <span className="text-white text-2xl">🏠</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Buying Homestead West Homes</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-700 mb-6">
                   Expert guidance through the Homestead West home buying process, from first-time buyers to luxury properties.
                 </p>
                 <a
@@ -156,7 +156,7 @@ export default function ServicesPage() {
                   <span className="text-white text-2xl">💰</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Selling Homestead West Homes</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-700 mb-6">
                   Maximize your Homestead West home's value with professional marketing and negotiation expertise.
                 </p>
                 <a
@@ -172,7 +172,7 @@ export default function ServicesPage() {
                   <span className="text-white text-2xl">📈</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Homestead West Investment Consulting</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-700 mb-6">
                   Strategic Homestead West real estate investment advice to build wealth through smart property decisions.
                 </p>
                 <a
@@ -188,7 +188,7 @@ export default function ServicesPage() {
                   <span className="text-white text-2xl">🔧</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Homestead West Property Management</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-700 mb-6">
                   Professional property management services for rental properties and investment portfolios.
                 </p>
                 <a
@@ -255,7 +255,7 @@ export default function ServicesPage() {
                   1
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Consultation</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Initial meeting to understand your Homestead West goals and requirements
                 </p>
               </div>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
                   2
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Strategy</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Develop a customized Homestead West plan based on your specific needs
                 </p>
               </div>
@@ -275,7 +275,7 @@ export default function ServicesPage() {
                   3
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Execution</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Implement the Homestead West plan with professional guidance and support
                 </p>
               </div>
@@ -285,7 +285,7 @@ export default function ServicesPage() {
                   4
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Follow-up</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Ongoing Homestead West support and relationship building for future needs
                 </p>
               </div>
@@ -333,7 +333,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homes in Las Vegas
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
@@ -351,27 +351,27 @@ export default function ServicesPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/services/buying" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Home Buying Services</h3>
-                  <p className="text-gray-600">Expert guidance for first-time and experienced buyers</p>
+                  <p className="text-gray-700">Expert guidance for first-time and experienced buyers</p>
                 </a>
                 <a href="/services/selling" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Home Selling Services</h3>
-                  <p className="text-gray-600">Maximize your home's value with professional marketing</p>
+                  <p className="text-gray-700">Maximize your home's value with professional marketing</p>
                 </a>
                 <a href="/services/investment" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Investment Consulting</h3>
-                  <p className="text-gray-600">Strategic real estate investment guidance</p>
+                  <p className="text-gray-700">Strategic real estate investment guidance</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                  <p className="text-gray-700">Exclusive access to new construction homes</p>
                 </a>
                 <a href="/about" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
-                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise</p>
+                  <p className="text-gray-700">Learn about Dr. Jan Duffy's expertise</p>
                 </a>
                 <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact Us</h3>
-                  <p className="text-gray-600">Get in touch for a consultation</p>
+                  <p className="text-gray-700">Get in touch for a consultation</p>
                 </a>
               </div>
             </div>

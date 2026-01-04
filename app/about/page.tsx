@@ -215,35 +215,35 @@ export default function AboutPage() {
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
                           <p className="font-semibold text-gray-900">Nevada Real Estate License</p>
-                          <p className="text-gray-600">License #S.0197614</p>
+                          <p className="text-gray-700">License #S.0197614</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
                           <p className="font-semibold text-gray-900">VIP New Construction Homes Specialist</p>
-                          <p className="text-gray-600">Represents home buyers exclusively</p>
+                          <p className="text-gray-700">Represents home buyers exclusively</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
                           <p className="font-semibold text-gray-900">Complete Buyer Representation</p>
-                          <p className="text-gray-600">Expert negotiation, contract review, and advocacy throughout the entire process</p>
+                          <p className="text-gray-700">Expert negotiation, contract review, and advocacy throughout the entire process</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
                           <p className="font-semibold text-gray-900">Office at Builder</p>
-                          <p className="text-gray-600">Professional on-site presence</p>
+                          <p className="text-gray-700">Professional on-site presence</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
                           <p className="font-semibold text-gray-900">Las Vegas Market Expert</p>
-                          <p className="text-gray-600">Deep local market knowledge</p>
+                          <p className="text-gray-700">Deep local market knowledge</p>
                         </div>
                       </div>
                     </div>
@@ -338,7 +338,7 @@ export default function AboutPage() {
                     We got early access to the best lots and saved thousands through her expert negotiation—all while having an advocate who worked for us, not the builder."
                   </p>
                   <p className="font-semibold text-gray-900">- Sarah & Mike Johnson</p>
-                  <p className="text-sm text-gray-600">Homestead West Homeowners</p>
+                  <p className="text-sm text-gray-700">Homestead West Homeowners</p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-xl">
@@ -352,7 +352,7 @@ export default function AboutPage() {
                     saved us months of delays. Her VIP status gave us priority treatment throughout."
                   </p>
                   <p className="font-semibold text-gray-900">- David & Lisa Chen</p>
-                  <p className="text-sm text-gray-600">Cadence Henderson Homeowners</p>
+                  <p className="text-sm text-gray-700">Cadence Henderson Homeowners</p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-xl">
@@ -366,7 +366,7 @@ export default function AboutPage() {
                     Her expertise meant we got upgrades and incentives others couldn't access—all while having an advocate who worked for us, not the builder."
                   </p>
                   <p className="font-semibold text-gray-900">- Robert & Maria Garcia</p>
-                  <p className="text-sm text-gray-600">North Las Vegas Homeowners</p>
+                  <p className="text-sm text-gray-700">North Las Vegas Homeowners</p>
                 </div>
               </div>
             </div>
@@ -379,7 +379,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
@@ -395,7 +395,7 @@ export default function AboutPage() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-6">
                 <h2 className="text-3xl font-bold mb-3 text-gray-900">View Available Homes</h2>
-                <p className="text-lg text-gray-600">Explore live MLS listings at Homestead West</p>
+                <p className="text-lg text-gray-700">Explore live MLS listings at Homestead West</p>
               </div>
 
               <div className="rounded-lg overflow-hidden shadow-lg">
@@ -458,27 +458,27 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                  <p className="text-gray-700">Exclusive access to new construction homes</p>
                 </a>
                 <a href="/services" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Services</h3>
-                  <p className="text-gray-600">Buying, selling, and investment consulting</p>
+                  <p className="text-gray-700">Buying, selling, and investment consulting</p>
                 </a>
                 <a href="/contact" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
-                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                  <p className="text-gray-700">Get in touch with Dr. Jan Duffy</p>
                 </a>
                 <a href="/homebuying-process" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
-                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                  <p className="text-gray-700">Step-by-step guide to new construction</p>
                 </a>
                 <a href="/testimonials" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Testimonials</h3>
-                  <p className="text-gray-600">What clients say about working with Dr. Jan</p>
+                  <p className="text-gray-700">What clients say about working with Dr. Jan</p>
                 </a>
                 <a href="/floor-plans" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
-                  <p className="text-gray-600">Available Homestead West home designs</p>
+                  <p className="text-gray-700">Available Homestead West home designs</p>
                 </a>
               </div>
             </div>

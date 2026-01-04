@@ -89,7 +89,7 @@ export default function FloorPlansPage() {
               <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
                 Available Homestead West Homes and Las Vegas MLS Listings
               </h2>
-              <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
                 Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
               </p>
               
@@ -205,27 +205,27 @@ export default function FloorPlansPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/floor-plans/3336" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Plan 3336</h3>
-                  <p className="text-gray-600">3,336 sq ft • 4-5 beds • From $910,990</p>
+                  <p className="text-gray-700">3,336 sq ft • 4-5 beds • From $910,990</p>
                 </a>
                 <a href="/floor-plans/3704" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Plan 3704</h3>
-                  <p className="text-gray-600">3,704 sq ft • 4 beds • From $940,990</p>
+                  <p className="text-gray-700">3,704 sq ft • 4 beds • From $940,990</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Program</h3>
-                  <p className="text-gray-600">Exclusive access and priority treatment</p>
+                  <p className="text-gray-700">Exclusive access and priority treatment</p>
                 </a>
                 <a href="/community" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Guide</h3>
-                  <p className="text-gray-600">Learn about Homestead West location</p>
+                  <p className="text-gray-700">Learn about Homestead West location</p>
                 </a>
                 <a href="/homebuying-process" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
-                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                  <p className="text-gray-700">Step-by-step guide to new construction</p>
                 </a>
                 <a href="/about" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
-                  <p className="text-gray-600">Meet your Las Vegas real estate expert</p>
+                  <p className="text-gray-700">Meet your Las Vegas real estate expert</p>
                 </a>
               </div>
             </div>

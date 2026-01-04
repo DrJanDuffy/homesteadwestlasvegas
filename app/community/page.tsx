@@ -150,7 +150,7 @@ export default function CommunityPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Dean Lamar Allen Elementary Near Homestead West</h3>
-                      <p className="text-gray-600">Grades K-5</p>
+                      <p className="text-gray-700">Grades K-5</p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -167,7 +167,7 @@ export default function CommunityPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Justice Myron E. Leavitt Middle Near Homestead West</h3>
-                      <p className="text-gray-600">Grades 6-8</p>
+                      <p className="text-gray-700">Grades 6-8</p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -184,7 +184,7 @@ export default function CommunityPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Centennial High School Near Homestead West</h3>
-                      <p className="text-gray-600">Grades 9-12</p>
+                      <p className="text-gray-700">Grades 9-12</p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -212,28 +212,28 @@ export default function CommunityPage() {
                       <span className="text-blue-600 mr-3 text-xl">🛒</span>
                       <div>
                         <p className="font-semibold text-gray-900">Target</p>
-                        <p className="text-gray-600">1.8 miles • 24/7 SuperTarget</p>
+                        <p className="text-gray-700">1.8 miles • 24/7 SuperTarget</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-blue-600 mr-3 text-xl">🛒</span>
                       <div>
                         <p className="font-semibold text-gray-900">Walmart Supercenter</p>
-                        <p className="text-gray-600">2.3 miles • Full grocery & pharmacy</p>
+                        <p className="text-gray-700">2.3 miles • Full grocery & pharmacy</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-blue-600 mr-3 text-xl">🛒</span>
                       <div>
                         <p className="font-semibold text-gray-900">Trader Joe's</p>
-                        <p className="text-gray-600">3.1 miles • Organic & specialty foods</p>
+                        <p className="text-gray-700">3.1 miles • Organic & specialty foods</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-blue-600 mr-3 text-xl">🛒</span>
                       <div>
                         <p className="font-semibold text-gray-900">Albertsons</p>
-                        <p className="text-gray-600">2.7 miles • Local grocery chain</p>
+                        <p className="text-gray-700">2.7 miles • Local grocery chain</p>
                       </div>
                     </div>
                   </div>
@@ -246,28 +246,28 @@ export default function CommunityPage() {
                       <span className="text-green-600 mr-3 text-xl">🍽️</span>
                       <div>
                         <p className="font-semibold text-gray-900">Rachel's Kitchen</p>
-                        <p className="text-gray-600">1.9 miles • Healthy American cuisine</p>
+                        <p className="text-gray-700">1.9 miles • Healthy American cuisine</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🍽️</span>
                       <div>
                         <p className="font-semibold text-gray-900">Egg Works</p>
-                        <p className="text-gray-600">2.1 miles • Breakfast & brunch</p>
+                        <p className="text-gray-700">2.1 miles • Breakfast & brunch</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🍽️</span>
                       <div>
                         <p className="font-semibold text-gray-900">My Garage Restaurant</p>
-                        <p className="text-gray-600">2.8 miles • Casual dining</p>
+                        <p className="text-gray-700">2.8 miles • Casual dining</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🍽️</span>
                       <div>
                         <p className="font-semibold text-gray-900">Wahoo's Tacos</p>
-                        <p className="text-gray-600">3.2 miles • Mexican & Baja-style</p>
+                        <p className="text-gray-700">3.2 miles • Mexican & Baja-style</p>
                       </div>
                     </div>
                   </div>
@@ -291,7 +291,7 @@ export default function CommunityPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Centennial Hills Hospital</h3>
-                      <p className="text-gray-600">Full-service hospital</p>
+                      <p className="text-gray-700">Full-service hospital</p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -308,7 +308,7 @@ export default function CommunityPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Northwest Medical Center Near Homestead West</h3>
-                      <p className="text-gray-600">Urgent care & primary care</p>
+                      <p className="text-gray-700">Urgent care & primary care</p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -325,7 +325,7 @@ export default function CommunityPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">CVS Pharmacy Near Homestead West</h3>
-                      <p className="text-gray-600">Pharmacy & health services</p>
+                      <p className="text-gray-700">Pharmacy & health services</p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -353,21 +353,21 @@ export default function CommunityPage() {
                       <span className="text-green-600 mr-3 text-xl">🌳</span>
                       <div>
                         <p className="font-semibold text-gray-900">Lone Mountain Park</p>
-                        <p className="text-gray-600">2.1 miles • Hiking trails & picnic areas</p>
+                        <p className="text-gray-700">2.1 miles • Hiking trails & picnic areas</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🌳</span>
                       <div>
                         <p className="font-semibold text-gray-900">Gilcrease Orchard</p>
-                        <p className="text-gray-600">3.4 miles • Farm & seasonal activities</p>
+                        <p className="text-gray-700">3.4 miles • Farm & seasonal activities</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">🌳</span>
                       <div>
                         <p className="font-semibold text-gray-900">Centennial Hills Park</p>
-                        <p className="text-gray-600">4.2 miles • Sports fields & playgrounds</p>
+                        <p className="text-gray-700">4.2 miles • Sports fields & playgrounds</p>
                       </div>
                     </div>
                   </div>
@@ -380,21 +380,21 @@ export default function CommunityPage() {
                       <span className="text-purple-600 mr-3 text-xl">🏔️</span>
                       <div>
                         <p className="font-semibold text-gray-900">Red Rock Canyon</p>
-                        <p className="text-gray-600">9 miles • Hiking, climbing, scenic drives</p>
+                        <p className="text-gray-700">9 miles • Hiking, climbing, scenic drives</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-purple-600 mr-3 text-xl">🌆</span>
                       <div>
                         <p className="font-semibold text-gray-900">Downtown Las Vegas</p>
-                        <p className="text-gray-600">18 miles • Entertainment & dining</p>
+                        <p className="text-gray-700">18 miles • Entertainment & dining</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <span className="text-purple-600 mr-3 text-xl">⛰️</span>
                       <div>
                         <p className="font-semibold text-gray-900">Mount Charleston</p>
-                        <p className="text-gray-600">23 miles • Skiing & alpine recreation</p>
+                        <p className="text-gray-700">23 miles • Skiing & alpine recreation</p>
                       </div>
                     </div>
                   </div>
@@ -421,7 +421,7 @@ export default function CommunityPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
@@ -439,27 +439,27 @@ export default function CommunityPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/community-map" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Map</h3>
-                  <p className="text-gray-600">Interactive map showing Homestead West location and nearby amenities</p>
+                  <p className="text-gray-700">Interactive map showing Homestead West location and nearby amenities</p>
                 </a>
                 <a href="/virtual-tour" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Virtual Tour</h3>
-                  <p className="text-gray-600">Take a 3D virtual tour of Homestead West homes</p>
+                  <p className="text-gray-700">Take a 3D virtual tour of Homestead West homes</p>
                 </a>
                 <a href="/floor-plans" className="bg-white p-6 rounded-lg hover:bg-purple-50 transition-colors border-2 border-purple-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
-                  <p className="text-gray-600">Explore available Homestead West home designs</p>
+                  <p className="text-gray-700">Explore available Homestead West home designs</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-white p-6 rounded-lg hover:bg-yellow-50 transition-colors border-2 border-yellow-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Get exclusive access to Homestead West homes</p>
+                  <p className="text-gray-700">Get exclusive access to Homestead West homes</p>
                 </a>
                 <a href="/services" className="bg-white p-6 rounded-lg hover:bg-indigo-50 transition-colors border-2 border-indigo-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>
-                  <p className="text-gray-600">Expert real estate services for Homestead West buyers</p>
+                  <p className="text-gray-700">Expert real estate services for Homestead West buyers</p>
                 </a>
                 <a href="/contact" className="bg-white p-6 rounded-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact Us</h3>
-                  <p className="text-gray-600">Schedule a consultation about Homestead West</p>
+                  <p className="text-gray-700">Schedule a consultation about Homestead West</p>
                 </a>
               </div>
             </div>

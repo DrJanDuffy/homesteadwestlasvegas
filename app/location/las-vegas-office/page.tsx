@@ -232,27 +232,27 @@ export default function LasVegasOfficePage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/community" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Guide</h3>
-                  <p className="text-gray-600">Learn about Homestead West community and amenities</p>
+                  <p className="text-gray-700">Learn about Homestead West community and amenities</p>
                 </a>
                 <a href="/community-map" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Map</h3>
-                  <p className="text-gray-600">Interactive map showing Homestead West location</p>
+                  <p className="text-gray-700">Interactive map showing Homestead West location</p>
                 </a>
                 <a href="/appointment" className="bg-white p-6 rounded-lg hover:bg-purple-50 transition-colors border-2 border-purple-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Schedule Appointment</h3>
-                  <p className="text-gray-600">Book a consultation with Dr. Jan Duffy</p>
+                  <p className="text-gray-700">Book a consultation with Dr. Jan Duffy</p>
                 </a>
                 <a href="/services" className="bg-white p-6 rounded-lg hover:bg-yellow-50 transition-colors border-2 border-yellow-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>
-                  <p className="text-gray-600">Buying, selling, investment, and property management</p>
+                  <p className="text-gray-700">Buying, selling, investment, and property management</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-white p-6 rounded-lg hover:bg-indigo-50 transition-colors border-2 border-indigo-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                  <p className="text-gray-700">Exclusive access to new construction homes</p>
                 </a>
                 <a href="/contact" className="bg-white p-6 rounded-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
-                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                  <p className="text-gray-700">Get in touch with Dr. Jan Duffy</p>
                 </a>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function LasVegasOfficePage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             

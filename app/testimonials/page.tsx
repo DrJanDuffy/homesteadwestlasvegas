@@ -266,7 +266,7 @@ export default function TestimonialsPage() {
                     
                     <div className="border-t pt-4">
                       <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600 mb-2">{testimonial.location}</p>
+                      <p className="text-sm text-gray-700 mb-2">{testimonial.location}</p>
                       <p className="text-sm text-blue-600 font-semibold">{testimonial.homeType}</p>
                       <p className="text-sm text-green-600 font-semibold">{testimonial.savings}</p>
                     </div>
@@ -346,27 +346,27 @@ export default function TestimonialsPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/about" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
-                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise as a VIP New Construction Homes Specialist</p>
+                  <p className="text-gray-700">Learn about Dr. Jan Duffy's expertise as a VIP New Construction Homes Specialist</p>
                 </a>
                 <a href="/services" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>
-                  <p className="text-gray-600">Buying, selling, investment, and property management</p>
+                  <p className="text-gray-700">Buying, selling, investment, and property management</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                  <p className="text-gray-700">Exclusive access to new construction homes</p>
                 </a>
                 <a href="/homebuying-process" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Buying Process</h3>
-                  <p className="text-gray-600">Step-by-step guide to new construction</p>
+                  <p className="text-gray-700">Step-by-step guide to new construction</p>
                 </a>
                 <a href="/properties" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Properties</h3>
-                  <p className="text-gray-600">Browse available Homestead West homes</p>
+                  <p className="text-gray-700">Browse available Homestead West homes</p>
                 </a>
                 <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
-                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                  <p className="text-gray-700">Get in touch with Dr. Jan Duffy</p>
                 </a>
               </div>
             </div>
@@ -379,7 +379,7 @@ export default function TestimonialsPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             

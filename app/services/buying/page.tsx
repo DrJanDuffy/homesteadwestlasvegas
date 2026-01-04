@@ -162,7 +162,7 @@ export default function BuyingServicePage() {
                   1
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Initial Consultation</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Discuss your needs, budget, and preferences to create your buying strategy
                 </p>
               </div>
@@ -172,7 +172,7 @@ export default function BuyingServicePage() {
                   2
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Pre-Approval</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Connect you with trusted lenders to get pre-approved for Homestead West financing
                 </p>
               </div>
@@ -182,7 +182,7 @@ export default function BuyingServicePage() {
                   3
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Property Search</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Show you Homestead West properties that match your criteria and schedule viewings
                 </p>
               </div>
@@ -192,7 +192,7 @@ export default function BuyingServicePage() {
                   4
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Offer & Negotiation</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Help you craft competitive Homestead West offers and negotiate the best terms
                 </p>
               </div>
@@ -202,7 +202,7 @@ export default function BuyingServicePage() {
                   5
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Inspection & Appraisal</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Coordinate Homestead West inspections and appraisals to protect your investment
                 </p>
               </div>
@@ -212,7 +212,7 @@ export default function BuyingServicePage() {
                   6
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Closing Process</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Guide you through final Homestead West paperwork and closing procedures
                 </p>
               </div>
@@ -222,7 +222,7 @@ export default function BuyingServicePage() {
                   7
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Move-In Support</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Provide resources and connections for your Homestead West move-in process
                 </p>
               </div>
@@ -232,7 +232,7 @@ export default function BuyingServicePage() {
                   8
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Homestead West Ongoing Relationship</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   Maintain our relationship for future real estate needs
                 </p>
               </div>
@@ -246,7 +246,7 @@ export default function BuyingServicePage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
@@ -263,7 +263,7 @@ export default function BuyingServicePage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 border rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Homestead West Financial Preparation</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-gray-700">
                   <li>• Credit score improvement for Homestead West</li>
                   <li>• Down payment planning for Homestead West</li>
                   <li>• Closing cost budgeting for Homestead West</li>
@@ -273,7 +273,7 @@ export default function BuyingServicePage() {
               
               <div className="bg-white p-6 border rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Homestead West Loan Options</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-gray-700">
                   <li>• Conventional loans for Homestead West</li>
                   <li>• FHA loans</li>
                   <li>• VA loans</li>
@@ -283,7 +283,7 @@ export default function BuyingServicePage() {
               
               <div className="bg-white p-6 border rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Homestead West and Las Vegas Market</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-gray-700">
                   <li>• Neighborhood insights</li>
                   <li>• Market trends</li>
                   <li>• Property values</li>
@@ -301,27 +301,27 @@ export default function BuyingServicePage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">Homestead West in Northwest Las Vegas</h3>
-                <p className="text-gray-600">Family-friendly Homestead West communities with excellent schools</p>
+                <p className="text-gray-700">Family-friendly Homestead West communities with excellent schools</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">Summerlin Near Homestead West</h3>
-                <p className="text-gray-600">Master-planned community with luxury amenities</p>
+                <p className="text-gray-700">Master-planned community with luxury amenities</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">Henderson</h3>
-                <p className="text-gray-600">Suburban living with easy access to Las Vegas</p>
+                <p className="text-gray-700">Suburban living with easy access to Las Vegas</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">Green Valley</h3>
-                <p className="text-gray-600">Established neighborhood with mature landscaping</p>
+                <p className="text-gray-700">Established neighborhood with mature landscaping</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">Spring Valley</h3>
-                <p className="text-gray-600">Convenient location with diverse housing options</p>
+                <p className="text-gray-700">Convenient location with diverse housing options</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">Enterprise</h3>
-                <p className="text-gray-600">Growing area with new construction opportunities</p>
+                <p className="text-gray-700">Growing area with new construction opportunities</p>
               </div>
             </div>
           </div>

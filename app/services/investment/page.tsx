@@ -182,7 +182,7 @@ export default function InvestmentConsultingPage() {
                   <span className="text-3xl">🏡</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West</h3>
-                <p className="text-gray-600 mb-4">Luxury ranch homes on pool-sized lots</p>
+                <p className="text-gray-700 mb-4">Luxury ranch homes on pool-sized lots</p>
                 <p className="text-sm text-gray-500">Starting at $910,990</p>
               </div>
 
@@ -191,7 +191,7 @@ export default function InvestmentConsultingPage() {
                   <span className="text-3xl">🏖️</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">Cadence Henderson</h3>
-                <p className="text-gray-600 mb-4">Master-planned community with resort amenities</p>
+                <p className="text-gray-700 mb-4">Master-planned community with resort amenities</p>
                 <p className="text-sm text-gray-500">Premium location</p>
               </div>
 
@@ -200,7 +200,7 @@ export default function InvestmentConsultingPage() {
                   <span className="text-3xl">🏗️</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">North Las Vegas</h3>
-                <p className="text-gray-600 mb-4">Growing communities with new construction</p>
+                <p className="text-gray-700 mb-4">Growing communities with new construction</p>
                 <p className="text-sm text-gray-500">Emerging markets</p>
               </div>
             </div>
@@ -214,7 +214,7 @@ export default function InvestmentConsultingPage() {
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             Available Homestead West Homes and Las Vegas MLS Listings
           </h2>
-          <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
             Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
           </p>
           

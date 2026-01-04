@@ -324,7 +324,7 @@ export default function HomePage() {
                     "A couple in the area wanted a corner lot in Homestead West. They called the VIP Berkshire Hathaway HomeServices Buyer Program two weeks before the public release. We registered them in the VIP program. They secured a corner position with mountain views—before anyone else saw it."
                   </p>
                   <p className="text-gray-900 font-semibold">— Homestead West Buyers</p>
-                  <p className="text-gray-600 text-sm">Final savings: $15,000 in negotiated upgrades including quartz countertops and covered patio extension</p>
+                  <p className="text-gray-700 text-sm">Final savings: $15,000 in negotiated upgrades including quartz countertops and covered patio extension</p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-600">
@@ -332,7 +332,7 @@ export default function HomePage() {
                     "A local executive was upsizing and needed to close in 60 days. The VIP Berkshire Hathaway HomeServices Buyer Program connected him with a move-in-ready spec home that wasn't publicly listed yet. The program negotiated $12,500 in closing cost credits. He moved in on schedule."
                   </p>
                   <p className="text-gray-900 font-semibold">— Local Executive</p>
-                  <p className="text-gray-600 text-sm">Closed in 60 days with $12,500 in closing cost credits</p>
+                  <p className="text-gray-700 text-sm">Closed in 60 days with $12,500 in closing cost credits</p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-600">
@@ -340,7 +340,7 @@ export default function HomePage() {
                     "A retiring couple nearby wanted a larger floor plan with a casita for visiting grandchildren. The builder's sales rep said it wasn't available. The VIP Berkshire Hathaway HomeServices Buyer Program checked the VIP portal. Found one coming available in 30 days. They secured it before it went public."
                   </p>
                   <p className="text-gray-900 font-semibold">— Retiring Couple</p>
-                  <p className="text-gray-600 text-sm">Saved $18,000 through our negotiation—design center upgrades plus lot premium credits</p>
+                  <p className="text-gray-700 text-sm">Saved $18,000 through our negotiation—design center upgrades plus lot premium credits</p>
                 </div>
               </div>
               
@@ -376,7 +376,7 @@ export default function HomePage() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-4xl font-bold mb-4 text-gray-900">Available Homes and Las Vegas MLS Listings</h2>
-                <p className="text-xl text-gray-600 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
+                <p className="text-xl text-gray-700 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
               </div>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
@@ -424,7 +424,7 @@ export default function HomePage() {
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
                 Search Available Homes and New Construction Listings
               </h2>
-              <p className="text-gray-600 mb-8 text-lg">
+              <p className="text-gray-700 mb-8 text-lg">
                 Explore new construction listings in Northwest Las Vegas
               </p>
               

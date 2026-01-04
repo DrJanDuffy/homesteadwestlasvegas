@@ -165,7 +165,7 @@ export default function PropertyManagementPage() {
                     <span className="text-3xl">🏡</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Single Family Homes</h3>
-                  <p className="text-gray-600 mb-4">Complete management for Homestead West rental homes</p>
+                  <p className="text-gray-700 mb-4">Complete management for Homestead West rental homes</p>
                   <ul className="text-sm text-gray-500 text-left">
                     <li>• Homestead West tenant screening & placement</li>
                     <li>• Homestead West rent collection & accounting</li>
@@ -179,7 +179,7 @@ export default function PropertyManagementPage() {
                     <span className="text-3xl">🏢</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Investment Properties</h3>
-                  <p className="text-gray-600 mb-4">Specialized Homestead West investment property management</p>
+                  <p className="text-gray-700 mb-4">Specialized Homestead West investment property management</p>
                   <ul className="text-sm text-gray-500 text-left">
                     <li>• Homestead West ROI optimization</li>
                     <li>• Homestead West market analysis</li>
@@ -193,7 +193,7 @@ export default function PropertyManagementPage() {
                     <span className="text-3xl">🏗️</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West New Construction</h3>
-                  <p className="text-gray-600 mb-4">VIP Homestead West new construction properties</p>
+                  <p className="text-gray-700 mb-4">VIP Homestead West new construction properties</p>
                   <ul className="text-sm text-gray-500 text-left">
                     <li>• Homestead West pre-construction management</li>
                     <li>• Homestead West builder coordination</li>
@@ -217,7 +217,7 @@ export default function PropertyManagementPage() {
                     1
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Homestead West Property Assessment</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Comprehensive Homestead West property evaluation and market analysis
                   </p>
                 </div>
@@ -227,7 +227,7 @@ export default function PropertyManagementPage() {
                     2
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Homestead West Tenant Placement</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Professional Homestead West marketing and qualified tenant screening
                   </p>
                 </div>
@@ -237,7 +237,7 @@ export default function PropertyManagementPage() {
                     3
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Homestead West Ongoing Management</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Day-to-day Homestead West operations and tenant relationship management
                   </p>
                 </div>
@@ -247,7 +247,7 @@ export default function PropertyManagementPage() {
                     4
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Homestead West Performance Optimization</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Continuous Homestead West improvement and ROI maximization
                   </p>
                 </div>
@@ -262,7 +262,7 @@ export default function PropertyManagementPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             

@@ -39,7 +39,7 @@ async function BlogPosts() {
   if (!posts.length) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-600">No posts available at the moment. Check back soon!</p>
+        <p className="text-gray-700">No posts available at the moment. Check back soon!</p>
       </div>
     );
   }
@@ -119,7 +119,7 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-12">
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <p className="text-xl text-gray-700 max-w-3xl mx-auto">
                   Stay informed with the latest real estate trends, market updates, and expert advice 
                   for buying and selling homes in Northwest Las Vegas.
                 </p>
@@ -138,7 +138,7 @@ export default function BlogPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             

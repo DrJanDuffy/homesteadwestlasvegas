@@ -407,27 +407,27 @@ export default function HomebuyingProcessPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/buyers-guide" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Buyer's Guide</h3>
-                  <p className="text-gray-600">Complete guide for new construction buyers</p>
+                  <p className="text-gray-700">Complete guide for new construction buyers</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-white p-6 rounded-lg hover:bg-yellow-50 transition-colors border-2 border-yellow-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Exclusive access to new construction homes</p>
+                  <p className="text-gray-700">Exclusive access to new construction homes</p>
                 </a>
                 <a href="/floor-plans" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
-                  <p className="text-gray-600">Explore available Homestead West home designs</p>
+                  <p className="text-gray-700">Explore available Homestead West home designs</p>
                 </a>
                 <a href="/faq" className="bg-white p-6 rounded-lg hover:bg-purple-50 transition-colors border-2 border-purple-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">FAQ</h3>
-                  <p className="text-gray-600">Common questions about new construction</p>
+                  <p className="text-gray-700">Common questions about new construction</p>
                 </a>
                 <a href="/properties" className="bg-white p-6 rounded-lg hover:bg-indigo-50 transition-colors border-2 border-indigo-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Properties</h3>
-                  <p className="text-gray-600">Browse available Homestead West homes</p>
+                  <p className="text-gray-700">Browse available Homestead West homes</p>
                 </a>
                 <a href="/contact" className="bg-white p-6 rounded-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
-                  <p className="text-gray-600">Get in touch with Dr. Jan Duffy</p>
+                  <p className="text-gray-700">Get in touch with Dr. Jan Duffy</p>
                 </a>
               </div>
             </div>
@@ -477,7 +477,7 @@ export default function HomebuyingProcessPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             

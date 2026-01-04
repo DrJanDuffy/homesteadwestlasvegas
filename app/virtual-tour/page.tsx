@@ -111,7 +111,7 @@ export default function VirtualTourPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold mb-4">Homestead West Interactive 3D Property Tour</h2>
-                <p className="text-lg text-gray-600 mb-6">
+                <p className="text-lg text-gray-700 mb-6">
                   Explore Homestead West luxury ranch homes from anywhere with our immersive virtual tour. 
                   Navigate through the Homestead West properties and experience the space as if you were there in person.
                 </p>
@@ -139,7 +139,7 @@ export default function VirtualTourPage() {
                     <span className="text-white text-2xl">🖱️</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Click to Navigate Homestead West</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Click on the white dots to move through different rooms and areas of the Homestead West home.
                   </p>
                 </div>
@@ -149,7 +149,7 @@ export default function VirtualTourPage() {
                     <span className="text-white text-2xl">📱</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Mobile Friendly Homestead West Tour</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Works perfectly on desktop, tablet, and mobile devices for viewing Homestead West anywhere.
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function VirtualTourPage() {
                     <span className="text-white text-2xl">🔍</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Detailed Homestead West Views</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Zoom in to see details, measurements, and features throughout the Homestead West home.
                   </p>
                 </div>
@@ -172,7 +172,7 @@ export default function VirtualTourPage() {
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <h4 className="text-xl font-semibold mb-2">Plan 3336</h4>
                     <p className="text-blue-600 font-bold text-lg mb-2">From $910,990</p>
-                    <ul className="space-y-1 text-gray-600">
+                    <ul className="space-y-1 text-gray-700">
                       <li>• 3,336 square feet</li>
                       <li>• 4-5 bedrooms</li>
                       <li>• 4.5 bathrooms</li>
@@ -182,7 +182,7 @@ export default function VirtualTourPage() {
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <h4 className="text-xl font-semibold mb-2">Plan 3704</h4>
                     <p className="text-blue-600 font-bold text-lg mb-2">From $940,990</p>
-                    <ul className="space-y-1 text-gray-600">
+                    <ul className="space-y-1 text-gray-700">
                       <li>• 3,704 square feet</li>
                       <li>• 4 bedrooms</li>
                       <li>• 4.5 bathrooms</li>
@@ -229,27 +229,27 @@ export default function VirtualTourPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/community" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Guide</h3>
-                  <p className="text-gray-600">Learn about Homestead West community and amenities</p>
+                  <p className="text-gray-700">Learn about Homestead West community and amenities</p>
                 </a>
                 <a href="/community-map" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Map</h3>
-                  <p className="text-gray-600">Interactive map showing Homestead West location</p>
+                  <p className="text-gray-700">Interactive map showing Homestead West location</p>
                 </a>
                 <a href="/floor-plans" className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors border-2 border-purple-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Floor Plans</h3>
-                  <p className="text-gray-600">Explore available Homestead West home designs</p>
+                  <p className="text-gray-700">Explore available Homestead West home designs</p>
                 </a>
                 <a href="/properties" className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors border-2 border-yellow-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Properties</h3>
-                  <p className="text-gray-600">Browse available Homestead West homes</p>
+                  <p className="text-gray-700">Browse available Homestead West homes</p>
                 </a>
                 <a href="/vip-buyer-program" className="bg-indigo-50 p-6 rounded-lg hover:bg-indigo-100 transition-colors border-2 border-indigo-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">VIP Buyer Program</h3>
-                  <p className="text-gray-600">Get exclusive access to Homestead West homes</p>
+                  <p className="text-gray-700">Get exclusive access to Homestead West homes</p>
                 </a>
                 <a href="/contact" className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border-2 border-gray-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Contact</h3>
-                  <p className="text-gray-600">Schedule a consultation about Homestead West</p>
+                  <p className="text-gray-700">Schedule a consultation about Homestead West</p>
                 </a>
               </div>
             </div>
@@ -262,7 +262,7 @@ export default function VirtualTourPage() {
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
               Available Homestead West Homes and Las Vegas MLS Listings
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
             </p>
             
