@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
 import RealScoutListings from '@/components/RealScoutListings';
 

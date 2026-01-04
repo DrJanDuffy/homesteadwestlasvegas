@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -92,6 +93,17 @@ export default function AboutPage() {
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
                 ⭐ VIP NEW CONSTRUCTION SPECIALIST ⭐
               </div>
+              <div className="mb-6 flex justify-center">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                  <Image
+                    src="/images/Dr. Duffy Blue_Headshot.jpg"
+                    alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Jan Duffy - Homestead West Real Estate Expert</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">VIP New Construction Specialist</p>
               <p className="text-xl text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
@@ -146,7 +158,17 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
+                <div className="order-2 lg:order-1">
+                  <div className="mb-6 lg:hidden">
+                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
+                      <Image
+                        src="/images/Dr. Duffy Blue_Headshot.jpg"
+                        alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
                   <h2 className="text-4xl font-bold mb-6 text-gray-900">Dr. Jan Duffy's Professional Background</h2>
                   <div className="space-y-6 text-lg text-gray-700">
                     <p>
@@ -169,7 +191,18 @@ export default function AboutPage() {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8">
+                <div className="order-1 lg:order-2">
+                  <div className="hidden lg:block mb-6">
+                    <div className="relative w-full aspect-square max-w-md mx-auto rounded-xl overflow-hidden border-4 border-blue-600 shadow-xl">
+                      <Image
+                        src="/images/Dr. Duffy Blue_Headshot.jpg"
+                        alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8">
                   <h3 className="text-2xl font-bold mb-6 text-gray-900">Dr. Jan Duffy's Credentials & Achievements</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">

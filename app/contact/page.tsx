@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -95,6 +96,16 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
+                <div className="mb-6">
+                  <div className="relative w-48 h-48 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
+                    <Image
+                      src="/images/Dr. Duffy Blue_Headshot.jpg"
+                      alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
                 <h2 className="text-3xl font-bold mb-4">Get In Touch About Homestead West</h2>
                 <div className="mb-6">
                   <a
