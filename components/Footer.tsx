@@ -16,7 +16,7 @@ export default function Footer() {
             <p className="mb-2">Las Vegas, NV 89149</p>
             <div className="mt-4 rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.5!2d-115.2936!3d36.2839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c8b8b8b8b8b9%3A0x0!2zMzYsMTcsMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6d-s6U4bM3dG&q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}
