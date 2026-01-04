@@ -501,14 +501,6 @@ export default function RootLayout({
                           closes: '00:00'
                         }
                       ],
-                      areaServed: {
-                        '@type': 'City',
-                        name: 'Las Vegas',
-                        containedInPlace: {
-                          '@type': 'State',
-                          name: 'Nevada'
-                        }
-                      },
                       hasCredential: {
                         '@type': 'EducationalOccupationalCredential',
                         credentialCategory: 'license',
