@@ -175,6 +175,16 @@ export default function HomePage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
+              <div className="flex justify-center mb-8">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
+                  <Image
+                    src="/images/Dr. Duffy Blue_Headshot.jpg"
+                    alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
                 Your Advocate in the New Construction Process
               </h2>
