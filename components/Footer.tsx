@@ -52,7 +52,10 @@ export default function Footer() {
           <img 
             src="/images/bhhs-logo.svg" 
             alt="Berkshire Hathaway HomeServices Nevada" 
+            width={200}
+            height={48}
             className="h-12 w-auto"
+            loading="lazy"
           />
           <a
             href="https://www.hud.gov/program_offices/fair_housing_equal_opp"

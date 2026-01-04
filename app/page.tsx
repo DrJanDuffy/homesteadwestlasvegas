@@ -303,7 +303,10 @@ export default function HomePage() {
                 <img 
                   src="/images/bhhs-logo.svg" 
                   alt="Berkshire Hathaway HomeServices Nevada" 
+                  width={200}
+                  height={64}
                   className="h-16 w-auto"
+                  loading="lazy"
                 />
               </div>
             </div>
