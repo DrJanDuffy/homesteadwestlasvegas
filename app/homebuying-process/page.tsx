@@ -118,7 +118,7 @@ export default function HomebuyingProcessPage() {
           </div>
         </header>
 
-        {/* VIP Partnership Introduction */}
+        {/* VIP New Construction Homes Specialist Introduction */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
@@ -127,11 +127,11 @@ export default function HomebuyingProcessPage() {
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Homestead West VIP Homebuying Journey</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's elite new construction partnership delivers exclusive Homestead West access, 
-                priority Homestead West treatment, and expert Homestead West guidance throughout your entire homebuying process.
+                Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, delivers exclusive Homestead West access, 
+                priority Homestead West treatment, and expert Homestead West guidance throughout your entire homebuying process—all while working for YOU, not the builder.
               </p>
               <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Homestead West VIP Partnership Advantages</h3>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">VIP New Construction Homes Specialist Advantages</h3>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
                     <ul className="space-y-2 text-gray-700">

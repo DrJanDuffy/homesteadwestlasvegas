@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         "Dr. Jan Duffy",
         "Las Vegas real estate",
         "89149 zip code homes",
-        "VIP new construction partnership",
+        "VIP New Construction Homes Specialist",
         "new construction Las Vegas",
         "Las Vegas homebuyer guide",
         "VIP buyer program",
@@ -169,7 +169,7 @@ export default function RootLayout({
             'Northwest Las Vegas Real Estate',
             'Luxury Ranch Homes',
             'New Construction Homes',
-            'VIP Builder Partnerships',
+            'VIP New Construction Homes Specialist',
             'Cadence Henderson',
             'Las Vegas Market Analysis'
           ],
@@ -385,7 +385,7 @@ export default function RootLayout({
                           name: 'Nevada'
                         }
                       },
-                      knowsAbout: ['New Construction Homes', 'New Construction Partnership', 'Northwest Las Vegas', 'Homestead West', 'Luxury Ranch Homes'],
+                      knowsAbout: ['New Construction Homes', 'VIP New Construction Homes Specialist', 'Northwest Las Vegas', 'Homestead West', 'Luxury Ranch Homes'],
                       hasCredential: [
                         {
                           '@type': 'EducationalOccupationalCredential',
@@ -509,7 +509,7 @@ export default function RootLayout({
                           name: 'Do I need a real estate agent to buy at Homestead West?',
                           acceptedAnswer: {
                             '@type': 'Answer',
-                            text: 'While not required, working with an independent real estate agent like Dr. Jan Duffy provides buyer representation, expert negotiation, and VIP access through her New Construction Partnership—at no additional cost to buyers. Dr. Jan represents YOUR interests, not the builder\'s.'
+                            text: 'While not required, working with an independent real estate agent like Dr. Jan Duffy provides buyer representation, expert negotiation, and VIP access as a New Construction Homes Specialist—at no additional cost to buyers. Dr. Jan represents YOUR interests, not the builder\'s.'
                           }
                         },
                         {
@@ -624,7 +624,7 @@ export default function RootLayout({
                             },
                             {
                               '@type': 'SiteNavigationElement',
-                              name: 'VIP Partnership',
+                              name: 'VIP New Construction Homes Specialist',
                               url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program'
                             },
                             {

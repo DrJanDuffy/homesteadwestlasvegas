@@ -95,14 +95,14 @@ export default function CommunityPage() {
           </div>
         </header>
 
-        {/* VIP Partnership */}
+        {/* VIP New Construction Homes Specialist */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Homestead West Community Access</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP new construction partnership provides insider knowledge 
+                  Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, provides insider knowledge 
                   of Homestead West community amenities, local services, and neighborhood advantages.
                 </p>
               </div>
@@ -461,7 +461,7 @@ export default function CommunityPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Call Homestead West Home?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP new construction partnership guide you to the perfect community
+                Let Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, guide you to the perfect community
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

@@ -4,12 +4,12 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'About Dr. Jan Duffy | VIP New Construction Specialist | Las Vegas Real Estate Expert',
-  description: 'Meet Dr. Jan Duffy, VIP new construction specialist and Las Vegas real estate expert. 500+ families helped, Nevada License S.0197614, elite builder partnerships.',
+  description: 'Meet Dr. Jan Duffy, VIP New Construction Homes Specialist and Las Vegas real estate expert. 500+ families helped, Nevada License S.0197614. Represents home buyers exclusively.',
   keywords: [
     'Dr. Jan Duffy Las Vegas',
     'Las Vegas real estate agent',
     'new construction specialist',
-    'VIP builder partnership',
+    'VIP New Construction Homes Specialist',
     'Nevada real estate license',
     'Las Vegas new construction expert',
     'Homestead West realtor'
@@ -28,7 +28,7 @@ export default function AboutPage() {
     '@type': 'Person',
     name: 'Dr. Jan Duffy',
     jobTitle: 'VIP New Construction Specialist',
-    description: 'Las Vegas real estate expert with elite new construction partnership',
+    description: 'Las Vegas real estate expert and VIP New Construction Homes Specialist who represents home buyers',
     telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
@@ -56,7 +56,7 @@ export default function AboutPage() {
     knowsAbout: [
       'New Construction Homes',
       'New Construction Homes',
-      'VIP Builder Partnerships',
+      'VIP New Construction Homes Specialist',
       'Las Vegas Real Estate',
       'Homestead West',
       'Cadence Henderson'
@@ -99,16 +99,16 @@ export default function AboutPage() {
           </div>
         </header>
 
-        {/* VIP Partnership Highlight */}
+        {/* VIP New Construction Homes Specialist Highlight */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">Elite Homestead West Builder Partnership</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP New Construction Homes Specialist</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy maintains an exclusive VIP partnership with the Homestead West builder, 
-                  one of America's top 10 homebuilders, delivering unparalleled Homestead West access and 
-                  negotiation power for her clients.
+                  Dr. Jan Duffy is a VIP New Construction Homes Specialist who represents home buyers exclusively. 
+                  She works for YOU, not the builder, delivering unparalleled Homestead West access and 
+                  negotiation power for her clients while maintaining complete buyer advocacy.
                 </p>
               </div>
 
@@ -118,7 +118,7 @@ export default function AboutPage() {
                     <span className="text-3xl">🏆</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West VIP Status</h3>
-                  <p className="text-gray-700">Elite Homestead West new construction partnership with exclusive access</p>
+                  <p className="text-gray-700">VIP New Construction Homes Specialist with exclusive access—representing home buyers exclusively</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -162,10 +162,10 @@ export default function AboutPage() {
                       processes, floor plans, and pricing gives her clients a significant advantage.
                     </p>
                     <p>
-                      As an independent real estate agent, Dr. Jan Duffy represents her clients' 
+                      As an independent real estate agent and VIP New Construction Homes Specialist, Dr. Jan Duffy represents her clients' 
                       interests exclusively, not the builder's. This independence, combined with 
-                      her VIP partnership access, creates the perfect balance of insider knowledge 
-                      and client advocacy.
+                      her deep new construction expertise, creates the perfect balance of insider knowledge 
+                      and complete client advocacy—all while working exclusively for home buyers.
                     </p>
                   </div>
                 </div>
@@ -182,8 +182,8 @@ export default function AboutPage() {
                     <div className="flex items-start">
                       <span className="text-green-600 mr-3 text-xl">✓</span>
                       <div>
-                        <p className="font-semibold text-gray-900">VIP New Construction Partnership</p>
-                        <p className="text-gray-600">Elite builder relationship status</p>
+                        <p className="font-semibold text-gray-900">VIP New Construction Homes Specialist</p>
+                        <p className="text-gray-600">Represents home buyers exclusively</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -235,7 +235,7 @@ export default function AboutPage() {
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-yellow-600 mb-2">VIP</div>
-                  <p className="text-gray-700 font-semibold">Homestead West Builder Partnership</p>
+                  <p className="text-gray-700 font-semibold">VIP New Construction Homes Specialist</p>
                 </div>
               </div>
 
@@ -246,7 +246,7 @@ export default function AboutPage() {
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <span className="text-yellow-400 mr-3 text-xl">⭐</span>
-                        <span>VIP new construction partnership</span>
+                        <span>VIP New Construction Homes Specialist—represents home buyers exclusively</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-yellow-400 mr-3 text-xl">⭐</span>
@@ -294,8 +294,8 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4 italic">
-                    "Dr. Jan Duffy's VIP partnership with the builder made all the difference. 
-                    We got early access to the best lots and saved thousands through her expert negotiation."
+                    "Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, made all the difference. 
+                    We got early access to the best lots and saved thousands through her expert negotiation—all while having an advocate who worked for us, not the builder."
                   </p>
                   <p className="font-semibold text-gray-900">- Sarah & Mike Johnson</p>
                   <p className="text-sm text-gray-600">Homestead West Homeowners</p>
@@ -322,8 +322,8 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4 italic">
-                    "Working with Dr. Jan Duffy was like having an insider at the builder. 
-                    Her VIP partnership meant we got upgrades and incentives others couldn't access."
+                    "Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist, was like having an insider at the builder. 
+                    Her expertise meant we got upgrades and incentives others couldn't access—all while having an advocate who worked for us, not the builder."
                   </p>
                   <p className="font-semibold text-gray-900">- Robert & Maria Garcia</p>
                   <p className="text-sm text-gray-600">North Las Vegas Homeowners</p>

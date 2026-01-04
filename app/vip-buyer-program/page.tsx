@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'new construction Henderson',
     'Cadence homes realtor',
     'North Las Vegas new builds',
-    'VIP builder partnership',
+    'VIP New Construction Homes Specialist',
     'Dr. Jan Duffy new construction',
     'Las Vegas new construction expert',
     'VIP buyer program',
@@ -55,7 +55,7 @@ export default function VIPBuyerProgramPage() {
     ],
     knowsAbout: [
       'New Construction Homes',
-      'VIP Builder Partnership',
+      'VIP New Construction Homes Specialist',
       'Cadence Henderson',
       'Homestead West Las Vegas',
       'Luxury Ranch Homes',
@@ -116,7 +116,7 @@ export default function VIPBuyerProgramPage() {
                 Premier New Home Buyer Program for Homestead West Las Vegas
               </p>
               <p className="text-xl text-blue-200 mb-12 max-w-4xl mx-auto">
-                The VIP Berkshire Hathaway HomeServices New Home Buyer Program provides exclusive access to Homestead West Las Vegas new construction homes. Through Dr. Jan Duffy's elite builder partnerships, you receive insider access, priority lot selection, and expert negotiation—giving YOU the ultimate advantage when purchasing your new Homestead West home.
+                The VIP Berkshire Hathaway HomeServices New Home Buyer Program provides exclusive access to Homestead West Las Vegas new construction homes. As a VIP New Construction Homes Specialist, Dr. Jan Duffy represents YOU—the buyer—with insider access, priority lot selection, and expert negotiation. She works exclusively for home buyers, not the builder, giving YOU the ultimate advantage when purchasing your new Homestead West home.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
@@ -141,7 +141,7 @@ export default function VIPBuyerProgramPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">What VIP Partnership Means for Homestead West Buyers</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">What Working with a VIP New Construction Homes Specialist Means</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                   Dr. Jan Duffy's elite builder relationships deliver exclusive advantages 
                   that regular agents simply cannot provide.
@@ -359,8 +359,8 @@ export default function VIPBuyerProgramPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-8 text-gray-900">Register as a New Home Buyer for New Homes - Dr. Jan Duffy Fast-Track Process</h2>
               <p className="text-xl text-gray-600 mb-12">
-                Dr. Jan Duffy's VIP Berkshire Hathaway HomeServices partnership includes a streamlined registration process 
-                that gets you priority treatment from day one for new construction homes.
+                As a VIP New Construction Homes Specialist, Dr. Jan Duffy's program includes a streamlined registration process 
+                that gets you priority treatment from day one for new construction homes. She represents YOU, the buyer, throughout the entire process.
               </p>
 
               <div className="grid md:grid-cols-4 gap-8 mb-12">
@@ -416,9 +416,9 @@ export default function VIPBuyerProgramPage() {
                 Get VIP Treatment from Start to Close
               </h3>
               <p className="text-xl mb-12 text-blue-100 max-w-3xl mx-auto">
-                Don't settle for ordinary. Experience the difference of working with Dr. Jan Duffy's 
-                elite builder relationships. Get insider access, priority treatment, 
-                and expert negotiation backed by premier partnerships.
+                Don't settle for ordinary. Experience the difference of working with Dr. Jan Duffy, 
+                a VIP New Construction Homes Specialist who represents home buyers exclusively. Get insider access, priority treatment, 
+                and expert negotiation—all while having an advocate who works for YOU, not the builder.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
@@ -446,7 +446,7 @@ export default function VIPBuyerProgramPage() {
                   </div>
                   <div>
                     <p className="mb-2"><span className="font-semibold">Office:</span> Builder Sales Office</p>
-                    <p className="mb-2"><span className="font-semibold">Specialty:</span> VIP Builder Partnerships</p>
+                    <p className="mb-2"><span className="font-semibold">Specialty:</span> VIP New Construction Homes Specialist</p>
                   </div>
                 </div>
                 <p className="mt-6 text-sm text-blue-200">

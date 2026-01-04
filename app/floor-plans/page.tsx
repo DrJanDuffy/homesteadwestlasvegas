@@ -134,7 +134,7 @@ export default function FloorPlansPage() {
                 <p className="text-lg text-gray-700 mb-6">
                   Homestead West homes typically range from $850,000 to $990,000, offering luxury living at various price points. 
                   The Homestead West MLS listings above are filtered to show properties within this range, ensuring you see 
-                  relevant Homestead West options that match your budget. Dr. Jan Duffy's VIP partnership often provides access 
+                  relevant Homestead West options that match your budget. Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, often provides access 
                   to Homestead West pricing incentives and special offers that may not be reflected in standard MLS listings.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">

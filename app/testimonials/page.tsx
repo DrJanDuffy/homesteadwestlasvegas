@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Client Testimonials & Reviews | Dr. Jan Duffy | VIP New Construction Specialist',
-  description: 'Read authentic client testimonials and reviews from families who worked with Dr. Jan Duffy\'s VIP new construction partnership. Real 5-star reviews from Homestead West homeowners sharing their experiences buying new construction homes in Las Vegas.',
+  description: 'Read authentic client testimonials and reviews from families who worked with VIP New Construction Homes Specialist Dr. Jan Duffy. Real 5-star reviews from Homestead West homeowners sharing their experiences buying new construction homes in Las Vegas.',
   keywords: [
     'Dr. Jan Duffy testimonials',
     'new construction reviews',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Client Testimonials & Reviews | Dr. Jan Duffy',
-    description: 'Read real client testimonials from families who worked with Dr. Jan Duffy\'s VIP new construction partnership.',
+    description: 'Read real client testimonials from families who worked with VIP New Construction Homes Specialist Dr. Jan Duffy.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/testimonials',
   },
@@ -47,7 +47,7 @@ export default function TestimonialsPage() {
           '@type': 'Person',
           name: 'Sarah & Mike Johnson'
         },
-        reviewBody: 'Dr. Jan Duffy\'s VIP partnership with the builder made all the difference. We got early access to the best lots and saved thousands through her expert negotiation.',
+        reviewBody: 'Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, made all the difference. We got early access to the best lots and saved thousands through her expert negotiation—all while having an advocate who worked for us, not the builder.',
         datePublished: '2024-11-15'
       },
       {
@@ -75,7 +75,7 @@ export default function TestimonialsPage() {
           '@type': 'Person',
           name: 'Robert & Maria Garcia'
         },
-        reviewBody: 'Working with Dr. Jan Duffy was like having an insider at the builder. Her VIP partnership meant we got upgrades and incentives others couldn\'t access.',
+        reviewBody: 'Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist, was like having an insider at the builder. Her expertise meant we got upgrades and incentives others couldn\'t access—all while having an advocate who worked for us, not the builder.',
         datePublished: '2024-10-20'
       }
     ]
@@ -88,7 +88,7 @@ export default function TestimonialsPage() {
       location: 'Homestead West Homeowners',
       rating: 5,
       date: 'November 15, 2024',
-      text: 'Dr. Jan Duffy\'s VIP partnership with the builder made all the difference. We got early access to the best lots and saved thousands through her expert negotiation. Her knowledge of the Homestead West community and the builder\'s process was invaluable.',
+      text: 'Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, made all the difference. We got early access to the best lots and saved thousands through her expert negotiation. Her knowledge of the Homestead West community and the builder\'s process was invaluable—all while having an advocate who worked for us, not the builder.',
       homeType: 'Plan 3704 - 3,704 sq ft',
       savings: '$15,000 in incentives'
     },
@@ -118,7 +118,7 @@ export default function TestimonialsPage() {
       location: 'Homestead West Homeowners',
       rating: 5,
       date: 'October 5, 2024',
-      text: 'Dr. Jan Duffy\'s expertise in new construction is unmatched. Her VIP new construction partnership gave us access to information and opportunities that regular buyers don\'t get. She guided us through every step with professionalism and care.',
+      text: 'Dr. Jan Duffy\'s expertise in new construction is unmatched. As a VIP New Construction Homes Specialist who represents home buyers, she gave us access to information and opportunities that regular buyers don\'t get. She guided us through every step with professionalism and care—all while working for us, not the builder.',
       homeType: 'Plan 3336 - 3,336 sq ft',
       savings: 'Priority lot selection'
     },
@@ -138,7 +138,7 @@ export default function TestimonialsPage() {
       location: 'Relocating from California',
       rating: 5,
       date: 'September 10, 2024',
-      text: 'Moving from California to Las Vegas was daunting, but Dr. Jan Duffy\'s VIP new construction partnership made our transition seamless. Her local market knowledge and builder relationships helped us find the perfect home quickly.',
+      text: 'Moving from California to Las Vegas was daunting, but working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, made our transition seamless. Her local market knowledge and expertise helped us find the perfect home quickly—all while having an advocate who worked for us.',
       homeType: 'New Construction Home',
       savings: 'Relocation incentives'
     },
@@ -158,7 +158,7 @@ export default function TestimonialsPage() {
       location: 'Investment Property Buyers',
       rating: 5,
       date: 'August 15, 2024',
-      text: 'We purchased multiple new construction properties as investments. Dr. Jan Duffy\'s VIP partnership provided us with insider market information and builder incentives that maximized our returns. Highly recommend her services.',
+      text: 'We purchased multiple new construction properties as investments. Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, provided us with insider market information and builder incentives that maximized our returns. Highly recommend her services.',
       homeType: 'Multiple New Construction',
       savings: 'Investment incentives'
     }
@@ -190,7 +190,7 @@ export default function TestimonialsPage() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Homestead West Client Testimonials</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">Real Success Stories</p>
-              <p className="text-xl text-blue-200">From VIP New Construction Partnership</p>
+              <p className="text-xl text-blue-200">From VIP New Construction Homes Specialist</p>
             </div>
           </div>
         </header>
@@ -298,7 +298,7 @@ export default function TestimonialsPage() {
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-yellow-600 mb-2">VIP</div>
-                  <p className="text-gray-700 font-semibold">Builder Partnership</p>
+                  <p className="text-gray-700 font-semibold">VIP New Construction Homes Specialist</p>
                 </div>
               </div>
             </div>
@@ -377,7 +377,7 @@ export default function TestimonialsPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/about" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
-                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise and VIP partnership</p>
+                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise as a VIP New Construction Homes Specialist</p>
                 </a>
                 <a href="/services" className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>

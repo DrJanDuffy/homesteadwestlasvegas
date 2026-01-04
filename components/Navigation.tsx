@@ -149,7 +149,7 @@ export default function Navigation() {
                 Contact
               </Link>
 
-              {/* VIP Partnership Badge */}
+              {/* VIP New Construction Homes Specialist Badge */}
               <Link
                 href="/vip-buyer-program"
                 className={cn(

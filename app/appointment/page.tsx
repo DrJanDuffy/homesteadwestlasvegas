@@ -275,7 +275,7 @@ export default function AppointmentPage() {
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West VIP Access</h3>
                   <p className="text-gray-700 mb-4">
-                    Dr. Jan Duffy's VIP partnership provides exclusive access to Homestead West new construction homes, 
+                    Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, provides exclusive access to Homestead West new construction homes, 
                     priority lot selection, and insider information about upcoming phases. When you schedule a consultation 
                     with Dr. Jan, you're not just getting a real estate agent—you're gaining access to a network of builder 
                     relationships that can give you the edge in securing your dream Homestead West home.

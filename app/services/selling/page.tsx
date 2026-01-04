@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Home Selling Services | Dr. Jan Duffy | Las Vegas Real Estate Expert',
-  description: 'Expert home selling services in Las Vegas with Dr. Jan Duffy. VIP new construction partnership, market expertise, and professional guidance for maximum home value.',
+  description: 'Expert home selling services in Las Vegas with Dr. Jan Duffy. VIP New Construction Homes Specialist, market expertise, and professional guidance for maximum home value.',
   keywords: [
     'home selling Las Vegas',
     'Dr. Jan Duffy selling services',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Home Selling Services | Dr. Jan Duffy',
-    description: 'Expert home selling services in Las Vegas with VIP new construction partnership.',
+    description: 'Expert home selling services in Las Vegas with VIP New Construction Homes Specialist.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/services/selling',
   },
@@ -83,7 +83,7 @@ export default function HomeSellingPage() {
         </div>
       </header>
 
-      {/* VIP Partnership */}
+      {/* VIP New Construction Homes Specialist */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -92,7 +92,7 @@ export default function HomeSellingPage() {
             </div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Homestead West Selling Services</h2>
             <p className="text-xl text-gray-700 mb-8">
-              Dr. Jan Duffy's VIP new construction partnership delivers exclusive market access, 
+              Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, delivers exclusive market access, 
               premium buyer connections, and expert negotiation for maximum home value.
             </p>
           </div>
@@ -192,7 +192,7 @@ export default function HomeSellingPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Sell Your Homestead West Home?</h2>
             <p className="text-xl mb-8 text-blue-100">
-              Contact Dr. Jan Duffy for expert selling services with VIP new construction partnership
+              Contact Dr. Jan Duffy, a VIP New Construction Homes Specialist, for expert selling services
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

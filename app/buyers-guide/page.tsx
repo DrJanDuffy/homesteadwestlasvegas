@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy",
-    description: "Complete buyer's guide to new construction homes in Las Vegas with VIP new construction partnership.",
+    description: "Complete buyer's guide to new construction homes in Las Vegas with VIP New Construction Homes Specialist.",
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/buyers-guide',
   },
@@ -146,19 +146,19 @@ export default function BuyersGuidePage() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Complete Homestead West Buyer's Guide</h1>
               <p className="text-2xl md:text-3xl mb-4 text-blue-100">New Construction Process</p>
-              <p className="text-xl text-blue-200">Expert Guidance with VIP New Construction Partnership</p>
+              <p className="text-xl text-blue-200">Expert Guidance with VIP New Construction Homes Specialist</p>
             </div>
           </div>
         </header>
 
-        {/* VIP Partnership Introduction */}
+        {/* VIP New Construction Homes Specialist Introduction */}
         <section className="py-16 bg-gradient-to-r from-[#f7fafc] to-[#e2e8f0] border-2 border-[#d4af37]">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">Homestead West VIP Buyer Advantages</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP new construction partnership delivers exclusive Homestead West advantages 
+                  Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, delivers exclusive Homestead West advantages 
                   throughout your entire Homestead West new construction home buying journey.
                 </p>
               </div>
@@ -450,7 +450,7 @@ export default function BuyersGuidePage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Start Your Homestead West New Construction Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP new construction partnership guide you through every step
+                Let Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, guide you through every step
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

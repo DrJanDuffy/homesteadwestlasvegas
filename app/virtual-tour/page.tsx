@@ -192,14 +192,14 @@ export default function VirtualTourPage() {
                 </div>
               </div>
 
-              {/* VIP Partnership CTA */}
+              {/* VIP New Construction Homes Specialist CTA */}
               <div className="text-center bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 rounded-lg">
                 <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
                   ⭐ VIP NEW CONSTRUCTION PROGRAM ⭐
                 </div>
                 <h3 className="text-3xl font-bold mb-4">Ready to Experience Homestead West VIP Treatment?</h3>
                 <p className="text-xl mb-8 text-blue-100">
-                  Schedule an in-person tour with Dr. Jan Duffy's VIP new construction partnership 
+                  Schedule an in-person tour with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers 
                   for exclusive access and expert guidance
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

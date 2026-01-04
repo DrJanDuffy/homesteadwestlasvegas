@@ -353,7 +353,7 @@ export default function ContactPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <a href="/about" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
-                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise and VIP partnership</p>
+                  <p className="text-gray-600">Learn about Dr. Jan Duffy's expertise as a VIP New Construction Homes Specialist</p>
                 </a>
                 <a href="/services" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Our Services</h3>

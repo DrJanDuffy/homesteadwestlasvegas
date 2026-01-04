@@ -44,7 +44,7 @@ export default function ServicesPage() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Homestead West | Homes by Dr Jan Duffy',
-    description: 'Las Vegas real estate services specializing in new construction homes, VIP builder partnerships, and expert real estate guidance',
+    description: 'Las Vegas real estate services specializing in new construction homes with VIP New Construction Homes Specialist, and expert real estate guidance',
     url: 'https://www.homesteadwestlasvegas.com',
     telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
@@ -68,7 +68,7 @@ export default function ServicesPage() {
       name: 'Las Vegas',
       '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
     },
-    knowsAbout: ['New Construction Homes', 'Real Estate Sales', 'Property Management', 'Real Estate Investment', 'VIP Builder Partnerships'],
+    knowsAbout: ['New Construction Homes', 'Real Estate Sales', 'Property Management', 'Real Estate Investment', 'VIP New Construction Homes Specialist'],
     memberOf: {
       '@type': 'Organization',
       name: 'Las Vegas Association of Realtors'

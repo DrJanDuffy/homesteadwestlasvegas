@@ -252,7 +252,7 @@ export default function CommunityMapPage() {
           </div>
         </section>
 
-        {/* Dr. Jan Duffy VIP Partnership */}
+        {/* Dr. Jan Duffy VIP New Construction Homes Specialist */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
@@ -261,7 +261,7 @@ export default function CommunityMapPage() {
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">VIP Access to Perfect Homestead West Lot Selection</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's elite new construction partnership delivers priority Homestead West lot access, 
+                Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, delivers priority Homestead West lot access, 
                 expert guidance, and exclusive Homestead West builder relationships
               </p>
               

@@ -4,14 +4,14 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'FAQ | Frequently Asked Questions | Dr. Jan Duffy | VIP New Construction Specialist',
-  description: 'Get answers to common questions about buying new construction homes in Las Vegas. FAQ about new construction, Homestead West, and Dr. Jan Duffy\'s VIP partnership.',
+  description: 'Get answers to common questions about buying new construction homes in Las Vegas. FAQ about new construction, Homestead West, and working with VIP New Construction Homes Specialist Dr. Jan Duffy.',
   keywords: [
     'new construction FAQ',
     'new construction questions',
     'Homestead West FAQ',
     'Las Vegas home buying questions',
     'Dr. Jan Duffy FAQ',
-    'VIP builder partnership questions',
+    'VIP New Construction Homes Specialist questions',
     'new construction process FAQ'
   ],
   openGraph: {
@@ -29,10 +29,10 @@ export default function FAQPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is Dr. Jan Duffy\'s VIP new construction partnership?',
+        name: 'What is a VIP New Construction Homes Specialist?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Dr. Jan Duffy maintains an exclusive VIP partnership with the builder. This elite relationship provides her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers.'
+          text: 'Dr. Jan Duffy is a VIP New Construction Homes Specialist who represents home buyers exclusively. As an independent real estate agent, she works for YOU, not the builder. Her expertise and builder relationships provide her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers—all while advocating for your interests.'
         }
       },
       {
@@ -72,19 +72,19 @@ export default function FAQPage() {
 
   const faqs = [
     {
-      category: 'VIP Partnership',
+      category: 'VIP New Construction Homes Specialist',
       questions: [
         {
-          question: 'What is Dr. Jan Duffy\'s VIP new construction partnership?',
-          answer: 'Dr. Jan Duffy maintains an exclusive VIP partnership with the builder. This elite relationship provides her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers.'
+          question: 'What is a VIP New Construction Homes Specialist?',
+          answer: 'Dr. Jan Duffy is a VIP New Construction Homes Specialist who represents home buyers exclusively. As an independent real estate agent, she works for YOU, not the builder. Her expertise and builder relationships provide her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers—all while advocating for your interests.'
         },
         {
-          question: 'How does the VIP partnership benefit me as a buyer?',
-          answer: 'The VIP partnership delivers early access to new phases before public release, priority lot selection and holds, direct communication with builder management, expert negotiation backed by premier relationships, and exclusive incentives and upgrade packages.'
+          question: 'How does working with a VIP New Construction Homes Specialist benefit me as a buyer?',
+          answer: 'Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, delivers early access to new phases before public release, priority lot selection and holds, direct communication with builder management, expert negotiation, and exclusive incentives and upgrade packages. Most importantly, she works for YOU, not the builder.'
         },
         {
           question: 'Is Dr. Jan Duffy affiliated with the builder?',
-          answer: 'Dr. Jan Duffy is an independent real estate agent who represents YOUR interests exclusively, not the builder\'s. Her VIP partnership provides insider access while maintaining complete client advocacy. She\'s not employed by the builder but maintains elite relationships with their management.'
+          answer: 'Dr. Jan Duffy is an independent real estate agent who represents YOUR interests exclusively, not the builder\'s. As a VIP New Construction Homes Specialist, she provides insider access while maintaining complete client advocacy. She\'s not employed by the builder but uses her expertise and relationships to benefit home buyers.'
         }
       ]
     },
@@ -114,11 +114,11 @@ export default function FAQPage() {
         },
         {
           question: 'How much earnest money is required?',
-          answer: 'Earnest money deposits for new construction typically range from 5-10% of the home price. This amount varies by builder and community. Dr. Jan Duffy\'s VIP partnership can help negotiate favorable earnest money terms and timing.'
+          answer: 'Earnest money deposits for new construction typically range from 5-10% of the home price. This amount varies by builder and community. As a VIP New Construction Homes Specialist, Dr. Jan Duffy can help negotiate favorable earnest money terms and timing while representing your interests.'
         },
         {
           question: 'What incentives are available for buyers?',
-          answer: 'The builder offers various incentives including closing cost assistance, rate buydowns, design center credits, and upgrade packages. Dr. Jan Duffy\'s VIP partnership provides access to exclusive incentives not available to general buyers, often totaling $15,000+ in savings.'
+          answer: 'The builder offers various incentives including closing cost assistance, rate buydowns, design center credits, and upgrade packages. As a VIP New Construction Homes Specialist, Dr. Jan Duffy provides access to exclusive incentives not available to general buyers, often totaling $15,000+ in savings—all while working exclusively for home buyers.'
         }
       ]
     },
@@ -127,7 +127,7 @@ export default function FAQPage() {
       questions: [
         {
           question: 'What floor plans are available at Homestead West?',
-          answer: 'Homestead West offers two luxury ranch home floor plans: Plan 3336 (3,336 sq ft) and Plan 3704 (3,704 sq ft). Both feature single-story living, pool-sized lots, optional detached casitas, and multi-generational layouts. Dr. Jan Duffy\'s VIP partnership provides early access to floor plan modifications.'
+          answer: 'Homestead West offers two luxury ranch home floor plans: Plan 3336 (3,336 sq ft) and Plan 3704 (3,704 sq ft). Both feature single-story living, pool-sized lots, optional detached casitas, and multi-generational layouts. As a VIP New Construction Homes Specialist, Dr. Jan Duffy provides early access to floor plan modifications while representing your interests.'
         },
         {
           question: 'What amenities are available in the Homestead West community?',
@@ -148,7 +148,7 @@ export default function FAQPage() {
         },
         {
           question: 'What makes Dr. Jan Duffy different from other agents?',
-          answer: 'Dr. Jan Duffy combines independent client advocacy with VIP new construction partnership access. She has an office at the builder sales office, direct builder relationships, 500+ families helped, and Nevada License S.0197614. Her expertise spans multiple new construction developments.'
+          answer: 'Dr. Jan Duffy is a VIP New Construction Homes Specialist who combines independent client advocacy with deep new construction expertise. She represents home buyers exclusively, has an office at the builder sales office, direct builder relationships, 500+ families helped, and Nevada License S.0197614. Her expertise spans multiple new construction developments, all while working for YOU, not the builder.'
         },
         {
           question: 'How do I get started with Dr. Jan Duffy?',
@@ -189,15 +189,15 @@ export default function FAQPage() {
           </div>
         </header>
 
-        {/* VIP Partnership Highlight */}
+        {/* VIP New Construction Homes Specialist Highlight */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP Partnership Advantages</h2>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">VIP New Construction Homes Specialist Advantages</h2>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-                  Dr. Jan Duffy's VIP new construction partnership provides exclusive advantages 
-                  throughout your new construction home buying journey.
+                  Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, provides exclusive advantages 
+                  throughout your new construction home buying journey—all while having an advocate who works for YOU, not the builder.
                 </p>
               </div>
 
@@ -306,7 +306,7 @@ export default function FAQPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Start Your Homestead West VIP Journey?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Let Dr. Jan Duffy's VIP new construction partnership guide you to your dream home
+                Let Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers, guide you to your dream home
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

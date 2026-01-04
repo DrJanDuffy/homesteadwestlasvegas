@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Property Management Services | Dr. Jan Duffy | Las Vegas Real Estate',
-  description: 'Professional property management services in Las Vegas with Dr. Jan Duffy. VIP new construction partnership, rental management, and investment property services.',
+  description: 'Professional property management services in Las Vegas with Dr. Jan Duffy. VIP New Construction Homes Specialist, rental management, and investment property services.',
   keywords: [
     'property management Las Vegas',
     'Dr. Jan Duffy property management',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Property Management Services | Dr. Jan Duffy',
-    description: 'Professional property management services in Las Vegas with VIP new construction partnership.',
+    description: 'Professional property management services in Las Vegas with VIP New Construction Homes Specialist.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/services/property-management',
   },
@@ -66,7 +66,7 @@ export default function PropertyManagementPage() {
           </div>
         </header>
 
-        {/* VIP Partnership */}
+        {/* VIP New Construction Homes Specialist */}
         <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
@@ -75,7 +75,7 @@ export default function PropertyManagementPage() {
               </div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Elite Homestead West Property Management</h2>
               <p className="text-xl text-gray-700 mb-8">
-                Dr. Jan Duffy's VIP new construction partnership delivers exclusive property management 
+                Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively, delivers exclusive property management 
                 services with premium tenant screening, maintenance coordination, and investment optimization.
               </p>
             </div>
@@ -278,7 +278,7 @@ export default function PropertyManagementPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready for Professional Homestead West Property Management?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Contact Dr. Jan Duffy for expert property management services with VIP new construction partnership
+                Contact Dr. Jan Duffy, a VIP New Construction Homes Specialist, for expert property management services
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
