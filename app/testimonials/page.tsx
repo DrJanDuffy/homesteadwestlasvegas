@@ -75,7 +75,7 @@ export default function TestimonialsPage() {
           '@type': 'Person',
           name: 'Robert & Maria Garcia'
         },
-        reviewBody: 'Working with Dr. Jan Duffy was like having an insider at the builder. Her VIP partnership meant we got upgrades and incentives others couldn\'t access.',
+        reviewBody: 'Working with Dr. Jan Duffy, a VIP New Construction Homes Specialist, was like having an insider at the builder. Her expertise meant we got upgrades and incentives others couldn\'t access—all while having an advocate who worked for us, not the builder.',
         datePublished: '2024-10-20'
       }
     ]

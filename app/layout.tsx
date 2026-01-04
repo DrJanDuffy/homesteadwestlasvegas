@@ -407,7 +407,7 @@ export default function RootLayout({
                       '@type': 'RealEstateAgent',
                       '@id': 'https://www.homesteadwestlasvegas.com/#business',
                       name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
-                      description: 'Expert guidance for Homestead West luxury ranch homes by New Construction Partnership in Northwest Las Vegas',
+                      description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist in Northwest Las Vegas',
                       telephone: '(702) 299-6607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: 'https://www.homesteadwestlasvegas.com',
@@ -535,7 +535,7 @@ export default function RootLayout({
                       '@id': 'https://www.homesteadwestlasvegas.com/#website',
                       url: 'https://www.homesteadwestlasvegas.com',
                       name: 'Homestead West Las Vegas - Dr. Jan Duffy',
-                      description: 'Expert guidance for Homestead West luxury ranch homes by New Construction Partnership',
+                      description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist',
                       publisher: {
                         '@id': 'https://www.homesteadwestlasvegas.com/#agent'
                       }

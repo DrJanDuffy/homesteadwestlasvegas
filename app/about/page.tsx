@@ -152,8 +152,8 @@ export default function AboutPage() {
                     <p>
                       Dr. Jan Duffy is a distinguished real estate professional specializing in 
                       new construction homes and developments throughout 
-                      the Las Vegas Valley. With her VIP new construction partnership, 
-                      she delivers exclusive access and expert guidance to homebuyers.
+                      the Las Vegas Valley. As a VIP New Construction Homes Specialist who represents home buyers exclusively,
+                      she delivers exclusive access and expert guidance to homebuyers—all while working for YOU, not the builder.
                     </p>
                     <p>
                       Her expertise spans multiple premier communities including Homestead West 
