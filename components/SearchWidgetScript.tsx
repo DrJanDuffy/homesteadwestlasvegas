@@ -1,28 +1,41 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useCallback, useRef } from 'react';
 
 export default function SearchWidgetScript() {
+  const handlerRef = useRef<((event: MouseEvent) => void) | null>(null);
+
+  const handleClick = useCallback((event: MouseEvent) => {
+    const searchText = (document.getElementById('SearchTextWidget') as HTMLInputElement)?.value;
+    const errorElement = document.querySelector('#WidgetSearchValidationError') as HTMLElement;
+    
+    if (!searchText || searchText.trim() === '') {
+      if (errorElement) {
+        errorElement.style.display = 'block';
+      }
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      if (errorElement) {
+        errorElement.style.display = 'none';
+      }
+    }
+  }, []);
+
   useEffect(() => {
     const searchButton = document.getElementById('HomeSearchBtnWidget');
-    if (searchButton) {
-      searchButton.onclick = function(event: MouseEvent) {
-        const searchText = (document.getElementById('SearchTextWidget') as HTMLInputElement)?.value;
-        const errorElement = document.querySelector('#WidgetSearchValidationError') as HTMLElement;
-        
-        if (searchText === '' || typeof(searchText) === 'undefined') {
-          if (errorElement) {
-            errorElement.style.display = 'block';
-          }
-          event.preventDefault();
-        } else {
-          if (errorElement) {
-            errorElement.style.display = 'none';
-          }
+    if (searchButton && !handlerRef.current) {
+      handlerRef.current = handleClick;
+      searchButton.addEventListener('click', handleClick, { passive: false });
+      
+      return () => {
+        if (searchButton && handlerRef.current) {
+          searchButton.removeEventListener('click', handlerRef.current);
+          handlerRef.current = null;
         }
       };
     }
-  }, []);
+  }, [handleClick]);
 
   return null;
 }

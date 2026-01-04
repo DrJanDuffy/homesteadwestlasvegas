@@ -625,7 +625,16 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold mb-4 text-gray-900">PRICE</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• Starting from $910K</li>
-                    <li>• [PLACEHOLDER: Current inventory count] homes available</li>
+                    <li>
+                      <a 
+                        href="https://drjanduffy.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNTk3Mg=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                      >
+                        View available homes
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 

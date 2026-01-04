@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // VIP New Construction Homes Specialist - High Priority (Key Differentiator)
     {
       url: `${baseUrl}/vip-buyer-program`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'weekly',
       priority: 0.95,
     },
@@ -30,19 +30,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Floor Plans - High Priority (Core Product)
     {
       url: `${baseUrl}/floor-plans`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/floor-plans/3336`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
       url: `${baseUrl}/floor-plans/3704`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
@@ -50,19 +50,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Community & Location - High Priority
     {
       url: `${baseUrl}/community`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
       url: `${baseUrl}/community-map`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'weekly',
       priority: 0.85,
     },
     {
       url: `${baseUrl}/virtual-tour`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // About & Credentials - High Priority
     {
       url: `${baseUrl}/about`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -78,13 +78,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Buyer Resources - High Priority
     {
       url: `${baseUrl}/buyers-guide`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/homebuying-process`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -92,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Contact - High Priority (Conversion Page)
     {
       url: `${baseUrl}/contact`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
@@ -100,25 +100,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Content & SEO Pages
     {
       url: `${baseUrl}/blog`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'weekly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/testimonials`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/faq`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/properties`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
@@ -126,31 +126,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Services
     {
       url: `${baseUrl}/services`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/services/buying`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/services/selling`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/services/investment`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
       url: `${baseUrl}/services/property-management`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,
     },
@@ -158,13 +158,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Location & Appointment
     {
       url: `${baseUrl}/location/las-vegas-office`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/appointment`,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
