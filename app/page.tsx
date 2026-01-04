@@ -189,11 +189,8 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Early Phase Access</h3>
-                  <p className="text-gray-700 mb-2">
+                  <p className="text-gray-700">
                     VIP buyers see new lot releases before the general public.
-                  </p>
-                  <p className="text-gray-600 text-sm italic">
-                    [PLACEHOLDER: Add specific example — "In Phase 2, VIP buyers had 72-hour early access to 12 premium lots."]
                   </p>
                 </div>
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
