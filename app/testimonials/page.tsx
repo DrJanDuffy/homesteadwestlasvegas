@@ -209,7 +209,7 @@ export default function TestimonialsPage() {
                 </div>
                 <p className="text-xl text-gray-700 max-w-4xl mx-auto">
                   Based on 47+ verified reviews from families who experienced Dr. Jan Duffy's 
-                  Homestead West VIP New Construction Homes Specialist advantages.
+                  VIP New Construction Homes Specialist services and buyer representation.
                 </p>
               </div>
 
@@ -234,8 +234,8 @@ export default function TestimonialsPage() {
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">⚡</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Homestead West Faster Process</h3>
-                  <p className="text-gray-700">Priority Homestead West scheduling and expedited service throughout</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Faster Process</h3>
+                  <p className="text-gray-700">Priority scheduling and expedited service throughout</p>
                 </div>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function TestimonialsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What Our Homestead West Clients Say</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What Our Clients Say</h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {testimonials.map((testimonial) => (
@@ -309,7 +309,7 @@ export default function TestimonialsPage() {
         <section className="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Ready to Experience Homestead West VIP Service?</h2>
+              <h2 className="text-4xl font-bold mb-6">Ready to Experience VIP Buyer Service?</h2>
               <p className="text-xl mb-8 text-blue-100">
                 Join hundreds of satisfied families who chose Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively
               </p>
