@@ -222,8 +222,8 @@ export default function AboutPage() {
                       <div className="flex items-start">
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
-                          <p className="font-semibold text-gray-900">500+ Families Helped</p>
-                          <p className="text-gray-600">Successful home purchases and sales</p>
+                          <p className="font-semibold text-gray-900">Complete Buyer Representation</p>
+                          <p className="text-gray-600">Expert negotiation, contract review, and advocacy throughout the entire process</p>
                         </div>
                       </div>
                       <div className="flex items-start">
