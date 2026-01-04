@@ -438,7 +438,6 @@ export default function RootLayout({
                         latitude: 36.2738,
                         longitude: -115.3089
                       },
-                      '@type': 'RealEstateAgent',
                       openingHoursSpecification: [
                         {
                           '@type': 'OpeningHoursSpecification',
