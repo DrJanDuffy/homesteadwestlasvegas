@@ -652,7 +652,9 @@ export default function HomePage() {
               
               <div className="text-center">
                 <a
-                  href="/properties"
+                  href="http://drjanduffy.realscout.com/onboarding"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
                 >
                   View Available Homes
