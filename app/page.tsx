@@ -198,11 +198,8 @@ export default function HomePage() {
                 </div>
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Leverage</h3>
-                  <p className="text-gray-700 mb-2">
+                  <p className="text-gray-700">
                     New construction prices aren't set in stone. Dr. Jan negotiates upgrades, closing costs, and lot premiums.
-                  </p>
-                  <p className="text-gray-600 text-sm italic">
-                    [PLACEHOLDER: Add example — "Recently negotiated $15K in upgrades for a buyer in Homestead Ranch."]
                   </p>
                 </div>
                 <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
@@ -771,7 +768,7 @@ export default function HomePage() {
             <div className="space-y-2 text-gray-200">
               <p>Or call directly: <a href="tel:7022996607" className="text-yellow-400 hover:text-yellow-300 font-semibold">(702) 299-6607</a></p>
               <p>Email: <a href="mailto:DrJanSells@HomesteadWestLasVegas.com" className="text-yellow-400 hover:text-yellow-300 font-semibold">DrJanSells@HomesteadWestLasVegas.com</a></p>
-              <p>Office: 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
+              <p>Homestead West Location: 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
             </div>
           </div>
         </section>
