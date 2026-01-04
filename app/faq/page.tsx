@@ -56,7 +56,7 @@ export default function FAQPage() {
         name: 'Do I need a real estate agent for new construction?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. Her VIP new construction partnership provides additional advantages including early access, priority treatment, and expert negotiation backed by premier relationships.'
+          text: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. As a VIP New Construction Homes Specialist, she provides additional advantages including early access, priority treatment, and expert negotiation—all while working exclusively for home buyers, not the builder.'
         }
       },
       {
