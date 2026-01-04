@@ -636,7 +636,7 @@ export default function HomePage() {
                     <li>• Centennial Hills Park</li>
                     <li>• Gilcrease Orchard</li>
                     <li>• Lone Mountain Regional Park</li>
-                    <li>• Top-rated schools: [PLACEHOLDER: School names]</li>
+                    <li>• Top-rated schools: Dean LaMar Allen Elementary, Justice Myron E. Leavitt Middle, Centennial High School, Northwest Career & Technical Academy (magnet)</li>
                   </ul>
                   <a
                     href="https://maps.app.goo.gl/rMPkPwK5Mz7Z2T5J7"
