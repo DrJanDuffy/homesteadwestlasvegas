@@ -550,6 +550,14 @@ export default function RootLayout({
                       description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist',
                       publisher: {
                         '@id': 'https://www.homesteadwestlasvegas.com/#agent'
+                      },
+                      potentialAction: {
+                        '@type': 'SearchAction',
+                        target: {
+                          '@type': 'EntryPoint',
+                          urlTemplate: 'https://www.homesteadwestlasvegas.com/properties?q={search_term_string}'
+                        },
+                        'query-input': 'required name=search_term_string'
                       }
                     },
                     {
@@ -567,6 +575,12 @@ export default function RootLayout({
                           '@type': 'SiteNavigationElement',
                           name: 'Available Homes',
                           url: 'https://www.homesteadwestlasvegas.com/#available-homes'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Nevada Is The Perfect Place To Make Memories. Communities With Parks, Recreation & More!',
+                          url: 'https://www.homesteadwestlasvegas.com/community',
+                          description: 'Discover Homestead West community amenities, parks, schools, and nearby attractions'
                         },
                         {
                           '@type': 'SiteNavigationElement',
@@ -658,8 +672,21 @@ export default function RootLayout({
                         },
                         {
                           '@type': 'SiteNavigationElement',
-                          name: 'Contact',
-                          url: 'https://www.homesteadwestlasvegas.com/contact'
+                          name: 'Contact Us',
+                          url: 'https://www.homesteadwestlasvegas.com/contact',
+                          description: 'Get in touch with Dr. Jan Duffy for expert real estate guidance'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Homeowner Reviews',
+                          url: 'https://www.homesteadwestlasvegas.com/testimonials',
+                          description: 'Read what clients say about working with Dr. Jan Duffy'
+                        },
+                        {
+                          '@type': 'SiteNavigationElement',
+                          name: 'Now\'s The Time To Make Your Move To Nevada. Homes From A Top U.S. Homebuilder.',
+                          url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program',
+                          description: 'Get VIP access to new construction homes with exclusive buyer representation'
                         }
                       ]
                     }
