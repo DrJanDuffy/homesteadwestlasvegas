@@ -611,12 +611,21 @@ export default function HomePage() {
                 {/* NEARBY */}
                 <div className="bg-yellow-50 rounded-xl p-6">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">NEARBY</h3>
-                  <ul className="space-y-2 text-gray-700 text-sm">
+                  <ul className="space-y-2 text-gray-700 text-sm mb-4">
                     <li>• Centennial Hills Park</li>
                     <li>• Gilcrease Orchard</li>
                     <li>• Lone Mountain Regional Park</li>
                     <li>• Top-rated schools: [PLACEHOLDER: School names]</li>
                   </ul>
+                  <a
+                    href="https://maps.app.goo.gl/rMPkPwK5Mz7Z2T5J7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold text-sm"
+                  >
+                    <span>🗺️</span>
+                    <span>Explore More Things to Do</span>
+                  </a>
                 </div>
               </div>
               

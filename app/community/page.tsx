@@ -374,8 +374,8 @@ export default function CommunityPage() {
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Homestead West Nearby Attractions</h3>
-                  <div className="space-y-4">
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Things to Do Near Homestead West</h3>
+                  <div className="space-y-4 mb-6">
                     <div className="flex items-start">
                       <span className="text-purple-600 mr-3 text-xl">🏔️</span>
                       <div>
@@ -397,6 +397,17 @@ export default function CommunityPage() {
                         <p className="text-gray-600">23 miles • Skiing & alpine recreation</p>
                       </div>
                     </div>
+                  </div>
+                  <div className="pt-4 border-t">
+                    <a
+                      href="https://maps.app.goo.gl/rMPkPwK5Mz7Z2T5J7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                    >
+                      <span>🗺️</span>
+                      <span>Explore More Things to Do on Google Maps</span>
+                    </a>
                   </div>
                 </div>
               </div>
