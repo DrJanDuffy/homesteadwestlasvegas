@@ -259,8 +259,8 @@ export default function AboutPage() {
               
               <div className="grid md:grid-cols-4 gap-8 mb-12">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-                  <p className="text-gray-700 font-semibold">Homestead West Families Helped</p>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">VIP</div>
+                  <p className="text-gray-700 font-semibold">Complete Buyer Representation Services</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-green-600 mb-2">$2M+</div>

@@ -114,7 +114,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                   <span className="text-2xl">🏆</span>
-                  <span>65+ Homestead West Families Helped</span>
+                  <span>Expert Buyer Representation & Negotiation</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                   <span className="text-2xl">📜</span>
@@ -331,8 +331,8 @@ export default function HomePage() {
                 <p className="text-center text-blue-100 mb-6 text-sm">VIP Berkshire Hathaway HomeServices Buyer Program results</p>
                 <div className="grid md:grid-cols-4 gap-6 text-center">
                   <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">65+</p>
-                    <p className="text-sm">Homestead West families helped since 2022</p>
+                    <p className="text-3xl font-bold text-yellow-400 mb-2">VIP</p>
+                    <p className="text-sm">Early Access & Priority Lot Selection</p>
                   </div>
                   <div>
                     <p className="text-3xl font-bold text-yellow-400 mb-2">$14,200</p>

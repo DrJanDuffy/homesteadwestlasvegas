@@ -285,8 +285,8 @@ export default function TestimonialsPage() {
               
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-                  <p className="text-gray-700 font-semibold">Families Helped</p>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">VIP</div>
+                  <p className="text-gray-700 font-semibold">Expert Negotiation & Advocacy</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                   <div className="text-4xl font-bold text-green-600 mb-2">$15K+</div>

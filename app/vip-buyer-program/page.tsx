@@ -285,11 +285,11 @@ export default function VIPBuyerProgramPage() {
 
               {/* Success Stats */}
               <div className="bg-blue-900 text-white rounded-xl p-12 text-center">
-                <h3 className="text-3xl font-bold mb-8">500+ Vegas Families Helped</h3>
+                <h3 className="text-3xl font-bold mb-8">VIP Buyer Services & Expertise</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div>
-                    <p className="text-5xl font-bold text-yellow-400 mb-2">500+</p>
-                    <p className="text-xl">Families Helped</p>
+                    <p className="text-5xl font-bold text-yellow-400 mb-2">VIP</p>
+                    <p className="text-xl">Early Access & Priority Selection</p>
                   </div>
                   <div>
                     <p className="text-5xl font-bold text-yellow-400 mb-2">$2M+</p>
