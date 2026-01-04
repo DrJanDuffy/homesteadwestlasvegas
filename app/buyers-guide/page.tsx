@@ -138,7 +138,7 @@ export default function BuyersGuidePage() {
       
       <div className="min-h-screen bg-white">
         {/* Header */}
-        <header className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-20">
+        <header className="bg-gradient-to-r from-[#1a365d] to-[#0f2439] text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-6">
@@ -152,7 +152,7 @@ export default function BuyersGuidePage() {
         </header>
 
         {/* VIP Partnership Introduction */}
-        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-yellow-400">
+        <section className="py-16 bg-gradient-to-r from-[#f7fafc] to-[#e2e8f0] border-2 border-[#d4af37]">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">

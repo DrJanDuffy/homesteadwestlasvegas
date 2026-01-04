@@ -159,7 +159,7 @@ export default function PropertiesPage() {
             <h2 className="text-3xl font-bold text-center mb-12">Why Choose Homestead West Properties?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-[#1a365d] rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-3xl">🏠</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Homestead West Ranch-Style Design</h3>
@@ -225,23 +225,23 @@ export default function PropertiesPage() {
                 <h3 className="text-2xl font-semibold mb-6">Why Choose Homestead West in Northwest Las Vegas?</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-[#1a365d] rounded-full mr-3 mt-2"></span>
                     <span>Growing community with new amenities and infrastructure</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-[#1a365d] rounded-full mr-3 mt-2"></span>
                     <span>Excellent school districts and family-friendly environment</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-[#1a365d] rounded-full mr-3 mt-2"></span>
                     <span>Easy access to Red Rock Canyon and outdoor recreation</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-[#1a365d] rounded-full mr-3 mt-2"></span>
                     <span>Strong appreciation potential and investment opportunities</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-[#1a365d] rounded-full mr-3 mt-2"></span>
                     <span>Lower density than central Las Vegas with more space</span>
                   </li>
                 </ul>
@@ -286,7 +286,7 @@ export default function PropertiesPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-blue-900 text-white">
+        <section className="py-16 bg-[#1a365d] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">Interested in Homestead West Properties?</h2>
             <p className="text-xl mb-8">

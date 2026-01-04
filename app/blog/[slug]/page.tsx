@@ -164,7 +164,7 @@ export default async function BlogPostPage({
             />
             
             {/* CTA Section */}
-            <div className="mt-12 p-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl text-white">
+            <div className="mt-12 p-8 bg-gradient-to-r from-[#1a365d] to-[#0f2439] rounded-xl text-white">
               <h2 className="text-2xl font-bold mb-4">
                 Ready to Buy or Sell in Northwest Las Vegas?
               </h2>

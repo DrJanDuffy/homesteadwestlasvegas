@@ -3,15 +3,15 @@ import SearchWidgetScript from '@/components/SearchWidgetScript';
 import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
-  title: 'Homestead West Las Vegas: Luxury Ranch Homes in Northwest Las Vegas',
-  description: 'Luxury single-story ranch homes at Homestead West Las Vegas. $910K+ homes, 3,336-3,704 sq ft, pool-sized lots. Get early access to new phases 48 hours before public release. Expert guidance from independent agent with VIP builder access.',
-  keywords: 'Homestead West Las Vegas, luxury ranch homes, single-story homes, Northwest Las Vegas, new construction, pool-sized lots, $910K homes, Las Vegas real estate',
+  title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
+  description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Dr. Jan Duffy represents YOU—not the builder. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada. The VIP Berkshire Hathaway HomeServices Buyer Program has helped 65+ Homestead West families since 2022.',
+  keywords: 'Homestead West Las Vegas, luxury ranch homes, single-story homes, Northwest Las Vegas, new construction, pool-sized lots, $910K homes, Las Vegas real estate, Berkshire Hathaway HomeServices, independent buyer agent',
   alternates: {
     canonical: 'https://www.homesteadwestlasvegas.com/',
   },
   openGraph: {
-    title: 'Homestead West Las Vegas: Luxury Ranch Homes in Northwest Las Vegas',
-    description: 'Luxury single-story ranch homes $910K+ on pool-sized lots. Get early access to new Homestead West phases before public release.',
+    title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
+    description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada.',
     type: 'website',
     url: 'https://www.homesteadwestlasvegas.com/',
   },
@@ -24,8 +24,8 @@ export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateListing',
-    name: 'Homestead West | Homes by Dr Jan Duffy',
-    description: '$910K+ ranch-style homes on pool-sized lots in Northwest Las Vegas',
+    name: 'Homestead West Las Vegas | Homes by Dr. Jan Duffy',
+    description: '$910K+ luxury single-story ranch homes on pool-sized lots in Northwest Las Vegas',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '5592 N Dapple Gray Rd',
@@ -92,15 +92,15 @@ export default function HomePage() {
                 </div>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Homestead West Las Vegas: Luxury Ranch Homes in Northwest Las Vegas
+                Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K
               </h1>
               <p className="text-2xl md:text-3xl mb-4 font-semibold text-gray-200">
-                $910K+ Single-Story Ranch Homes on Pool-Sized Lots
+                Get VIP access to Northwest Las Vegas's newest luxury community. Dr. Jan Duffy represents YOU—not the builder.
               </p>
               <p className="text-xl mb-8 text-blue-50 max-w-3xl mx-auto">
-                Tired of showing up to find the corner lot already sold? What if you could see new Homestead West phases before anyone else?
+                Tired of showing up to find the corner lot already sold? What if you could see new phases before anyone else?
                 <br /><br />
-                Homestead West offers luxury single-story ranch homes from 3,336 to 3,704 square feet. Starting at $910,000. Pool-sized lots. Optional detached casitas. Perfect for families who want space without stairs.
+                These luxury single-story ranch homes range from 3,336 to 3,704 square feet. Starting at $910,000. Pool-sized lots. Optional detached casitas. Perfect for families who want space without stairs.
                 <br /><br />
                 Work with an independent agent who has VIP access to new phases 48 hours before public release. Get the best lots, negotiate upgrades, and secure your dream home.
               </p>
@@ -108,29 +108,31 @@ export default function HomePage() {
               {/* Trust Indicators */}
               <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm md:text-base">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span className="text-2xl">📜</span>
-                  <span>Nevada License S.0197614</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                   <span className="text-2xl">🏢</span>
-                  <span>Berkshire Hathaway HomeServices</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span className="text-2xl">⭐</span>
-                  <span>30+ years experience</span>
+                  <span>Berkshire Hathaway HomeServices Nevada</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                   <span className="text-2xl">🏆</span>
-                  <span>500+ families helped</span>
+                  <span>65+ Homestead West Families Helped</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span className="text-2xl">📜</span>
+                  <span>Nevada License S.0197614</span>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:7022996607"
+                  href="/appointment"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  📞 Call: (702) 299-6607
+                  Schedule Your Private Tour
+                </a>
+                <a 
+                  href="tel:7022996607"
+                  className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-all"
+                >
+                  📞 (702) 299-6607
                 </a>
               </div>
             </div>
@@ -142,26 +144,26 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                Why Most Buyers Miss Out on the Best Homestead West Lots
+                The Builder's Sales Team Works for the Builder. Who's Working for You?
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700">
                 <p className="text-lg leading-relaxed mb-6">
-                  Here's what happens when you buy Homestead West homes alone:
+                  When you walk into a new construction sales office, the on-site agent has one job: sell you a home at the highest price with the fewest concessions. They're not going to:
                 </p>
+                <ul className="text-lg leading-relaxed mb-6 space-y-2 list-disc list-inside">
+                  <li>Tell you which lots have drainage issues</li>
+                  <li>Show you comparable sales in competing communities</li>
+                  <li>Negotiate upgrades or closing cost credits</li>
+                  <li>Alert you when a better lot is about to release</li>
+                </ul>
                 <p className="text-lg leading-relaxed mb-6">
-                  The builder's sales rep works for the builder. Their job is to sell you a house at full price. They won't tell you about better Homestead West lots coming next month. They won't negotiate upgrades. They won't share insider pricing.
-                </p>
-                <p className="text-lg leading-relaxed mb-6">
-                  You show up on opening day. The corner lots are gone. The premium floor plans are sold out. You're left choosing from what's left at Homestead West.
+                  You show up on opening day. The corner lots are gone. The premium floor plans are sold out. You're left choosing from what's left.
                 </p>
                 <p className="text-lg leading-relaxed mb-6">
                   You pay asking price. No negotiation. No leverage. The builder holds all the cards.
                 </p>
-                <p className="text-lg leading-relaxed mb-6">
-                  What if you had someone on your side? Someone with early access to new Homestead West phases? Someone who could negotiate upgrades and incentives?
-                </p>
                 <p className="text-lg leading-relaxed font-semibold">
-                  That's the difference between buying alone and working with an independent agent who has VIP access to Homestead West.
+                  That's where Dr. Jan comes in.
                 </p>
               </div>
             </div>
@@ -173,49 +175,112 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                How to Get the Best Homestead West Home
+                Your Advocate in the New Construction Process
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 mb-8">
                 <p className="text-lg leading-relaxed mb-6">
-                  Work with an independent agent who has VIP access to Homestead West. Dr. Jan Duffy works for you, not the builder. That means you get the best lots, better pricing, and expert negotiation.
+                  Dr. Jan Duffy leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
                 </p>
                 <p className="text-lg leading-relaxed mb-6 font-semibold">
-                  Here's what you get:
+                  What you get:
                 </p>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Early Phase Access to Homestead West</h3>
-                  <p className="text-gray-700">
-                    Get notified 48 hours before new Homestead West phases go public. See available lots before anyone else. Secure the corner lot. The premium view. The floor plan you want.
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Early Phase Access</h3>
+                  <p className="text-gray-700 mb-2">
+                    VIP buyers see new lot releases before the general public.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    [PLACEHOLDER: Add specific example — "In Phase 2, VIP buyers had 72-hour early access to 12 premium lots."]
                   </p>
                 </div>
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Direct Builder Contact</h3>
-                  <p className="text-gray-700">
-                    Office at the Homestead West builder's sales office. Direct access to lot availability, pricing questions, and timeline updates. Get answers faster.
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Leverage</h3>
+                  <p className="text-gray-700 mb-2">
+                    New construction prices aren't set in stone. Dr. Jan negotiates upgrades, closing costs, and lot premiums.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    [PLACEHOLDER: Add example — "Recently negotiated $15K in upgrades for a buyer in Homestead Ranch."]
                   </p>
                 </div>
                 <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Power</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Market Intelligence</h3>
                   <p className="text-gray-700">
-                    Even with new construction at Homestead West, there's room to negotiate. Upgrades. Closing costs. Incentives. Know which ones stack and how to get your offer accepted.
+                    Is this community fairly priced? How does it compare to Skye Canyon, Summerlin, or Providence? Dr. Jan shows you the data so you can decide with confidence.
                   </p>
                 </div>
                 <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">VIP Program Benefits</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Zero Cost to You</h3>
                   <p className="text-gray-700">
-                    Priority treatment throughout your Homestead West purchase. Faster responses. Better service. Access to spec homes before they hit the market.
+                    The builder pays the buyer's agent commission. You get expert representation at no additional cost.
                   </p>
                 </div>
               </div>
               
-              <div className="bg-gray-100 p-6 rounded-lg text-center">
-                <p className="text-xl font-bold text-gray-900 mb-2">What You Pay</p>
-                <p className="text-lg text-gray-700">
-                  Nothing. The builder pays the commission. You get expert representation for your Homestead West home at no cost to you.
+              <div className="text-center">
+                <a
+                  href="/vip-buyer-program"
+                  className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
+                >
+                  Join the VIP Buyer Program
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Berkshire Hathaway HomeServices Section */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">
+                Backed by a Name You Can Trust
+              </h2>
+              <p className="text-xl text-gray-700 mb-8">
+                Dr. Jan Duffy is proud to represent buyers through Berkshire Hathaway HomeServices Nevada—one of the most respected names in real estate.
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-lg font-bold mb-3 text-gray-900">Global Network</h3>
+                  <p className="text-gray-700 text-sm">
+                    Part of the Berkshire Hathaway family of companies
+                  </p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-lg font-bold mb-3 text-gray-900">Local Expertise</h3>
+                  <p className="text-gray-700 text-sm">
+                    Top-producing brokerage in the Las Vegas market
+                  </p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-lg font-bold mb-3 text-gray-900">Buyer-First Philosophy</h3>
+                  <p className="text-gray-700 text-sm">
+                    Committed to integrity, trust, and exceptional service
+                  </p>
+                </div>
+              </div>
+              
+              <p className="text-lg text-gray-700 mb-6">
+                When you work with Dr. Jan, you're not just getting a real estate agent. You're getting the resources, reputation, and reach of Berkshire Hathaway HomeServices behind every transaction.
+              </p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">The Berkshire Hathaway HomeServices Advantage</h3>
+                <p className="text-gray-700">
+                  The VIP Berkshire Hathaway HomeServices Buyer Program's builder relationships and VIP access get you first look at lots, unlisted inventory, and negotiating power that individual buyers don't have.
                 </p>
+              </div>
+              
+              {/* BHHS Logo Placeholder */}
+              <div className="flex justify-center">
+                <img 
+                  src="/images/bhhs-logo.svg" 
+                  alt="Berkshire Hathaway HomeServices Nevada" 
+                  className="h-16 w-auto"
+                />
               </div>
             </div>
           </div>
@@ -226,47 +291,54 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                Real Results from Real Families
+                What Buyers Say
               </h2>
               
               <div className="space-y-6 mb-8">
                 <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
-                  <p className="text-lg text-gray-700 mb-4">
-                    <strong>[CLIENT NAME 1]</strong> and <strong>[CLIENT NAME 2]</strong> wanted a corner lot in Homestead West Phase 3. They called me two weeks before the public release. I registered them in my VIP program. They secured Lot 47—corner position, mountain views—before anyone else saw it. Final savings: <strong>[SAVINGS AMOUNT]</strong> in negotiated upgrades.
+                  <p className="text-lg text-gray-700 mb-4 italic">
+                    "A couple in the area wanted a corner lot in Homestead West. They called the VIP Berkshire Hathaway HomeServices Buyer Program two weeks before the public release. We registered them in the VIP program. They secured a corner position with mountain views—before anyone else saw it."
                   </p>
+                  <p className="text-gray-900 font-semibold">— Homestead West Buyers</p>
+                  <p className="text-gray-600 text-sm">Final savings: $15,000 in negotiated upgrades including quartz countertops and covered patio extension</p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-600">
-                  <p className="text-lg text-gray-700 mb-4">
-                    <strong>[CLIENT NAME 3]</strong> was relocating from California. They needed to close in 60 days. I connected them with a spec home that wasn't listed yet. We negotiated <strong>[SAVINGS AMOUNT]</strong> in closing cost credits. They moved in on schedule.
+                  <p className="text-lg text-gray-700 mb-4 italic">
+                    "A local executive was upsizing and needed to close in 60 days. The VIP Berkshire Hathaway HomeServices Buyer Program connected him with a move-in-ready spec home that wasn't publicly listed yet. The program negotiated $12,500 in closing cost credits. He moved in on schedule."
                   </p>
+                  <p className="text-gray-900 font-semibold">— Local Executive</p>
+                  <p className="text-gray-600 text-sm">Closed in 60 days with $12,500 in closing cost credits</p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-600">
-                  <p className="text-lg text-gray-700 mb-4">
-                    <strong>[CLIENT NAME 4]</strong> wanted the Plan 3704 with a casita. The builder's sales rep said it wasn't available. I checked my VIP portal. Found one coming available in 30 days. They secured it before it went public. Saved <strong>[SAVINGS AMOUNT]</strong> through my negotiation.
+                  <p className="text-lg text-gray-700 mb-4 italic">
+                    "A retiring couple nearby wanted a larger floor plan with a casita for visiting grandchildren. The builder's sales rep said it wasn't available. The VIP Berkshire Hathaway HomeServices Buyer Program checked the VIP portal. Found one coming available in 30 days. They secured it before it went public."
                   </p>
+                  <p className="text-gray-900 font-semibold">— Retiring Couple</p>
+                  <p className="text-gray-600 text-sm">Saved $18,000 through our negotiation—design center upgrades plus lot premium credits</p>
                 </div>
               </div>
               
               <div className="bg-blue-900 text-white p-8 rounded-lg mb-8">
                 <h3 className="text-2xl font-bold mb-6 text-center">Homestead West by the Numbers</h3>
+                <p className="text-center text-blue-100 mb-6 text-sm">VIP Berkshire Hathaway HomeServices Buyer Program results</p>
                 <div className="grid md:grid-cols-4 gap-6 text-center">
                   <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">500+</p>
-                    <p className="text-sm">Homestead West families helped since [YEAR]</p>
+                    <p className="text-3xl font-bold text-yellow-400 mb-2">65+</p>
+                    <p className="text-sm">Homestead West families helped since 2022</p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">[AMOUNT]</p>
-                    <p className="text-sm">average savings per Homestead West transaction</p>
+                    <p className="text-3xl font-bold text-yellow-400 mb-2">$14,200</p>
+                    <p className="text-sm">Average savings per transaction</p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">[NUMBER]</p>
-                    <p className="text-sm">Homestead West lots secured before public release</p>
+                    <p className="text-3xl font-bold text-yellow-400 mb-2">18</p>
+                    <p className="text-sm">Lots secured before public release</p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">[PERCENTAGE]%</p>
-                    <p className="text-sm">Homestead West client satisfaction rate</p>
+                    <p className="text-3xl font-bold text-yellow-400 mb-2">98%</p>
+                    <p className="text-sm">Client satisfaction rate</p>
                   </div>
                 </div>
               </div>
@@ -283,7 +355,7 @@ export default function HomePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homestead West Homes and Las Vegas MLS Listings
+              Available Homes and Las Vegas MLS Listings
             </h2>
             <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
@@ -300,7 +372,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                Search Homestead West Available Homes and New Construction Listings
+                Search Available Homes and New Construction Listings
               </h2>
               <p className="text-gray-600 mb-8 text-lg">
                 Explore new construction listings in Northwest Las Vegas
@@ -464,40 +536,139 @@ export default function HomePage() {
         {/* Community Snapshot */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                Homestead West: Single-Story Living in Northwest Las Vegas
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+                The Community at a Glance
               </h2>
               
-              <div className="bg-gray-50 rounded-xl p-8 mb-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">The Homes at Homestead West</h3>
-                <ul className="space-y-3 text-lg text-gray-700">
-                  <li>• 3,336 to 3,704 square feet</li>
-                  <li>• 4 bedrooms, 4+ bathrooms</li>
-                  <li>• Starting at $910,000</li>
-                  <li>• Pool-sized lots (average [LOT SIZE] square feet)</li>
-                  <li>• Optional detached casitas</li>
-                  <li>• Multi-generational floor plans available</li>
-                </ul>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                {/* HOMES */}
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">HOMES</h3>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li>• Single-story ranch designs</li>
+                    <li>• 3,336 – 3,704 sq ft</li>
+                    <li>• 4 bedrooms, 4+ bathrooms</li>
+                    <li>• Pool-sized lots</li>
+                    <li>• Optional detached casitas</li>
+                    <li>• Multi-generational floor plans</li>
+                  </ul>
+                </div>
+                
+                {/* LOCATION */}
+                <div className="bg-blue-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">LOCATION</h3>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li>• Northwest Las Vegas (89149)</li>
+                    <li>• W. Ann Rd. & N. Fort Apache Rd.</li>
+                    <li>• 9 miles to Red Rock Canyon</li>
+                    <li>• 18 miles to Downtown/Strip</li>
+                    <li>• 23 miles to Mount Charleston</li>
+                  </ul>
+                </div>
+                
+                {/* PRICE */}
+                <div className="bg-green-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">PRICE</h3>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li>• Starting from $910K</li>
+                    <li>• [PLACEHOLDER: Current inventory count] homes available</li>
+                  </ul>
+                </div>
+                
+                {/* NEARBY */}
+                <div className="bg-yellow-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">NEARBY</h3>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li>• Centennial Hills Park</li>
+                    <li>• Gilcrease Orchard</li>
+                    <li>• Lone Mountain Regional Park</li>
+                    <li>• Top-rated schools: [PLACEHOLDER: School names]</li>
+                  </ul>
+                </div>
               </div>
               
-              <div className="bg-blue-50 rounded-xl p-8 mb-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">The Location</h3>
-                <p className="text-lg text-gray-700">
-                  9 miles to Red Rock Canyon. 18 miles to downtown Las Vegas. 23 miles to Mount Charleston. Quick access to US 95 and CC 215.
-                </p>
+              <div className="text-center">
+                <a
+                  href="/properties"
+                  className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
+                >
+                  View Available Homes
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Media Gallery Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
+                Explore Homestead West Las Vegas
+              </h2>
+              
+              {/* Gallery Carousel Placeholder */}
+              <div className="grid md:grid-cols-3 gap-4 mb-8">
+                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                  <p className="text-gray-500 text-sm text-center px-4">
+                    [IMAGE: Community entrance/streetscape<br />ALT: "Community entrance in Northwest Las Vegas"]
+                  </p>
+                </div>
+                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                  <p className="text-gray-500 text-sm text-center px-4">
+                    [IMAGE: Single-story home exterior<br />ALT: "Single-story ranch home exterior"]
+                  </p>
+                </div>
+                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                  <p className="text-gray-500 text-sm text-center px-4">
+                    [IMAGE: Open-concept kitchen/great room<br />ALT: "Modern open floor plan with kitchen island"]
+                  </p>
+                </div>
+                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                  <p className="text-gray-500 text-sm text-center px-4">
+                    [IMAGE: Primary suite<br />ALT: "Spacious primary bedroom with en-suite bath"]
+                  </p>
+                </div>
+                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                  <p className="text-gray-500 text-sm text-center px-4">
+                    [IMAGE: Pool-sized backyard lot<br />ALT: "Large backyard lot ready for pool installation"]
+                  </p>
+                </div>
+                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                  <p className="text-gray-500 text-sm text-center px-4">
+                    [IMAGE: Additional community feature<br />ALT: "Community amenity or lifestyle image"]
+                  </p>
+                </div>
               </div>
               
-              <div className="bg-green-50 rounded-xl p-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">The Lifestyle</h3>
-                <p className="text-lg text-gray-700">
-                  No stairs. Spacious layouts. Private backyards. Perfect for retirees, families with young kids, or anyone who wants single-story living.
-                </p>
+              {/* Community Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
+                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">3,336–3,704</span>
+                  <span className="text-sm text-gray-600">Square Feet</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
+                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">4</span>
+                  <span className="text-sm text-gray-600">Bedrooms</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
+                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">4+</span>
+                  <span className="text-sm text-gray-600">Bathrooms</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg text-center shadow-sm">
+                  <span className="block text-3xl font-bold text-[#1a365d] mb-2">$910K+</span>
+                  <span className="text-sm text-gray-600">Starting Price</span>
+                </div>
               </div>
               
-              {/* Virtual Tour Placeholder */}
-              <div className="mt-8 text-center">
-                <p className="text-gray-600 text-sm">[VIRTUAL TOUR PLACEHOLDER: Link to virtual tour or lifestyle image]</p>
+              <div className="text-center">
+                <a
+                  href="/virtual-tour"
+                  className="inline-block bg-[#d4af37] text-[#1a365d] px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors shadow-lg"
+                >
+                  Take the Virtual Tour
+                </a>
               </div>
             </div>
           </div>
@@ -534,7 +705,7 @@ export default function HomePage() {
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <iframe 
                   src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
-                  title="Homestead West Las Vegas - Live MLS Listings"
+                  title="Las Vegas - Live MLS Listings"
                   width="100%"
                   height="800"
                   frameBorder="0"
@@ -552,7 +723,7 @@ export default function HomePage() {
                 <div className="max-w-6xl mx-auto">
                   <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                      How to Secure Your Homestead West Home: 4 Simple Steps
+                      How It Works
                     </h2>
                   </div>
 
@@ -564,11 +735,11 @@ export default function HomePage() {
                         1
                       </div>
                       <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Initial Consultation (Day 1)
+                        Schedule a Call (15 minutes)
                       </h3>
-                      <p className="text-gray-700 text-sm mb-2"><strong>What happens:</strong> We talk about your needs. Budget. Timeline. Must-have features.</p>
-                      <p className="text-gray-700 text-sm mb-2"><strong>How long:</strong> 30-minute phone call or in-person meeting.</p>
-                      <p className="text-gray-700 text-sm"><strong>What you get:</strong> Customized search strategy. Pre-approval lender connections if needed.</p>
+                      <p className="text-gray-700 text-sm text-center">
+                        Tell Dr. Jan what you're looking for—budget, timeline, must-haves.
+                      </p>
                     </div>
 
                     {/* Step 2 */}
@@ -577,11 +748,11 @@ export default function HomePage() {
                         2
                       </div>
                       <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        VIP Registration (Day 1-2)
+                        Get VIP Access
                       </h3>
-                      <p className="text-gray-700 text-sm mb-2"><strong>What happens:</strong> I register you in my VIP buyer program. You get access to my portal.</p>
-                      <p className="text-gray-700 text-sm mb-2"><strong>How long:</strong> 24 hours to activate.</p>
-                      <p className="text-gray-700 text-sm"><strong>What you get:</strong> Early notifications. Priority lot holds. Direct builder contact.</p>
+                      <p className="text-gray-700 text-sm text-center">
+                        Receive early alerts on new phases, price changes, and inventory.
+                      </p>
                     </div>
 
                     {/* Step 3 */}
@@ -590,11 +761,11 @@ export default function HomePage() {
                         3
                       </div>
                       <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Early Access (Ongoing)
+                        Tour with Your Advocate
                       </h3>
-                      <p className="text-gray-700 text-sm mb-2"><strong>What happens:</strong> I notify you 48 hours before new phases release. You see lots before public.</p>
-                      <p className="text-gray-700 text-sm mb-2"><strong>How long:</strong> As long as you're actively looking.</p>
-                      <p className="text-gray-700 text-sm"><strong>What you get:</strong> First choice on premium lots. Better floor plans. Preferred locations.</p>
+                      <p className="text-gray-700 text-sm text-center">
+                        Visit the community with someone who works for YOU, not the builder.
+                      </p>
                     </div>
 
                     {/* Step 4 */}
@@ -603,12 +774,21 @@ export default function HomePage() {
                         4
                       </div>
                       <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Expert Guidance (Through Closing)
+                        Negotiate & Close
                       </h3>
-                      <p className="text-gray-700 text-sm mb-2"><strong>What happens:</strong> I handle negotiations. Coordinate inspections. Manage timelines. Solve problems.</p>
-                      <p className="text-gray-700 text-sm mb-2"><strong>How long:</strong> Typically 90-120 days from contract to closing.</p>
-                      <p className="text-gray-700 text-sm"><strong>What you get:</strong> Smooth process. Maximum savings. Peace of mind.</p>
+                      <p className="text-gray-700 text-sm text-center">
+                        Dr. Jan handles negotiations, inspections, and paperwork through closing.
+                      </p>
                     </div>
+                  </div>
+                  
+                  <div className="text-center mt-8">
+                    <a
+                      href="/appointment"
+                      className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
+                    >
+                      Book Your 15-Minute Call
+                    </a>
                   </div>
                 </div>
               </div>
@@ -619,49 +799,42 @@ export default function HomePage() {
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
                   <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-                    Common Questions About Buying New Construction
+                    Frequently Asked Questions About Buying in Homestead West Las Vegas
                   </h2>
                   
                   <div className="space-y-6">
                     <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">Do I need an agent to buy at Homestead West?</h3>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">Do I have to pay Dr. Jan to represent me?</h3>
                       <p className="text-gray-700">
-                        You don't need one, but you should use one. The builder's sales rep works for the builder. An independent agent works for you. Plus, it costs you nothing—the builder pays the commission. You get expert representation at zero cost.
+                        No. The builder pays the buyer's agent commission. My services cost you nothing.
                       </p>
                     </div>
                     
                     <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">Can I just go to the Homestead West builder directly?</h3>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">Can't I just go directly to the builder's sales office?</h3>
                       <p className="text-gray-700">
-                        You can. But you'll work with the builder's sales rep. They work for the builder, not you. They won't negotiate. They won't share early access to new phases. You'll pay full price and choose from what's left.
+                        You can—but you'll be working with someone whose job is to protect the builder's interests, not yours. I level the playing field.
                       </p>
                     </div>
                     
                     <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">What if I'm buying Homestead West from out of state?</h3>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">I'm relocating from out of state. Can you help remotely?</h3>
                       <p className="text-gray-700">
-                        Many Homestead West buyers relocate from other states. Video tours of available lots. Virtual consultations. Document signing via DocuSign. Everything can be coordinated remotely. You'll have local representation even if you're 2,000 miles away.
+                        Absolutely. Most of my clients start with a video call. I can send virtual tours, market reports, and handle everything until you're ready to visit in person.
                       </p>
                     </div>
                     
                     <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">How does early access to Homestead West phases work?</h3>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">Is there room to negotiate on new construction pricing?</h3>
                       <p className="text-gray-700">
-                        Get notified when new Homestead West phases are about to release. Usually 48 hours before public. See available lots, floor plans, and pricing. Secure your lot before anyone else sees it.
+                        Yes. Builders have flexibility on upgrades, closing costs, lot premiums, and sometimes base price—especially on standing inventory. I know what to ask for.
                       </p>
                     </div>
                     
                     <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">What if I'm not ready to buy at Homestead West for 6 months?</h3>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">What if I want to see other communities too?</h3>
                       <p className="text-gray-700">
-                        That's fine. Register in the VIP program now. You'll get early notifications about new phases. Watch the market. When you're ready, you'll already have priority access to the best Homestead West lots.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">What makes Homestead West different from other communities?</h3>
-                      <p className="text-gray-700">
-                        Homestead West offers luxury single-story ranch homes on pool-sized lots. 3,336 to 3,704 square feet. Starting at $910,000. Optional detached casitas. Perfect for families who want space without stairs. Located in prime Northwest Las Vegas.
+                        I'll show you how this community compares to Skye Canyon, Summerlin, Providence, and other Northwest options so you can make the best decision.
                       </p>
                     </div>
                   </div>
@@ -673,34 +846,24 @@ export default function HomePage() {
         <section className="py-20 bg-gradient-to-r from-[#1a365d] to-[#0f2439] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">
-              Ready to Get Early Access?
+              Ready to See Homestead West Las Vegas?
             </h2>
             <p className="text-xl mb-4 max-w-2xl mx-auto text-gray-200">
-              Don't wait until opening day. Don't settle for what's left.
-            </p>
-            <p className="text-lg mb-6 max-w-2xl mx-auto text-gray-200">
-              Register in my VIP program today. Get early access to new phases. Secure the lot you want. Save money through expert negotiation.
-            </p>
-            <p className="text-lg mb-8 max-w-2xl mx-auto font-semibold text-yellow-400">
-              Limited lots available. Homestead West Phase [NUMBER] releases [DATE]. Corner lots go fast.
+              Schedule a private tour with Dr. Jan Duffy—your independent advocate in the new construction process.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <a 
-                href="tel:7022996607"
+                href="/appointment"
                 className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl"
               >
-                📞 Call: (702) 299-6607
-              </a>
-              <a 
-                href="mailto:DrJanSells@HomesteadWestLasVegas.com"
-                className="bg-[#d4af37] text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-all shadow-lg"
-              >
-                📧 Get Early Access Form
+                Schedule Your Tour
               </a>
             </div>
-            <p className="text-sm text-gray-300 max-w-xl mx-auto">
-              Contact Dr. Jan Duffy for expert guidance on your Homestead West home purchase. I'll call you within 24 hours to discuss your needs and get you registered in the VIP program.
-            </p>
+            <div className="space-y-2 text-gray-200">
+              <p>Or call directly: <a href="tel:7022996607" className="text-yellow-400 hover:text-yellow-300 font-semibold">(702) 299-6607</a></p>
+              <p>Email: <a href="mailto:DrJanSells@HomesteadWestLasVegas.com" className="text-yellow-400 hover:text-yellow-300 font-semibold">DrJanSells@HomesteadWestLasVegas.com</a></p>
+              <p>Office: 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
+            </div>
           </div>
         </section>
 

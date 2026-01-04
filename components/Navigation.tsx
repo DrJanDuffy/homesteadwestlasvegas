@@ -52,20 +52,36 @@ export default function Navigation() {
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
+            {/* Logo/Brand */}
+            <Link
+              href="/"
+              className={cn(
+                'flex items-center space-x-2',
+                'hover:opacity-80 transition-opacity duration-150',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
+                'min-h-[44px]'
+              )}
+            >
+              <div className="text-2xl font-bold">
+                <span className="text-[#1a365d]">Homestead</span>
+                <span className="text-[#d4af37]"> West</span>
+              </div>
+            </Link>
+
             {/* Phone Number */}
             <a
               href="tel:7022996607"
               className={cn(
                 'flex items-center space-x-2',
                 'hover:opacity-80 transition-opacity duration-150',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                 'min-h-[44px]'
               )}
             >
-              <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#1a365d] rounded-lg flex items-center justify-center">
                 <span className="text-white text-xl">📞</span>
               </div>
-              <div className="text-xl font-bold text-gray-900">
+              <div className="text-xl font-bold text-[#1a365d]">
                 (702) 299-6607
               </div>
             </a>
@@ -76,9 +92,9 @@ export default function Navigation() {
               <Link
                 href="/"
                 className={cn(
-                  'text-gray-700 hover:text-blue-600 font-medium',
+                  'text-gray-700 hover:text-[#1a365d] font-medium',
                   'transition-colors duration-150',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
               >
@@ -89,9 +105,9 @@ export default function Navigation() {
               <Link
                 href="/#available-homes"
                 className={cn(
-                  'text-gray-700 hover:text-blue-600 font-medium',
+                  'text-gray-700 hover:text-[#1a365d] font-medium',
                   'transition-colors duration-150',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
               >
@@ -111,9 +127,9 @@ export default function Navigation() {
               <Link
                 href="/about"
                 className={cn(
-                  'text-gray-700 hover:text-blue-600 font-medium',
+                  'text-gray-700 hover:text-[#1a365d] font-medium',
                   'transition-colors duration-150',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
               >
@@ -124,9 +140,9 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 className={cn(
-                  'text-gray-700 hover:text-blue-600 font-medium',
+                  'text-gray-700 hover:text-[#1a365d] font-medium',
                   'transition-colors duration-150',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
               >
@@ -137,12 +153,12 @@ export default function Navigation() {
               <Link
                 href="/vip-buyer-program"
                 className={cn(
-                  'bg-gradient-to-r from-yellow-400 to-yellow-500 text-black',
+                  'bg-gradient-to-r from-[#d4af37] to-[#f4d03f] text-[#1a365d]',
                   'px-4 py-2 rounded-full font-bold text-sm',
-                  'hover:from-yellow-500 hover:to-yellow-600',
+                  'hover:from-[#f4d03f] hover:to-[#d4af37]',
                   'hover:scale-[1.02] active:scale-[0.98]',
                   'transition-all duration-150 shadow-lg',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2',
                   'min-h-[44px] flex items-center'
                 )}
               >
@@ -155,11 +171,11 @@ export default function Navigation() {
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className={cn(
-                  'text-gray-700 hover:text-blue-600',
+                  'text-gray-700 hover:text-[#1a365d]',
                   'transition-colors duration-150',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] min-w-[44px] flex items-center justify-center',
-                  mobileMenuOpen && 'text-blue-600'
+                  mobileMenuOpen && 'text-[#1a365d]'
                 )}
                 aria-label="Toggle mobile menu"
                 aria-expanded={mobileMenuOpen}
