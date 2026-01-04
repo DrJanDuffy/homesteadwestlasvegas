@@ -95,7 +95,17 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-8">Get In Touch About Homestead West</h2>
+                <h2 className="text-3xl font-bold mb-4">Get In Touch About Homestead West</h2>
+                <div className="mb-6">
+                  <a
+                    href="https://share.google/Zn8fNxbKQlWioMikG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-4"
+                  >
+                    📱 View Contact Card on Google
+                  </a>
+                </div>
                 <p className="text-lg mb-8">
                   Ready to buy, sell, or invest in Homestead West Las Vegas real estate? Contact Dr. Jan Duffy for 
                   expert Homestead West guidance and personalized service. We're here to help you achieve your 
@@ -109,8 +119,20 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Homestead West Phone</h3>
-                      <p className="text-lg">(702) 299-6607</p>
+                      <p className="text-lg">
+                        <a href="tel:7022996607" className="text-blue-600 hover:text-blue-800 font-semibold">
+                          (702) 299-6607
+                        </a>
+                      </p>
                       <p className="text-gray-600">Available Monday-Friday 9AM-6PM, Saturday 10AM-4PM for Homestead West</p>
+                      <a
+                        href="https://share.google/Zn8fNxbKQlWioMikG"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mt-2 text-blue-600 hover:text-blue-800 font-semibold text-sm transition-colors"
+                      >
+                        View Contact Card →
+                      </a>
                     </div>
                   </div>
                   
@@ -120,8 +142,20 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Homestead West Email</h3>
-                      <p className="text-lg">DrJanSells@HomesteadWestLasVegas.com</p>
+                      <p className="text-lg">
+                        <a href="mailto:DrJanSells@HomesteadWestLasVegas.com" className="text-blue-600 hover:text-blue-800 font-semibold break-all">
+                          DrJanSells@HomesteadWestLasVegas.com
+                        </a>
+                      </p>
                       <p className="text-gray-600">We respond within 24 hours about Homestead West</p>
+                      <a
+                        href="https://share.google/Zn8fNxbKQlWioMikG"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mt-2 text-blue-600 hover:text-blue-800 font-semibold text-sm transition-colors"
+                      >
+                        View Contact Card →
+                      </a>
                     </div>
                   </div>
                   
@@ -278,7 +312,7 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold mb-6">Find Our Office</h2>
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-6">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.5!2d-115.1398!3d36.1699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDEwJzExLjYiTiAxMTXCsDA4JzIzLjMiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    src="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
                     width="100%"
                     height="100%"
                     className="border-0"
@@ -288,14 +322,24 @@ export default function ContactPage() {
                     title="Las Vegas Office Location"
                   ></iframe>
                 </div>
-                <a
-                  href="https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Get Directions
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center"
+                  >
+                    Get Directions
+                  </a>
+                  <a
+                    href="https://share.google/Zn8fNxbKQlWioMikG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors text-center"
+                  >
+                    📱 View Contact Card
+                  </a>
+                </div>
               </div>
             </div>
           </div>
