@@ -160,7 +160,7 @@ export default function ContactPage() {
                           DrJanSells@HomesteadWestLasVegas.com
                         </a>
                       </p>
-                      <p className="text-gray-600">We respond within 24 hours about Homestead West</p>
+                      <p className="text-gray-700">We respond within 24 hours about Homestead West</p>
                       <a
                         href="https://share.google/nB0T4SaU9gr8wLSdB"
                         target="_blank"
@@ -217,7 +217,7 @@ export default function ContactPage() {
                     <span>Closed</span>
                   </div>
                 </div>
-                <p className="mt-6 text-gray-600">
+                <p className="mt-6 text-gray-800">
                   <strong>Note:</strong> Appointments are available outside regular hours by special arrangement. 
                   Emergency real estate matters are handled on a case-by-case basis.
                 </p>
