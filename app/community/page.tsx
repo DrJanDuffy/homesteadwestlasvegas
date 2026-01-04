@@ -142,21 +142,22 @@ export default function CommunityPage() {
             <div className="max-w-6xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Homestead West Local Schools</h2>
               
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                       <span className="text-2xl">🎒</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Dean Lamar Allen Elementary Near Homestead West</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Dean LaMar Allen Elementary</h3>
                       <p className="text-gray-700">Grades K-5</p>
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-gray-700"><span className="font-semibold">Rating:</span> 8/10 (GreatSchools)</p>
-                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 2.1 miles</p>
-                    <p className="text-gray-700"><span className="font-semibold">Address:</span> 7151 W. Alexander Rd</p>
+                    <p className="text-gray-700"><span className="font-semibold">GreatSchools:</span> 6/10</p>
+                    <p className="text-gray-700"><span className="font-semibold">Niche:</span> B-</p>
+                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> ~1 mile</p>
+                    <p className="text-gray-700 text-sm"><span className="font-semibold">Address:</span> 8680 W Hammer Ln</p>
                   </div>
                 </div>
 
@@ -166,14 +167,14 @@ export default function CommunityPage() {
                       <span className="text-2xl">🏫</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Justice Myron E. Leavitt Middle Near Homestead West</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Justice Myron E. Leavitt Middle School</h3>
                       <p className="text-gray-700">Grades 6-8</p>
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-gray-700"><span className="font-semibold">Rating:</span> 7/10 (GreatSchools)</p>
-                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 3.2 miles from Homestead West</p>
-                    <p className="text-gray-700"><span className="font-semibold">Address:</span> 4701 Quadrel Dr</p>
+                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 1.5 miles</p>
+                    <p className="text-gray-700"><span className="font-semibold">Enrollment:</span> ~1,400 students</p>
+                    <p className="text-gray-700 text-sm"><span className="font-semibold">Location:</span> Centennial Hills</p>
                   </div>
                 </div>
 
@@ -183,16 +184,49 @@ export default function CommunityPage() {
                       <span className="text-2xl">🎓</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">Centennial High School Near Homestead West</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Centennial High School</h3>
                       <p className="text-gray-700">Grades 9-12</p>
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-gray-700"><span className="font-semibold">Rating:</span> 8/10 (GreatSchools)</p>
-                    <p className="text-gray-700"><span className="font-semibold">Distance:</span> 4.1 miles</p>
-                    <p className="text-gray-700"><span className="font-semibold">Address:</span> 10200 Centennial Pkwy</p>
+                    <p className="text-gray-700"><span className="font-semibold">GreatSchools:</span> 4/10</p>
+                    <p className="text-gray-700"><span className="font-semibold">Niche:</span> B</p>
+                    <p className="text-gray-700"><span className="font-semibold">Graduation Rate:</span> 91%</p>
+                    <p className="text-gray-700 text-sm"><span className="font-semibold">Programs:</span> Culinary Arts, Performing Arts, JROTC</p>
+                    <p className="text-gray-700 text-sm"><span className="font-semibold">Ranking:</span> #1 in Nevada for Best High Schools for Athletes (Niche)</p>
                   </div>
                 </div>
+
+                <div className="bg-yellow-50 p-6 rounded-xl border-2 border-yellow-200">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-2xl">⭐</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">Northwest Career & Technical Academy</h3>
+                      <p className="text-gray-700">Magnet Option</p>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-gray-700"><span className="font-semibold">Ranking:</span> Top 12 in Nevada (SchoolDigger)</p>
+                    <p className="text-gray-700 text-sm"><span className="font-semibold">Features:</span> Smaller class sizes, career-focused curriculum</p>
+                    <p className="text-gray-700 text-sm"><span className="font-semibold">Requirement:</span> Application required</p>
+                    <p className="text-blue-700 text-sm font-semibold mt-2">Magnet School Option</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Zoned Schools for Homestead West</h3>
+                <p className="text-gray-700 mb-2">
+                  Homestead West (Ann Rd & Fort Apache area, 89149) is zoned for the Clark County School District. 
+                  All three zoned schools are within 2 miles of the community, providing convenient access for families.
+                </p>
+                <p className="text-gray-700">
+                  <strong>Note:</strong> Northwest Career & Technical Academy is a magnet option requiring application, 
+                  and ranks among the top 12 high schools in Nevada. Families interested in this option should apply 
+                  through the Clark County School District magnet program.
+                </p>
               </div>
             </div>
           </div>

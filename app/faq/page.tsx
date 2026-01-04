@@ -135,7 +135,7 @@ export default function FAQPage() {
         },
         {
           question: 'What schools serve the Homestead West community?',
-          answer: 'Homestead West is served by excellent schools including Dean Lamar Allen Elementary (2.1 miles, 8/10 rating), Justice Myron E. Leavitt Middle School (3.2 miles, 7/10 rating), and Centennial High School (4.1 miles, 8/10 rating).'
+          answer: 'Homestead West (Ann Rd & Fort Apache area, 89149) is zoned for: Dean LaMar Allen Elementary (K-5, GreatSchools 6/10, Niche B-, ~1 mile, 8680 W Hammer Ln), Justice Myron E. Leavitt Middle School (6-8, 1.5 miles, ~1,400 students in Centennial Hills), and Centennial High School (9-12, GreatSchools 4/10, Niche B, 91% graduation rate, strong programs in Culinary Arts, Performing Arts, and JROTC, ranked #1 in Nevada for Best High Schools for Athletes). Magnet option: Northwest Career & Technical Academy (top 12 in Nevada, smaller classes, career-focused, application required).'
         }
       ]
     },

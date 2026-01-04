@@ -262,13 +262,26 @@ export default function RootLayout({
           },
           {
             '@type': 'School',
-            name: 'Dean Lamar Allen Elementary',
-            description: '2.1 miles away'
+            name: 'Dean LaMar Allen Elementary',
+            description: '~1 mile away, Grades K-5, GreatSchools 6/10',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: '8680 W Hammer Ln',
+              addressLocality: 'Las Vegas',
+              addressRegion: 'NV',
+              postalCode: '89149',
+              addressCountry: 'US'
+            }
+          },
+          {
+            '@type': 'School',
+            name: 'Justice Myron E. Leavitt Middle School',
+            description: '1.5 miles away, Grades 6-8, ~1,400 students'
           },
           {
             '@type': 'School',
             name: 'Centennial High School',
-            description: '4.1 miles away'
+            description: 'Grades 9-12, GreatSchools 4/10, Niche B, 91% graduation rate, #1 in Nevada for Best High Schools for Athletes'
           },
           {
             '@type': 'Hospital',
