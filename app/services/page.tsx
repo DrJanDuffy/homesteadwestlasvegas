@@ -106,13 +106,12 @@ export default function ServicesPage() {
                 <p className="text-xl text-blue-200">VIP New Construction Homes Specialist | Nevada License S.0197614</p>
               </div>
               <div className="flex justify-center mt-8">
-                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20" style={{ aspectRatio: '1/1' }}>
                   <Image
                     src="/images/Dr. Duffy Blue_Headshot.jpg"
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
-                    width={192}
-                    height={192}
-                    className="object-cover object-center rounded-full"
+                    fill
+                    className="object-cover object-center"
                     style={{ objectPosition: 'center top' }}
                     priority
                     sizes="(max-width: 768px) 160px, 192px"

@@ -97,13 +97,12 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <div className="mb-6">
-                  <div className="relative w-48 h-48 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20">
+                  <div className="relative w-48 h-48 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20" style={{ aspectRatio: '1/1' }}>
                     <Image
                       src="/images/Dr. Duffy Blue_Headshot.jpg"
                       alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
-                      width={192}
-                      height={192}
-                      className="object-cover object-center rounded-full"
+                      fill
+                      className="object-cover object-center"
                       style={{ objectPosition: 'center top' }}
                       sizes="192px"
                     />

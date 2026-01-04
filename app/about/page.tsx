@@ -94,13 +94,12 @@ export default function AboutPage() {
                 ⭐ VIP NEW CONSTRUCTION SPECIALIST ⭐
               </div>
               <div className="mb-6 flex justify-center">
-                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20" style={{ aspectRatio: '1/1' }}>
                   <Image
                     src="/images/Dr. Duffy Blue_Headshot.jpg"
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
-                    width={256}
-                    height={256}
-                    className="object-cover object-center rounded-full"
+                    fill
+                    className="object-cover object-center"
                     style={{ objectPosition: 'center top' }}
                     priority
                     sizes="(max-width: 768px) 192px, 256px"
@@ -163,13 +162,14 @@ export default function AboutPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="order-2 lg:order-1">
                   <div className="mb-6 lg:hidden">
-                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20">
+                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20" style={{ aspectRatio: '1/1' }}>
                       <Image
                         src="/images/Dr. Duffy Blue_Headshot.jpg"
                         alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                         fill
                         className="object-cover object-center"
                         style={{ objectPosition: 'center top' }}
+                        sizes="192px"
                       />
                     </div>
                   </div>
@@ -204,6 +204,7 @@ export default function AboutPage() {
                         fill
                         className="object-cover object-center"
                         style={{ objectPosition: 'center top' }}
+                        sizes="(max-width: 1024px) 100vw, 400px"
                       />
                     </div>
                   </div>
