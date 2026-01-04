@@ -101,7 +101,7 @@ export default function FAQPage() {
         },
         {
           question: 'Can I customize my new construction home?',
-          answer: 'Yes! The builder offers extensive customization options through their Design Center. You can choose finishes, colors, flooring, countertops, cabinets, lighting, and structural options. Dr. Jan Duffy\'s VIP partnership provides access to exclusive upgrade packages and priority Design Center appointments.'
+          answer: 'Yes! The builder offers extensive customization options through their Design Center. You can choose finishes, colors, flooring, countertops, cabinets, lighting, and structural options. As a VIP New Construction Homes Specialist, Dr. Jan Duffy provides access to exclusive upgrade packages and priority Design Center appointments—all while representing your interests.'
         }
       ]
     },

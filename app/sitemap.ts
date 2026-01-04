@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     
-    // VIP Partnership - High Priority (Key Differentiator)
+    // VIP New Construction Homes Specialist - High Priority (Key Differentiator)
     {
       url: `${baseUrl}/vip-buyer-program`,
       lastModified: now,

@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy | Las Vegas Real Estate Expert",
-  description: "Complete buyer's guide to new construction homes in Las Vegas. Step-by-step process with Dr. Jan Duffy's VIP new construction partnership. Expert guidance for first-time buyers.",
+  description: "Complete buyer's guide to new construction homes in Las Vegas. Step-by-step process with VIP New Construction Homes Specialist Dr. Jan Duffy. Expert guidance for first-time buyers.",
   keywords: [
     'new construction buyer guide',
     'Las Vegas new home process',

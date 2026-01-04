@@ -379,7 +379,7 @@ export default function AboutPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Work with a Homestead West VIP Specialist?</h2>
               <p className="text-xl mb-8 text-blue-100">
-                Experience the difference of working with Dr. Jan Duffy's elite new construction partnership
+                Experience the difference of working with Dr. Jan Duffy, a VIP New Construction Homes Specialist who represents home buyers exclusively
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
