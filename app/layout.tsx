@@ -322,6 +322,14 @@ export default function RootLayout({
       return (
         <html lang="en">
           <head>
+            {/* Preconnect to external resources for faster loading */}
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+            <link rel="preconnect" href="https://em.realscout.com" />
+            <link rel="preconnect" href="https://www.realscout.com" />
+            <link rel="dns-prefetch" href="https://em.realscout.com" />
+            <link rel="dns-prefetch" href="https://www.realscout.com" />
+            <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
             {/* Google Analytics */}
             <script
               async
@@ -368,7 +376,7 @@ export default function RootLayout({
                       '@id': 'https://www.homesteadwestlasvegas.com/#agent',
                       name: 'Dr. Jan Duffy',
                       description: 'Las Vegas Real Estate Expert with 30+ years experience, Ph.D. in Market Research & Consumer Behavior, $127M+ in sales serving 500+ Vegas families',
-                      telephone: '(702) 299-6607',
+                      telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: 'https://www.homesteadwestlasvegas.com',
                       image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
@@ -408,11 +416,11 @@ export default function RootLayout({
                       }
                     },
                     {
-                      '@type': 'RealEstateAgent',
+                      '@type': 'LocalBusiness',
                       '@id': 'https://www.homesteadwestlasvegas.com/#business',
                       name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
                       description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist in Northwest Las Vegas',
-                      telephone: '(702) 299-6607',
+                      telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: 'https://www.homesteadwestlasvegas.com',
                       image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
@@ -427,9 +435,10 @@ export default function RootLayout({
                       },
                       geo: {
                         '@type': 'GeoCoordinates',
-                        latitude: 36.2839,
-                        longitude: -115.2936
+                        latitude: 36.2738,
+                        longitude: -115.3089
                       },
+                      '@type': 'RealEstateAgent',
                       openingHoursSpecification: [
                         {
                           '@type': 'OpeningHoursSpecification',
@@ -693,18 +702,32 @@ export default function RootLayout({
             <Navigation />
             {children}
             <Footer />
-            {/* Load RealScout script asynchronously after page load */}
+            {/* Load RealScout script asynchronously after page is fully interactive */}
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-                  if (typeof window !== 'undefined' && !document.querySelector('script[src*="realscout-web-components"]')) {
-                    const script = document.createElement('script');
-                    script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
-                    script.type = 'module';
-                    script.async = true;
-                    script.defer = true;
-                    document.head.appendChild(script);
-                  }
+                  (function() {
+                    if (typeof window === 'undefined') return;
+                    if (document.querySelector('script[src*="realscout-web-components"]')) return;
+                    
+                    function loadRealScoutScript() {
+                      const script = document.createElement('script');
+                      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+                      script.type = 'module';
+                      script.async = true;
+                      script.crossOrigin = 'anonymous';
+                      document.head.appendChild(script);
+                    }
+                    
+                    // Wait for page to be fully interactive
+                    if (document.readyState === 'complete') {
+                      setTimeout(loadRealScoutScript, 100);
+                    } else {
+                      window.addEventListener('load', function() {
+                        setTimeout(loadRealScoutScript, 100);
+                      });
+                    }
+                  })();
                 `,
               }}
             />
