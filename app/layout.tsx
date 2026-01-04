@@ -418,8 +418,9 @@ export default function RootLayout({
                     {
                       '@type': 'LocalBusiness',
                       '@id': 'https://www.homesteadwestlasvegas.com/#business',
-                      name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
-                      description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist in Northwest Las Vegas',
+                      name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert | Home builder · Henderson · Closed · Opens 10 AM',
+                      alternateName: 'Homestead West Las Vegas Real Estate',
+                      description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist in Northwest Las Vegas. Home builder serving Henderson and Las Vegas areas.',
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: 'https://www.homesteadwestlasvegas.com',
@@ -438,35 +439,53 @@ export default function RootLayout({
                         latitude: 36.2738,
                         longitude: -115.3089
                       },
+                      areaServed: [
+                        {
+                          '@type': 'City',
+                          name: 'Las Vegas',
+                          containedInPlace: {
+                            '@type': 'State',
+                            name: 'Nevada'
+                          }
+                        },
+                        {
+                          '@type': 'City',
+                          name: 'Henderson',
+                          containedInPlace: {
+                            '@type': 'State',
+                            name: 'Nevada'
+                          }
+                        }
+                      ],
                       openingHoursSpecification: [
                         {
                           '@type': 'OpeningHoursSpecification',
                           dayOfWeek: 'Monday',
-                          opens: '10:00',
+                          opens: '09:00',
                           closes: '18:00'
                         },
                         {
                           '@type': 'OpeningHoursSpecification',
                           dayOfWeek: 'Tuesday',
-                          opens: '10:00',
+                          opens: '09:00',
                           closes: '18:00'
                         },
                         {
                           '@type': 'OpeningHoursSpecification',
                           dayOfWeek: 'Wednesday',
-                          opens: '10:00',
+                          opens: '09:00',
                           closes: '18:00'
                         },
                         {
                           '@type': 'OpeningHoursSpecification',
                           dayOfWeek: 'Thursday',
-                          opens: '10:00',
+                          opens: '09:00',
                           closes: '18:00'
                         },
                         {
                           '@type': 'OpeningHoursSpecification',
                           dayOfWeek: 'Friday',
-                          opens: '10:00',
+                          opens: '09:00',
                           closes: '18:00'
                         },
                         {
@@ -478,8 +497,8 @@ export default function RootLayout({
                         {
                           '@type': 'OpeningHoursSpecification',
                           dayOfWeek: 'Sunday',
-                          opens: '10:00',
-                          closes: '15:00'
+                          opens: '00:00',
+                          closes: '00:00'
                         }
                       ],
                       areaServed: {
@@ -728,35 +747,7 @@ export default function RootLayout({
             <Navigation />
             {children}
             <Footer />
-            {/* Load RealScout script asynchronously after page is fully interactive */}
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function() {
-                    if (typeof window === 'undefined') return;
-                    if (document.querySelector('script[src*="realscout-web-components"]')) return;
-                    
-                    function loadRealScoutScript() {
-                      const script = document.createElement('script');
-                      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
-                      script.type = 'module';
-                      script.async = true;
-                      script.crossOrigin = 'anonymous';
-                      document.head.appendChild(script);
-                    }
-                    
-                    // Wait for page to be fully interactive
-                    if (document.readyState === 'complete') {
-                      setTimeout(loadRealScoutScript, 100);
-                    } else {
-                      window.addEventListener('load', function() {
-                        setTimeout(loadRealScoutScript, 100);
-                      });
-                    }
-                  })();
-                `,
-              }}
-            />
+            {/* RealScout script is now loaded by RealScoutListings component when needed */}
           </body>
         </html>
       );

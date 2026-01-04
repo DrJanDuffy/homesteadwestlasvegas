@@ -17,7 +17,7 @@ export default function RealScoutListings() {
           }
         });
       },
-      { rootMargin: '100px' } // Start loading 100px before it's visible
+      { rootMargin: '200px' } // Start loading 200px before it's visible for better perceived performance
     );
 
     if (containerRef.current) {
@@ -29,14 +29,30 @@ export default function RealScoutListings() {
 
   useEffect(() => {
     if (isVisible && containerRef.current) {
-      // Ensure RealScout script is loaded
+      // Ensure RealScout script is loaded (only when actually needed)
       const scriptExists = document.querySelector('script[src*="realscout-web-components"]');
       if (!scriptExists) {
-        const script = document.createElement('script');
-        script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
-        script.type = 'module';
-        script.async = true;
-        document.head.appendChild(script);
+        // Wait for page to be idle before loading
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(() => {
+            const script = document.createElement('script');
+            script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+            script.type = 'module';
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+          }, { timeout: 2000 });
+        } else {
+          // Fallback for browsers without requestIdleCallback
+          setTimeout(() => {
+            const script = document.createElement('script');
+            script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+            script.type = 'module';
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+          }, 500);
+        }
       }
 
       // Wait for script to load before creating element
