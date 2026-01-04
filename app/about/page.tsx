@@ -160,12 +160,13 @@ export default function AboutPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="order-2 lg:order-1">
                   <div className="mb-6 lg:hidden">
-                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
+                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20">
                       <Image
                         src="/images/Dr. Duffy Blue_Headshot.jpg"
                         alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                         fill
-                        className="object-cover"
+                        className="object-cover object-center"
+                        style={{ objectPosition: 'center top' }}
                       />
                     </div>
                   </div>
@@ -193,12 +194,13 @@ export default function AboutPage() {
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="hidden lg:block mb-6">
-                    <div className="relative w-full aspect-square max-w-md mx-auto rounded-xl overflow-hidden border-4 border-blue-600 shadow-xl">
+                    <div className="relative w-full aspect-square max-w-md mx-auto rounded-xl overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20">
                       <Image
                         src="/images/Dr. Duffy Blue_Headshot.jpg"
                         alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                         fill
-                        className="object-cover"
+                        className="object-cover object-center"
+                        style={{ objectPosition: 'center top' }}
                       />
                     </div>
                   </div>

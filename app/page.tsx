@@ -176,12 +176,13 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="flex justify-center mb-8">
-                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20">
                   <Image
                     src="/images/Dr. Duffy Blue_Headshot.jpg"
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
+                    style={{ objectPosition: 'center top' }}
                   />
                 </div>
               </div>
