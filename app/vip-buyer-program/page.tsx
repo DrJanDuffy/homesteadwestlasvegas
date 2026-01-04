@@ -372,7 +372,7 @@ export default function VIPBuyerProgramPage() {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
                   <h3 className="text-lg font-bold mb-2 text-gray-900">VIP Registration for New Homes</h3>
-                  <p className="text-gray-600 text-sm">Register with VIP Berkshire Hathaway HomeServices buyer program portal</p>
+                  <p className="text-gray-600 text-sm">Register with VIP Berkshire Hathaway HomeServices buyer program by Calling Dr. Jan Duffy</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">3</div>
