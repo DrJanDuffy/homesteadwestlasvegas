@@ -423,8 +423,16 @@ export default function VIPBuyerProgramPage() {
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 <a
-                  href="tel:7022996607"
+                  href="https://drjanduffy.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNTk3Mg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-yellow-500 text-black px-10 py-5 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-all shadow-2xl"
+                >
+                  🔍 Search Available Homes
+                </a>
+                <a
+                  href="tel:7022996607"
+                  className="bg-white text-blue-900 px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-100 transition-all shadow-2xl"
                 >
                   📞 Call Dr. Jan: (702) 299-6607
                 </a>
