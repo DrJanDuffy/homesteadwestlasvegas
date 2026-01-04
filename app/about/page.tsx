@@ -94,12 +94,13 @@ export default function AboutPage() {
                 ⭐ VIP NEW CONSTRUCTION SPECIALIST ⭐
               </div>
               <div className="mb-6 flex justify-center">
-                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20">
                   <Image
                     src="/images/Dr. Duffy Blue_Headshot.jpg"
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
+                    style={{ objectPosition: 'center top' }}
                     priority
                   />
                 </div>
