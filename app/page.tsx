@@ -42,7 +42,7 @@ export default function HomePage() {
       name: 'Dr. Jan Duffy',
       telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
-      // image: 'https://www.homesteadwestlasvegas.com/images/dr-jan-duffy.jpg', // TODO: Add when image is available
+      image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
       priceRange: '$850,000-$990,000',
       address: {
         '@type': 'PostalAddress',
