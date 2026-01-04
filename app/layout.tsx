@@ -418,13 +418,14 @@ export default function RootLayout({
                     {
                       '@type': 'LocalBusiness',
                       '@id': 'https://www.homesteadwestlasvegas.com/#business',
-                      name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert | Home builder · Henderson · Closed · Opens 10 AM',
+                      name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
                       alternateName: 'Homestead West Las Vegas Real Estate',
                       description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist in Northwest Las Vegas. Home builder serving Henderson and Las Vegas areas.',
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: 'https://www.homesteadwestlasvegas.com',
                       image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+                      logo: 'https://www.homesteadwestlasvegas.com/images/bhhs-logo.svg',
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
@@ -460,31 +461,7 @@ export default function RootLayout({
                       openingHoursSpecification: [
                         {
                           '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Monday',
-                          opens: '09:00',
-                          closes: '18:00'
-                        },
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Tuesday',
-                          opens: '09:00',
-                          closes: '18:00'
-                        },
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Wednesday',
-                          opens: '09:00',
-                          closes: '18:00'
-                        },
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Thursday',
-                          opens: '09:00',
-                          closes: '18:00'
-                        },
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Friday',
+                          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                           opens: '09:00',
                           closes: '18:00'
                         },
@@ -493,18 +470,64 @@ export default function RootLayout({
                           dayOfWeek: 'Saturday',
                           opens: '10:00',
                           closes: '16:00'
-                        },
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Sunday',
-                          opens: '00:00',
-                          closes: '00:00'
                         }
                       ],
                       hasCredential: {
                         '@type': 'EducationalOccupationalCredential',
                         credentialCategory: 'license',
                         name: 'Nevada Real Estate License S.0197614'
+                      },
+                      foundingDate: '2022',
+                      numberOfEmployees: {
+                        '@type': 'QuantitativeValue',
+                        value: '1'
+                      },
+                      serviceArea: {
+                        '@type': 'GeoCircle',
+                        geoMidpoint: {
+                          '@type': 'GeoCoordinates',
+                          latitude: 36.2738,
+                          longitude: -115.3089
+                        },
+                        geoRadius: {
+                          '@type': 'Distance',
+                          value: '50',
+                          unitCode: 'MI'
+                        }
+                      }
+                    },
+                    {
+                      '@type': 'Organization',
+                      '@id': 'https://www.homesteadwestlasvegas.com/#organization',
+                      name: 'Dr. Jan Duffy Real Estate',
+                      alternateName: 'Homestead West Las Vegas Real Estate',
+                      url: 'https://www.homesteadwestlasvegas.com',
+                      logo: 'https://www.homesteadwestlasvegas.com/images/bhhs-logo.svg',
+                      image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+                      address: {
+                        '@type': 'PostalAddress',
+                        streetAddress: '5592 N Dapple Gray Rd',
+                        addressLocality: 'Las Vegas',
+                        addressRegion: 'NV',
+                        postalCode: '89149',
+                        addressCountry: 'US'
+                      },
+                      contactPoint: {
+                        '@type': 'ContactPoint',
+                        telephone: '+17022996607',
+                        contactType: 'Customer Service',
+                        areaServed: ['US'],
+                        availableLanguage: ['English']
+                      },
+                      sameAs: [
+                        'https://www.homesteadwestlasvegas.com',
+                        'https://www.homesteadwestlasvegas.com/vip-buyer-program',
+                        'https://www.homesteadwestlasvegas.com/about',
+                        'https://www.homesteadwestlasvegas.com/contact'
+                      ],
+                      memberOf: {
+                        '@type': 'Organization',
+                        name: 'Berkshire Hathaway HomeServices Nevada Properties'
                       }
                     },
                     {

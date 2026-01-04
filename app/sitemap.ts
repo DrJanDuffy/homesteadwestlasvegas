@@ -2,15 +2,21 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.homesteadwestlasvegas.com'
-  const now = new Date().toISOString()
+  const now = new Date()
+  const lastModified = now.toISOString()
 
   return [
     // Homepage - Highest Priority
     {
       url: baseUrl,
-      lastModified: now,
+      lastModified: lastModified,
       changeFrequency: 'weekly',
       priority: 1.0,
+      alternates: {
+        languages: {
+          en: baseUrl,
+        },
+      },
     },
     
     // VIP New Construction Homes Specialist - High Priority (Key Differentiator)
