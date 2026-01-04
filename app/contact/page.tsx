@@ -98,7 +98,7 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold mb-4">Get In Touch About Homestead West</h2>
                 <div className="mb-6">
                   <a
-                    href="https://share.google/Zn8fNxbKQlWioMikG"
+                    href="https://share.google/nB0T4SaU9gr8wLSdB"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-4"
@@ -126,7 +126,7 @@ export default function ContactPage() {
                       </p>
                       <p className="text-gray-600">Available Monday-Friday 9AM-6PM, Saturday 10AM-4PM for Homestead West</p>
                       <a
-                        href="https://share.google/Zn8fNxbKQlWioMikG"
+                        href="https://share.google/nB0T4SaU9gr8wLSdB"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-2 text-blue-600 hover:text-blue-800 font-semibold text-sm transition-colors"
@@ -149,7 +149,7 @@ export default function ContactPage() {
                       </p>
                       <p className="text-gray-600">We respond within 24 hours about Homestead West</p>
                       <a
-                        href="https://share.google/Zn8fNxbKQlWioMikG"
+                        href="https://share.google/nB0T4SaU9gr8wLSdB"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-2 text-blue-600 hover:text-blue-800 font-semibold text-sm transition-colors"
@@ -169,7 +169,7 @@ export default function ContactPage() {
                       <p className="text-lg mb-2">Las Vegas, NV 89149</p>
                       <p className="text-gray-600">By appointment only for Homestead West</p>
                       <a
-                        href="https://share.google/Zn8fNxbKQlWioMikG"
+                        href="https://share.google/nB0T4SaU9gr8wLSdB"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-3 text-blue-600 hover:text-blue-800 font-semibold text-sm transition-colors"
@@ -332,7 +332,7 @@ export default function ContactPage() {
                     Get Directions
                   </a>
                   <a
-                    href="https://share.google/Zn8fNxbKQlWioMikG"
+                    href="https://share.google/nB0T4SaU9gr8wLSdB"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors text-center"
