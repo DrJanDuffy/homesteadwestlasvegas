@@ -38,9 +38,6 @@ export default function Footer() {
             src="/images/equal-housing-logo.png" 
             alt="Equal Housing Opportunity" 
             className="h-12 w-auto"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
           />
         </div>
         
