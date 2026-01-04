@@ -4,7 +4,11 @@ import "./globals.css";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap', // Better font loading performance
+  preload: true,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.homesteadwestlasvegas.com'),
@@ -63,10 +67,10 @@ export const metadata: Metadata = {
     description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 299-6607.',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Homestead West Las Vegas Ranch Homes',
+        url: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+        width: 750,
+        height: 752,
+        alt: 'Dr. Jan Duffy - VIP New Construction Homes Specialist | Homestead West Las Vegas',
       }
     ],
   },
@@ -75,7 +79,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
     description: 'Luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert real estate guidance from Dr. Jan Duffy.',
-    images: ['/twitter-image.jpg'],
+    images: ['https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg'],
   },
 
       verification: {
@@ -689,27 +693,18 @@ export default function RootLayout({
             <Navigation />
             {children}
             <Footer />
-            {/* Load RealScout script asynchronously after page load to prevent blocking */}
+            {/* Load RealScout script asynchronously after page load */}
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-                  (function() {
-                    if (typeof window !== 'undefined' && !document.querySelector('script[src*="realscout-web-components"]')) {
-                      // Load script after page is interactive
-                      if (document.readyState === 'complete') {
-                        loadRealScoutScript();
-                      } else {
-                        window.addEventListener('load', loadRealScoutScript);
-                      }
-                    }
-                    function loadRealScoutScript() {
-                      const script = document.createElement('script');
-                      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
-                      script.type = 'module';
-                      script.async = true;
-                      document.head.appendChild(script);
-                    }
-                  })();
+                  if (typeof window !== 'undefined' && !document.querySelector('script[src*="realscout-web-components"]')) {
+                    const script = document.createElement('script');
+                    script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+                    script.type = 'module';
+                    script.async = true;
+                    script.defer = true;
+                    document.head.appendChild(script);
+                  }
                 `,
               }}
             />

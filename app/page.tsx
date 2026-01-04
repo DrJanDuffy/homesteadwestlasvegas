@@ -15,6 +15,22 @@ export const metadata: Metadata = {
     description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada.',
     type: 'website',
     url: 'https://www.homesteadwestlasvegas.com/',
+    siteName: 'Homestead West Las Vegas',
+    images: [
+      {
+        url: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+        width: 750,
+        height: 752,
+        alt: 'Dr. Jan Duffy - VIP New Construction Homes Specialist | Homestead West Las Vegas',
+      }
+    ],
+  },
+  
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
+    description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada.',
+    images: ['https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg'],
   },
 };
 
