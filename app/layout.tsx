@@ -343,18 +343,33 @@ export default function RootLayout({
             <link rel="dns-prefetch" href="https://em.realscout.com" />
             <link rel="dns-prefetch" href="https://www.realscout.com" />
             <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-            {/* Google Analytics */}
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}`}
-            ></script>
+            {/* Google Analytics - Deferred to prevent render blocking */}
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}');
+                  (function() {
+                    // Defer Google Analytics until after page load
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    
+                    function loadGA() {
+                      const script = document.createElement('script');
+                      script.async = true;
+                      script.src = 'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}';
+                      document.head.appendChild(script);
+                      gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}');
+                    }
+                    
+                    if (document.readyState === 'complete') {
+                      setTimeout(loadGA, 100);
+                    } else {
+                      window.addEventListener('load', function() {
+                        setTimeout(loadGA, 100);
+                      });
+                    }
+                  })();
                 `,
               }}
             />
