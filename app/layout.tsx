@@ -343,31 +343,56 @@ export default function RootLayout({
             <link rel="dns-prefetch" href="https://em.realscout.com" />
             <link rel="dns-prefetch" href="https://www.realscout.com" />
             <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-            {/* Google Analytics - Deferred to prevent render blocking */}
+            {/* Google Analytics - Deferred and optimized to reduce unused JS */}
             <script
               dangerouslySetInnerHTML={{
                 __html: `
                   (function() {
-                    // Defer Google Analytics until after page load
+                    // Defer Google Analytics until after page is fully interactive
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     window.gtag = gtag;
-                    gtag('js', new Date());
                     
+                    // Only initialize after user interaction or extended idle time
                     function loadGA() {
+                      if (window.gtagLoaded) return;
+                      window.gtagLoaded = true;
+                      
+                      gtag('js', new Date());
                       const script = document.createElement('script');
                       script.async = true;
                       script.src = 'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}';
+                      script.defer = true;
                       document.head.appendChild(script);
-                      gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}');
+                      
+                      // Delay config until script loads
+                      script.onload = function() {
+                        gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'GA_MEASUREMENT_ID'}', {
+                          send_page_view: false
+                        });
+                      };
                     }
                     
-                    if (document.readyState === 'complete') {
-                      setTimeout(loadGA, 100);
+                    // Load on user interaction (more efficient than on load)
+                    ['mousedown', 'touchstart', 'keydown', 'scroll'].forEach(function(event) {
+                      window.addEventListener(event, function() {
+                        if (!window.gtagLoaded) {
+                          loadGA();
+                        }
+                      }, { once: true, passive: true });
+                    });
+                    
+                    // Fallback: load after page is idle for 2 seconds
+                    if ('requestIdleCallback' in window) {
+                      requestIdleCallback(function() {
+                        setTimeout(loadGA, 2000);
+                      }, { timeout: 3000 });
                     } else {
-                      window.addEventListener('load', function() {
-                        setTimeout(loadGA, 100);
-                      });
+                      setTimeout(function() {
+                        if (document.readyState === 'complete' && !window.gtagLoaded) {
+                          loadGA();
+                        }
+                      }, 2000);
                     }
                   })();
                 `,
