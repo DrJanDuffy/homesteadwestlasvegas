@@ -60,6 +60,8 @@ const nextConfig: NextConfig = {
   // Experimental optimizations
   experimental: {
     optimizePackageImports: ['react', 'react-dom'],
+    // Inline CSS to reduce render-blocking resources
+    inlineCss: true,
   },
   
   // Headers for better SEO and security
