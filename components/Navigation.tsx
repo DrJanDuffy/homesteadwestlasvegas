@@ -64,7 +64,7 @@ export default function Navigation() {
             >
               <div className="text-2xl font-bold">
                 <span className="text-[#1a365d]">Homestead</span>
-                <span className="text-[#d4af37]"> West</span>
+                <span className="text-[#b8941f]"> West</span>
               </div>
             </Link>
 

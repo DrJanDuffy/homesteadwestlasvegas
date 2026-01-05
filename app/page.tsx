@@ -499,7 +499,7 @@ export default function HomePage() {
                             className="btn HomeSearchBtn" 
                             id="HomeSearchBtnWidget" 
                             value="Find Homes"
-                            style={{backgroundColor: '#f58220', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600}}
+                            style={{backgroundColor: '#d1690a', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600}}
                           />
                         </p>
                       </fieldset>
