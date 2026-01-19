@@ -3,8 +3,8 @@ import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Community & Neighborhood | Homestead West Las Vegas | Schools, Shopping, Healthcare',
-  description: 'Explore Homestead West Las Vegas community with local schools, shopping, dining, healthcare facilities, and recreation. Northwest Las Vegas neighborhood guide.',
+  title: 'Community & Neighborhood | Homestead West Las Vegas | Schools, Shopping, Healthcare | Northwest Las Vegas',
+  description: 'Explore Homestead West Las Vegas community in Northwest Las Vegas with local schools, shopping, dining, healthcare facilities, and recreation. Luxury new construction neighborhood guide for zip code 89149.',
   keywords: [
     'Homestead West community',
     'Northwest Las Vegas schools',
@@ -12,7 +12,14 @@ export const metadata: Metadata = {
     'Las Vegas healthcare facilities',
     'Las Vegas parks and recreation',
     '89149 zip code',
-    'luxury new construction Las Vegas'
+    'luxury new construction Las Vegas',
+    'Northwest Las Vegas neighborhood',
+    'new construction community Las Vegas',
+    'Las Vegas new home community',
+    'luxury homes Northwest Las Vegas',
+    'single story homes Las Vegas',
+    'ranch homes Las Vegas',
+    'pool sized lots Las Vegas'
   ],
   openGraph: {
     title: 'Community & Neighborhood | Homestead West Las Vegas',
@@ -44,6 +51,7 @@ export default function CommunityPage() {
     containedInPlace: {
       '@type': 'City',
       name: 'Las Vegas',
+      alternateName: 'Northwest Las Vegas',
       '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
     },
     amenityFeature: [
@@ -61,8 +69,19 @@ export default function CommunityPage() {
         '@type': 'LocationFeatureSpecification',
         name: 'Optional detached casita',
         value: true
+      },
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'New construction homes',
+        value: true
+      },
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Luxury homes',
+        value: true
       }
-    ]
+    ],
+    hasMap: 'https://www.homesteadwestlasvegas.com/community-map'
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Person',
+    '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy',
     jobTitle: 'VIP New Construction Specialist',
     description: 'Las Vegas real estate expert and VIP New Construction Homes Specialist who represents home buyers',
@@ -55,7 +55,6 @@ export default function AboutPage() {
       }
     },
     knowsAbout: [
-      'New Construction Homes',
       'New Construction Homes',
       'VIP New Construction Homes Specialist',
       'Las Vegas Real Estate',

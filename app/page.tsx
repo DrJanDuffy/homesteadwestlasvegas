@@ -4,9 +4,9 @@ import SearchWidgetScript from '@/components/SearchWidgetScript';
 import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
-  title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
-  description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Dr. Jan Duffy represents YOU—not the builder. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada. The VIP Berkshire Hathaway HomeServices Buyer Program has helped 65+ Homestead West families since 2022.',
-  keywords: 'Homestead West Las Vegas, luxury ranch homes, single-story homes, Northwest Las Vegas, new construction, pool-sized lots, $910K homes, Las Vegas real estate, Berkshire Hathaway HomeServices, independent buyer agent',
+  title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K | New Construction Northwest Las Vegas',
+  description: 'New construction luxury single-story ranch homes in Northwest Las Vegas from $910K. Pool-sized lots, optional casitas, VIP buyer representation. Dr. Jan Duffy represents YOU—not the builder. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada. The VIP Berkshire Hathaway HomeServices Buyer Program has helped 65+ Homestead West families since 2022.',
+  keywords: 'Homestead West Las Vegas, luxury ranch homes, single-story homes, Northwest Las Vegas, new construction, pool-sized lots, $910K homes, Las Vegas real estate, Berkshire Hathaway HomeServices, independent buyer agent, new construction homes Las Vegas, single story homes Las Vegas, luxury homes Northwest Las Vegas, new construction community Las Vegas, ranch homes Las Vegas, pool sized lots Las Vegas',
   alternates: {
     canonical: 'https://www.homesteadwestlasvegas.com/',
   },
@@ -85,11 +85,62 @@ export default function HomePage() {
     }
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Do I have to pay Dr. Jan to represent me?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. The builder pays the buyer\'s agent commission. My services cost you nothing.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can\'t I just go directly to the builder\'s sales office?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can—but you\'ll be working with someone whose job is to protect the builder\'s interests, not yours. I level the playing field.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'I\'m relocating from out of state. Can you help remotely?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Absolutely. Most of my clients start with a video call. I can send virtual tours, market reports, and handle everything until you\'re ready to visit in person.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Is there room to negotiate on new construction pricing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Builders have flexibility on upgrades, closing costs, lot premiums, and sometimes base price—especially on standing inventory. I know what to ask for.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What if I want to see other communities too?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'I\'ll show you how this community compares to Skye Canyon, Summerlin, Providence, and other Northwest options so you can make the best decision.'
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       
       <div className="min-h-screen bg-white">

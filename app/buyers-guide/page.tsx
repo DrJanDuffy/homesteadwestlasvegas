@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy | Las Vegas Real Estate Expert",
-  description: "Complete buyer's guide to new construction homes in Las Vegas. Step-by-step process with VIP New Construction Homes Specialist Dr. Jan Duffy. Expert guidance for first-time buyers.",
+  description: "Complete buyer's guide to new construction homes in Las Vegas and Northwest Las Vegas. Step-by-step process with VIP New Construction Homes Specialist Dr. Jan Duffy. Expert guidance for first-time buyers and luxury home buyers.",
   keywords: [
     'new construction buyer guide',
     'Las Vegas new home process',
@@ -12,7 +12,12 @@ export const metadata: Metadata = {
     'first time home buyer Las Vegas',
     'new construction process',
     'Dr. Jan Duffy buyer guide',
-    'Homestead West buyer guide'
+    'Homestead West buyer guide',
+    'Northwest Las Vegas new construction',
+    'luxury home buyer guide',
+    'new construction homes Las Vegas',
+    'single story homes buyer guide',
+    'ranch homes Las Vegas guide'
   ],
   openGraph: {
     title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy",

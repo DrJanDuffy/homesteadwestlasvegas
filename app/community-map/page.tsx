@@ -3,19 +3,26 @@ import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Community Map | Homestead West Las Vegas | Available Lots & Homesites',
-  description: 'Explore Homestead West community map with available lots and homesites. Interactive map showing pool-sized lots, floor plan locations, and community layout.',
+  title: 'Community Map | Homestead West Las Vegas | Available Lots & Homesites | Northwest Las Vegas',
+  description: 'Explore Homestead West community map with available lots and homesites in Northwest Las Vegas. Interactive map showing pool-sized lots, floor plan locations, community layout, and proximity to Red Rock Canyon, downtown Las Vegas, and Mount Charleston. New construction homes from $910K.',
   keywords: [
     'Homestead West community map',
     'Las Vegas homesites map',
-    'new construction lots',
+    'new construction lots Las Vegas',
     'Homestead West available lots',
     'Las Vegas new home lots',
-    'pool-sized lots Las Vegas'
+    'pool-sized lots Las Vegas',
+    'Northwest Las Vegas new construction',
+    'luxury ranch homes Las Vegas',
+    'single story homes Las Vegas',
+    'new construction homes Northwest Las Vegas',
+    'Las Vegas homesites for sale',
+    'Homestead West lot map',
+    'new construction community map Las Vegas'
   ],
   openGraph: {
-    title: 'Community Map | Homestead West Las Vegas',
-    description: 'Explore Homestead West community map with available lots and homesites.',
+    title: 'Community Map | Homestead West Las Vegas | Available Lots & Homesites',
+    description: 'Explore Homestead West community map with available lots and homesites in Northwest Las Vegas. New construction homes from $910K.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/community-map',
   },
@@ -80,8 +87,13 @@ export default function CommunityMapPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-gray-900">Homestead West Community Layout</h2>
-                <p className="text-xl text-gray-700 mb-6">
-                  Explore the interactive map to see available lots, floor plan locations, and community amenities
+                <p className="text-xl text-gray-700 mb-4">
+                  Explore the interactive map to see available lots, floor plan locations, and community amenities in Northwest Las Vegas
+                </p>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  Located at 5592 N Dapple Gray Rd in Las Vegas, NV 89149, Homestead West offers luxury single-story ranch homes on pool-sized lots. 
+                  The community is strategically positioned with quick access to US 95 and CC 215, just 9 miles from Red Rock Canyon, 
+                  18 miles from downtown Las Vegas, and 23 miles from Mount Charleston.
                 </p>
               </div>
 
@@ -156,6 +168,70 @@ export default function CommunityMapPage() {
                   <p className="text-gray-700">
                     Understand the overall community design and proximity to amenities.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Location & Neighborhood Context */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Homestead West Location in Northwest Las Vegas</h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Prime Northwest Las Vegas Location</h3>
+                  <p className="text-gray-700 mb-4">
+                    Homestead West is located in the desirable Northwest Las Vegas area, known for its newer communities, 
+                    excellent schools, and proximity to outdoor recreation. The community offers easy access to major highways 
+                    while maintaining a peaceful residential atmosphere.
+                  </p>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 font-bold">•</span>
+                      <span><strong>9 miles</strong> to Red Rock Canyon National Conservation Area</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 font-bold">•</span>
+                      <span><strong>18 miles</strong> to Downtown Las Vegas and the Strip</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 font-bold">•</span>
+                      <span><strong>23 miles</strong> to Mount Charleston for skiing and hiking</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 font-bold">•</span>
+                      <span><strong>Quick access</strong> to US 95 and CC 215 freeways</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 p-6 rounded-lg">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Nearby Northwest Las Vegas Amenities</h3>
+                  <p className="text-gray-700 mb-4">
+                    The Homestead West community is surrounded by excellent schools, shopping centers, healthcare facilities, 
+                    and recreational opportunities that make Northwest Las Vegas a desirable place to live.
+                  </p>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <span className="text-green-600 mr-3 font-bold">•</span>
+                      <span>Top-rated schools including Dean LaMar Allen Elementary and Centennial High School</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-600 mr-3 font-bold">•</span>
+                      <span>Shopping at Centennial Hills and nearby retail centers</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-600 mr-3 font-bold">•</span>
+                      <span>Healthcare facilities including hospitals and medical centers</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-600 mr-3 font-bold">•</span>
+                      <span>Parks, trails, and outdoor recreation areas</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

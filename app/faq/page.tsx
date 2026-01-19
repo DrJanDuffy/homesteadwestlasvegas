@@ -23,53 +23,6 @@ export const metadata: Metadata = {
 };
 
 export default function FAQPage() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is a VIP New Construction Homes Specialist?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Dr. Jan Duffy is a VIP New Construction Homes Specialist who represents home buyers exclusively. As an independent real estate agent, she works for YOU, not the builder. Her expertise and builder relationships provide her clients with early access to new phases, priority lot selection, direct builder communication, and exclusive incentives not available to general buyers—all while advocating for your interests.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How long does the new construction process take?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The typical new construction timeline is 4-6 months from contract signing to closing. Pre-construction activities (pre-approval, floor plan selection, lot selection, contract signing, design center) take 2-4 weeks. Construction itself takes 4-6 months, followed by 1-2 weeks for final walkthrough and closing.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What are the advantages of buying new construction vs. resale?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'New construction offers modern floor plans, energy-efficient features, warranty coverage, customization options, and the latest building materials. You can choose your lot, floor plan, and finishes. New homes typically require less immediate maintenance and come with builder warranties.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Do I need a real estate agent for new construction?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes! While builders have sales representatives, they represent the builder\'s interests. A buyer\'s agent like Dr. Jan Duffy represents YOUR interests exclusively. As a VIP New Construction Homes Specialist, she provides additional advantages including early access, priority treatment, and expert negotiation—all while working exclusively for home buyers, not the builder.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What financing options are available for new construction?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The builder offers various financing options including conventional loans, FHA, VA, and USDA loans. Dr. Jan Duffy can connect you with the builder\'s preferred lenders who offer special rates and programs. Pre-approval is recommended before starting your home search.'
-        }
-      }
-    ]
-  };
-
   const faqs = [
     {
       category: 'VIP New Construction Homes Specialist',
@@ -157,6 +110,22 @@ export default function FAQPage() {
       ]
     }
   ];
+
+  // Generate FAQPage schema from all FAQ questions
+  const allQuestions = faqs.flatMap(category => category.questions);
+  
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allQuestions.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },

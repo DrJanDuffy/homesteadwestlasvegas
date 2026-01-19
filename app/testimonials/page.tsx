@@ -25,9 +25,20 @@ export const metadata: Metadata = {
 export default function TestimonialsPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Person',
+    '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy',
     description: 'VIP New Construction Specialist with excellent client reviews',
+    telephone: '+17022996607',
+    email: 'DrJanSells@HomesteadWestLasVegas.com',
+    jobTitle: 'VIP New Construction Specialist',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '5592 N Dapple Gray Rd',
+      addressLocality: 'Las Vegas',
+      addressRegion: 'NV',
+      postalCode: '89149',
+      addressCountry: 'US'
+    },
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',

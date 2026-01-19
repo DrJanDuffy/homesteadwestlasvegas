@@ -584,52 +584,6 @@ export default function RootLayout({
                       }
                     },
                     {
-                      '@type': 'FAQPage',
-                      '@id': 'https://www.homesteadwestlasvegas.com/#faq',
-                      mainEntity: [
-                        {
-                          '@type': 'Question',
-                          name: 'What are Homestead West home prices in 2026?',
-                          acceptedAnswer: {
-                            '@type': 'Answer',
-                            text: 'Homestead West by the builder starts at $910,990 for Plan 3336 (3,336 sq ft, 4-5 beds, 4.5 baths) and $940,990 for Plan 3704 (3,704 sq ft, 4 beds, 4.5 baths). Both are single-story luxury ranch homes on pool-sized lots with optional detached casitas.'
-                          }
-                        },
-                        {
-                          '@type': 'Question',
-                          name: 'Where is Homestead West located in Las Vegas?',
-                          acceptedAnswer: {
-                            '@type': 'Answer',
-                            text: 'Homestead West is located at 5592 N Dapple Gray Rd, Las Vegas, NV 89149, in Northwest Las Vegas. The community offers quick access to US 95 and CC 215, is 9 miles to Red Rock Canyon, 18 miles to downtown Las Vegas, and 23 miles to Mount Charleston.'
-                          }
-                        },
-                        {
-                          '@type': 'Question',
-                          name: 'Do I need a real estate agent to buy at Homestead West?',
-                          acceptedAnswer: {
-                            '@type': 'Answer',
-                            text: 'While not required, working with an independent real estate agent like Dr. Jan Duffy provides buyer representation, expert negotiation, and VIP access as a New Construction Homes Specialist—at no additional cost to buyers. Dr. Jan represents YOUR interests, not the builder\'s.'
-                          }
-                        },
-                        {
-                          '@type': 'Question',
-                          name: 'What floor plans are available at Homestead West?',
-                          acceptedAnswer: {
-                            '@type': 'Answer',
-                            text: 'Homestead West offers two single-story ranch home designs: Plan 3336 (3,336 sq ft, 4-5 beds, 4.5 baths, 3-5 car garage, from $910,990) and Plan 3704 (3,704 sq ft, 4 beds, 4.5 baths, 3-5 car garage, from $940,990). Both feature pool-sized lots with optional detached pool houses or casitas.'
-                          }
-                        },
-                        {
-                          '@type': 'Question',
-                          name: 'Who is the builder of Homestead West?',
-                          acceptedAnswer: {
-                            '@type': 'Answer',
-                            text: 'Homestead West is built by a New Construction Partnership, one of the nation\'s top 10 homebuilders. Known for quality construction, attractive pricing, and a streamlined online homebuying process.'
-                          }
-                        }
-                      ]
-                    },
-                    {
                       '@type': 'WebSite',
                       '@id': 'https://www.homesteadwestlasvegas.com/#website',
                       url: 'https://www.homesteadwestlasvegas.com',
