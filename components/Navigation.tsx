@@ -83,7 +83,7 @@ export default function Navigation() {
                   'min-h-[44px] flex items-center px-3'
                 )}
               >
-                View Homes
+                Find a Home
               </Link>
 
               {/* About - Build trust */}
