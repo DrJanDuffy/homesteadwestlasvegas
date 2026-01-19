@@ -42,7 +42,7 @@ export default function Navigation() {
   ];
 
   const mobileStandaloneLinks = [
-    { href: '/#available-homes', label: 'View Homes' },
+    { href: '/#available-homes', label: 'Find a Home' },
     { href: '/about', label: 'About Dr. Jan' },
     { href: '/contact', label: 'Contact' },
     { href: '/vip-buyer-program', label: 'VIP Program' },
