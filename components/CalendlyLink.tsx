@@ -55,7 +55,7 @@ export default function CalendlyLink() {
       onClick={handleClick}
       className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-75 will-change-[background-color]"
     >
-      Schedule time with Dr Jan Duffy
+      Have a Question? Talk to a New Construction Homes Specialist
     </a>
   );
 }
