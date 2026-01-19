@@ -51,7 +51,9 @@ export default function CommunityPage() {
     },
     containedInPlace: {
       '@type': 'City',
-      name: 'Las Vegas'
+      name: 'Las Vegas',
+      alternateName: 'Northwest Las Vegas',
+      '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
     },
     // AEO: Additional context for AI systems
     additionalProperty: [
@@ -76,12 +78,6 @@ export default function CommunityPage() {
         value: 'Pool-sized lots, optional detached casitas'
       }
     ],
-    containedInPlace: {
-      '@type': 'City',
-      name: 'Las Vegas',
-      alternateName: 'Northwest Las Vegas',
-      '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
-    },
     amenityFeature: [
       {
         '@type': 'LocationFeatureSpecification',
