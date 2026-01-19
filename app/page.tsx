@@ -4,8 +4,8 @@ import dynamic from 'next/dynamic';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
 
 // Lazy load RealScoutListings to reduce initial bundle size
+// Note: ssr: false removed for Server Component compatibility
 const RealScoutListings = dynamic(() => import('@/components/RealScoutListings'), {
-  ssr: false,
   loading: () => (
     <div className="flex items-center justify-center py-12">
       <div className="text-gray-600">Loading property listings...</div>

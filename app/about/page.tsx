@@ -507,7 +507,7 @@ export default function AboutPage() {
             </p>
           </div>
         </aside>
-      </div>
+      </article>
     </>
   );
 }
