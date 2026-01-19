@@ -1,0 +1,6 @@
+# Target modern browsers only - removes ~14 KiB of legacy JavaScript polyfills
+# Supports browsers with >0.5% usage and last 2 versions
+> 0.5%
+last 2 versions
+not dead
+not IE 11

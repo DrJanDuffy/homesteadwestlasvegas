@@ -184,6 +184,7 @@ export default function HomePage() {
                   ⭐ VIP Berkshire Hathaway HomeServices Buyer Program ⭐
                 </div>
               </div>
+              {/* LCP Element - Optimized for fast rendering (no blocking styles) */}
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K
               </h1>

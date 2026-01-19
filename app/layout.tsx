@@ -345,12 +345,10 @@ export default function RootLayout({
       return (
         <html lang="en">
           <head>
-            {/* Preconnect to external resources for faster loading */}
+            {/* Preconnect to external resources for faster loading - Prioritize fonts for LCP */}
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-            <link rel="preconnect" href="https://em.realscout.com" />
-            <link rel="preconnect" href="https://www.realscout.com" />
-            <link rel="preconnect" href="https://assets.calendly.com" />
+            {/* Defer non-critical preconnects */}
             <link rel="dns-prefetch" href="https://em.realscout.com" />
             <link rel="dns-prefetch" href="https://www.realscout.com" />
             <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

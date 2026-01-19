@@ -52,7 +52,6 @@ const nextConfig: NextConfig = {
   output: 'standalone',
   
   // Compiler optimizations
-  // Note: swcMinify is enabled by default in Next.js 15, no need to specify
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
