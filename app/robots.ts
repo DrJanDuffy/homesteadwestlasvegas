@@ -6,17 +6,32 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/'],
+        disallow: [
+          '/api/',
+          '/admin/',
+          '/_next/',
+          '/favicon.ico',
+        ],
       },
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/api/', '/admin/'],
+        disallow: [
+          '/api/',
+          '/admin/',
+          '/_next/',
+          '/favicon.ico',
+        ],
       },
       {
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/api/', '/admin/'],
+        disallow: [
+          '/api/',
+          '/admin/',
+          '/_next/',
+          '/favicon.ico',
+        ],
       },
     ],
     sitemap: 'https://www.homesteadwestlasvegas.com/sitemap.xml',
