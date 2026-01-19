@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, startTransition } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
@@ -30,13 +30,17 @@ export function Dropdown({ label, items, id }: DropdownProps) {
         buttonRef.current &&
         !buttonRef.current.contains(event.target as Node)
       ) {
-        setIsOpen(false);
+        // Use startTransition for non-urgent update
+        startTransition(() => {
+          setIsOpen(false);
+        });
       }
     }
 
     if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
+      // Use capture phase and passive for better performance
+      document.addEventListener('mousedown', handleClickOutside, { capture: true });
+      return () => document.removeEventListener('mousedown', handleClickOutside, { capture: true });
     }
   }, [isOpen]);
 
@@ -46,8 +50,13 @@ export function Dropdown({ label, items, id }: DropdownProps) {
       if (!isOpen) return;
 
       if (event.key === 'Escape') {
-        setIsOpen(false);
-        buttonRef.current?.focus();
+        startTransition(() => {
+          setIsOpen(false);
+        });
+        // Focus update can be deferred
+        requestAnimationFrame(() => {
+          buttonRef.current?.focus();
+        });
       }
     }
 
@@ -60,18 +69,32 @@ export function Dropdown({ label, items, id }: DropdownProps) {
   const handleMouseEnter = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
     }
-    setIsOpen(true);
+    // Use startTransition to mark as non-urgent update
+    startTransition(() => {
+      setIsOpen(true);
+    });
   };
 
   const handleMouseLeave = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    // Defer close to avoid blocking
     timeoutRef.current = setTimeout(() => {
-      setIsOpen(false);
+      startTransition(() => {
+        setIsOpen(false);
+      });
+      timeoutRef.current = null;
     }, 150); // 150ms delay prevents accidental close
   };
 
   const handleClick = () => {
-    setIsOpen((prev) => !prev);
+    // Use startTransition for non-urgent state update
+    startTransition(() => {
+      setIsOpen((prev) => !prev);
+    });
   };
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
@@ -92,11 +115,10 @@ export function Dropdown({ label, items, id }: DropdownProps) {
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
           'min-h-[44px] px-2' // Touch target
         )}
-        onClick={() => {
-          // Use requestAnimationFrame to avoid blocking UI
-          requestAnimationFrame(() => {
-            handleClick();
-          });
+        onClick={(e) => {
+          e.preventDefault();
+          // Direct call - startTransition is already in handleClick
+          handleClick();
         }}
         onKeyDown={handleKeyPress}
         onMouseEnter={handleMouseEnter}
@@ -155,7 +177,11 @@ export function Dropdown({ label, items, id }: DropdownProps) {
             )}
             role="menuitem"
             tabIndex={isOpen ? 0 : -1}
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              startTransition(() => {
+                setIsOpen(false);
+              });
+            }}
           >
             {item.label}
           </Link>

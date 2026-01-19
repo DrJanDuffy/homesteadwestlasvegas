@@ -42,10 +42,10 @@ export default function Navigation() {
   ];
 
   const mobileStandaloneLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/#available-homes', label: 'Available Homes' },
+    { href: '/#available-homes', label: 'View Homes' },
     { href: '/about', label: 'About Dr. Jan' },
     { href: '/contact', label: 'Contact' },
+    { href: '/vip-buyer-program', label: 'VIP Program' },
   ];
 
   return (
@@ -71,85 +71,53 @@ export default function Navigation() {
               </div>
             </a>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {/* Home */}
-              <Link
-                href="/"
-                className={cn(
-                  'text-gray-700 hover:text-[#1a365d] font-medium',
-                  'transition-colors duration-75 will-change-[color]',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
-                  'min-h-[44px] flex items-center px-2'
-                )}
-              >
-                Home
-              </Link>
-
-              {/* Available Homes */}
+            {/* Desktop Navigation - Simplified for conversions */}
+            <div className="hidden lg:flex items-center space-x-6">
+              {/* Available Homes - Primary action */}
               <Link
                 href="/#available-homes"
                 className={cn(
-                  'text-gray-700 hover:text-[#1a365d] font-medium',
+                  'text-[#1a365d] hover:text-[#d4af37] font-semibold',
                   'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
-                  'min-h-[44px] flex items-center px-2'
+                  'min-h-[44px] flex items-center px-3'
                 )}
               >
-                Available Homes
+                View Homes
               </Link>
 
-              {/* Community Dropdown */}
-              <Dropdown label="Community" items={communityItems} id="community" />
-
-              {/* Services Dropdown */}
-              <Dropdown label="Services" items={servicesItems} id="services" />
-
-              {/* Resources Dropdown */}
-              <Dropdown label="Resources" items={resourcesItems} id="resources" />
-
-              {/* About */}
+              {/* About - Build trust */}
               <Link
                 href="/about"
                 className={cn(
                   'text-gray-700 hover:text-[#1a365d] font-medium',
                   'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
-                  'min-h-[44px] flex items-center px-2'
+                  'min-h-[44px] flex items-center px-3'
                 )}
               >
-                About Dr. Jan
+                About
               </Link>
 
-              {/* Contact */}
-              <Link
-                href="/contact"
-                className={cn(
-                  'text-gray-700 hover:text-[#1a365d] font-medium',
-                  'transition-colors duration-75 will-change-[color]',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
-                  'min-h-[44px] flex items-center px-2'
-                )}
-              >
-                Contact
-              </Link>
+              {/* Resources Dropdown - Consolidated info */}
+              <Dropdown label="Info" items={resourcesItems} id="resources" />
 
-              {/* VIP New Construction Homes Specialist Badge */}
+              {/* VIP ACCESS - Prominent CTA */}
               <Link
                 href="/vip-buyer-program"
                 className={cn(
                   'bg-gradient-to-r from-[#d4af37] to-[#f4d03f] text-[#1a365d]',
-                  'px-4 py-2 rounded-full font-bold text-sm',
+                  'px-5 py-2.5 rounded-full font-bold text-sm',
                   'hover:from-[#f4d03f] hover:to-[#d4af37]',
                   'transition-[background] duration-75 will-change-[background] shadow-lg',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2',
-                  'min-h-[44px] flex items-center'
+                  'min-h-[44px] flex items-center whitespace-nowrap'
                 )}
               >
                 ⭐ VIP ACCESS
               </Link>
 
-              {/* Calendly link widget */}
+              {/* Calendly link widget - Primary CTA */}
               <CalendlyLink />
             </div>
 
