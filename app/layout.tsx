@@ -417,7 +417,7 @@ export default function RootLayout({
 
             {/* Removed duplicate RealEstateAgent schema - consolidated in @graph */}
 
-            {/* Structured Data - @graph (RealEstateAgent, LocalBusiness, FAQPage, WebSite) */}
+            {/* Structured Data - @graph (RealEstateAgent, LocalBusiness, Organization, WebSite, SiteNavigationElement) */}
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
