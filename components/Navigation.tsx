@@ -78,7 +78,7 @@ export default function Navigation() {
                 href="/"
                 className={cn(
                   'text-gray-700 hover:text-[#1a365d] font-medium',
-                  'transition-colors duration-150',
+                  'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
@@ -91,7 +91,7 @@ export default function Navigation() {
                 href="/#available-homes"
                 className={cn(
                   'text-gray-700 hover:text-[#1a365d] font-medium',
-                  'transition-colors duration-150',
+                  'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
@@ -113,7 +113,7 @@ export default function Navigation() {
                 href="/about"
                 className={cn(
                   'text-gray-700 hover:text-[#1a365d] font-medium',
-                  'transition-colors duration-150',
+                  'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
@@ -126,7 +126,7 @@ export default function Navigation() {
                 href="/contact"
                 className={cn(
                   'text-gray-700 hover:text-[#1a365d] font-medium',
-                  'transition-colors duration-150',
+                  'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] flex items-center px-2'
                 )}
@@ -141,8 +141,7 @@ export default function Navigation() {
                   'bg-gradient-to-r from-[#d4af37] to-[#f4d03f] text-[#1a365d]',
                   'px-4 py-2 rounded-full font-bold text-sm',
                   'hover:from-[#f4d03f] hover:to-[#d4af37]',
-                  'hover:scale-[1.02] active:scale-[0.98]',
-                  'transition-all duration-150 shadow-lg',
+                  'transition-[background] duration-75 will-change-[background] shadow-lg',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2',
                   'min-h-[44px] flex items-center'
                 )}
@@ -157,10 +156,15 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
               <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                onClick={() => {
+                  // Use requestAnimationFrame to avoid blocking UI
+                  requestAnimationFrame(() => {
+                    setMobileMenuOpen(!mobileMenuOpen);
+                  });
+                }}
                 className={cn(
                   'text-gray-700 hover:text-[#1a365d]',
-                  'transition-colors duration-150',
+                  'transition-colors duration-75 will-change-[color]',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                   'min-h-[44px] min-w-[44px] flex items-center justify-center',
                   mobileMenuOpen && 'text-[#1a365d]'

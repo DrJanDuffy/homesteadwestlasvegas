@@ -6,18 +6,24 @@ export default function SearchWidgetScript() {
   const handlerRef = useRef<((event: MouseEvent) => void) | null>(null);
 
   const handleClick = useCallback((event: MouseEvent) => {
+    // Optimized: Cache DOM queries and minimize work
     const searchText = (document.getElementById('SearchTextWidget') as HTMLInputElement)?.value;
     const errorElement = document.querySelector('#WidgetSearchValidationError') as HTMLElement;
     
     if (!searchText || searchText.trim() === '') {
       if (errorElement) {
-        errorElement.style.display = 'block';
+        // Use requestAnimationFrame for non-critical DOM updates
+        requestAnimationFrame(() => {
+          errorElement.style.display = 'block';
+        });
       }
       event.preventDefault();
       event.stopPropagation();
     } else {
       if (errorElement) {
-        errorElement.style.display = 'none';
+        requestAnimationFrame(() => {
+          errorElement.style.display = 'none';
+        });
       }
     }
   }, []);

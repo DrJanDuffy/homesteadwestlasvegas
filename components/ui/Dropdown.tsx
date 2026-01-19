@@ -86,12 +86,18 @@ export function Dropdown({ label, items, id }: DropdownProps) {
       <button
         ref={buttonRef}
         className={cn(
-          'text-gray-700 hover:text-blue-600 font-medium transition-colors',
+          'text-gray-700 hover:text-blue-600 font-medium',
+          'transition-colors duration-75 will-change-[color]',
           'flex items-center gap-1',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded',
           'min-h-[44px] px-2' // Touch target
         )}
-        onClick={handleClick}
+        onClick={() => {
+          // Use requestAnimationFrame to avoid blocking UI
+          requestAnimationFrame(() => {
+            handleClick();
+          });
+        }}
         onKeyDown={handleKeyPress}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -102,7 +108,7 @@ export function Dropdown({ label, items, id }: DropdownProps) {
         {label}
         <svg
           className={cn(
-            'w-4 h-4 transition-transform duration-200',
+            'w-4 h-4 transition-transform duration-150 will-change-transform',
             isOpen && 'rotate-180'
           )}
           fill="none"
@@ -125,7 +131,7 @@ export function Dropdown({ label, items, id }: DropdownProps) {
           'absolute top-full left-0 mt-2',
           'bg-white rounded-lg shadow-lg border border-gray-100',
           'min-w-[200px] py-2',
-          'transition-all duration-200 ease-out',
+          'transition-[opacity,transform] duration-150 ease-out will-change-[opacity,transform]',
           'z-50',
           isOpen
             ? 'opacity-100 visible translate-y-0'
@@ -143,7 +149,7 @@ export function Dropdown({ label, items, id }: DropdownProps) {
             className={cn(
               'block px-4 py-3 text-gray-700',
               'hover:bg-blue-50 hover:text-blue-700',
-              'transition-colors duration-150',
+              'transition-colors duration-75 will-change-[background-color,color]',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset',
               'min-h-[44px] flex items-center' // Touch target
             )}
