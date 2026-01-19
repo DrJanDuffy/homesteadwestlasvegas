@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Script from 'next/script';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -104,128 +105,10 @@ export default function AppointmentPage() {
               </div>
               
               <div className="bg-gray-50 p-8 rounded-lg">
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                      Service Needed *
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    >
-                      <option value="">Select a service</option>
-                      <option value="buying">Buying a Home</option>
-                      <option value="selling">Selling a Home</option>
-                      <option value="investment">Real Estate Investment</option>
-                      <option value="property-management">Property Management</option>
-                      <option value="consultation">General Consultation</option>
-                    </select>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="preferred-date" className="block text-sm font-medium text-gray-700 mb-2">
-                      Preferred Date
-                    </label>
-                    <input
-                      type="date"
-                      id="preferred-date"
-                      name="preferred-date"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="preferred-time" className="block text-sm font-medium text-gray-700 mb-2">
-                      Preferred Time
-                    </label>
-                    <select
-                      id="preferred-time"
-                      name="preferred-time"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    >
-                      <option value="">Select preferred time</option>
-                      <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
-                      <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
-                      <option value="evening">Evening (5:00 PM - 7:00 PM)</option>
-                    </select>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="consultation-type" className="block text-sm font-medium text-gray-700 mb-2">
-                      Consultation Type
-                    </label>
-                    <select
-                      id="consultation-type"
-                      name="consultation-type"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    >
-                      <option value="in-person">In-Person (Office)</option>
-                      <option value="phone">Phone Call</option>
-                      <option value="video">Video Call</option>
-                    </select>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Additional Information
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="Tell us about your real estate goals..."
-                    ></textarea>
-                  </div>
-                  
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    Schedule Appointment
-                  </button>
-                </form>
+                {/* Calendly inline widget begin */}
+                <div className="calendly-inline-widget" data-url="https://calendly.com/drjanduffy" style={{minWidth:'320px',height:'700px'}}></div>
+                <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+                {/* Calendly inline widget end */}
               </div>
             </div>
           </div>

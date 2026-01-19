@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Dropdown } from '@/components/ui/Dropdown';
 import { MobileMenu } from '@/components/MobileMenu';
+import CalendlyLink from '@/components/CalendlyLink';
 import { cn } from '@/lib/utils';
 
 export default function Navigation() {
@@ -164,6 +165,9 @@ export default function Navigation() {
               >
                 ⭐ VIP ACCESS
               </Link>
+
+              {/* Calendly link widget */}
+              <CalendlyLink />
             </div>
 
             {/* Mobile Menu Button */}

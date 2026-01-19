@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import CalendlyLink from '@/components/CalendlyLink';
 import { cn } from '@/lib/utils';
 
 interface MenuItem {
@@ -125,6 +126,11 @@ export function MobileMenu({ isOpen, onClose, sections, standaloneLinks }: Mobil
           >
             ⭐ VIP ACCESS
           </Link>
+
+          {/* Calendly link widget */}
+          <div className="mx-4 mb-4">
+            <CalendlyLink />
+          </div>
 
           {/* Accordion Sections */}
           {sections?.map((section) => {

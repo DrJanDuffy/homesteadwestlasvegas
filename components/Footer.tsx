@@ -1,3 +1,5 @@
+import CalendlyLink from '@/components/CalendlyLink';
+
 export default function Footer() {
   return (
     <footer className="bg-[#1a365d] text-gray-200 py-12">
@@ -38,12 +40,16 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-4">
               <li><a href="/about" className="hover:text-yellow-400 transition-colors">About Dr. Jan</a></li>
               <li><a href="/vip-buyer-program" className="hover:text-yellow-400 transition-colors">VIP Buyer Program</a></li>
               <li><a href="/testimonials" className="hover:text-yellow-400 transition-colors">Testimonials</a></li>
               <li><a href="/contact" className="hover:text-yellow-400 transition-colors">Contact</a></li>
             </ul>
+            {/* Calendly link widget */}
+            <div className="mt-4">
+              <CalendlyLink />
+            </div>
           </div>
         </div>
         

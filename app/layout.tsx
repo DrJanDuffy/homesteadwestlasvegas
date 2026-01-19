@@ -772,6 +772,27 @@ export default function RootLayout({
                 `
               }}
             />
+
+            {/* Calendly badge widget begin */}
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <script
+              type="text/javascript"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.onload = function() { 
+                    Calendly.initBadgeWidget({ 
+                      url: 'https://calendly.com/drjanduffy', 
+                      text: 'Schedule time with Dr. Jan Duffy Today', 
+                      color: '#0069ff', 
+                      textColor: '#ffffff', 
+                      branding: true 
+                    }); 
+                  }
+                `,
+              }}
+            />
+            {/* Calendly badge widget end */}
           </head>
           <body className={inter.className}>
             <Navigation />
