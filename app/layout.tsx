@@ -827,7 +827,7 @@ export default function RootLayout({
                     if (window.Calendly) {
                       Calendly.initBadgeWidget({ 
                         url: 'https://calendly.com/drjanduffy', 
-                        text: 'Schedule time with Dr. Jan Duffy Today', 
+                        text: 'Have a Question? Talk to a New Construction Homes Specialist', 
                         color: '#0069ff', 
                         textColor: '#ffffff', 
                         branding: true 
