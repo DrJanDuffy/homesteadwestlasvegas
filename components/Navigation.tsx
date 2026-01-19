@@ -58,7 +58,7 @@ export default function Navigation() {
               href="tel:7022996607"
               className={cn(
                 'flex items-center space-x-3',
-                'hover:opacity-80 transition-opacity duration-150',
+                'hover:opacity-80 transition-opacity duration-75 will-change-opacity',
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 rounded',
                 'min-h-[44px]'
               )}

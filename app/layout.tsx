@@ -386,14 +386,22 @@ export default function RootLayout({
                     // Load on user interaction (more efficient than on load)
                     // Only load GA after significant user engagement to reduce unused JS
                     var interactionCount = 0;
-                    ['mousedown', 'touchstart', 'keydown', 'scroll'].forEach(function(event) {
-                      window.addEventListener(event, function() {
-                        interactionCount++;
-                        // Only load after 3+ interactions or scroll depth > 50%
-                        if (!window.gtagLoaded && (interactionCount >= 3 || (event === 'scroll' && (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) > 0.5))) {
+                    var interactionHandler = function(event) {
+                      interactionCount++;
+                      // Only load after 3+ interactions or scroll depth > 50%
+                      if (!window.gtagLoaded && (interactionCount >= 3 || (event === 'scroll' && (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) > 0.5))) {
+                        // Defer GA loading to avoid blocking
+                        requestAnimationFrame(function() {
                           loadGA();
-                        }
-                      }, { once: false, passive: true });
+                        });
+                        // Remove listeners after loading
+                        ['mousedown', 'touchstart', 'keydown', 'scroll'].forEach(function(evt) {
+                          window.removeEventListener(evt, interactionHandler, { passive: true });
+                        });
+                      }
+                    };
+                    ['mousedown', 'touchstart', 'keydown', 'scroll'].forEach(function(event) {
+                      window.addEventListener(event, interactionHandler, { once: false, passive: true });
                     });
                     
                     // Fallback: load after page is idle for 5 seconds (increased from 2s)
