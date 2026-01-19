@@ -4,15 +4,14 @@ import type { NextRequest } from 'next/server';
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get('host') || '';
+  const needsRedirect = 
+    hostname === 'homesteadwestlasvegas.com' || // non-www
+    url.protocol === 'http:'; // HTTP
 
-  // Redirect non-www to www
-  if (hostname === 'homesteadwestlasvegas.com') {
+  // If redirect needed, combine both redirects into one
+  if (needsRedirect) {
+    // Always redirect to canonical: https://www.homesteadwestlasvegas.com
     url.hostname = 'www.homesteadwestlasvegas.com';
-    return NextResponse.redirect(url, 301);
-  }
-
-  // Redirect http to https
-  if (url.protocol === 'http:') {
     url.protocol = 'https:';
     return NextResponse.redirect(url, 301);
   }
