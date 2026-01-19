@@ -318,8 +318,8 @@ export default function ServicesPage() {
                   📅 Schedule Consultation
                 </a>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8">
-                <p className="text-lg font-semibold mb-2">Dr. Jan Duffy - VIP New Construction Homes Specialist</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8 text-white">
+                <p className="text-lg font-semibold mb-2 text-white">Dr. Jan Duffy - VIP New Construction Homes Specialist</p>
                 <p className="text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
                 <p className="text-blue-200 mt-1">DrJanSells@HomesteadWestLasVegas.com</p>
               </div>

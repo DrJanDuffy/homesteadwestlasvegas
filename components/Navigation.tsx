@@ -65,7 +65,7 @@ export default function Navigation() {
             >
               <div className="text-2xl font-bold">
                 <span className="text-[#1a365d]">Homestead</span>
-                <span className="text-[#b8941f]"> West</span>
+                <span className="text-[#8b6f1a]"> West</span>
               </div>
             </Link>
 
@@ -82,7 +82,7 @@ export default function Navigation() {
               <div className="w-10 h-10 bg-[#1a365d] rounded-lg flex items-center justify-center">
                 <span className="text-white text-xl">📞</span>
               </div>
-              <div className="text-xl font-bold text-[#1a365d]">
+              <div className="text-xl font-bold text-gray-900">
                 (702) 299-6607
               </div>
             </a>

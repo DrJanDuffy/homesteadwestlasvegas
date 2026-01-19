@@ -108,7 +108,7 @@ export default function ContactPage() {
                     />
                   </div>
                 </div>
-                <h2 className="text-3xl font-bold mb-4">Get In Touch About Homestead West</h2>
+                <h2 className="text-3xl font-bold mb-4 text-gray-900">Get In Touch About Homestead West</h2>
                 <div className="mb-6">
                   <a
                     href="https://share.google/nB0T4SaU9gr8wLSdB"
@@ -131,8 +131,8 @@ export default function ContactPage() {
                       <span className="text-white text-xl">📞</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Homestead West Phone</h3>
-                      <p className="text-lg">
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Phone</h3>
+                      <p className="text-lg text-gray-900">
                         <a href="tel:7022996607" className="text-blue-600 hover:text-blue-800 font-semibold">
                           (702) 299-6607
                         </a>
@@ -154,8 +154,8 @@ export default function ContactPage() {
                       <span className="text-white text-xl">✉️</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Homestead West Email</h3>
-                      <p className="text-lg">
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Email</h3>
+                      <p className="text-lg text-gray-900">
                         <a href="mailto:DrJanSells@HomesteadWestLasVegas.com" className="text-blue-600 hover:text-blue-800 font-semibold break-all">
                           DrJanSells@HomesteadWestLasVegas.com
                         </a>
@@ -177,9 +177,9 @@ export default function ContactPage() {
                       <span className="text-white text-xl">📍</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Homestead West Office Address</h3>
-                      <p className="text-lg mb-1">5592 N Dapple Gray Rd</p>
-                      <p className="text-lg mb-2">Las Vegas, NV 89149</p>
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Office Address</h3>
+                      <p className="text-lg mb-1 text-gray-900">5592 N Dapple Gray Rd</p>
+                      <p className="text-lg mb-2 text-gray-900">Las Vegas, NV 89149</p>
                       <p className="text-gray-700">By appointment only for Homestead West</p>
                       <a
                         href="https://share.google/nB0T4SaU9gr8wLSdB"
@@ -202,19 +202,19 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Homestead West Office Hours</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-900">Homestead West Office Hours</h2>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="font-medium">Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM</span>
+                    <span className="font-medium text-gray-900">Monday - Friday</span>
+                    <span className="text-gray-700">9:00 AM - 6:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="font-medium">Saturday</span>
-                    <span>10:00 AM - 4:00 PM</span>
+                    <span className="font-medium text-gray-900">Saturday</span>
+                    <span className="text-gray-700">10:00 AM - 4:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="font-medium">Sunday</span>
-                    <span>Closed</span>
+                    <span className="font-medium text-gray-900">Sunday</span>
+                    <span className="text-gray-700">Closed</span>
                   </div>
                 </div>
                 <p className="mt-6 text-gray-800">
@@ -224,7 +224,7 @@ export default function ContactPage() {
               </div>
               
               <div>
-                <h2 className="text-3xl font-bold mb-6">Find Our Office</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-900">Find Our Office</h2>
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-6">
                   <iframe
                     src="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
@@ -298,9 +298,9 @@ export default function ContactPage() {
         {/* License Information */}
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Licensed Real Estate Professional</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Licensed Real Estate Professional</h2>
             <div className="bg-blue-50 p-8 rounded-lg max-w-2xl mx-auto">
-              <p className="text-lg mb-4">
+              <p className="text-lg mb-4 text-gray-900">
                 <strong>Dr. Jan Duffy</strong> is a licensed real estate agent in Nevada
               </p>
               <p className="text-xl font-semibold text-blue-600 mb-4">

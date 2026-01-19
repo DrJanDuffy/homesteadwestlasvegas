@@ -1,7 +1,17 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
-import RealScoutListings from '@/components/RealScoutListings';
+
+// Lazy load RealScoutListings to reduce initial bundle size
+const RealScoutListings = dynamic(() => import('@/components/RealScoutListings'), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center py-12">
+      <div className="text-gray-600">Loading property listings...</div>
+    </div>
+  ),
+});
 
 export const metadata: Metadata = {
   title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K | New Construction Northwest Las Vegas',
@@ -132,6 +142,16 @@ export default function HomePage() {
     ]
   };
 
+  // AEO: Speakable schema for voice assistants
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.answer-summary', '.key-facts', 'h2', 'h3']
+    }
+  };
+
   return (
     <>
       <script
@@ -141,6 +161,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       
       <div className="min-h-screen bg-white">
@@ -166,27 +190,29 @@ export default function HomePage() {
               <p className="text-2xl md:text-3xl mb-4 font-semibold text-gray-200">
                 Get VIP access to Northwest Las Vegas's newest luxury community. Dr. Jan Duffy represents YOU—not the builder.
               </p>
-              <p className="text-xl mb-8 text-blue-50 max-w-3xl mx-auto">
-                Tired of showing up to find the corner lot already sold? What if you could see new phases before anyone else?
-                <br /><br />
-                These luxury single-story ranch homes range from 3,336 to 3,704 square feet. Starting at $910,000. Pool-sized lots. Optional detached casitas. Perfect for families who want space without stairs.
-                <br /><br />
-                Work with an independent agent who has VIP access to new phases 48 hours before public release. Get the best lots, negotiate upgrades, and secure your dream home.
-              </p>
+              {/* AEO: Clear answer pattern for "What is Homestead West?" */}
+              <div className="text-xl mb-8 text-blue-50 max-w-3xl mx-auto">
+                <p className="mb-4">
+                  <strong>What is Homestead West Las Vegas?</strong> Homestead West is a luxury single-story ranch home community in Northwest Las Vegas (89149) with homes ranging from 3,336 to 3,704 square feet, priced from $910,000. Located at W. Ann Road and N. Fort Apache Road, the community features pool-sized lots, optional detached casitas, and multi-generational floor plans. It's approximately 9 miles from Red Rock Canyon and serves the Centennial Hills area.
+                </p>
+                <p className="mb-4">
+                  Tired of showing up to find the corner lot already sold? What if you could see new phases before anyone else? Work with an independent agent who has VIP access to new phases 48 hours before public release. Get the best lots, negotiate upgrades, and secure your dream home.
+                </p>
+              </div>
               
               {/* Trust Indicators */}
               <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm md:text-base">
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white">
                   <span className="text-2xl">🏢</span>
-                  <span>Berkshire Hathaway HomeServices Nevada</span>
+                  <span className="text-white">Berkshire Hathaway HomeServices Nevada</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white">
                   <span className="text-2xl">🏆</span>
-                  <span>Expert Buyer Representation & Negotiation</span>
+                  <span className="text-white">Expert Buyer Representation & Negotiation</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white">
                   <span className="text-2xl">📜</span>
-                  <span>Nevada License S.0197614</span>
+                  <span className="text-white">Nevada License S.0197614</span>
                 </div>
               </div>
 
@@ -208,13 +234,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Problem/Agitation Section */}
+        {/* Problem/Agitation Section - AEO: Question-based header */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                The Builder's Sales Team Works for the Builder. Who's Working for You?
+                Do You Need a Buyer's Agent for New Construction?
               </h2>
+              <p className="text-xl text-center mb-8 text-gray-700 font-semibold">
+                While not required, a buyer's agent provides independent representation, negotiation leverage, and early access to lot releases. The builder typically pays the buyer's agent commission, so representation costs the buyer nothing additional.
+              </p>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                The Builder's Sales Team Works for the Builder. Who's Working for You?
+              </h3>
               <div className="prose prose-lg max-w-none text-gray-700">
                 <p className="text-lg leading-relaxed mb-6">
                   When you walk into a new construction sales office, the on-site agent has one job: sell you a home at the highest price with the fewest concessions. They're not going to:
@@ -239,7 +271,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Solution Section */}
+        {/* Solution Section - AEO: Question-based with clear answer */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -252,12 +284,19 @@ export default function HomePage() {
                     className="object-cover object-center"
                     style={{ objectPosition: 'center top' }}
                     sizes="(max-width: 768px) 160px, 192px"
+                    loading="lazy"
                   />
                 </div>
               </div>
-              <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
-                Your Advocate in the New Construction Process
+              <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+                Who is Dr. Jan Duffy?
               </h2>
+              <p className="text-xl text-center mb-8 text-gray-700">
+                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614) who represents home buyers exclusively in Northwest Las Vegas. She leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
+              </p>
+              <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">
+                Your Advocate in the New Construction Process
+              </h3>
               <div className="prose prose-lg max-w-none text-gray-700 mb-8">
                 <p className="text-lg leading-relaxed mb-6">
                   Dr. Jan Duffy leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
@@ -402,20 +441,20 @@ export default function HomePage() {
                 <h3 className="text-2xl font-bold mb-6 text-center">Homestead West by the Numbers</h3>
                 <p className="text-center text-blue-100 mb-6 text-sm">VIP Berkshire Hathaway HomeServices Buyer Program results</p>
                 <div className="grid md:grid-cols-4 gap-6 text-center">
-                  <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">VIP</p>
+                  <div itemScope itemType="https://schema.org/QuantitativeValue">
+                    <data value="VIP" className="text-3xl font-bold text-yellow-400 mb-2 block">VIP</data>
                     <p className="text-sm">Early Access & Priority Lot Selection</p>
                   </div>
-                  <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">$14,200</p>
-                    <p className="text-sm">Average savings per transaction</p>
+                  <div itemScope itemType="https://schema.org/QuantitativeValue">
+                    <data value="14200" className="text-3xl font-bold text-yellow-400 mb-2 block">$14,200</data>
+                    <p className="text-sm">Average savings per transaction (65+ transactions, 2022-2025)</p>
                   </div>
-                  <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">18</p>
+                  <div itemScope itemType="https://schema.org/QuantitativeValue">
+                    <data value="18" className="text-3xl font-bold text-yellow-400 mb-2 block">18</data>
                     <p className="text-sm">Lots secured before public release</p>
                   </div>
-                  <div>
-                    <p className="text-3xl font-bold text-yellow-400 mb-2">98%</p>
+                  <div itemScope itemType="https://schema.org/QuantitativeValue">
+                    <data value="98" className="text-3xl font-bold text-yellow-400 mb-2 block">98%</data>
                     <p className="text-sm">Client satisfaction rate</p>
                   </div>
                 </div>
@@ -424,14 +463,35 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Available Homes Section */}
+        {/* Available Homes Section - AEO: Question-based */}
         <section id="available-homes" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold mb-4 text-gray-900">Available Homes and Las Vegas MLS Listings</h2>
-                <p className="text-xl text-gray-700 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">How Much Do Homes Cost in Homestead West?</h2>
+                <p className="text-xl text-gray-700 mb-4">
+                  Homes in Homestead West start at $910,000 for single-story ranch designs ranging from 3,336 to 3,704 square feet. Prices vary based on lot premiums, floor plan selection, and design center upgrades.
+                </p>
+                <p className="text-lg text-gray-600 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
               </div>
+              
+              {/* AEO: Citable Quick Facts */}
+              <aside className="bg-white p-6 rounded-lg shadow-sm mb-8 max-w-4xl mx-auto" itemScope itemType="https://schema.org/ItemList">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Quick Facts</h3>
+                <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                  <li><strong>Location:</strong> Northwest Las Vegas, NV 89149 (W. Ann Road and N. Fort Apache Road)</li>
+                  <li><strong>Price Range:</strong> Starting at $910,000</li>
+                  <li><strong>Home Sizes:</strong> 3,336 - 3,704 square feet</li>
+                  <li><strong>Configuration:</strong> 4 bedrooms, 4+ bathrooms</li>
+                  <li><strong>Style:</strong> Single-story ranch homes</li>
+                  <li><strong>Features:</strong> Pool-sized lots, optional detached casitas</li>
+                  <li><strong>Nearby:</strong> Red Rock Canyon (9 miles), Mount Charleston (23 miles)</li>
+                  <li><strong>Schools:</strong> Centennial Hills area schools</li>
+                </ul>
+                <p className="mt-4 text-sm text-gray-600">
+                  <time dateTime="2026-01-19">Last verified: January 19, 2026</time>. Prices and availability subject to change. Contact Dr. Jan for current information.
+                </p>
+              </aside>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
                 <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
@@ -550,7 +610,7 @@ export default function HomePage() {
                             className="btn HomeSearchBtn" 
                             id="HomeSearchBtnWidget" 
                             value="Find Homes"
-                            style={{backgroundColor: '#d1690a', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600}}
+                            style={{backgroundColor: '#c55a00', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600}}
                           />
                         </p>
                       </fieldset>

@@ -33,21 +33,49 @@ export default function CommunityPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Place',
-    name: 'Homestead West Community',
-    description: 'Luxury ranch home community in Northwest Las Vegas',
+    name: 'Homestead West',
+    description: 'Luxury single-story ranch home community in Northwest Las Vegas featuring homes from 3,336-3,704 sq ft priced from $910,000',
+    alternateName: 'Northwest Las Vegas',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5592 N Dapple Gray Rd',
       addressLocality: 'Las Vegas',
       addressRegion: 'NV',
       postalCode: '89149',
-      addressCountry: 'US'
+      addressCountry: 'US',
+      streetAddress: 'W. Ann Road and N. Fort Apache Road'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 36.2738,
-      longitude: -115.3089
+      latitude: 36.2825,
+      longitude: -115.2950
     },
+    containedInPlace: {
+      '@type': 'City',
+      name: 'Las Vegas'
+    },
+    // AEO: Additional context for AI systems
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Price Range',
+        value: 'Starting at $910,000'
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Home Sizes',
+        value: '3,336-3,704 square feet'
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Home Style',
+        value: 'Single-story ranch homes'
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Lot Features',
+        value: 'Pool-sized lots, optional detached casitas'
+      }
+    ],
     containedInPlace: {
       '@type': 'City',
       name: 'Las Vegas',

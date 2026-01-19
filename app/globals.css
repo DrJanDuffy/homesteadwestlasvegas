@@ -106,7 +106,7 @@ body {
 }
 
 #pro-search-box-widget #HomeSearchBtnWidget {
-  background-color: #d1690a;
+  background-color: #c55a00;
   color: white;
   border: none;
   padding: 14px 20px;
@@ -117,7 +117,7 @@ body {
 }
 
 #pro-search-box-widget #HomeSearchBtnWidget:hover {
-  background-color: #b85808;
+  background-color: #a84d00;
 }
 
 #pro-search-box-widget #home-search-options {

@@ -83,6 +83,36 @@ export default function VIPBuyerProgramPage() {
     }
   };
 
+  // AEO: Service schema for VIP Buyer Program
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'New Construction Buyer Representation',
+    name: 'VIP Berkshire Hathaway HomeServices Buyer Program',
+    provider: {
+      '@type': 'RealEstateAgent',
+      name: 'Dr. Jan Duffy',
+      telephone: '+17022996607',
+      email: 'DrJanSells@HomesteadWestLasVegas.com'
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Las Vegas'
+    },
+    description: 'VIP buyer representation program providing early lot access, builder negotiation, and market intelligence for new construction home purchases. Average savings of $14,200 per transaction based on 65+ transactions (2022-2025).',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: 'No cost to buyer - builder pays commission'
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '65'
+    }
+  };
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
     { name: 'VIP Buyer Program', url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program' }
@@ -93,6 +123,10 @@ export default function VIPBuyerProgramPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"
@@ -444,17 +478,17 @@ export default function VIPBuyerProgramPage() {
                 </a>
               </div>
 
-              <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
-                <h4 className="text-2xl font-bold mb-4">Dr. Jan Duffy - VIP New Construction Specialist</h4>
+              <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm text-white">
+                <h4 className="text-2xl font-bold mb-4 text-white">Dr. Jan Duffy - VIP New Construction Specialist</h4>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
-                    <p className="mb-2"><span className="font-semibold">Phone:</span> (702) 299-6607</p>
-                    <p className="mb-2"><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
-                    <p className="mb-2"><span className="font-semibold">License:</span> Nevada S.0197614</p>
+                    <p className="mb-2 text-white"><span className="font-semibold">Phone:</span> (702) 299-6607</p>
+                    <p className="mb-2 text-white"><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
+                    <p className="mb-2 text-white"><span className="font-semibold">License:</span> Nevada S.0197614</p>
                   </div>
                   <div>
-                    <p className="mb-2"><span className="font-semibold">Office:</span> Builder Sales Office</p>
-                    <p className="mb-2"><span className="font-semibold">Specialty:</span> VIP New Construction Homes Specialist</p>
+                    <p className="mb-2 text-white"><span className="font-semibold">Office:</span> Builder Sales Office</p>
+                    <p className="mb-2 text-white"><span className="font-semibold">Specialty:</span> VIP New Construction Homes Specialist</p>
                   </div>
                 </div>
                 <p className="mt-6 text-sm text-blue-200">

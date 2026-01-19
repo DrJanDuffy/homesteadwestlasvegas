@@ -8,6 +8,8 @@ const inter = Inter({
   subsets: ["latin"],
   display: 'swap', // Better font loading performance
   preload: true,
+  fallback: ['Arial', 'Helvetica', 'sans-serif'], // Fallback fonts
+  adjustFontFallback: true, // Better fallback rendering
 });
 
 export const metadata: Metadata = {
@@ -98,6 +100,14 @@ export const metadata: Metadata = {
     'geo.placename': 'Las Vegas',
     'geo.position': '36.2738;-115.3089',
     'ICBM': '36.2738, -115.3089',
+    // AEO: AI-friendly meta tags
+    'subject': 'Homestead West new construction homes Las Vegas',
+    'topic': 'Real Estate, New Construction, Las Vegas',
+    'coverage': 'Las Vegas, Nevada, Northwest Las Vegas, 89149',
+    'classification': 'Real Estate Listing Service',
+    'category': 'Real Estate > Residential > New Construction',
+    'revised': '2026-01-19',
+    'date': '2026-01-19',
   },
 };
 
@@ -340,9 +350,11 @@ export default function RootLayout({
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             <link rel="preconnect" href="https://em.realscout.com" />
             <link rel="preconnect" href="https://www.realscout.com" />
+            <link rel="preconnect" href="https://assets.calendly.com" />
             <link rel="dns-prefetch" href="https://em.realscout.com" />
             <link rel="dns-prefetch" href="https://www.realscout.com" />
             <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+            <link rel="dns-prefetch" href="https://assets.calendly.com" />
             {/* Google Analytics - Deferred and optimized to reduce unused JS */}
             <script
               dangerouslySetInnerHTML={{
@@ -374,25 +386,33 @@ export default function RootLayout({
                     }
                     
                     // Load on user interaction (more efficient than on load)
+                    // Only load GA after significant user engagement to reduce unused JS
+                    var interactionCount = 0;
                     ['mousedown', 'touchstart', 'keydown', 'scroll'].forEach(function(event) {
                       window.addEventListener(event, function() {
-                        if (!window.gtagLoaded) {
+                        interactionCount++;
+                        // Only load after 3+ interactions or scroll depth > 50%
+                        if (!window.gtagLoaded && (interactionCount >= 3 || (event === 'scroll' && (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) > 0.5))) {
                           loadGA();
                         }
-                      }, { once: true, passive: true });
+                      }, { once: false, passive: true });
                     });
                     
-                    // Fallback: load after page is idle for 2 seconds
+                    // Fallback: load after page is idle for 5 seconds (increased from 2s)
                     if ('requestIdleCallback' in window) {
                       requestIdleCallback(function() {
-                        setTimeout(loadGA, 2000);
-                      }, { timeout: 3000 });
+                        setTimeout(function() {
+                          if (!window.gtagLoaded && document.readyState === 'complete') {
+                            loadGA();
+                          }
+                        }, 5000);
+                      }, { timeout: 6000 });
                     } else {
                       setTimeout(function() {
                         if (document.readyState === 'complete' && !window.gtagLoaded) {
                           loadGA();
                         }
-                      }, 2000);
+                      }, 5000);
                     }
                   })();
                 `,
@@ -773,22 +793,41 @@ export default function RootLayout({
               }}
             />
 
-            {/* Calendly badge widget begin */}
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            {/* Calendly badge widget begin - Deferred to avoid blocking render */}
             <script
-              type="text/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
-                  window.onload = function() { 
-                    Calendly.initBadgeWidget({ 
-                      url: 'https://calendly.com/drjanduffy', 
-                      text: 'Schedule time with Dr. Jan Duffy Today', 
-                      color: '#0069ff', 
-                      textColor: '#ffffff', 
-                      branding: true 
-                    }); 
-                  }
+                  (function() {
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+                    link.media = 'print';
+                    link.onload = function() { this.media = 'all'; };
+                    document.head.appendChild(link);
+                  })();
+                `,
+              }}
+            />
+            <noscript>
+              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+            </noscript>
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" defer></script>
+            <script
+              type="text/javascript"
+              defer
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.addEventListener('load', function() { 
+                    if (window.Calendly) {
+                      Calendly.initBadgeWidget({ 
+                        url: 'https://calendly.com/drjanduffy', 
+                        text: 'Schedule time with Dr. Jan Duffy Today', 
+                        color: '#0069ff', 
+                        textColor: '#ffffff', 
+                        branding: true 
+                      });
+                    }
+                  });
                 `,
               }}
             />

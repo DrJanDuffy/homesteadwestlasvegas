@@ -120,6 +120,24 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: '/_next/media/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/media/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
     ];
   },
   
@@ -130,6 +148,16 @@ const nextConfig: NextConfig = {
         source: '/home',
         destination: '/',
         permanent: true,
+      },
+    ];
+  },
+  
+  // Rewrites to handle font file paths (fix 404 errors)
+  async rewrites() {
+    return [
+      {
+        source: '/media/:path*',
+        destination: '/_next/static/media/:path*',
       },
     ];
   },

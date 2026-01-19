@@ -84,7 +84,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="min-h-screen bg-white">
+      <article itemScope itemType="https://schema.org/Article" className="min-h-screen bg-white">
         {/* Header */}
         <header className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-20">
           <div className="container mx-auto px-4">
@@ -105,9 +105,16 @@ export default function AboutPage() {
                   />
                 </div>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Jan Duffy - Homestead West Real Estate Expert</h1>
-              <p className="text-2xl md:text-3xl mb-4 text-blue-100">VIP New Construction Specialist</p>
-              <p className="text-xl text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+              <h1 itemProp="headline" className="text-5xl md:text-6xl font-bold mb-6">Who is Dr. Jan Duffy?</h1>
+              <p itemProp="description" className="text-2xl md:text-3xl mb-4 text-blue-100">
+                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614) who represents home buyers exclusively in Northwest Las Vegas. She has helped 500+ families and leads the VIP Buyer Program that has assisted 65+ Homestead West families since 2022.
+              </p>
+              <p className="text-xl text-blue-200 mb-4">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+              {/* AEO: Author attribution and freshness */}
+              <address rel="author" className="text-blue-100 text-lg mb-2">
+                By <a href="/about" className="text-yellow-400 hover:text-yellow-300">Dr. Jan Duffy</a>, Licensed Nevada Real Estate Agent (S.0197614)
+              </address>
+              <time dateTime="2026-01-19" className="text-blue-200 text-sm">Last updated: January 19, 2026</time>
             </div>
           </div>
         </header>
@@ -491,6 +498,15 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+        
+        {/* AEO: Content freshness indicator */}
+        <aside className="bg-gray-50 py-8 border-t border-gray-200">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="text-sm text-gray-600 text-center">
+              <time dateTime="2026-01-19">Last verified: January 19, 2026</time>. Information subject to change. Contact Dr. Jan Duffy for current details.
+            </p>
+          </div>
+        </aside>
       </div>
     </>
   );
