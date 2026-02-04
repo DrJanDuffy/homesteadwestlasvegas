@@ -46,6 +46,7 @@ This website provides information about Homestead West, a luxury single-story ho
 - /faq - Frequently asked questions about Homestead West and new construction buying
 - /buyers-guide - Comprehensive guide to buying new construction homes
 - /testimonials - Client reviews and success stories
+- /reviews - Leave a Google review (review link and QR code)
 
 ## Contact Information
 Phone: (702) 299-6607

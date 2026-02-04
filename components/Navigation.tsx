@@ -34,6 +34,7 @@ export default function Navigation() {
     { href: '/vip-buyer-program', label: 'VIP Partnership' },
     { href: '/blog', label: 'Blog & News' },
     { href: '/testimonials', label: 'Testimonials' },
+    { href: '/reviews', label: 'Leave a Review' },
     { href: '/faq', label: 'FAQ' },
     { href: '/properties', label: 'Property Search' },
   ];

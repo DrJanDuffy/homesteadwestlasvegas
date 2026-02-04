@@ -45,6 +45,7 @@ export default function Footer() {
               <li><a href="/amenities" className="hover:text-yellow-400 transition-colors">Nearby Amenities</a></li>
               <li><a href="/vip-buyer-program" className="hover:text-yellow-400 transition-colors">VIP Buyer Program</a></li>
               <li><a href="/testimonials" className="hover:text-yellow-400 transition-colors">Testimonials</a></li>
+              <li><a href="/reviews" className="hover:text-yellow-400 transition-colors">Leave a Review</a></li>
               <li><a href="/contact" className="hover:text-yellow-400 transition-colors">Contact</a></li>
             </ul>
             {/* Calendly link widget */}

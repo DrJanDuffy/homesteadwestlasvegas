@@ -290,6 +290,10 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Testimonials</h3>
                   <p className="text-gray-700">What clients say about working with Dr. Jan</p>
                 </a>
+                <a href="/reviews" className="bg-white p-6 rounded-lg hover:bg-amber-50 transition-colors border-2 border-amber-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Leave a Review</h3>
+                  <p className="text-gray-700">Review us on Google — link and QR code</p>
+                </a>
                 <a href="/location" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Find Our Office</h3>
                   <p className="text-gray-700">Map, directions, hours & contact for all locations</p>

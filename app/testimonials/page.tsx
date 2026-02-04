@@ -355,6 +355,10 @@ export default function TestimonialsPage() {
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Explore More Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
+                <a href="/reviews" className="bg-amber-50 p-6 rounded-lg hover:bg-amber-100 transition-colors border-2 border-amber-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Leave a Google Review</h3>
+                  <p className="text-gray-700">Help others find us — review us on Google (link + QR code)</p>
+                </a>
                 <a href="/about" className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors border-2 border-blue-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">About Dr. Jan</h3>
                   <p className="text-gray-700">Learn about Dr. Jan Duffy's expertise as a VIP New Construction Homes Specialist</p>
