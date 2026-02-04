@@ -14,6 +14,7 @@ export default function Navigation() {
     { href: '/community', label: 'Community Guide' },
     { href: '/community-map', label: 'Community Map' },
     { href: '/amenities', label: 'Nearby Amenities' },
+    { href: '/directions', label: 'Directions' },
     { href: '/virtual-tour', label: 'Virtual Tour' },
     { href: '/location', label: 'Find Our Office' },
     { href: '/location/las-vegas-office', label: 'Las Vegas Office' },

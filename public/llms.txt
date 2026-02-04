@@ -41,6 +41,7 @@ This website provides information about Homestead West, a luxury single-story ho
 - /community-map - Interactive community map and location details
 - /amenities - Nearby amenities map: restaurants, parks, parking, shopping, schools, healthcare (Google Maps)
 - /location - Find our office: map, directions, hours, and all locations
+- /directions - Directions to our office: from airport, downtown, Henderson; drive, transit, walk (Google Maps)
 - /vip-buyer-program - VIP buyer representation services
 - /faq - Frequently asked questions about Homestead West and new construction buying
 - /buyers-guide - Comprehensive guide to buying new construction homes

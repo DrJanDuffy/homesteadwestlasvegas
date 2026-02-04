@@ -141,14 +141,22 @@ export default function LasVegasOfficePage() {
                     title="Las Vegas Office - 5592 Dapple Gray Rd, Las Vegas, NV 89149"
                   ></iframe>
                 </div>
-                <a
-                  href="https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Open in Google Maps
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Open in Google Maps
+                  </a>
+                  <a
+                    href="/directions"
+                    className="inline-block border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+                  >
+                    Get directions (airport, downtown, transit)
+                  </a>
+                </div>
               </div>
             </div>
           </div>

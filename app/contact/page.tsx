@@ -294,6 +294,10 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Find Our Office</h3>
                   <p className="text-gray-700">Map, directions, hours & contact for all locations</p>
                 </a>
+                <a href="/directions" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Directions</h3>
+                  <p className="text-gray-700">Get directions & estimated travel time (drive, transit, walk)</p>
+                </a>
                 <a href="/amenities" className="bg-white p-6 rounded-lg hover:bg-amber-50 transition-colors border-2 border-amber-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Nearby Amenities</h3>
                   <p className="text-gray-700">Restaurants, parks, parking, shopping & more on Google Maps</p>

@@ -41,6 +41,7 @@ export default function Footer() {
             <ul className="space-y-2 mb-4">
               <li><a href="/about" className="hover:text-yellow-400 transition-colors">About Dr. Jan</a></li>
               <li><a href="/location" className="hover:text-yellow-400 transition-colors">Find Our Office</a></li>
+              <li><a href="/directions" className="hover:text-yellow-400 transition-colors">Directions</a></li>
               <li><a href="/amenities" className="hover:text-yellow-400 transition-colors">Nearby Amenities</a></li>
               <li><a href="/vip-buyer-program" className="hover:text-yellow-400 transition-colors">VIP Buyer Program</a></li>
               <li><a href="/testimonials" className="hover:text-yellow-400 transition-colors">Testimonials</a></li>

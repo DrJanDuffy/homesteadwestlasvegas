@@ -194,6 +194,9 @@ export default function LocationIndexPage() {
             <p className="text-gray-700 mb-6 max-w-xl mx-auto">
               Stop by our Homestead West office or book an appointment with Dr. Jan Duffy for a consultation.
             </p>
+            <p className="text-gray-600 mb-4">
+              <a href="/directions" className="text-[#1a365d] font-medium hover:underline">Get directions and estimated travel time (drive, transit, walk) →</a>
+            </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="/appointment"
