@@ -783,45 +783,7 @@ export default function RootLayout({
               }}
             />
 
-            {/* Calendly badge widget begin - Deferred to avoid blocking render */}
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function() {
-                    var link = document.createElement('link');
-                    link.rel = 'stylesheet';
-                    link.href = 'https://assets.calendly.com/assets/external/widget.css';
-                    link.media = 'print';
-                    link.onload = function() { this.media = 'all'; };
-                    document.head.appendChild(link);
-                  })();
-                `,
-              }}
-            />
-            <noscript>
-              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-            </noscript>
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" defer></script>
-            <script
-              type="text/javascript"
-              defer
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.addEventListener('load', function() { 
-                    if (window.Calendly) {
-                      Calendly.initBadgeWidget({ 
-                        url: 'https://calendly.com/drjanduffy', 
-                        text: 'Have a Question? Talk to a New Construction Homes Specialist', 
-                        color: '#0069ff', 
-                        textColor: '#ffffff', 
-                        branding: true 
-                      });
-                    }
-                  });
-                `,
-              }}
-            />
-            {/* Calendly badge widget end */}
+            {/* Calendly: loaded on-demand by CalendlyLink / appointment page to avoid LCP and long main-thread tasks */}
           </head>
           <body className={inter.className}>
             <Navigation />

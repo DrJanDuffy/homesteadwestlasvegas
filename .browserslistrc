@@ -1,6 +1,8 @@
-# Target modern browsers only - removes ~14 KiB of legacy JavaScript polyfills
-# Supports browsers with >0.5% usage and last 2 versions
-> 0.5%
-last 2 versions
+# Modern-only: drop polyfills for Array.at, flat, flatMap, Object.fromEntries, hasOwn, trimStart/End
+# Aligns with Lighthouse "Legacy JavaScript" and Next.js 15 supported browsers
+Chrome >= 92
+Firefox >= 90
+Safari >= 15.4
+Edge >= 92
 not dead
 not IE 11

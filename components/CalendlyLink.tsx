@@ -1,57 +1,49 @@
 'use client';
 
-import { useEffect, useState, startTransition } from 'react';
+import { useCallback } from 'react';
+
+const CALENDLY_URL = 'https://calendly.com/drjanduffy';
+const WIDGET_JS = 'https://assets.calendly.com/assets/external/widget.js';
+const WIDGET_CSS = 'https://assets.calendly.com/assets/external/widget.css';
+
+function loadCalendly(): Promise<void> {
+  const w = typeof window === 'undefined' ? null : (window as Window & { Calendly?: { initPopupWidget: (opts: { url: string }) => void } });
+  if (w?.Calendly) return Promise.resolve();
+
+  return new Promise((resolve) => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = WIDGET_CSS;
+    link.media = 'print';
+    link.onload = () => { link.media = 'all'; };
+    document.head.appendChild(link);
+
+    const script = document.createElement('script');
+    script.src = WIDGET_JS;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => resolve();
+    document.body.appendChild(script);
+  });
+}
 
 export default function CalendlyLink() {
-  const [calendlyReady, setCalendlyReady] = useState(false);
-
-  useEffect(() => {
-    // Check if Calendly is already loaded
-    if (typeof window !== 'undefined' && (window as any).Calendly) {
-      startTransition(() => {
-        setCalendlyReady(true);
-      });
-      return;
-    }
-
-    // Wait for Calendly to load - use longer interval to reduce checks
-    const checkCalendly = setInterval(() => {
-      if (typeof window !== 'undefined' && (window as any).Calendly) {
-        startTransition(() => {
-          setCalendlyReady(true);
-        });
-        clearInterval(checkCalendly);
-      }
-    }, 200); // Increased from 100ms to reduce frequency
-
-    // Cleanup after 10 seconds
-    const timeout = setTimeout(() => {
-      clearInterval(checkCalendly);
-    }, 10000);
-
-    return () => {
-      clearInterval(checkCalendly);
-      clearTimeout(timeout);
-    };
-  }, []);
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    // Use requestAnimationFrame to defer non-critical work
-    requestAnimationFrame(() => {
-      if (typeof window !== 'undefined' && (window as any).Calendly) {
-        (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/drjanduffy' });
+    loadCalendly().then(() => {
+      const w = (window as Window & { Calendly?: { initPopupWidget: (opts: { url: string }) => void } });
+      if (w.Calendly) {
+        w.Calendly.initPopupWidget({ url: CALENDLY_URL });
       } else {
-        // Fallback: open Calendly in new tab if script not loaded
-        window.open('https://calendly.com/drjanduffy', '_blank');
+        window.open(CALENDLY_URL, '_blank');
       }
     });
     return false;
-  };
+  }, []);
 
   return (
-    <a 
-      href="https://calendly.com/drjanduffy" 
+    <a
+      href={CALENDLY_URL}
       onClick={handleClick}
       className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-75 will-change-[background-color]"
     >
