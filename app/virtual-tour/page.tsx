@@ -47,35 +47,6 @@ export default function VirtualTourPage() {
     }
   };
 
-  const videoSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'VideoObject',
-    name: 'Homestead West Virtual 3D Tour',
-    description: 'Interactive 3D virtual tour of Homestead West luxury ranch homes in Northwest Las Vegas',
-    thumbnailUrl: 'https://www.homesteadwestlasvegas.com/images/Dr.%20Duffy%20Blue_Headshot.jpg',
-    uploadDate: '2024-01-01T00:00:00-08:00',
-    contentUrl: 'https://www.homesteadwestlasvegas.com/virtual-tour',
-    embedUrl: 'https://www.homesteadwestlasvegas.com/virtual-tour',
-    publisher: {
-      '@type': 'RealEstateAgent',
-      name: 'Dr. Jan Duffy',
-      telephone: '+17022996607',
-      email: 'DrJanSells@HomesteadWestLasVegas.com'
-    },
-    about: {
-      '@type': 'RealEstateListing',
-      name: 'Homestead West | Homes by Dr Jan Duffy',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '5592 Dapple Gray Rd',
-        addressLocality: 'Las Vegas',
-        addressRegion: 'NV',
-        postalCode: '89149',
-        addressCountry: 'US'
-      }
-    }
-  };
-
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
     { name: 'Virtual Tour', url: 'https://www.homesteadwestlasvegas.com/virtual-tour' }
@@ -86,10 +57,6 @@ export default function VirtualTourPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
       <script
         type="application/ld+json"
