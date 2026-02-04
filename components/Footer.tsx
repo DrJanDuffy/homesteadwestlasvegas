@@ -14,34 +14,34 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Map Location</h3>
-            <p className="mb-2">5592 N Dapple Gray Rd</p>
+            <p className="mb-2">5592 Dapple Gray Rd</p>
             <p className="mb-2">Las Vegas, NV 89149</p>
             <div className="mt-4 rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
+                src="https://www.google.com/maps?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Homestead West Location - 5592 N Dapple Gray Rd, Las Vegas, NV 89149"
+                title="Homestead West Location - 5592 Dapple Gray Rd, Las Vegas, NV 89149"
                 className="w-full"
               />
             </div>
             <a
-              href="https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/location"
               className="inline-block mt-3 text-yellow-400 hover:text-yellow-300 text-sm transition-colors"
             >
-              Get Directions →
+              Find Our Office (map & directions) →
             </a>
           </div>
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 mb-4">
               <li><a href="/about" className="hover:text-yellow-400 transition-colors">About Dr. Jan</a></li>
+              <li><a href="/location" className="hover:text-yellow-400 transition-colors">Find Our Office</a></li>
+              <li><a href="/amenities" className="hover:text-yellow-400 transition-colors">Nearby Amenities</a></li>
               <li><a href="/vip-buyer-program" className="hover:text-yellow-400 transition-colors">VIP Buyer Program</a></li>
               <li><a href="/testimonials" className="hover:text-yellow-400 transition-colors">Testimonials</a></li>
               <li><a href="/contact" className="hover:text-yellow-400 transition-colors">Contact</a></li>

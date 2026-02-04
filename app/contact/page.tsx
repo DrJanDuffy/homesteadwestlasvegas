@@ -5,7 +5,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent | Homestead West',
-  description: 'Contact Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Call (702) 299-6607 or visit our office at 5592 N Dapple Gray Rd.',
+  description: 'Contact Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Call (702) 299-6607 or visit our office at 5592 Dapple Gray Rd.',
   keywords: 'contact Dr. Jan Duffy, Las Vegas real estate agent, Homestead West contact, real estate consultation Las Vegas',
   openGraph: {
     title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent',
@@ -28,7 +28,7 @@ export default function ContactPage() {
       email: 'DrJanSells@HomesteadWestLasVegas.com',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '5592 N Dapple Gray Rd',
+        streetAddress: '5592 Dapple Gray Rd',
         addressLocality: 'Las Vegas',
         addressRegion: 'NV',
         postalCode: '89149',
@@ -36,7 +36,8 @@ export default function ContactPage() {
       },
       licenseNumber: 'S.0197614',
       openingHours: [
-        'Mo-Fr 09:00-18:00',
+        'Su 10:00-15:00',
+        'Mo-Fr 10:00-18:00',
         'Sa 10:00-16:00'
       ]
     }
@@ -137,7 +138,7 @@ export default function ContactPage() {
                           (702) 299-6607
                         </a>
                       </p>
-                      <p className="text-gray-700">Available Monday-Friday 9AM-6PM, Saturday 10AM-4PM for Homestead West</p>
+                      <p className="text-gray-700">Available Sunday 10AM-3PM, Monday-Friday 10AM-6PM, Saturday 10AM-4PM for Homestead West</p>
                       <a
                         href="https://share.google/nB0T4SaU9gr8wLSdB"
                         target="_blank"
@@ -178,7 +179,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-gray-900">Homestead West Office Address</h3>
-                      <p className="text-lg mb-1 text-gray-900">5592 N Dapple Gray Rd</p>
+                      <p className="text-lg mb-1 text-gray-900">5592 Dapple Gray Rd</p>
                       <p className="text-lg mb-2 text-gray-900">Las Vegas, NV 89149</p>
                       <p className="text-gray-700">By appointment only for Homestead West</p>
                       <a
@@ -206,7 +207,7 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span className="font-medium text-gray-900">Monday - Friday</span>
-                    <span className="text-gray-700">9:00 AM - 6:00 PM</span>
+                    <span className="text-gray-700">10:00 AM - 6:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span className="font-medium text-gray-900">Saturday</span>
@@ -214,7 +215,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span className="font-medium text-gray-900">Sunday</span>
-                    <span className="text-gray-700">Closed</span>
+                    <span className="text-gray-700">10:00 AM – 3:00 PM</span>
                   </div>
                 </div>
                 <p className="mt-6 text-gray-800">
@@ -227,7 +228,7 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Find Our Office</h2>
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-6">
                   <iframe
-                    src="https://www.google.com/maps?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
+                    src="https://www.google.com/maps?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
                     width="100%"
                     height="100%"
                     className="border-0"
@@ -237,9 +238,12 @@ export default function ContactPage() {
                     title="Las Vegas Office Location"
                   ></iframe>
                 </div>
+                <p className="text-gray-600 mb-3">
+                  <a href="/location" className="text-blue-600 hover:underline font-medium">View map and all office locations →</a>
+                </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                    href="https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center"
@@ -285,6 +289,14 @@ export default function ContactPage() {
                 <a href="/testimonials" className="bg-white p-6 rounded-lg hover:bg-indigo-50 transition-colors border-2 border-indigo-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Testimonials</h3>
                   <p className="text-gray-700">What clients say about working with Dr. Jan</p>
+                </a>
+                <a href="/location" className="bg-white p-6 rounded-lg hover:bg-blue-50 transition-colors border-2 border-blue-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Find Our Office</h3>
+                  <p className="text-gray-700">Map, directions, hours & contact for all locations</p>
+                </a>
+                <a href="/amenities" className="bg-white p-6 rounded-lg hover:bg-amber-50 transition-colors border-2 border-amber-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Nearby Amenities</h3>
+                  <p className="text-gray-700">Restaurants, parks, parking, shopping & more on Google Maps</p>
                 </a>
                 <a href="/faq" className="bg-white p-6 rounded-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">FAQ</h3>

@@ -56,7 +56,7 @@ export default function HomePage() {
     description: '$910K+ luxury single-story ranch homes on pool-sized lots in Northwest Las Vegas',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5592 N Dapple Gray Rd',
+      streetAddress: '5592 Dapple Gray Rd',
       addressLocality: 'Las Vegas',
       addressRegion: 'NV',
       postalCode: '89149',
@@ -74,7 +74,7 @@ export default function HomePage() {
       priceRange: '$850,000-$990,000',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '5592 N Dapple Gray Rd',
+        streetAddress: '5592 Dapple Gray Rd',
         addressLocality: 'Las Vegas',
         addressRegion: 'NV',
         postalCode: '89149',
@@ -930,7 +930,7 @@ export default function HomePage() {
             <div className="space-y-2 text-gray-200">
               <p>Or call directly: <a href="tel:7022996607" className="text-yellow-400 hover:text-yellow-300 font-semibold">(702) 299-6607</a></p>
               <p>Email: <a href="mailto:DrJanSells@HomesteadWestLasVegas.com" className="text-yellow-400 hover:text-yellow-300 font-semibold">DrJanSells@HomesteadWestLasVegas.com</a></p>
-              <p>Homestead West Location: 5592 N Dapple Gray Rd, Las Vegas, NV 89149</p>
+              <p>Homestead West Location: 5592 Dapple Gray Rd, Las Vegas, NV 89149</p>
             </div>
           </div>
         </section>

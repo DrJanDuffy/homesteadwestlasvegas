@@ -4,11 +4,11 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Las Vegas Real Estate Office | Homestead West | Dr. Jan Duffy',
-  description: 'Visit our Las Vegas real estate office at 5592 N Dapple Gray Rd. Dr. Jan Duffy (License S.0197614) provides expert real estate services in Northwest Las Vegas.',
+  description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy (License S.0197614) provides expert real estate services in Northwest Las Vegas.',
   keywords: 'Las Vegas real estate office, Dr. Jan Duffy office, Northwest Las Vegas real estate, real estate agent Las Vegas, Homestead West office',
   openGraph: {
     title: 'Las Vegas Real Estate Office | Homestead West',
-    description: 'Visit our Las Vegas real estate office at 5592 N Dapple Gray Rd. Dr. Jan Duffy provides expert real estate services.',
+    description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy provides expert real estate services.',
     type: 'website',
     url: 'https://homesteadwestlasvegas.com/location/las-vegas-office',
   },
@@ -25,7 +25,7 @@ export default function LasVegasOfficePage() {
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5592 N Dapple Gray Rd',
+      streetAddress: '5592 Dapple Gray Rd',
       addressLocality: 'Las Vegas',
       addressRegion: 'NV',
       postalCode: '89149',
@@ -37,7 +37,8 @@ export default function LasVegasOfficePage() {
       longitude: -115.1398
     },
     openingHours: [
-      'Mo-Fr 09:00-18:00',
+      'Su 10:00-15:00',
+      'Mo-Fr 10:00-18:00',
       'Sa 10:00-16:00'
     ],
     licenseNumber: 'S.0197614',
@@ -47,7 +48,7 @@ export default function LasVegasOfficePage() {
       '@id': 'https://en.wikipedia.org/wiki/Las_Vegas'
     },
     serviceType: ['Real Estate Sales', 'Property Management', 'Real Estate Investment Consulting'],
-    hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149'
+    hasMap: 'https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149'
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -118,9 +119,9 @@ export default function LasVegasOfficePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Homestead West Office Hours</h3>
-                      <p>Monday-Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 10:00 AM - 4:00 PM<br />
-                      Sunday: Closed</p>
+                      <p>Sunday: 10:00 AM - 3:00 PM<br />
+                      Monday-Friday: 10:00 AM - 6:00 PM<br />
+                      Saturday: 10:00 AM - 4:00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -130,18 +131,18 @@ export default function LasVegasOfficePage() {
                 <h2 className="text-3xl font-bold mb-6">Get Directions to Homestead West</h2>
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-6">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.5!2d-115.1398!3d36.1699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDEwJzExLjYiTiAxMTXCsDA4JzIzLjMiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    src="https://www.google.com/maps?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149&output=embed"
                     width="100%"
                     height="100%"
                     className="border-0"
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Las Vegas Office Location"
+                    title="Las Vegas Office - 5592 Dapple Gray Rd, Las Vegas, NV 89149"
                   ></iframe>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
+                  href="https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -288,9 +289,7 @@ export default function LasVegasOfficePage() {
               </a>
             </div>
             <p className="text-blue-200 mt-6 max-w-2xl mx-auto">
-              Our Homestead West office is open Monday through Friday from 9:00 AM to 6:00 PM, and Saturday from 10:00 AM to 
-              4:00 PM. We're closed on Sundays but available for Homestead West emergencies. For Homestead West inquiries or to 
-              schedule a Homestead West consultation, please call, email, or visit our Homestead West office location.
+              Our Homestead West office is open Sunday 10:00 AM–3:00 PM, Monday through Friday 10:00 AM–6:00 PM, and Saturday 10:00 AM–4:00 PM. For Homestead West inquiries or to schedule a consultation, please call, email, or visit our office.
             </p>
           </div>
         </section>

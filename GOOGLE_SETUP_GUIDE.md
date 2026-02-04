@@ -26,7 +26,7 @@ In `app/layout.tsx`, replace:
 2. Create new business listing
 3. Use exact information from structured data:
    - **Business Name**: Homestead West | Homes by Dr Jan Duffy
-   - **Address**: 5592 N Dapple Gray Rd, Las Vegas, NV 89149
+   - **Address**: 5592 Dapple Gray Rd, Las Vegas, NV 89149
    - **Phone**: (702) 299-6607
    - **Email**: DrJanSells@HomesteadWestLasVegas.com
    - **Website**: https://homesteadwestlasvegas.com
@@ -37,9 +37,9 @@ In `app/layout.tsx`, replace:
 - Additional: Property Management
 
 ### 3. Business Hours
-- Monday-Friday: 9:00 AM - 6:00 PM
+- Sunday: 10:00 AM - 3:00 PM
+- Monday-Friday: 10:00 AM - 6:00 PM
 - Saturday: 10:00 AM - 4:00 PM
-- Sunday: Closed
 
 ### 4. Services
 - Real Estate Sales

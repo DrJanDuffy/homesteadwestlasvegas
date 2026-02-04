@@ -61,6 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/amenities`,
+      lastModified: lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/virtual-tour`,
       lastModified: lastModified,
       changeFrequency: 'monthly',
@@ -156,6 +162,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     
     // Location & Appointment
+    {
+      url: `${baseUrl}/location`,
+      lastModified: lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/location/las-vegas-office`,
       lastModified: lastModified,

@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
+  // Use project root for file tracing (silences multiple lockfile warning)
+  outputFileTracingRoot: path.join(__dirname),
   // Image optimization for better Core Web Vitals
   images: {
     formats: ['image/webp', 'image/avif'],

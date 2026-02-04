@@ -13,8 +13,10 @@ export default function Navigation() {
   const communityItems = [
     { href: '/community', label: 'Community Guide' },
     { href: '/community-map', label: 'Community Map' },
+    { href: '/amenities', label: 'Nearby Amenities' },
     { href: '/virtual-tour', label: 'Virtual Tour' },
-    { href: '/location/las-vegas-office', label: 'Location & Office' },
+    { href: '/location', label: 'Find Our Office' },
+    { href: '/location/las-vegas-office', label: 'Las Vegas Office' },
   ];
 
   const servicesItems = [

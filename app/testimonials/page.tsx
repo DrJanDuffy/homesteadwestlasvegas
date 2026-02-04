@@ -33,7 +33,7 @@ export default function TestimonialsPage() {
     jobTitle: 'VIP New Construction Specialist',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5592 N Dapple Gray Rd',
+      streetAddress: '5592 Dapple Gray Rd',
       addressLocality: 'Las Vegas',
       addressRegion: 'NV',
       postalCode: '89149',

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         "pool-sized lots Las Vegas",
         "single story homes Las Vegas",
         "luxury homes Las Vegas",
-        "5592 N Dapple Gray Rd",
+        "5592 Dapple Gray Rd",
         "Dr. Jan Duffy",
         "Las Vegas real estate",
         "89149 zip code homes",
@@ -124,7 +124,7 @@ export default function RootLayout({
     description: '$910K+ ranch-style homes on pool-sized lots in Northwest Las Vegas',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5592 N Dapple Gray Rd',
+      streetAddress: '5592 Dapple Gray Rd',
       addressLocality: 'Las Vegas',
       addressRegion: 'NV',
       postalCode: '89149',
@@ -136,6 +136,7 @@ export default function RootLayout({
       longitude: -115.3089
     },
     telephone: '+17022996607',
+    smsNumber: 'sms:+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     url: 'https://www.homesteadwestlasvegas.com',
     image: 'https://www.homesteadwestlasvegas.com/og-image.jpg',
@@ -155,13 +156,18 @@ export default function RootLayout({
           priceRange: '$850,000-$990,000',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: '5592 N Dapple Gray Rd',
+            streetAddress: '5592 Dapple Gray Rd',
             addressLocality: 'Las Vegas',
             addressRegion: 'NV',
             postalCode: '89149',
             addressCountry: 'US'
           },
           areaServed: [
+            {
+              '@type': 'Place',
+              name: 'Centennial Hills',
+              address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', addressCountry: 'US' }
+            },
             {
               '@type': 'City',
               name: 'Las Vegas',
@@ -307,7 +313,7 @@ export default function RootLayout({
             }
           }
         ],
-        hasMap: 'https://maps.google.com/?q=5592+N+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
+        hasMap: 'https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
         sameAs: [
           'https://www.homesteadwestlasvegas.com',
           'https://www.homesteadwestlasvegas.com/vip-buyer-program',
@@ -462,20 +468,16 @@ export default function RootLayout({
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
-                        streetAddress: '5592 N Dapple Gray Rd',
+                        streetAddress: '5592 Dapple Gray Rd',
                         addressLocality: 'Las Vegas',
                         addressRegion: 'NV',
                         postalCode: '89149',
                         addressCountry: 'US'
                       },
-                      areaServed: {
-                        '@type': 'City',
-                        name: 'Las Vegas',
-                        containedInPlace: {
-                          '@type': 'State',
-                          name: 'Nevada'
-                        }
-                      },
+                      areaServed: [
+                        { '@type': 'Place', name: 'Centennial Hills', address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', addressCountry: 'US' } },
+                        { '@type': 'City', name: 'Las Vegas', containedInPlace: { '@type': 'State', name: 'Nevada' } }
+                      ],
                       knowsAbout: ['New Construction Homes', 'VIP New Construction Homes Specialist', 'Northwest Las Vegas', 'Homestead West', 'Luxury Ranch Homes'],
                       hasCredential: [
                         {
@@ -497,9 +499,9 @@ export default function RootLayout({
                     {
                       '@type': 'LocalBusiness',
                       '@id': 'https://www.homesteadwestlasvegas.com/#business',
-                      name: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
-                      alternateName: 'Homestead West Las Vegas Real Estate',
-                      description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist in Northwest Las Vegas. Home builder serving Henderson and Las Vegas areas.',
+                      name: 'Homestead West | Homes by Dr Jan Duffy',
+                      alternateName: ['Homestead West Las Vegas Real Estate', 'Dr. Jan Duffy - Las Vegas Real Estate Expert'],
+                      description: 'Buying a new home in Homestead West Las Vegas? Work with a licensed agent who represents you, not the builder. Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada specializes in this single-story ranch community at Ann Road and Fort Apache, 89149. Services include early lot access, upgrade negotiations, and buyer representation through closing. Buyers pay no commission as builders cover agent fees.',
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: 'https://www.homesteadwestlasvegas.com',
@@ -508,7 +510,7 @@ export default function RootLayout({
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
-                        streetAddress: '5592 N Dapple Gray Rd',
+                        streetAddress: '5592 Dapple Gray Rd',
                         addressLocality: 'Las Vegas',
                         addressRegion: 'NV',
                         postalCode: '89149',
@@ -520,36 +522,18 @@ export default function RootLayout({
                         longitude: -115.3089
                       },
                       areaServed: [
-                        {
-                          '@type': 'City',
-                          name: 'Las Vegas',
-                          containedInPlace: {
-                            '@type': 'State',
-                            name: 'Nevada'
-                          }
-                        },
-                        {
-                          '@type': 'City',
-                          name: 'Henderson',
-                          containedInPlace: {
-                            '@type': 'State',
-                            name: 'Nevada'
-                          }
-                        }
+                        { '@type': 'Place', name: 'Centennial Hills', address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', addressCountry: 'US' } },
+                        { '@type': 'City', name: 'Las Vegas', containedInPlace: { '@type': 'State', name: 'Nevada' } },
+                        { '@type': 'City', name: 'Henderson', containedInPlace: { '@type': 'State', name: 'Nevada' } }
                       ],
                       openingHoursSpecification: [
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                          opens: '09:00',
-                          closes: '18:00'
-                        },
-                        {
-                          '@type': 'OpeningHoursSpecification',
-                          dayOfWeek: 'Saturday',
-                          opens: '10:00',
-                          closes: '16:00'
-                        }
+                        { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '10:00', closes: '15:00' },
+                        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '10:00', closes: '18:00' },
+                        { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '10:00', closes: '16:00' }
+                      ],
+                      amenityFeature: [
+                        { '@type': 'LocationFeatureSpecification', name: 'Has wheelchair accessible parking lot', value: true },
+                        { '@type': 'LocationFeatureSpecification', name: 'Has wheelchair accessible entrance', value: true }
                       ],
                       hasCredential: {
                         '@type': 'EducationalOccupationalCredential',
@@ -585,7 +569,7 @@ export default function RootLayout({
                       image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
                       address: {
                         '@type': 'PostalAddress',
-                        streetAddress: '5592 N Dapple Gray Rd',
+                        streetAddress: '5592 Dapple Gray Rd',
                         addressLocality: 'Las Vegas',
                         addressRegion: 'NV',
                         postalCode: '89149',

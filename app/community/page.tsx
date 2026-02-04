@@ -518,6 +518,10 @@ export default function CommunityPage() {
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Community Map</h3>
                   <p className="text-gray-700">Interactive map showing Homestead West location and nearby amenities</p>
                 </a>
+                <a href="/amenities" className="bg-white p-6 rounded-lg hover:bg-amber-50 transition-colors border-2 border-amber-200 shadow-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Nearby Amenities Map</h3>
+                  <p className="text-gray-700">Restaurants, parks, parking, shopping, schools & more on Google Maps</p>
+                </a>
                 <a href="/virtual-tour" className="bg-white p-6 rounded-lg hover:bg-green-50 transition-colors border-2 border-green-200 shadow-sm">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Virtual Tour</h3>
                   <p className="text-gray-700">Take a 3D virtual tour of Homestead West homes</p>
