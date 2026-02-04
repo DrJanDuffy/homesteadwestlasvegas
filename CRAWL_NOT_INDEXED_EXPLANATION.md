@@ -1,14 +1,16 @@
-# "Crawled - Currently Not Indexed" Explanation
+# "Crawled - Currently Not Indexed" & "Blocked by robots.txt" Explanation
 
 ## 📋 Issue Summary
 
 **Type:** Info (not an error)  
-**Message:** "Crawled - currently not indexed"  
+**Messages:** "Crawled - currently not indexed" or **"Blocked by robots.txt"**  
 **Status:** ✅ Expected behavior for internal files
 
-### Affected URLs:
-1. `/_next/static/chunks/1c7e9a669b124069.css?dpl=...` - Next.js CSS chunk file
-2. `/favicon.ico?favicon.0b3bf435.ico` - Favicon file
+### Affected URLs (examples):
+1. `/_next/static/chunks/...js` or `...css` - Next.js JS/CSS chunk files
+2. `/favicon.ico` or `/favicon.ico?favicon....ico` - Favicon file
+
+**"Blocked by robots.txt"** means Google is respecting your `Disallow` rules and not indexing these URLs. That is correct—they are assets, not content pages.
 
 ---
 
