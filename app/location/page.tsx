@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: 'Find Our Office | Homestead West Las Vegas',
     description: 'Map and directions to our Las Vegas real estate office. Visit Dr. Jan Duffy at Homestead West.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/location',
+    url: 'https://www.homesteadwestlasvegas.com/location',
   },
 };
 

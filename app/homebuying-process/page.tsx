@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Homebuying Process | Homestead West Las Vegas',
     description: 'Complete guide to buying a new home at Homestead West Las Vegas with expert guidance from Dr. Jan Duffy.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/homebuying-process',
+    url: 'https://www.homesteadwestlasvegas.com/homebuying-process',
   },
 };
 
@@ -67,25 +67,25 @@ export default function HomebuyingProcessPage() {
         '@type': 'HowToStep',
         name: 'Prequalify',
         text: 'Get a no-strings-attached financial assessment to understand your budget and loan options.',
-        url: 'https://homesteadwestlasvegas.com/homebuying-process#prequalify'
+        url: 'https://www.homesteadwestlasvegas.com/homebuying-process#prequalify'
       },
       {
         '@type': 'HowToStep',
         name: 'House Hunt',
         text: 'Search for your perfect home at Homestead West with expert guidance from Dr. Jan Duffy.',
-        url: 'https://homesteadwestlasvegas.com/homebuying-process#house-hunt'
+        url: 'https://www.homesteadwestlasvegas.com/homebuying-process#house-hunt'
       },
       {
         '@type': 'HowToStep',
         name: 'Contract',
         text: 'Make a preliminary commitment to buy your chosen home and lot.',
-        url: 'https://homesteadwestlasvegas.com/homebuying-process#contract'
+        url: 'https://www.homesteadwestlasvegas.com/homebuying-process#contract'
       },
       {
         '@type': 'HowToStep',
         name: 'Close',
         text: 'Complete final paperwork and become a new homeowner at Homestead West.',
-        url: 'https://homesteadwestlasvegas.com/homebuying-process#close'
+        url: 'https://www.homesteadwestlasvegas.com/homebuying-process#close'
       }
     ]
   };

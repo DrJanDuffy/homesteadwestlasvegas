@@ -92,6 +92,16 @@ All pages should have:
 
 ---
 
+## ⚠️ "Validation Failed" for Redirecting URLs
+
+If you see **Validation Failed** (e.g. under Page indexing → Page with redirect):
+
+- **Cause:** You requested indexing or validation for a **redirecting** URL (e.g. `http://homesteadwestlasvegas.com/`, `https://homesteadwestlasvegas.com/`, `http://www.homesteadwestlasvegas.com/`). Google does not index those URLs; it indexes the **destination** (`https://www.homesteadwestlasvegas.com/`).
+- **Fix:** Use **URL Inspection** and request indexing for the **canonical** URL only: `https://www.homesteadwestlasvegas.com/` (and other page URLs with `www`). Do not request indexing for the http or non-www variants.
+- **Result:** The canonical www URL should index; the "3 affected pages" are the three redirecting variants, which is expected and not a bug.
+
+---
+
 ## 🎯 Action Items
 
 ### If Canonical URL is NOT Indexed:

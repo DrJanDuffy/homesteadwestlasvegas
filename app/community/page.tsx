@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Community & Neighborhood | Homestead West Las Vegas',
     description: 'Explore Homestead West Las Vegas community with local schools, shopping, dining, and recreation.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/community',
+    url: 'https://www.homesteadwestlasvegas.com/community',
   },
 };
 

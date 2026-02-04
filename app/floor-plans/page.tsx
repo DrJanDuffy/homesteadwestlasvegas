@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Available Homes | Homestead West Las Vegas',
     description: 'Browse current available homes in Las Vegas MLS. Updated daily with the latest properties.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/floor-plans',
+    url: 'https://www.homesteadwestlasvegas.com/floor-plans',
   },
 };
 

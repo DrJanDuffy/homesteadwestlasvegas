@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Nearby Amenities Map | Homestead West Las Vegas',
     description: 'Restaurants, parks, parking, shopping, schools, and more near Homestead West. View on Google Maps.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/amenities',
+    url: 'https://www.homesteadwestlasvegas.com/amenities',
   },
 };
 

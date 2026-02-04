@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Directions to Our Office | Homestead West Las Vegas',
     description: `Plan your visit: directions to ${DESTINATION_DISPLAY}. From airport, downtown, Henderson. Drive, transit, or walk.`,
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/directions',
+    url: 'https://www.homesteadwestlasvegas.com/directions',
   },
 };
 

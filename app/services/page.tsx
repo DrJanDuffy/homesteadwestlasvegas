@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Real Estate Services | Dr. Jan Duffy',
     description: 'Comprehensive real estate services by Dr. Jan Duffy in Las Vegas.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/services',
+    url: 'https://www.homesteadwestlasvegas.com/services',
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Schedule Appointment | Dr. Jan Duffy Real Estate',
     description: 'Schedule a consultation with Dr. Jan Duffy for expert real estate services in Las Vegas.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/appointment',
+    url: 'https://www.homesteadwestlasvegas.com/appointment',
   },
 };
 

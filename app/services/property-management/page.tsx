@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Property Management Services | Dr. Jan Duffy',
     description: 'Professional property management services in Las Vegas with VIP New Construction Homes Specialist.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/services/property-management',
+    url: 'https://www.homesteadwestlasvegas.com/services/property-management',
   },
 };
 

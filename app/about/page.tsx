@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'About Dr. Jan Duffy | VIP New Construction Specialist',
     description: 'Meet Dr. Jan Duffy, VIP new construction specialist and Las Vegas real estate expert with 500+ families helped.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/about',
+    url: 'https://www.homesteadwestlasvegas.com/about',
   },
 };
 

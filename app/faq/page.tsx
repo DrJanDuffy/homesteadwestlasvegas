@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'FAQ | Frequently Asked Questions | Dr. Jan Duffy',
     description: 'Get answers to common questions about buying new construction homes in Las Vegas.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/faq',
+    url: 'https://www.homesteadwestlasvegas.com/faq',
   },
 };
 

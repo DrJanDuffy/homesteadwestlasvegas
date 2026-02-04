@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Home Selling Services | Dr. Jan Duffy',
     description: 'Expert home selling services in Las Vegas with VIP New Construction Homes Specialist.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/services/selling',
+    url: 'https://www.homesteadwestlasvegas.com/services/selling',
   },
 };
 

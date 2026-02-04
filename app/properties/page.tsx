@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Las Vegas Properties for Sale | Dr. Jan Duffy',
     description: 'Browse Las Vegas properties for sale with Dr. Jan Duffy. Ranch-style homes starting at $910K.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/properties',
+    url: 'https://www.homesteadwestlasvegas.com/properties',
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Investment Consulting | Dr. Jan Duffy',
     description: 'Expert real estate investment consulting in Las Vegas with VIP New Construction Homes Specialist.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/services/investment',
+    url: 'https://www.homesteadwestlasvegas.com/services/investment',
   },
 };
 

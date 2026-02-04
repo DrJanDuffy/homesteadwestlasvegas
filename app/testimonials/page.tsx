@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Client Testimonials & Reviews | Dr. Jan Duffy',
     description: 'Read real client testimonials from families who worked with VIP New Construction Homes Specialist Dr. Jan Duffy.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/testimonials',
+    url: 'https://www.homesteadwestlasvegas.com/testimonials',
   },
 };
 

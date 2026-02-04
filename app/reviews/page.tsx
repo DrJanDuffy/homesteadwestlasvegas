@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Review Us on Google | Homestead West Las Vegas',
     description: 'Leave a Google review for Dr. Jan Duffy. Reviews build trust and help us stand out on Search and Maps.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/reviews',
+    url: 'https://www.homesteadwestlasvegas.com/reviews',
   },
 };
 

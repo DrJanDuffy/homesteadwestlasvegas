@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Buyer's Guide | New Construction Process | Dr. Jan Duffy",
     description: "Complete buyer's guide to new construction homes in Las Vegas with VIP New Construction Homes Specialist.",
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/buyers-guide',
+    url: 'https://www.homesteadwestlasvegas.com/buyers-guide',
   },
 };
 
@@ -77,55 +77,55 @@ export default function BuyersGuidePage() {
         '@type': 'HowToStep',
         name: 'Get Pre-approved',
         text: 'Obtain mortgage pre-approval to understand your budget and strengthen your offer.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#preapproval'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#preapproval'
       },
       {
         '@type': 'HowToStep',
         name: 'Choose Your Community',
         text: 'Select the perfect new construction development for your lifestyle and needs.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#community'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#community'
       },
       {
         '@type': 'HowToStep',
         name: 'Select Floor Plan',
         text: 'Choose from available floor plans and customize with structural and design options.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#floorplan'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#floorplan'
       },
       {
         '@type': 'HowToStep',
         name: 'Pick Your Lot',
         text: 'Select your homesite and any lot premiums or upgrades.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#lot'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#lot'
       },
       {
         '@type': 'HowToStep',
         name: 'Sign Purchase Agreement',
         text: 'Execute the purchase agreement and provide earnest money deposit.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#contract'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#contract'
       },
       {
         '@type': 'HowToStep',
         name: 'Design Center Selection',
         text: 'Choose finishes, colors, and upgrades at the builder Design Center.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#design'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#design'
       },
       {
         '@type': 'HowToStep',
         name: 'Construction Monitoring',
         text: 'Monitor construction progress with regular updates and walk-throughs.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#construction'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#construction'
       },
       {
         '@type': 'HowToStep',
         name: 'Final Walkthrough',
         text: 'Complete final walkthrough and address any punch list items.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#walkthrough'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#walkthrough'
       },
       {
         '@type': 'HowToStep',
         name: 'Closing',
         text: 'Sign final documents and receive keys to your new construction home.',
-        url: 'https://homesteadwestlasvegas.com/buyers-guide#closing'
+        url: 'https://www.homesteadwestlasvegas.com/buyers-guide#closing'
       }
     ]
   };

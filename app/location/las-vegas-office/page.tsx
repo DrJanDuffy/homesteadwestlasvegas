@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Las Vegas Real Estate Office | Homestead West',
     description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy provides expert real estate services.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/location/las-vegas-office',
+    url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office',
   },
 };
 
@@ -20,7 +20,7 @@ export default function LasVegasOfficePage() {
     '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy',
     description: 'Expert Las Vegas real estate agent specializing in Northwest Las Vegas properties',
-    url: 'https://homesteadwestlasvegas.com/location/las-vegas-office',
+    url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office',
     telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {

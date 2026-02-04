@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Buying Homes Las Vegas | Dr. Jan Duffy',
     description: 'Expert home buying services in Las Vegas by Dr. Jan Duffy.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/services/buying',
+    url: 'https://www.homesteadwestlasvegas.com/services/buying',
   },
 };
 

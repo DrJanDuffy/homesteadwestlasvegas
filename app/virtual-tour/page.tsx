@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Virtual Tour | Homestead West Las Vegas',
     description: 'Take a virtual 3D tour of Homestead West luxury ranch homes in Northwest Las Vegas.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/virtual-tour',
+    url: 'https://www.homesteadwestlasvegas.com/virtual-tour',
   },
 };
 
@@ -27,7 +27,7 @@ export default function VirtualTourPage() {
     '@type': 'VirtualLocation',
     name: 'Homestead West Virtual Tour',
     description: 'Interactive 3D virtual tour of Homestead West luxury ranch homes',
-    url: 'https://homesteadwestlasvegas.com/virtual-tour',
+    url: 'https://www.homesteadwestlasvegas.com/virtual-tour',
     provider: {
       '@type': 'Organization',
       name: 'Matterport',
@@ -54,8 +54,8 @@ export default function VirtualTourPage() {
     description: 'Interactive 3D virtual tour of Homestead West luxury ranch homes in Northwest Las Vegas',
     // thumbnailUrl: 'https://www.homesteadwestlasvegas.com/images/virtual-tour-thumbnail.jpg', // TODO: Add when thumbnail is available
     uploadDate: '2024-01-01',
-    contentUrl: 'https://homesteadwestlasvegas.com/virtual-tour',
-    embedUrl: 'https://homesteadwestlasvegas.com/virtual-tour',
+    contentUrl: 'https://www.homesteadwestlasvegas.com/virtual-tour',
+    embedUrl: 'https://www.homesteadwestlasvegas.com/virtual-tour',
     publisher: {
       '@type': 'RealEstateAgent',
       name: 'Dr. Jan Duffy',

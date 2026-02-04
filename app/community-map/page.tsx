@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Community Map | Homestead West Las Vegas | Available Lots & Homesites',
     description: 'Explore Homestead West community map with available lots and homesites in Northwest Las Vegas. New construction homes from $910K.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/community-map',
+    url: 'https://www.homesteadwestlasvegas.com/community-map',
   },
 };
 
@@ -34,7 +34,7 @@ export default function CommunityMapPage() {
     '@type': 'Map',
     name: 'Homestead West Community Map',
     description: 'Interactive map showing available lots and homesites at Homestead West',
-    url: 'https://homesteadwestlasvegas.com/community-map',
+    url: 'https://www.homesteadwestlasvegas.com/community-map',
     provider: {
       '@type': 'Organization',
       name: 'the builder'

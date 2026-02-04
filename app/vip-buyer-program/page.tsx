@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: 'VIP Berkshire Hathaway HomeServices Buyer Program | Dr. Jan Duffy',
     description: 'Get VIP access to new construction homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, and expert negotiation.',
     type: 'website',
-    url: 'https://homesteadwestlasvegas.com/vip-buyer-program',
+    url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program',
   },
 };
 
