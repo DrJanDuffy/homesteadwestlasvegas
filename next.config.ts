@@ -151,6 +151,9 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // GSC reported 404 for /$ (typo/bot URL) — redirect to homepage
+      { source: '/%24', destination: '/', permanent: true },
+      { source: '/\\$', destination: '/', permanent: true },
     ];
   },
   
