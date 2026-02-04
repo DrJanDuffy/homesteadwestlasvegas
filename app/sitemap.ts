@@ -1,11 +1,25 @@
 import { MetadataRoute } from 'next'
+import { fetchKCMPosts } from '@/lib/rss-fetcher'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.homesteadwestlasvegas.com'
   const now = new Date()
   const lastModified = now.toISOString()
 
-  return [
+  let blogUrls: MetadataRoute.Sitemap = []
+  try {
+    const posts = await fetchKCMPosts()
+    blogUrls = posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: post.publishedAt.toISOString(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }))
+  } catch {
+    // Omit blog URLs if RSS unavailable at build/crawl time
+  }
+
+  const staticPages: MetadataRoute.Sitemap = [
     // Homepage - Highest Priority
     {
       url: baseUrl,
@@ -192,5 +206,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/homestead-west-vs-skye-canyon`,
+      lastModified: lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
   ]
+
+  return [...staticPages, ...blogUrls]
 }

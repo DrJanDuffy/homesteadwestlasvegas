@@ -5,6 +5,7 @@
 ### Google Analytics & SEO
 ```bash
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+# From Google Search Console → Add property → HTML tag → copy the content value
 GOOGLE_SITE_VERIFICATION=your-google-verification-code-here
 ```
 

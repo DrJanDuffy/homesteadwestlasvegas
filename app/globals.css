@@ -41,10 +41,11 @@ body {
   margin: 0 auto;
 }
 
+/* 2026 luxury: deep navy, warm gold accents */
 #pro-search-box-widget #home-search-form {
   font-family: 'Muli', sans-serif;
   color: #fff;
-  background: #001D31;
+  background: #0f2439;
   border-radius: 8px;
   padding: 20px;
 }
@@ -75,7 +76,7 @@ body {
 }
 
 #pro-search-box-widget .homes-type-field--link {
-  color: #f58220;
+  color: #c9a227;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -84,6 +85,7 @@ body {
 }
 
 #pro-search-box-widget .homes-type-field--link:hover {
+  color: #d4af37;
   text-decoration: underline;
 }
 
@@ -105,8 +107,9 @@ body {
   font-size: 16px;
 }
 
+/* Luxury real estate: navy + gold — WCAG AA: white on #142d47 ≥4.5:1 */
 #pro-search-box-widget #HomeSearchBtnWidget {
-  background-color: #c55a00;
+  background-color: #142d47;
   color: white;
   border: none;
   padding: 14px 20px;
@@ -117,7 +120,7 @@ body {
 }
 
 #pro-search-box-widget #HomeSearchBtnWidget:hover {
-  background-color: #a84d00;
+  background-color: #0f2439;
 }
 
 #pro-search-box-widget #home-search-options {

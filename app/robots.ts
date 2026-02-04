@@ -1,7 +1,10 @@
 import { MetadataRoute } from 'next'
 
+const SITE_URL = 'https://www.homesteadwestlasvegas.com'
+
 export default function robots(): MetadataRoute.Robots {
   return {
+    host: SITE_URL,
     rules: [
       {
         userAgent: '*',
@@ -34,6 +37,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: 'https://www.homesteadwestlasvegas.com/sitemap.xml',
+    sitemap: `${SITE_URL}/sitemap.xml`,
   }
 }
