@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
-import { SITE_URL } from '@/lib/site-contact';
+import { LICENSE_ID, SITE_URL } from '@/lib/site-contact';
 import { ASSET_BHHS_LOGO_PATH, ASSET_HEADSHOT_PATH, headshotAbsoluteUrl } from '@/lib/site-assets';
 import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 // RealScout listings load client-side, so this doesn't affect dynamic data
 export const revalidate = 3600; // 1 hour
 
-/** Single source for homepage FAQ (visible copy + FAQPage JSON-LD must match — AEO / schema integrity). */
+/** Homepage FAQ subset — visible copy + FAQPage JSON-LD must match. More answers on /faq. */
 const homePageFaqs = [
   {
     question: 'Do I have to pay Dr. Jan to represent me?',
@@ -66,16 +66,6 @@ const homePageFaqs = [
     question: "I'm relocating from out of state. Can you help remotely?",
     answer:
       'Absolutely. Most clients start with a video call. Dr. Jan can send virtual tours, market reports, and handle everything until you are ready to visit in person.',
-  },
-  {
-    question: 'Is there room to negotiate on new construction pricing?',
-    answer:
-      'Yes. Builders have flexibility on upgrades, closing costs, lot premiums, and sometimes base price—especially on standing inventory. Dr. Jan knows what to ask for.',
-  },
-  {
-    question: 'What if I want to see other communities too?',
-    answer:
-      'Dr. Jan will show you how Homestead West compares to Skye Canyon, Summerlin, Providence, and other Northwest options so you can make the best decision.',
   },
 ] as const;
 
@@ -508,19 +498,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Solution Section - AEO: Question-based with clear answer */}
+        {/* Solution — teaser + deep links (full bio on /about) */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="flex justify-center mb-8">
-                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20" style={{ aspectRatio: '1/1' }}>
+              <div className="flex justify-center mb-6">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20" style={{ aspectRatio: '1/1' }}>
                   <Image
                     src={ASSET_HEADSHOT_PATH}
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                     fill
                     className="object-cover object-center"
                     style={{ objectPosition: 'center top' }}
-                    sizes="(max-width: 768px) 160px, 192px"
+                    sizes="(max-width: 768px) 128px, 160px"
                     loading="lazy"
                   />
                 </div>
@@ -528,52 +518,25 @@ export default function HomePage() {
               <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
                 Who is Dr. Jan Duffy?
               </h2>
-              <p className="text-xl text-center mb-8 text-gray-700">
-                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614.LLC) who represents home buyers exclusively in Northwest Las Vegas. She leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
+              <p className="text-lg text-center mb-6 text-gray-700 max-w-2xl mx-auto">
+                VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License {LICENSE_ID}). She represents home buyers—not the builder—in Homestead West and Northwest Las Vegas, with VIP access, negotiation support, and local market context.
               </p>
-              <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">
-                Your Advocate in the New Construction Process
-              </h3>
-              <div className="prose prose-lg max-w-none text-gray-700 mb-8">
-                <p className="text-lg leading-relaxed mb-6">
-                  Dr. Jan Duffy leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
-                </p>
-                <p className="text-lg leading-relaxed mb-6 font-semibold">
-                  What you get:
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Early Phase Access</h3>
-                  <p className="text-gray-700">
-                    VIP buyers see new lot releases before the general public.
-                  </p>
-                </div>
-                <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Leverage</h3>
-                  <p className="text-gray-700">
-                    New construction prices aren't set in stone. Dr. Jan negotiates upgrades, closing costs, and lot premiums.
-                  </p>
-                </div>
-                <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Market Intelligence</h3>
-                  <p className="text-gray-700">
-                    Is this community fairly priced? How does it compare to Skye Canyon, Summerlin, or Providence? Dr. Jan shows you the data so you can decide with confidence.
-                  </p>
-                </div>
-                <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">Zero Cost to You</h3>
-                  <p className="text-gray-700">
-                    The builder pays the buyer's agent commission. You get expert representation at no additional cost.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="text-center">
+              <ul className="grid sm:grid-cols-2 gap-2 mb-8 text-gray-700 text-sm max-w-2xl mx-auto">
+                <li className="flex gap-2"><span className="text-[#1a365d] font-bold shrink-0">✓</span> Early phase &amp; lot release alerts</li>
+                <li className="flex gap-2"><span className="text-[#1a365d] font-bold shrink-0">✓</span> Upgrades, closing costs &amp; lot premiums</li>
+                <li className="flex gap-2"><span className="text-[#1a365d] font-bold shrink-0">✓</span> Compare vs. Skye Canyon, Summerlin &amp; more</li>
+                <li className="flex gap-2"><span className="text-[#1a365d] font-bold shrink-0">✓</span> Builder-paid buyer agent commission</li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link
+                  href="/about"
+                  className="inline-block border-2 border-[#1a365d] text-[#1a365d] px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#1a365d] hover:text-white transition-colors"
+                >
+                  About Dr. Jan — full bio
+                </Link>
                 <a
                   href="/vip-buyer-program"
-                  className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
+                  className="inline-block bg-[#1a365d] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
                 >
                   Join the VIP Buyer Program
                 </a>
@@ -605,7 +568,7 @@ export default function HomePage() {
                 />
               </div>
               
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="text-lg font-bold mb-3 text-gray-900">Global Network</h3>
                   <p className="text-gray-700 text-sm">
@@ -625,74 +588,51 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-              
-              <p className="text-lg text-gray-700 mb-6">
-                When you work with Dr. Jan, you're not just getting a real estate agent. You're getting the resources, reputation, and reach of Berkshire Hathaway HomeServices behind every transaction.
-              </p>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">The Berkshire Hathaway HomeServices Advantage</h3>
-                <p className="text-gray-700">
-                  The VIP Berkshire Hathaway HomeServices Buyer Program's builder relationships and VIP access get you first look at lots, unlisted inventory, and negotiating power that individual buyers don't have.
-                </p>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* Proof Section */}
+        {/* Proof — teaser; full stories on /testimonials */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
                 What Buyers Say
               </h2>
-              
-              <div className="space-y-6 mb-8">
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
-                  <p className="text-lg text-gray-700 mb-4 italic">
-                    "A couple in the area wanted a corner lot in Homestead West. They called the VIP Berkshire Hathaway HomeServices Buyer Program two weeks before the public release. We registered them in the VIP program. They secured a corner position with mountain views—before anyone else saw it."
-                  </p>
-                  <p className="text-gray-900 font-semibold">— Homestead West Buyers</p>
-                  <p className="text-gray-700 text-sm">Final savings: $15,000 in negotiated upgrades including quartz countertops and covered patio extension</p>
-                </div>
-                
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-600">
-                  <p className="text-lg text-gray-700 mb-4 italic">
-                    "A local executive was upsizing and needed to close in 60 days. The VIP Berkshire Hathaway HomeServices Buyer Program connected him with a move-in-ready spec home that wasn't publicly listed yet. The program negotiated $12,500 in closing cost credits. He moved in on schedule."
-                  </p>
-                  <p className="text-gray-900 font-semibold">— Local Executive</p>
-                  <p className="text-gray-700 text-sm">Closed in 60 days with $12,500 in closing cost credits</p>
-                </div>
-                
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-600">
-                  <p className="text-lg text-gray-700 mb-4 italic">
-                    "A retiring couple nearby wanted a larger floor plan with a casita for visiting grandchildren. The builder's sales rep said it wasn't available. The VIP Berkshire Hathaway HomeServices Buyer Program checked the VIP portal. Found one coming available in 30 days. They secured it before it went public."
-                  </p>
-                  <p className="text-gray-900 font-semibold">— Retiring Couple</p>
-                  <p className="text-gray-700 text-sm">Saved $18,000 through our negotiation—design center upgrades plus lot premium credits</p>
-                </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 mb-6">
+                <p className="text-lg text-gray-700 mb-4 italic">
+                  &quot;A couple in the area wanted a corner lot in Homestead West. They called the VIP Berkshire Hathaway HomeServices Buyer Program two weeks before the public release. We registered them in the VIP program. They secured a corner position with mountain views—before anyone else saw it.&quot;
+                </p>
+                <p className="text-gray-900 font-semibold">— Homestead West Buyers</p>
+                <p className="text-gray-700 text-sm">Final savings: $15,000 in negotiated upgrades including quartz countertops and covered patio extension</p>
               </div>
-              
-              <div className="bg-blue-900 text-white p-8 rounded-lg mb-8">
-                <h3 className="text-2xl font-bold mb-6 text-center">Homestead West by the Numbers</h3>
+
+              <p className="text-center mb-8">
+                <Link href="/testimonials" className="text-[#1a365d] font-semibold underline hover:text-[#d4af37]">
+                  Read more client stories →
+                </Link>
+              </p>
+
+              <div className="bg-blue-900 text-white p-6 md:p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-center">Homestead West by the Numbers</h3>
                 <p className="text-center text-blue-100 mb-6 text-sm">VIP Berkshire Hathaway HomeServices Buyer Program results</p>
-                <div className="grid md:grid-cols-4 gap-6 text-center">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                   <div itemScope itemType="https://schema.org/QuantitativeValue">
-                    <data value="VIP" className="text-3xl font-bold text-yellow-400 mb-2 block">VIP</data>
-                    <p className="text-sm">Early Access & Priority Lot Selection</p>
+                    <data value="VIP" className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 block">VIP</data>
+                    <p className="text-xs md:text-sm">Early access &amp; lot selection</p>
                   </div>
                   <div itemScope itemType="https://schema.org/QuantitativeValue">
-                    <data value="14200" className="text-3xl font-bold text-yellow-400 mb-2 block">$14,200</data>
-                    <p className="text-sm">Average savings per transaction (65+ transactions, 2022-2025)</p>
+                    <data value="14200" className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 block">$14,200</data>
+                    <p className="text-xs md:text-sm">Avg. savings per transaction (65+ transactions, 2022–2025)</p>
                   </div>
                   <div itemScope itemType="https://schema.org/QuantitativeValue">
-                    <data value="18" className="text-3xl font-bold text-yellow-400 mb-2 block">18</data>
-                    <p className="text-sm">Lots secured before public release</p>
+                    <data value="18" className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 block">18</data>
+                    <p className="text-xs md:text-sm">Lots secured before public release</p>
                   </div>
                   <div itemScope itemType="https://schema.org/QuantitativeValue">
-                    <data value="98" className="text-3xl font-bold text-yellow-400 mb-2 block">98%</data>
-                    <p className="text-sm">Client satisfaction rate</p>
+                    <data value="98" className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 block">98%</data>
+                    <p className="text-xs md:text-sm">Client satisfaction rate</p>
                   </div>
                 </div>
               </div>
@@ -700,80 +640,33 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Community Snapshot */}
+        {/* Community — teaser (details on /community; quick facts above) */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">
                 The Community at a Glance
               </h2>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                {/* HOMES */}
-                <div className="bg-gray-50 rounded-xl p-6">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">HOMES</h3>
-                  <ul className="space-y-2 text-gray-700 text-sm">
-                    <li>• Single-story ranch designs</li>
-                    <li>• 3,336 – 3,704 sq ft</li>
-                    <li>• 4 bedrooms, 4+ bathrooms</li>
-                    <li>• Pool-sized lots</li>
-                    <li>• Optional detached casitas</li>
-                    <li>• Multi-generational floor plans</li>
-                  </ul>
-                </div>
-                
-                {/* LOCATION */}
-                <div className="bg-blue-50 rounded-xl p-6">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">LOCATION</h3>
-                  <ul className="space-y-2 text-gray-700 text-sm">
-                    <li>• Northwest Las Vegas (89149)</li>
-                    <li>• W. Ann Rd. & N. Fort Apache Rd.</li>
-                    <li>• 9 miles to Red Rock Canyon</li>
-                    <li>• 18 miles to Downtown/Strip</li>
-                    <li>• 23 miles to Mount Charleston</li>
-                  </ul>
-                </div>
-                
-                {/* PRICE */}
-                <div className="bg-green-50 rounded-xl p-6">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">PRICE</h3>
-                  <ul className="space-y-2 text-gray-700 text-sm">
-                    <li>• Starting from $910K</li>
-                    <li>
-                      <a 
-                        href="https://drjanduffy.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNTk3Mg=="
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 font-semibold underline"
-                      >
-                        View available homes
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                
-                {/* NEARBY */}
-                <div className="bg-yellow-50 rounded-xl p-6">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">NEARBY</h3>
-                  <ul className="space-y-2 text-gray-700 text-sm mb-4">
-                    <li>• Centennial Hills Park</li>
-                    <li>• Gilcrease Orchard</li>
-                    <li>• Lone Mountain Regional Park</li>
-                    <li>• Top-rated schools: Dean LaMar Allen Elementary, Justice Myron E. Leavitt Middle, Centennial High School, Northwest Career & Technical Academy (magnet)</li>
-                  </ul>
-                  <a
-                    href="https://maps.app.goo.gl/rMPkPwK5Mz7Z2T5J7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold text-sm"
-                  >
-                    <span>🗺️</span>
-                    <span>Explore More Things to Do</span>
-                  </a>
-                </div>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Single-story ranch homes from $910K+ on pool-sized lots in 89149—optional casitas, multi-generational plans, and quick access to Red Rock Canyon and Centennial Hills. Schools, amenities, and lifestyle are covered in the full guide.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <Link
+                  href="/community"
+                  className="inline-block bg-[#1a365d] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
+                >
+                  Community guide — schools &amp; amenities
+                </Link>
+                <a
+                  href="https://drjanduffy.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNTk3Mg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border-2 border-[#1a365d] text-[#1a365d] px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-50 transition-colors"
+                >
+                  View available homes (MLS)
+                </a>
               </div>
-
-              <p className="text-center text-gray-600 text-sm mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                 Researching the wider{' '}
                 <Link href="/la-madre-foothills" className="text-[#1a365d] font-semibold underline">
                   La Madre Foothills
@@ -784,117 +677,74 @@ export default function HomePage() {
                 </Link>
                 .
               </p>
-              
+              <a
+                href="https://maps.app.goo.gl/rMPkPwK5Mz7Z2T5J7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#1a365d] font-semibold text-sm underline hover:text-[#d4af37]"
+              >
+                <span aria-hidden>🗺️</span>
+                Explore more things to do nearby
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Process — summary; full timeline on /homebuying-process */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-6 text-gray-900">
+                How It Works
+              </h2>
+              <ol className="list-decimal pl-5 space-y-3 text-gray-700 mb-6">
+                <li>Schedule a 15-minute call—goals, budget, and must-haves.</li>
+                <li>Get VIP access to new phases, pricing, and inventory alerts.</li>
+                <li>Tour with your advocate—not the builder&apos;s sales rep.</li>
+                <li>Negotiate and close with Dr. Jan on your side through inspections and paperwork.</li>
+              </ol>
+              <p className="text-center mb-8">
+                <Link href="/homebuying-process" className="text-[#1a365d] font-semibold underline hover:text-[#d4af37]">
+                  Full homebuying timeline &amp; milestones →
+                </Link>
+              </p>
               <div className="text-center">
                 <a
-                  href="http://drjanduffy.realscout.com/onboarding"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/appointment"
                   className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
                 >
-                  View Available Homes
+                  Book Your 15-Minute Call
                 </a>
               </div>
             </div>
           </div>
         </section>
 
-            {/* Process Section */}
-            <section className="py-16 bg-white">
-              <div className="container mx-auto px-4">
-                <div className="max-w-6xl mx-auto">
-                  <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                      How It Works
-                    </h2>
+        {/* FAQ — subset; complete list on /faq */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+                Frequently Asked Questions About Buying in Homestead West Las Vegas
+              </h2>
+
+              <div className="space-y-6">
+                {homePageFaqs.map((faq) => (
+                  <div key={faq.question} className="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 className="text-xl font-bold mb-3 text-gray-900">{faq.question}</h3>
+                    <p className="text-gray-700">{faq.answer}</p>
                   </div>
-
-                  {/* Process Steps */}
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {/* Step 1 */}
-                    <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
-                      <div className="flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full text-2xl font-bold mb-4 mx-auto">
-                        1
-                      </div>
-                      <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Schedule a Call (15 minutes)
-                      </h3>
-                      <p className="text-gray-700 text-sm text-center">
-                        Tell Dr. Jan what you're looking for—budget, timeline, must-haves.
-                      </p>
-                    </div>
-
-                    {/* Step 2 */}
-                    <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
-                      <div className="flex items-center justify-center w-16 h-16 bg-purple-600 text-white rounded-full text-2xl font-bold mb-4 mx-auto">
-                        2
-                      </div>
-                      <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Get VIP Access
-                      </h3>
-                      <p className="text-gray-700 text-sm text-center">
-                        Receive early alerts on new phases, price changes, and inventory.
-                      </p>
-                    </div>
-
-                    {/* Step 3 */}
-                    <div className="bg-green-50 rounded-xl p-6 border-2 border-green-200">
-                      <div className="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4 mx-auto">
-                        3
-                      </div>
-                      <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Tour with Your Advocate
-                      </h3>
-                      <p className="text-gray-700 text-sm text-center">
-                        Visit the community with someone who works for YOU, not the builder.
-                      </p>
-                    </div>
-
-                    {/* Step 4 */}
-                    <div className="bg-yellow-50 rounded-xl p-6 border-2 border-yellow-200">
-                      <div className="flex items-center justify-center w-16 h-16 bg-yellow-500 text-black rounded-full text-2xl font-bold mb-4 mx-auto">
-                        4
-                      </div>
-                      <h3 className="text-xl font-bold text-center mb-3 text-gray-900">
-                        Negotiate & Close
-                      </h3>
-                      <p className="text-gray-700 text-sm text-center">
-                        Dr. Jan handles negotiations, inspections, and paperwork through closing.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center mt-8">
-                    <a
-                      href="/appointment"
-                      className="inline-block bg-[#1a365d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f2439] transition-colors shadow-lg"
-                    >
-                      Book Your 15-Minute Call
-                    </a>
-                  </div>
-                </div>
+                ))}
               </div>
-            </section>
 
-            {/* FAQ Section */}
-            <section className="py-16 bg-gray-50">
-              <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto">
-                  <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-                    Frequently Asked Questions About Buying in Homestead West Las Vegas
-                  </h2>
-                  
-                  <div className="space-y-6">
-                    {homePageFaqs.map((faq) => (
-                      <div key={faq.question} className="bg-white p-6 rounded-lg shadow-sm">
-                        <h3 className="text-xl font-bold mb-3 text-gray-900">{faq.question}</h3>
-                        <p className="text-gray-700">{faq.answer}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </section>
+              <p className="text-center mt-10">
+                <Link href="/faq" className="text-[#1a365d] font-semibold underline hover:text-[#d4af37] text-lg">
+                  More questions — pricing, negotiations &amp; communities →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Final CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#1a365d] to-[#0f2439] text-white">
