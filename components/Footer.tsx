@@ -88,11 +88,10 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 pt-8 text-center text-sm">
           <p className="mb-2">
-            © 2025 HomesteadWestLasVegas.com | All rights reserved.
+            Homestead West | Homes by Dr Jan Duffy | Berkshire Hathaway HomeServices | License: S.0197614.LLC
           </p>
           <p className="text-gray-400">
-            Independent real estate resource. Not affiliated with or endorsed by the builder. 
-            Dr. Jan Duffy is an independent real estate agent with Berkshire Hathaway HomeServices Nevada, providing expert guidance to home buyers.
+            © 2026 Homestead West | Homes by Dr Jan Duffy All rights reserved.
           </p>
         </div>
       </div>
