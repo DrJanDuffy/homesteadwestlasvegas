@@ -210,7 +210,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white">
                   <span className="text-2xl">📜</span>
-                  <span className="text-white">Nevada License S.0197614</span>
+                  <span className="text-white">Nevada License S.0197614.LLC</span>
                 </div>
               </div>
 
@@ -529,7 +529,7 @@ export default function HomePage() {
                 Who is Dr. Jan Duffy?
               </h2>
               <p className="text-xl text-center mb-8 text-gray-700">
-                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614) who represents home buyers exclusively in Northwest Las Vegas. She leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
+                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614.LLC) who represents home buyers exclusively in Northwest Las Vegas. She leads the VIP Berkshire Hathaway HomeServices Buyer Program, which has helped 65+ families buy homes in Homestead West since 2022—with an average savings of $14,200 per transaction.
               </p>
               <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">
                 Your Advocate in the New Construction Process
@@ -615,7 +615,7 @@ export default function HomePage() {
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="text-lg font-bold mb-3 text-gray-900">Local Expertise</h3>
                   <p className="text-gray-700 text-sm">
-                    Top-producing brokerage in the Las Vegas market
+                    Deep knowledge of Northwest Las Vegas neighborhoods and new construction
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">

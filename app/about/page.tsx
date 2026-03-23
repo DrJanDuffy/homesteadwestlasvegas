@@ -6,7 +6,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'About Dr. Jan Duffy | VIP New Construction Specialist | Las Vegas Real Estate Expert',
-  description: 'Meet Dr. Jan Duffy, VIP New Construction Homes Specialist and Las Vegas real estate expert. 500+ families helped, Nevada License S.0197614. Represents home buyers exclusively.',
+  description: 'Meet Dr. Jan Duffy, VIP New Construction Homes Specialist and Las Vegas real estate expert. 500+ families helped, Nevada License S.0197614.LLC. Represents home buyers exclusively.',
   keywords: [
     'Dr. Jan Duffy Las Vegas',
     'Las Vegas real estate agent',
@@ -49,7 +49,7 @@ export default function AboutPage() {
       '@type': 'EducationalOccupationalCredential',
       name: 'Nevada Real Estate License',
       credentialCategory: 'license',
-      credentialId: 'S.0197614',
+      credentialId: 'S.0197614.LLC',
       recognizedBy: {
         '@type': 'Organization',
         name: 'Nevada Real Estate Division'
@@ -108,12 +108,12 @@ export default function AboutPage() {
               </div>
               <h1 itemProp="headline" className="text-5xl md:text-6xl font-bold mb-6">Who is Dr. Jan Duffy?</h1>
               <p itemProp="description" className="text-2xl md:text-3xl mb-4 text-blue-100">
-                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614) who represents home buyers exclusively in Northwest Las Vegas. She has helped 500+ families and leads the VIP Buyer Program that has assisted 65+ Homestead West families since 2022.
+                Dr. Jan Duffy is a VIP New Construction Homes Specialist with Berkshire Hathaway HomeServices Nevada (License S.0197614.LLC) who represents home buyers exclusively in Northwest Las Vegas. She has helped 500+ families and leads the VIP Buyer Program that has assisted 65+ Homestead West families since 2022.
               </p>
-              <p className="text-xl text-blue-200 mb-4">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+              <p className="text-xl text-blue-200 mb-4">Las Vegas Real Estate Expert | Nevada License S.0197614.LLC</p>
               {/* AEO: Author attribution and freshness */}
               <address rel="author" className="text-blue-100 text-lg mb-2">
-                By <a href="/about" className="text-yellow-400 hover:text-yellow-300">Dr. Jan Duffy</a>, Licensed Nevada Real Estate Agent (S.0197614)
+                By <a href="/about" className="text-yellow-400 hover:text-yellow-300">Dr. Jan Duffy</a>, Licensed Nevada Real Estate Agent (S.0197614.LLC)
               </address>
               <time dateTime="2026-01-19" className="text-blue-200 text-sm">Last updated: January 19, 2026</time>
             </div>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                         <span className="text-green-600 mr-3 text-xl">✓</span>
                         <div>
                           <p className="font-semibold text-gray-900">Nevada Real Estate License</p>
-                          <p className="text-gray-700">License #S.0197614</p>
+                          <p className="text-gray-700">License #S.0197614.LLC</p>
                         </div>
                       </div>
                       <div className="flex items-start">
@@ -453,7 +453,7 @@ export default function AboutPage() {
               
               <div className="mt-8 text-blue-200">
                 <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
-                <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+                <p>Las Vegas Real Estate Expert | Nevada License S.0197614.LLC</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
                 <p className="mt-4 text-sm">
                   Independent real estate agent providing VIP access to new construction homes. 

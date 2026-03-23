@@ -6,7 +6,7 @@ import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Las Vegas Real Estate Office | Homestead West | Dr. Jan Duffy',
-  description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy (License S.0197614) provides expert real estate services in Northwest Las Vegas.',
+  description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy (License S.0197614.LLC) provides expert real estate services in Northwest Las Vegas.',
   keywords: 'Las Vegas real estate office, Dr. Jan Duffy office, Northwest Las Vegas real estate, real estate agent Las Vegas, Homestead West office',
   ...canonicalMetadata('/location/las-vegas-office'),
   openGraph: {
@@ -44,7 +44,7 @@ export default function LasVegasOfficePage() {
       'Mo-Fr 10:00-18:00',
       'Sa 10:00-16:00'
     ],
-    licenseNumber: 'S.0197614',
+    licenseNumber: 'S.0197614.LLC',
     areaServed: {
       '@type': 'City',
       name: 'Las Vegas',

@@ -367,7 +367,7 @@ export default function CommunityMapPage() {
                     <p><span className="font-semibold">Phone:</span> (702) 299-6607</p>
                     <p><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
                     <p><span className="font-semibold">Office:</span> Builder Sales Office</p>
-                    <p><span className="font-semibold">License:</span> Nevada S.0197614</p>
+                    <p><span className="font-semibold">License:</span> Nevada S.0197614.LLC</p>
                   </div>
                 </div>
                 

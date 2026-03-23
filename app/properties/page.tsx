@@ -5,7 +5,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Las Vegas Properties for Sale | Dr. Jan Duffy | Ranch Homes $910K+',
-  description: 'Browse Las Vegas properties for sale with Dr. Jan Duffy (License S.0197614). Discover ranch-style homes on pool-sized lots in Northwest Las Vegas starting at $910K. View available Homestead West homes and new construction listings.',
+  description: 'Browse Las Vegas properties for sale with Dr. Jan Duffy (License S.0197614.LLC). Discover ranch-style homes on pool-sized lots in Northwest Las Vegas starting at $910K. View available Homestead West homes and new construction listings.',
   keywords: 'Las Vegas properties for sale, ranch homes Las Vegas, Northwest Las Vegas homes, $910K homes Las Vegas, Dr. Jan Duffy listings',
   openGraph: {
     title: 'Las Vegas Properties for Sale | Dr. Jan Duffy',
@@ -44,7 +44,7 @@ export default function PropertiesPage() {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
           telephone: '+17022996607',
-          licenseNumber: 'S.0197614'
+          licenseNumber: 'S.0197614.LLC'
         }
       },
       {
@@ -68,7 +68,7 @@ export default function PropertiesPage() {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
           telephone: '+17022996607',
-          licenseNumber: 'S.0197614'
+          licenseNumber: 'S.0197614.LLC'
         }
       },
       {
@@ -92,7 +92,7 @@ export default function PropertiesPage() {
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
           telephone: '+17022996607',
-          licenseNumber: 'S.0197614'
+          licenseNumber: 'S.0197614.LLC'
         }
       }
     ]

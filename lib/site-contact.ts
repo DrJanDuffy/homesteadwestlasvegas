@@ -9,7 +9,8 @@ export const BUSINESS_NAME_SHORT = 'Homestead West Las Vegas' as const
 
 export const BROKERAGE_NAME = 'Berkshire Hathaway HomeServices Nevada Properties' as const
 export const AGENT_NAME = 'Dr. Jan Duffy' as const
-export const LICENSE_ID = 'S.0197614' as const
+/** Nevada license as shown on GBP / footer (includes LLC entity suffix). */
+export const LICENSE_ID = 'S.0197614.LLC' as const
 export const LICENSE_DISPLAY = `Nevada Real Estate License ${LICENSE_ID}` as const
 
 export const PHONE_E164 = '+17022996607' as const
@@ -35,4 +36,4 @@ export const BUSINESS_SCHEMA_ID = `${SITE_URL}/#business` as const
  * First-party, citable RealEstateAgent description for JSON-LD (no sales volume or review counts).
  */
 export const AGENT_JSONLD_DESCRIPTION =
-  'Las Vegas real estate agent and VIP New Construction Homes Specialist. Ph.D. in Market Research & Consumer Behavior. Nevada real estate license S.0197614. Berkshire Hathaway HomeServices Nevada Properties. Represents home buyers in new construction including Homestead West.'
+  'Las Vegas real estate agent and VIP New Construction Homes Specialist. Ph.D. in Market Research & Consumer Behavior. Nevada real estate license S.0197614.LLC. Berkshire Hathaway HomeServices Nevada Properties. Represents home buyers in new construction including Homestead West.'

@@ -357,7 +357,7 @@ export default function TestimonialsPage() {
               
               <div className="mt-8 text-blue-200">
                 <p className="text-lg font-semibold">Dr. Jan Duffy - VIP New Construction Specialist</p>
-                <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+                <p>Las Vegas Real Estate Expert | Nevada License S.0197614.LLC</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
               </div>
             </div>

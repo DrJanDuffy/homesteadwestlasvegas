@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         "Las Vegas homebuyer guide",
         "VIP buyer program",
         "Las Vegas real estate expert",
-        "Nevada real estate license S.0197614"
+        "Nevada real estate license S.0197614.LLC"
       ],
 
   authors: [{ name: "Dr. Jan Duffy" }],
@@ -205,7 +205,7 @@ export default function RootLayout({
             '@type': 'EducationalOccupationalCredential',
             name: 'Nevada Real Estate License',
             credentialCategory: 'license',
-            credentialId: 'S.0197614',
+            credentialId: 'S.0197614.LLC',
             recognizedBy: {
               '@type': 'Organization',
               name: 'Nevada Real Estate Division'
@@ -495,7 +495,7 @@ export default function RootLayout({
                         {
                           '@type': 'EducationalOccupationalCredential',
                           credentialCategory: 'license',
-                          name: 'Nevada Real Estate License S.0197614'
+                          name: 'Nevada Real Estate License S.0197614.LLC'
                         }
                       ],
                       memberOf: {
@@ -545,7 +545,7 @@ export default function RootLayout({
                       hasCredential: {
                         '@type': 'EducationalOccupationalCredential',
                         credentialCategory: 'license',
-                        name: 'Nevada Real Estate License S.0197614'
+                        name: 'Nevada Real Estate License S.0197614.LLC'
                       },
                       foundingDate: '2022',
                       numberOfEmployees: {

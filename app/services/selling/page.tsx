@@ -40,7 +40,7 @@ export default function HomeSellingPage() {
         postalCode: '89149',
         addressCountry: 'US'
       },
-      licenseNumber: 'S.0197614'
+      licenseNumber: 'S.0197614.LLC'
     },
     areaServed: {
       '@type': 'City',
@@ -78,7 +78,7 @@ export default function HomeSellingPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-4">Homestead West Home Selling Services</h1>
             <p className="text-xl text-blue-100">Expert Guidance for Maximum Homestead West Home Value</p>
-            <p className="text-lg text-blue-200 mt-2">Dr. Jan Duffy | Nevada License S.0197614</p>
+            <p className="text-lg text-blue-200 mt-2">Dr. Jan Duffy | Nevada License S.0197614.LLC</p>
           </div>
         </div>
       </header>

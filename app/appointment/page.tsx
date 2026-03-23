@@ -5,7 +5,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Schedule Appointment | Dr. Jan Duffy Real Estate | Las Vegas',
-  description: 'Schedule a consultation with Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Book your appointment online today.',
+  description: 'Schedule a consultation with Dr. Jan Duffy (License S.0197614.LLC) for expert real estate services in Las Vegas. Book your appointment online today.',
   keywords: 'schedule appointment, Dr. Jan Duffy, real estate consultation, Las Vegas real estate, book meeting',
   openGraph: {
     title: 'Schedule Appointment | Dr. Jan Duffy Real Estate',
@@ -26,7 +26,7 @@ export default function AppointmentPage() {
       name: 'Dr. Jan Duffy',
       telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
-      licenseNumber: 'S.0197614'
+      licenseNumber: 'S.0197614.LLC'
     },
     object: {
       '@type': 'Event',

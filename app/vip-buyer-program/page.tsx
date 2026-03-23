@@ -515,7 +515,7 @@ export default function VIPBuyerProgramPage() {
                   <div>
                     <p className="mb-2 text-white"><span className="font-semibold">Phone:</span> (702) 299-6607</p>
                     <p className="mb-2 text-white"><span className="font-semibold">Email:</span> DrJanSells@HomesteadWestLasVegas.com</p>
-                    <p className="mb-2 text-white"><span className="font-semibold">License:</span> Nevada S.0197614</p>
+                    <p className="mb-2 text-white"><span className="font-semibold">License:</span> Nevada S.0197614.LLC</p>
                   </div>
                   <div>
                     <p className="mb-2 text-white"><span className="font-semibold">Office:</span> Builder Sales Office</p>

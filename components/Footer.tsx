@@ -1,5 +1,6 @@
 import CalendlyLink from '@/components/CalendlyLink';
 import { ASSET_BHHS_LOGO_PATH } from '@/lib/site-assets';
+import { LICENSE_ID } from '@/lib/site-contact';
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Dr. Jan Duffy</h3>
             <p className="mb-2">Berkshire Hathaway HomeServices Nevada</p>
-            <p className="mb-2">Nevada License: S.0197614</p>
+            <p className="mb-2">Nevada License: {LICENSE_ID}</p>
             <p className="mb-2">(702) 299-6607</p>
             <p>DrJanSells@HomesteadWestLasVegas.com</p>
           </div>
@@ -88,7 +89,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 pt-8 text-center text-sm">
           <p className="mb-2">
-            Homestead West | Homes by Dr Jan Duffy | Berkshire Hathaway HomeServices | License: S.0197614.LLC
+            Homestead West | Homes by Dr Jan Duffy | Berkshire Hathaway HomeServices | License: {LICENSE_ID}
           </p>
           <p className="text-gray-400">
             © 2026 Homestead West | Homes by Dr Jan Duffy All rights reserved.

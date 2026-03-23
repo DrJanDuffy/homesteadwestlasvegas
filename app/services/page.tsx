@@ -7,7 +7,7 @@ import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Real Estate Services | Dr. Jan Duffy | Las Vegas Real Estate Agent',
-  description: 'Comprehensive real estate services by Dr. Jan Duffy (License S.0197614) in Las Vegas. Buying, selling, investment consulting, and property management.',
+  description: 'Comprehensive real estate services by Dr. Jan Duffy (License S.0197614.LLC) in Las Vegas. Buying, selling, investment consulting, and property management.',
   keywords: 'real estate services Las Vegas, Dr. Jan Duffy services, buying homes Las Vegas, selling homes Las Vegas, real estate investment',
   ...canonicalMetadata('/services'),
   openGraph: {
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       name: 'Dr. Jan Duffy',
       telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
-      licenseNumber: 'S.0197614'
+      licenseNumber: 'S.0197614.LLC'
     },
     areaServed: {
       '@type': 'City',
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                 </div>
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">Real Estate Services</h1>
                 <p className="text-2xl md:text-3xl mb-4 text-blue-100">Comprehensive Solutions by Dr. Jan Duffy</p>
-                <p className="text-xl text-blue-200">VIP New Construction Homes Specialist | Nevada License S.0197614</p>
+                <p className="text-xl text-blue-200">VIP New Construction Homes Specialist | Nevada License S.0197614.LLC</p>
               </div>
               <div className="flex justify-center mt-8">
                 <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20" style={{ aspectRatio: '1/1' }}>
@@ -338,7 +338,7 @@ export default function ServicesPage() {
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8 text-white">
                 <p className="text-lg font-semibold mb-2 text-white">Dr. Jan Duffy - VIP New Construction Homes Specialist</p>
-                <p className="text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+                <p className="text-blue-200">Las Vegas Real Estate Expert | Nevada License S.0197614.LLC</p>
                 <p className="text-blue-200 mt-1">DrJanSells@HomesteadWestLasVegas.com</p>
               </div>
             </div>

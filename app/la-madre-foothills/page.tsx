@@ -50,7 +50,7 @@ const CITY_PLANNING_ZONING_URL = 'https://www.lasvegasnevada.gov/Business/Planni
 export const metadata: Metadata = {
   title: 'La Madre Foothills Las Vegas | Homes & Area Guide | Homestead West',
   description:
-    'La Madre Foothills homes and area guide: zips 89124–89166, live MLS search, Northwest Las Vegas foothills context, and buyer representation. Call (702) 299-6607. Dr. Jan Duffy, Nevada license S.0197614, Berkshire Hathaway HomeServices Nevada Properties.',
+    'La Madre Foothills homes and area guide: zips 89124–89166, live MLS search, Northwest Las Vegas foothills context, and buyer representation. Call (702) 299-6607. Dr. Jan Duffy, Nevada license S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties.',
   keywords: [
     'La Madre Foothills Las Vegas',
     'Homestead West Northwest Las Vegas',

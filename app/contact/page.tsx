@@ -8,7 +8,7 @@ import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent | Homestead West',
-  description: 'Contact Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Call (702) 299-6607 or visit our office at 5592 Dapple Gray Rd.',
+  description: 'Contact Dr. Jan Duffy (License S.0197614.LLC) for expert real estate services in Las Vegas. Call (702) 299-6607 or visit our office at 5592 Dapple Gray Rd.',
   keywords: 'contact Dr. Jan Duffy, Las Vegas real estate agent, Homestead West contact, real estate consultation Las Vegas',
   ...canonicalMetadata('/contact'),
   openGraph: {
@@ -38,7 +38,7 @@ export default function ContactPage() {
         postalCode: '89149',
         addressCountry: 'US'
       },
-      licenseNumber: 'S.0197614',
+      licenseNumber: 'S.0197614.LLC',
       openingHours: [
         'Su 10:00-15:00',
         'Mo-Fr 10:00-18:00',
@@ -68,7 +68,7 @@ export default function ContactPage() {
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Contact Dr. Jan Duffy for Homestead West</h1>
-            <p className="text-xl mb-2">Las Vegas Real Estate Expert | License S.0197614</p>
+            <p className="text-xl mb-2">Las Vegas Real Estate Expert | License S.0197614.LLC</p>
             <p className="text-lg text-blue-100 mb-1">{BROKERAGE_NAME}</p>
             <p className="text-blue-200">
               <a href={PHONE_TEL_HREF} className="underline hover:text-white">
@@ -336,7 +336,7 @@ export default function ContactPage() {
                 <strong>Dr. Jan Duffy</strong> is a licensed real estate agent in Nevada
               </p>
               <p className="text-xl font-semibold text-blue-600 mb-4">
-                License Number: S.0197614
+                License Number: S.0197614.LLC
               </p>
               <p className="text-gray-700">
                 Licensed by the Nevada Real Estate Division • Member of the National Association of Realtors

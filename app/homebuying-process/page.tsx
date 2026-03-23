@@ -4,7 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Homebuying Process | Homestead West Las Vegas | Expert Guidance by Dr. Jan Duffy',
-  description: 'Complete guide to buying a new home at Homestead West Las Vegas. Expert guidance from Dr. Jan Duffy through prequalification, house hunting, contracting, and closing. Nevada License S.0197614.',
+  description: 'Complete guide to buying a new home at Homestead West Las Vegas. Expert guidance from Dr. Jan Duffy through prequalification, house hunting, contracting, and closing. Nevada License S.0197614.LLC.',
   keywords: [
     'homebuying process Las Vegas',
     'new home buying guide',
@@ -475,7 +475,7 @@ export default function HomebuyingProcessPage() {
               
               <div className="mt-8 text-blue-200">
                 <p className="text-lg font-semibold">Dr. Jan Duffy</p>
-                <p>Las Vegas Real Estate Expert | Nevada License S.0197614</p>
+                <p>Las Vegas Real Estate Expert | Nevada License S.0197614.LLC</p>
                 <p>DrJanSells@HomesteadWestLasVegas.com</p>
                 <p className="mt-4 text-sm">
                   Independent real estate agent providing expert guidance to home buyers. 

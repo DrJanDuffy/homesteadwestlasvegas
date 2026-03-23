@@ -27,6 +27,7 @@ export default function Navigation() {
     { href: '/services/buying', label: 'Home Buying' },
     { href: '/services/selling', label: 'Home Selling' },
     { href: '/services/investment', label: 'Investment Consulting' },
+    { href: '/services/property-management', label: 'Property Management' },
   ];
 
   const resourcesItems = [
