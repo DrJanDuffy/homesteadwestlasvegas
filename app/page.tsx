@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
+import { SITE_URL } from '@/lib/site-contact';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 // Lazy load RealScoutListings to reduce initial bundle size
 // Note: ssr: false removed for Server Component compatibility
@@ -17,18 +19,16 @@ export const metadata: Metadata = {
   title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K | New Construction Northwest Las Vegas',
   description: 'New construction luxury single-story ranch homes in Northwest Las Vegas from $910K. Pool-sized lots, optional casitas, VIP buyer representation. Dr. Jan Duffy represents YOU—not the builder. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada. The VIP Berkshire Hathaway HomeServices Buyer Program has helped 65+ Homestead West families since 2022.',
   keywords: 'Homestead West Las Vegas, luxury ranch homes, single-story homes, Northwest Las Vegas, new construction, pool-sized lots, $910K homes, Las Vegas real estate, Berkshire Hathaway HomeServices, independent buyer agent, new construction homes Las Vegas, single story homes Las Vegas, luxury homes Northwest Las Vegas, new construction community Las Vegas, ranch homes Las Vegas, pool sized lots Las Vegas',
-  alternates: {
-    canonical: 'https://www.homesteadwestlasvegas.com/',
-  },
+  ...canonicalMetadata('/'),
   openGraph: {
     title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
     description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/',
+    url: absoluteUrl('/'),
     siteName: 'Homestead West Las Vegas',
     images: [
       {
-        url: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+        url: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
         width: 750,
         height: 752,
         alt: 'Dr. Jan Duffy - VIP New Construction Homes Specialist | Homestead West Las Vegas',
@@ -40,13 +40,42 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
     description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada.',
-    images: ['https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg'],
+    images: [`${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`],
   },
 };
 
 // ISR: Revalidate every hour for fresh content while maintaining performance
 // RealScout listings load client-side, so this doesn't affect dynamic data
 export const revalidate = 3600; // 1 hour
+
+/** Single source for homepage FAQ (visible copy + FAQPage JSON-LD must match — AEO / schema integrity). */
+const homePageFaqs = [
+  {
+    question: 'Do I have to pay Dr. Jan to represent me?',
+    answer:
+      "No. The builder pays the buyer's agent commission. My services cost you nothing.",
+  },
+  {
+    question: "Can't I just go directly to the builder's sales office?",
+    answer:
+      "You'll be working with someone whose job is to protect the builder's interests, not yours. Dr. Jan levels the playing field as your buyer's agent.",
+  },
+  {
+    question: "I'm relocating from out of state. Can you help remotely?",
+    answer:
+      'Absolutely. Most clients start with a video call. Dr. Jan can send virtual tours, market reports, and handle everything until you are ready to visit in person.',
+  },
+  {
+    question: 'Is there room to negotiate on new construction pricing?',
+    answer:
+      'Yes. Builders have flexibility on upgrades, closing costs, lot premiums, and sometimes base price—especially on standing inventory. Dr. Jan knows what to ask for.',
+  },
+  {
+    question: 'What if I want to see other communities too?',
+    answer:
+      'Dr. Jan will show you how Homestead West compares to Skye Canyon, Summerlin, Providence, and other Northwest options so you can make the best decision.',
+  },
+] as const;
 
 export default function HomePage() {
   const jsonLd = {
@@ -64,13 +93,13 @@ export default function HomePage() {
     },
     telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
-    url: 'https://www.homesteadwestlasvegas.com',
+    url: SITE_URL,
     agent: {
       '@type': 'RealEstateAgent',
       name: 'Dr. Jan Duffy',
       telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
-      image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
       priceRange: '$850,000-$990,000',
       address: {
         '@type': 'PostalAddress',
@@ -98,48 +127,14 @@ export default function HomePage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Do I have to pay Dr. Jan to represent me?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. The builder pays the buyer\'s agent commission. My services cost you nothing.'
-        }
+    mainEntity: homePageFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
       },
-      {
-        '@type': 'Question',
-        name: 'Can\'t I just go directly to the builder\'s sales office?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'You can—but you\'ll be working with someone whose job is to protect the builder\'s interests, not yours. I level the playing field.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'I\'m relocating from out of state. Can you help remotely?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Absolutely. Most of my clients start with a video call. I can send virtual tours, market reports, and handle everything until you\'re ready to visit in person.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Is there room to negotiate on new construction pricing?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Builders have flexibility on upgrades, closing costs, lot premiums, and sometimes base price—especially on standing inventory. I know what to ask for.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What if I want to see other communities too?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'I\'ll show you how this community compares to Skye Canyon, Summerlin, Providence, and other Northwest options so you can make the best decision.'
-        }
-      }
-    ]
+    })),
   };
 
   // AEO: Speakable schema for voice assistants
@@ -871,40 +866,12 @@ export default function HomePage() {
                   </h2>
                   
                   <div className="space-y-6">
-                    <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">Do I have to pay Dr. Jan to represent me?</h3>
-                      <p className="text-gray-700">
-                        No. The builder pays the buyer's agent commission. My services cost you nothing.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">Can't I just go directly to the builder's sales office?</h3>
-                      <p className="text-gray-700">
-                        You can—but you'll be working with someone whose job is to protect the builder's interests, not yours. I level the playing field.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">I'm relocating from out of state. Can you help remotely?</h3>
-                      <p className="text-gray-700">
-                        Absolutely. Most of my clients start with a video call. I can send virtual tours, market reports, and handle everything until you're ready to visit in person.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">Is there room to negotiate on new construction pricing?</h3>
-                      <p className="text-gray-700">
-                        Yes. Builders have flexibility on upgrades, closing costs, lot premiums, and sometimes base price—especially on standing inventory. I know what to ask for.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">What if I want to see other communities too?</h3>
-                      <p className="text-gray-700">
-                        I'll show you how this community compares to Skye Canyon, Summerlin, Providence, and other Northwest options so you can make the best decision.
-                      </p>
-                    </div>
+                    {homePageFaqs.map((faq) => (
+                      <div key={faq.question} className="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 className="text-xl font-bold mb-3 text-gray-900">{faq.question}</h3>
+                        <p className="text-gray-700">{faq.answer}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

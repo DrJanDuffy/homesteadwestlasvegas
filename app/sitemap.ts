@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
 import { fetchKCMPosts } from '@/lib/rss-fetcher'
+import { SITE_URL } from '@/lib/site-contact'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.homesteadwestlasvegas.com'
+  const baseUrl = SITE_URL
   const now = new Date()
   const lastModified = now.toISOString()
 
@@ -67,6 +68,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/northwest-las-vegas-new-construction`,
+      lastModified: lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.82,
     },
     {
       url: `${baseUrl}/community-map`,
@@ -208,6 +215,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/homestead-west-vs-skye-canyon`,
+      lastModified: lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/homestead-west-vs-cadence`,
       lastModified: lastModified,
       changeFrequency: 'monthly',
       priority: 0.75,

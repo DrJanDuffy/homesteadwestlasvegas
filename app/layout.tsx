@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import { SITE_URL, AGENT_JSONLD_DESCRIPTION } from "@/lib/site-contact";
+import { metadataBaseUrl } from "@/lib/metadata";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -13,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.homesteadwestlasvegas.com'),
+  metadataBase: metadataBaseUrl,
   
   title: {
     default: "Homestead West Las Vegas | $910K+ Ranch Homes | Dr. Jan Duffy Real Estate",
@@ -63,13 +65,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.homesteadwestlasvegas.com',
+    url: SITE_URL,
     siteName: 'Homestead West Las Vegas',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
     description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 299-6607.',
     images: [
       {
-        url: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+        url: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
         width: 750,
         height: 752,
         alt: 'Dr. Jan Duffy - VIP New Construction Homes Specialist | Homestead West Las Vegas',
@@ -81,15 +83,19 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
     description: 'Luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert real estate guidance from Dr. Jan Duffy.',
-    images: ['https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg'],
+    images: [`${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`],
   },
 
-      verification: {
-        google: process.env.GOOGLE_SITE_VERIFICATION || 'your-google-verification-code-here',
-      },
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
 
   alternates: {
-    canonical: 'https://www.homesteadwestlasvegas.com/',
+    canonical: `${SITE_URL}/`,
     types: {
       'application/rss+xml': '/blog/rss.xml',
     },
@@ -138,8 +144,8 @@ export default function RootLayout({
     telephone: '+17022996607',
     smsNumber: 'sms:+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
-    url: 'https://www.homesteadwestlasvegas.com',
-    image: 'https://www.homesteadwestlasvegas.com/og-image.jpg',
+    url: SITE_URL,
+    image: `${SITE_URL}/og-image.jpg`,
     priceRange: '$910,990 - $940,990',
     numberOfRooms: '4-5',
     floorSize: {
@@ -152,7 +158,7 @@ export default function RootLayout({
           name: 'Dr. Jan Duffy',
           telephone: '+17022996607',
           email: 'DrJanSells@HomesteadWestLasVegas.com',
-          image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+          image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
           priceRange: '$850,000-$990,000',
           address: {
             '@type': 'PostalAddress',
@@ -315,15 +321,15 @@ export default function RootLayout({
         ],
         hasMap: 'https://maps.google.com/?q=5592+Dapple+Gray+Rd,+Las+Vegas,+NV+89149',
         sameAs: [
-          'https://www.homesteadwestlasvegas.com',
-          'https://www.homesteadwestlasvegas.com/vip-buyer-program',
-          'https://www.homesteadwestlasvegas.com/about',
-          'https://www.homesteadwestlasvegas.com/contact',
-          'https://www.homesteadwestlasvegas.com/floor-plans',
-          'https://www.homesteadwestlasvegas.com/community',
-          'https://www.homesteadwestlasvegas.com/services',
-          'https://www.homesteadwestlasvegas.com/buyers-guide',
-          'https://www.homesteadwestlasvegas.com/homebuying-process'
+          SITE_URL,
+          `${SITE_URL}/vip-buyer-program`,
+          `${SITE_URL}/about`,
+          `${SITE_URL}/contact`,
+          `${SITE_URL}/floor-plans`,
+          `${SITE_URL}/community`,
+          `${SITE_URL}/services`,
+          `${SITE_URL}/buyers-guide`,
+          `${SITE_URL}/homebuying-process`
         ]
   };
 
@@ -335,13 +341,13 @@ export default function RootLayout({
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://www.homesteadwestlasvegas.com'
+            item: SITE_URL
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Homestead West Las Vegas',
-            item: 'https://www.homesteadwestlasvegas.com'
+            item: SITE_URL
           }
         ]
       };
@@ -458,13 +464,13 @@ export default function RootLayout({
                   '@graph': [
                     {
                       '@type': 'RealEstateAgent',
-                      '@id': 'https://www.homesteadwestlasvegas.com/#agent',
+                      '@id': `${SITE_URL}/#agent`,
                       name: 'Dr. Jan Duffy',
-                      description: 'Las Vegas Real Estate Expert with 30+ years experience, Ph.D. in Market Research & Consumer Behavior, $127M+ in sales serving 500+ Vegas families',
+                      description: AGENT_JSONLD_DESCRIPTION,
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
-                      url: 'https://www.homesteadwestlasvegas.com',
-                      image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+                      url: SITE_URL,
+                      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
@@ -498,15 +504,15 @@ export default function RootLayout({
                     },
                     {
                       '@type': 'LocalBusiness',
-                      '@id': 'https://www.homesteadwestlasvegas.com/#business',
+                      '@id': `${SITE_URL}/#business`,
                       name: 'Homestead West | Homes by Dr Jan Duffy',
                       alternateName: ['Homestead West Las Vegas Real Estate', 'Dr. Jan Duffy - Las Vegas Real Estate Expert'],
                       description: 'Buying a new home in Homestead West Las Vegas? Work with a licensed agent who represents you, not the builder. Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada specializes in this single-story ranch community at Ann Road and Fort Apache, 89149. Services include early lot access, upgrade negotiations, and buyer representation through closing. Buyers pay no commission as builders cover agent fees.',
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
-                      url: 'https://www.homesteadwestlasvegas.com',
-                      image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
-                      logo: 'https://www.homesteadwestlasvegas.com/images/bhhs-logo.svg',
+                      url: SITE_URL,
+                      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+                      logo: `${SITE_URL}/images/bhhs-logo.svg`,
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
@@ -561,12 +567,12 @@ export default function RootLayout({
                     },
                     {
                       '@type': 'Organization',
-                      '@id': 'https://www.homesteadwestlasvegas.com/#organization',
+                      '@id': `${SITE_URL}/#organization`,
                       name: 'Dr. Jan Duffy Real Estate',
                       alternateName: 'Homestead West Las Vegas Real Estate',
-                      url: 'https://www.homesteadwestlasvegas.com',
-                      logo: 'https://www.homesteadwestlasvegas.com/images/bhhs-logo.svg',
-                      image: 'https://www.homesteadwestlasvegas.com/images/Dr. Duffy Blue_Headshot.jpg',
+                      url: SITE_URL,
+                      logo: `${SITE_URL}/images/bhhs-logo.svg`,
+                      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
                       address: {
                         '@type': 'PostalAddress',
                         streetAddress: '5592 Dapple Gray Rd',
@@ -583,10 +589,10 @@ export default function RootLayout({
                         availableLanguage: ['English']
                       },
                       sameAs: [
-                        'https://www.homesteadwestlasvegas.com',
-                        'https://www.homesteadwestlasvegas.com/vip-buyer-program',
-                        'https://www.homesteadwestlasvegas.com/about',
-                        'https://www.homesteadwestlasvegas.com/contact'
+                        SITE_URL,
+                        `${SITE_URL}/vip-buyer-program`,
+                        `${SITE_URL}/about`,
+                        `${SITE_URL}/contact`
                       ],
                       memberOf: {
                         '@type': 'Organization',
@@ -595,50 +601,50 @@ export default function RootLayout({
                     },
                     {
                       '@type': 'WebSite',
-                      '@id': 'https://www.homesteadwestlasvegas.com/#website',
-                      url: 'https://www.homesteadwestlasvegas.com',
+                      '@id': `${SITE_URL}/#website`,
+                      url: SITE_URL,
                       name: 'Homestead West Las Vegas - Dr. Jan Duffy',
                       description: 'Expert guidance for Homestead West luxury ranch homes from VIP New Construction Homes Specialist',
                       publisher: {
-                        '@id': 'https://www.homesteadwestlasvegas.com/#business'
+                        '@id': `${SITE_URL}/#business`
                       },
                       inLanguage: 'en-US',
                       potentialAction: {
                         '@type': 'SearchAction',
                         target: {
                           '@type': 'EntryPoint',
-                          urlTemplate: 'https://www.homesteadwestlasvegas.com/properties?q={search_term_string}'
+                          urlTemplate: `${SITE_URL}/properties?q={search_term_string}`
                         },
                         'query-input': 'required name=search_term_string'
                       }
                     },
                     {
                       '@type': 'SiteNavigationElement',
-                      '@id': 'https://www.homesteadwestlasvegas.com/#navigation',
+                      '@id': `${SITE_URL}/#navigation`,
                       name: 'Main Navigation',
-                      url: 'https://www.homesteadwestlasvegas.com',
+                      url: SITE_URL,
                       hasPart: [
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'Home',
-                          url: 'https://www.homesteadwestlasvegas.com'
+                          url: SITE_URL
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'New Homes, Prime Locations',
-                          url: 'https://www.homesteadwestlasvegas.com/properties',
+                          url: `${SITE_URL}/properties`,
                           description: 'Browse available Homestead West homes and Las Vegas MLS listings'
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'Single-Story & Two-Story Homes',
-                          url: 'https://www.homesteadwestlasvegas.com/floor-plans',
+                          url: `${SITE_URL}/floor-plans`,
                           description: 'Explore Homestead West floor plans: 3,336-3,704 sq ft luxury ranch homes'
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'Nevada Is The Perfect Place To Make Memories. Communities With Parks, Recreation & More!',
-                          url: 'https://www.homesteadwestlasvegas.com/community',
+                          url: `${SITE_URL}/community`,
                           description: 'Discover Homestead West community amenities, parks, schools, and nearby attractions'
                         },
                         {
@@ -648,22 +654,22 @@ export default function RootLayout({
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Community Guide',
-                              url: 'https://www.homesteadwestlasvegas.com/community'
+                              url: `${SITE_URL}/community`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Community Map',
-                              url: 'https://www.homesteadwestlasvegas.com/community-map'
+                              url: `${SITE_URL}/community-map`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Virtual Tour',
-                              url: 'https://www.homesteadwestlasvegas.com/virtual-tour'
+                              url: `${SITE_URL}/virtual-tour`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Location & Office',
-                              url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office'
+                              url: `${SITE_URL}/location/las-vegas-office`
                             }
                           ]
                         },
@@ -674,22 +680,22 @@ export default function RootLayout({
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'All Services',
-                              url: 'https://www.homesteadwestlasvegas.com/services'
+                              url: `${SITE_URL}/services`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Home Buying',
-                              url: 'https://www.homesteadwestlasvegas.com/services/buying'
+                              url: `${SITE_URL}/services/buying`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Home Selling',
-                              url: 'https://www.homesteadwestlasvegas.com/services/selling'
+                              url: `${SITE_URL}/services/selling`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Investment Consulting',
-                              url: 'https://www.homesteadwestlasvegas.com/services/investment'
+                              url: `${SITE_URL}/services/investment`
                             }
                           ]
                         },
@@ -700,51 +706,51 @@ export default function RootLayout({
                             {
                               '@type': 'SiteNavigationElement',
                               name: "Buyer's Guide",
-                              url: 'https://www.homesteadwestlasvegas.com/buyers-guide'
+                              url: `${SITE_URL}/buyers-guide`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Homebuying Process',
-                              url: 'https://www.homesteadwestlasvegas.com/homebuying-process'
+                              url: `${SITE_URL}/homebuying-process`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'VIP New Construction Homes Specialist',
-                              url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program'
+                              url: `${SITE_URL}/vip-buyer-program`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'FAQ',
-                              url: 'https://www.homesteadwestlasvegas.com/faq'
+                              url: `${SITE_URL}/faq`
                             },
                             {
                               '@type': 'SiteNavigationElement',
                               name: 'Testimonials',
-                              url: 'https://www.homesteadwestlasvegas.com/testimonials'
+                              url: `${SITE_URL}/testimonials`
                             }
                           ]
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'About Dr. Jan',
-                          url: 'https://www.homesteadwestlasvegas.com/about'
+                          url: `${SITE_URL}/about`
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'Contact Us',
-                          url: 'https://www.homesteadwestlasvegas.com/contact',
+                          url: `${SITE_URL}/contact`,
                           description: 'Get in touch with Dr. Jan Duffy for expert real estate guidance'
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'Homeowner Reviews',
-                          url: 'https://www.homesteadwestlasvegas.com/testimonials',
+                          url: `${SITE_URL}/testimonials`,
                           description: 'Read what clients say about working with Dr. Jan Duffy'
                         },
                         {
                           '@type': 'SiteNavigationElement',
                           name: 'Now\'s The Time To Make Your Move To Nevada. Homes From A Top U.S. Homebuilder.',
-                          url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program',
+                          url: `${SITE_URL}/vip-buyer-program`,
                           description: 'Get VIP access to new construction homes with exclusive buyer representation'
                         }
                       ]

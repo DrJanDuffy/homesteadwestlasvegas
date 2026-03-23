@@ -1,16 +1,19 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { SITE_URL, ADDRESS, BROKERAGE_NAME, PHONE_DISPLAY, PHONE_TEL_HREF } from '@/lib/site-contact';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Las Vegas Real Estate Office | Homestead West | Dr. Jan Duffy',
   description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy (License S.0197614) provides expert real estate services in Northwest Las Vegas.',
   keywords: 'Las Vegas real estate office, Dr. Jan Duffy office, Northwest Las Vegas real estate, real estate agent Las Vegas, Homestead West office',
+  ...canonicalMetadata('/location/las-vegas-office'),
   openGraph: {
     title: 'Las Vegas Real Estate Office | Homestead West',
     description: 'Visit our Las Vegas real estate office at 5592 Dapple Gray Rd. Dr. Jan Duffy provides expert real estate services.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office',
+    url: absoluteUrl('/location/las-vegas-office'),
   },
 };
 
@@ -20,7 +23,7 @@ export default function LasVegasOfficePage() {
     '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy',
     description: 'Expert Las Vegas real estate agent specializing in Northwest Las Vegas properties',
-    url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office',
+    url: absoluteUrl('/location/las-vegas-office'),
     telephone: '+17022996607',
     email: 'DrJanSells@HomesteadWestLasVegas.com',
     address: {
@@ -33,8 +36,8 @@ export default function LasVegasOfficePage() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 36.1699,
-      longitude: -115.1398
+      latitude: 36.2738,
+      longitude: -115.3089,
     },
     openingHours: [
       'Su 10:00-15:00',
@@ -52,8 +55,8 @@ export default function LasVegasOfficePage() {
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
-    { name: 'Location', url: 'https://www.homesteadwestlasvegas.com/location/las-vegas-office' }
+    { name: 'Home', url: SITE_URL },
+    { name: 'Las Vegas Office', url: absoluteUrl('/location/las-vegas-office') },
   ]);
 
   return (
@@ -72,7 +75,8 @@ export default function LasVegasOfficePage() {
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Homestead West Las Vegas Real Estate Office</h1>
-            <p className="text-xl">Homestead West | Homes by Dr Jan Duffy</p>
+            <p className="text-xl mb-2">Homestead West | Homes by Dr Jan Duffy</p>
+            <p className="text-lg text-blue-100">{BROKERAGE_NAME}</p>
           </div>
         </header>
 
@@ -89,7 +93,9 @@ export default function LasVegasOfficePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Homestead West Address</h3>
-                      <p>See footer for address</p>
+                      <p>
+                        {ADDRESS.streetAddress}, {ADDRESS.addressLocality}, {ADDRESS.addressRegion} {ADDRESS.postalCode}
+                      </p>
                     </div>
                   </div>
                   
@@ -99,7 +105,11 @@ export default function LasVegasOfficePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Homestead West Phone</h3>
-                      <p>(702) 299-6607</p>
+                      <p>
+                        <a href={PHONE_TEL_HREF} className="text-blue-600 font-semibold underline">
+                          {PHONE_DISPLAY}
+                        </a>
+                      </p>
                     </div>
                   </div>
                   

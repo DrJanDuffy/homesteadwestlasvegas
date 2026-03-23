@@ -1,12 +1,13 @@
 import { Feed } from 'feed';
 import { fetchKCMPosts } from '@/lib/rss-fetcher';
+import { SITE_URL } from '@/lib/site-contact';
 
 export const revalidate = 3600; // 1 hour
 
 export async function GET() {
   try {
     const posts = await fetchKCMPosts();
-    const siteUrl = 'https://www.homesteadwestlasvegas.com';
+    const siteUrl = SITE_URL;
     
     if (!posts.length) {
       // Return empty feed if no posts available

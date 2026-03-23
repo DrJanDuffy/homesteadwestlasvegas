@@ -1,10 +1,12 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Community & Neighborhood | Homestead West Las Vegas | Schools, Shopping, Healthcare | Northwest Las Vegas',
   description: 'Explore Homestead West Las Vegas community in Northwest Las Vegas with local schools, shopping, dining, healthcare facilities, and recreation. Luxury new construction neighborhood guide for zip code 89149.',
+  ...canonicalMetadata('/community'),
   keywords: [
     'Homestead West community',
     'Northwest Las Vegas schools',
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Community & Neighborhood | Homestead West Las Vegas',
     description: 'Explore Homestead West Las Vegas community with local schools, shopping, dining, and recreation.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/community',
+    url: absoluteUrl('/community'),
   },
 };
 

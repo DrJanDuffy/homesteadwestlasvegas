@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { SITE_URL } from '@/lib/site-contact';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Homestead West vs Skye Canyon: Complete Comparison | Northwest Las Vegas New Construction',
@@ -14,18 +16,19 @@ export const metadata: Metadata = {
     '89149 vs 89166 zip code',
     'luxury homes Las Vegas comparison'
   ],
+  ...canonicalMetadata('/homestead-west-vs-skye-canyon'),
   openGraph: {
     title: 'Homestead West vs Skye Canyon: Complete Comparison',
     description: 'Compare Homestead West and Skye Canyon new construction communities in Northwest Las Vegas.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/homestead-west-vs-skye-canyon',
+    url: absoluteUrl('/homestead-west-vs-skye-canyon'),
   },
 };
 
 export default function ComparisonPage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
-    { name: 'Homestead West vs Skye Canyon', url: 'https://www.homesteadwestlasvegas.com/homestead-west-vs-skye-canyon' }
+    { name: 'Home', url: SITE_URL },
+    { name: 'Homestead West vs Skye Canyon', url: absoluteUrl('/homestead-west-vs-skye-canyon') }
   ]);
 
   // AEO: Comparison schema for AI systems
@@ -37,7 +40,7 @@ export default function ComparisonPage() {
     author: {
       '@type': 'RealEstateAgent',
       name: 'Dr. Jan Duffy',
-      url: 'https://www.homesteadwestlasvegas.com/about'
+      url: `${SITE_URL}/about`
     },
     datePublished: '2026-01-19',
     dateModified: '2026-01-19',

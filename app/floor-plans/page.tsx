@@ -1,10 +1,14 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { SITE_URL } from '@/lib/site-contact';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Available Homes | Homestead West Las Vegas | MLS Listings',
   description: 'Browse current available homes in Las Vegas MLS. Updated daily with the latest properties from Homestead West and surrounding areas. Expert guidance from Dr. Jan Duffy.',
+  ...canonicalMetadata('/floor-plans'),
   keywords: [
     'available homes Las Vegas',
     'Las Vegas MLS listings',
@@ -18,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Available Homes | Homestead West Las Vegas',
     description: 'Browse current available homes in Las Vegas MLS. Updated daily with the latest properties.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/floor-plans',
+    url: absoluteUrl('/floor-plans'),
   },
 };
 
@@ -58,8 +62,8 @@ export default function FloorPlansPage() {
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
-    { name: 'Floor Plans', url: 'https://www.homesteadwestlasvegas.com/floor-plans' }
+    { name: 'Home', url: SITE_URL },
+    { name: 'Floor Plans', url: absoluteUrl('/floor-plans') },
   ]);
 
   return (
@@ -81,6 +85,49 @@ export default function FloorPlansPage() {
             <p className="text-xl text-blue-100">Homestead West Las Vegas MLS Listings - Updated Daily</p>
           </div>
         </header>
+
+        {/* AEO: plan-fit questions (links to detail pages) */}
+        <section className="py-14 bg-white border-b border-gray-200">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
+              Which Homestead West floor plan is right for you?
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 rounded-xl p-8 border border-gray-100">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">
+                  When does Plan 3336 make sense?
+                </h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Plan 3336 fits buyers who want a large single-story footprint near 3,336 sq ft—strong for everyday living and
+                  entertaining without jumping to the largest plan. If you want pool-sized lot flexibility and a balance of space
+                  and efficiency, start here.
+                </p>
+                <Link
+                  href="/floor-plans/3336"
+                  className="text-[#1a365d] font-semibold underline hover:text-[#d4af37]"
+                >
+                  View Plan 3336 details
+                </Link>
+              </div>
+              <div className="bg-gray-50 rounded-xl p-8 border border-gray-100">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">
+                  When does Plan 3704 make sense?
+                </h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Plan 3704 is the step-up for buyers who want maximum single-story square footage in the community—ideal when
+                  you need extra bedrooms, a larger great room, or multi-generational layout options. Compare lot premiums and
+                  rear-yard orientation with Dr. Jan before you lock a homesite.
+                </p>
+                <Link
+                  href="/floor-plans/3704"
+                  className="text-[#1a365d] font-semibold underline hover:text-[#d4af37]"
+                >
+                  View Plan 3704 details
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* RealScout Office Listings Carousel */}
         <section className="py-16 bg-gray-50">

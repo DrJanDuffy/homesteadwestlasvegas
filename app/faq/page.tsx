@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { canonicalMetadata } from '@/lib/metadata';
+import { SITE_URL } from '@/lib/site-contact';
 
 export const metadata: Metadata = {
   title: 'FAQ | Frequently Asked Questions | Dr. Jan Duffy | VIP New Construction Specialist',
   description: 'Get answers to common questions about buying new construction homes in Las Vegas. FAQ about new construction, Homestead West, and working with VIP New Construction Homes Specialist Dr. Jan Duffy.',
+  ...canonicalMetadata('/faq'),
   keywords: [
     'new construction FAQ',
     'new construction questions',
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
     title: 'FAQ | Frequently Asked Questions | Dr. Jan Duffy',
     description: 'Get answers to common questions about buying new construction homes in Las Vegas.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/faq',
+    url: `${SITE_URL}/faq`,
   },
 };
 
@@ -101,7 +104,7 @@ export default function FAQPage() {
         },
         {
           question: 'What makes Dr. Jan Duffy different from other agents?',
-          answer: 'Dr. Jan Duffy is a VIP New Construction Homes Specialist who combines independent client advocacy with deep new construction expertise. She represents home buyers exclusively, has an office at the builder sales office, direct builder relationships, 500+ families helped, and Nevada License S.0197614. Her expertise spans multiple new construction developments, all while working for YOU, not the builder.'
+          answer: 'Dr. Jan Duffy is a VIP New Construction Homes Specialist who combines independent client advocacy with deep new construction expertise. She represents home buyers exclusively, has an office at the builder sales office, direct builder relationships, and Nevada License S.0197614. Her expertise spans multiple new construction developments, all while working for YOU, not the builder.'
         },
         {
           question: 'How do I get started with Dr. Jan Duffy?',
@@ -128,8 +131,8 @@ export default function FAQPage() {
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
-    { name: 'FAQ', url: 'https://www.homesteadwestlasvegas.com/faq' }
+    { name: 'Home', url: SITE_URL },
+    { name: 'FAQ', url: `${SITE_URL}/faq` }
   ]);
 
   return (

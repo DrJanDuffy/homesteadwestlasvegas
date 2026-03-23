@@ -12,6 +12,7 @@ export default function Navigation() {
 
   const communityItems = [
     { href: '/community', label: 'Community Guide' },
+    { href: '/northwest-las-vegas-new-construction', label: 'NW Las Vegas & 89149' },
     { href: '/community-map', label: 'Community Map' },
     { href: '/amenities', label: 'Nearby Amenities' },
     { href: '/directions', label: 'Directions' },
@@ -36,6 +37,8 @@ export default function Navigation() {
     { href: '/testimonials', label: 'Testimonials' },
     { href: '/reviews', label: 'Leave a Review' },
     { href: '/faq', label: 'FAQ' },
+    { href: '/homestead-west-vs-skye-canyon', label: 'vs Skye Canyon' },
+    { href: '/homestead-west-vs-cadence', label: 'vs Cadence' },
     { href: '/properties', label: 'Property Search' },
   ];
 

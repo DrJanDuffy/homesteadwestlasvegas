@@ -1,10 +1,12 @@
 import { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { SITE_URL } from '@/lib/site-contact';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'VIP Berkshire Hathaway HomeServices Buyer Program | Dr. Jan Duffy | Las Vegas New Construction Expert',
-  description: 'Get VIP access to new construction homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, direct builder contact, and expert negotiation. 500+ Vegas families helped.',
+  description: 'Get VIP access to new construction homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, direct builder contact, and expert negotiation.',
   keywords: [
     'luxury new construction Las Vegas',
     'new construction Henderson',
@@ -16,13 +18,32 @@ export const metadata: Metadata = {
     'VIP buyer program',
     'new construction buyer access'
   ],
+  ...canonicalMetadata('/vip-buyer-program'),
   openGraph: {
     title: 'VIP Berkshire Hathaway HomeServices Buyer Program | Dr. Jan Duffy',
     description: 'Get VIP access to new construction homes in Las Vegas with Dr. Jan Duffy. Early phase access, priority lot selection, and expert negotiation.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program',
+    url: absoluteUrl('/vip-buyer-program'),
   },
 };
+
+const vipProgramFaqs = [
+  {
+    question: 'Do I need to register with the VIP program before visiting a builder model home?',
+    answer:
+      'You should connect with Dr. Jan Duffy before you register with the builder so your buyer representation is documented correctly. That protects your relationship as a represented buyer and keeps incentives and lot holds aligned with your contract.',
+  },
+  {
+    question: 'How is VIP builder access different from walking into the sales office alone?',
+    answer:
+      'The sales team works for the builder. The VIP program is buyer-focused: early phase timing, lot strategy, and negotiation are handled with you as the client—not the builder.',
+  },
+  {
+    question: 'Does the VIP program add extra fees to my new construction purchase?',
+    answer:
+      'Buyer representation is typically paid from the builder side as part of the transaction structure; Dr. Jan reviews how that applies to your specific community and contract during consultation.',
+  },
+] as const;
 
 export default function VIPBuyerProgramPage() {
   const jsonLd = {
@@ -99,23 +120,19 @@ export default function VIPBuyerProgramPage() {
       '@type': 'City',
       name: 'Las Vegas'
     },
-    description: 'VIP buyer representation program providing early lot access, builder negotiation, and market intelligence for new construction home purchases. Average savings of $14,200 per transaction based on 65+ transactions (2022-2025).',
+    description:
+      'VIP buyer representation program providing early lot access, builder coordination, and negotiation support for new construction home purchases in Las Vegas and Henderson.',
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
       description: 'No cost to buyer - builder pays commission'
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '65'
-    }
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
-    { name: 'VIP Buyer Program', url: 'https://www.homesteadwestlasvegas.com/vip-buyer-program' }
+    { name: 'Home', url: SITE_URL },
+    { name: 'VIP Buyer Program', url: absoluteUrl('/vip-buyer-program') },
   ]);
 
   return (
@@ -383,6 +400,21 @@ export default function VIPBuyerProgramPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* AEO: VIP-specific Q&A (unique from /faq; visible copy for answer engines) */}
+        <section className="py-16 bg-gray-50 border-y border-gray-200">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">Common questions about the VIP buyer program</h2>
+            <div className="space-y-6">
+              {vipProgramFaqs.map((faq) => (
+                <div key={faq.question} className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

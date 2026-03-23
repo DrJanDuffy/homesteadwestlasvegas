@@ -2,16 +2,19 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { SITE_URL, BROKERAGE_NAME, ADDRESS, PHONE_DISPLAY, PHONE_TEL_HREF } from '@/lib/site-contact';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent | Homestead West',
   description: 'Contact Dr. Jan Duffy (License S.0197614) for expert real estate services in Las Vegas. Call (702) 299-6607 or visit our office at 5592 Dapple Gray Rd.',
   keywords: 'contact Dr. Jan Duffy, Las Vegas real estate agent, Homestead West contact, real estate consultation Las Vegas',
+  ...canonicalMetadata('/contact'),
   openGraph: {
     title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Agent',
     description: 'Contact Dr. Jan Duffy for expert real estate services in Las Vegas. Professional consultation available.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/contact',
+    url: absoluteUrl('/contact'),
   },
 };
 
@@ -44,8 +47,8 @@ export default function ContactPage() {
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://www.homesteadwestlasvegas.com' },
-    { name: 'Contact', url: 'https://www.homesteadwestlasvegas.com/contact' }
+    { name: 'Home', url: SITE_URL },
+    { name: 'Contact', url: absoluteUrl('/contact') },
   ]);
 
   return (
@@ -64,7 +67,15 @@ export default function ContactPage() {
         <header className="bg-blue-900 text-white py-8">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Contact Dr. Jan Duffy for Homestead West</h1>
-            <p className="text-xl">Las Vegas Real Estate Expert | License S.0197614</p>
+            <p className="text-xl mb-2">Las Vegas Real Estate Expert | License S.0197614</p>
+            <p className="text-lg text-blue-100 mb-1">{BROKERAGE_NAME}</p>
+            <p className="text-blue-200">
+              <a href={PHONE_TEL_HREF} className="underline hover:text-white">
+                {PHONE_DISPLAY}
+              </a>
+              {' · '}
+              {ADDRESS.streetAddress}, {ADDRESS.addressLocality}, {ADDRESS.addressRegion} {ADDRESS.postalCode}
+            </p>
           </div>
         </header>
 

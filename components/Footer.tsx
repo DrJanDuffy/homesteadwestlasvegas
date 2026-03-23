@@ -40,6 +40,12 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 mb-4">
               <li><a href="/about" className="hover:text-yellow-400 transition-colors">About Dr. Jan</a></li>
+              <li><a href="/services" className="hover:text-yellow-400 transition-colors">Real Estate Services</a></li>
+              <li><a href="/floor-plans" className="hover:text-yellow-400 transition-colors">Available Homes</a></li>
+              <li><a href="/community" className="hover:text-yellow-400 transition-colors">Community</a></li>
+              <li><a href="/northwest-las-vegas-new-construction" className="hover:text-yellow-400 transition-colors">NW Las Vegas &amp; 89149</a></li>
+              <li><a href="/homestead-west-vs-skye-canyon" className="hover:text-yellow-400 transition-colors">Homestead West vs Skye Canyon</a></li>
+              <li><a href="/homestead-west-vs-cadence" className="hover:text-yellow-400 transition-colors">Homestead West vs Cadence</a></li>
               <li><a href="/location" className="hover:text-yellow-400 transition-colors">Find Our Office</a></li>
               <li><a href="/directions" className="hover:text-yellow-400 transition-colors">Directions</a></li>
               <li><a href="/amenities" className="hover:text-yellow-400 transition-colors">Nearby Amenities</a></li>

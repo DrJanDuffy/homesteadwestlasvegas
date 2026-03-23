@@ -1,6 +1,5 @@
 import { MetadataRoute } from 'next'
-
-const SITE_URL = 'https://www.homesteadwestlasvegas.com'
+import { SITE_URL } from '@/lib/site-contact'
 
 export default function robots(): MetadataRoute.Robots {
   return {
