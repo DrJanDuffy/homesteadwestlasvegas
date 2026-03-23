@@ -86,6 +86,21 @@ export default function FloorPlansPage() {
           </div>
         </header>
 
+        {/* MLS listings — early for buyer engagement */}
+        <section className="py-16 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+                Available Homestead West Homes and Las Vegas MLS Listings
+              </h2>
+              <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+                Browse current listings from the Las Vegas MLS — updated daily with the latest properties
+              </p>
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
         {/* AEO: plan-fit questions (links to detail pages) */}
         <section className="py-14 bg-white border-b border-gray-200">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -125,22 +140,6 @@ export default function FloorPlansPage() {
                   View Plan 3704 details
                 </Link>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* RealScout Office Listings Carousel */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-                Available Homestead West Homes and Las Vegas MLS Listings
-              </h2>
-              <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-                Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
-              </p>
-              
-              <RealScoutListings />
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import RealScoutListings from '@/components/RealScoutListings';
 import {
   AMENITY_CATEGORIES,
   amenityMapEmbedUrl,
@@ -94,7 +95,21 @@ export default function AmenitiesPage() {
           </div>
         </header>
 
-        <section className="py-8 bg-gray-50">
+        <section className="py-12 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-gray-900">
+              Browse homes near these amenities
+            </h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-sm md:text-base">
+              Live MLS listings — explore inventory while you plan schools, dining, and parks.
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-8 bg-white">
           <div className="container mx-auto px-4">
             <p className="text-center text-gray-700 max-w-2xl mx-auto">
               Select a category below to see that type of place on the map. Each map shows results near our office and the Homestead West area. Use the links to open Google Maps, or embed these maps on your own site at no cost.

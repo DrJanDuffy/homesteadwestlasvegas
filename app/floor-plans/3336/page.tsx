@@ -109,7 +109,7 @@ export default function Plan3336Page() {
         </header>
 
         {/* RealScout Office Listings Carousel */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50" id="available-homes">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">

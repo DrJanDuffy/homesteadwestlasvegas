@@ -212,7 +212,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
                 <a 
                   href="/appointment"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -220,11 +220,250 @@ export default function HomePage() {
                   Schedule Your Private Tour
                 </a>
                 <a 
+                  href="#available-homes"
+                  className="bg-[#d4af37] text-[#1a365d] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#c9a227] transition-all shadow-lg"
+                >
+                  View Available Homes
+                </a>
+                <a 
                   href="tel:7022996607"
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-all"
                 >
                   📞 (702) 299-6607
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Available homes + MLS search — fold 2 (merged single discovery zone) */}
+        <section id="available-homes" className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">How Much Do Homes Cost in Homestead West?</h2>
+                <p className="text-xl text-gray-700 mb-4">
+                  Homes in Homestead West start at $910,000 for single-story ranch designs ranging from 3,336 to 3,704 square feet. Prices vary based on lot premiums, floor plan selection, and design center upgrades.
+                </p>
+                <p className="text-lg text-gray-600 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
+              </div>
+
+              <aside className="bg-white p-6 rounded-lg shadow-sm mb-8 max-w-4xl mx-auto key-facts" itemScope itemType="https://schema.org/ItemList">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Quick Facts</h3>
+                <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                  <li><strong>Location:</strong> Northwest Las Vegas, NV 89149 (W. Ann Road and N. Fort Apache Road)</li>
+                  <li><strong>Price Range:</strong> Starting at $910,000</li>
+                  <li><strong>Home Sizes:</strong> 3,336 - 3,704 square feet</li>
+                  <li><strong>Configuration:</strong> 4 bedrooms, 4+ bathrooms</li>
+                  <li><strong>Style:</strong> Single-story ranch homes</li>
+                  <li><strong>Features:</strong> Pool-sized lots, optional detached casitas</li>
+                  <li><strong>Nearby:</strong> Red Rock Canyon (9 miles), Mount Charleston (23 miles)</li>
+                  <li><strong>Schools:</strong> Centennial Hills area schools</li>
+                </ul>
+                <p className="mt-4 text-sm text-gray-600">
+                  <time dateTime="2026-01-19">Last verified: January 19, 2026</time>. Prices and availability subject to change. Contact Dr. Jan for current information.
+                </p>
+              </aside>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">$910K+</span>
+                  <span className="text-sm">Starting Price</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">3,336–3,704</span>
+                  <span className="text-sm">Sq Ft</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">4 Bed / 4+ Bath</span>
+                  <span className="text-sm">Bed & Bath</span>
+                </div>
+                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
+                  <span className="block text-2xl font-bold text-[#f58220]">89149</span>
+                  <span className="text-sm">Zip Code</span>
+                </div>
+              </div>
+
+              <div className="max-w-7xl mx-auto mb-8">
+                <h3 className="text-2xl font-bold text-center mb-4 text-gray-900">Browse MLS &amp; VIP inventory</h3>
+                <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto">Curated Homestead West listings — updated as inventory changes.</p>
+                <RealScoutListings />
+              </div>
+
+              <div className="max-w-7xl mx-auto mb-8">
+                <h3 className="text-2xl font-bold text-center mb-4 text-gray-900">Community map &amp; builder inventory (ShowingNew)</h3>
+                <p className="text-center text-gray-600 mb-4 max-w-2xl mx-auto">Explore the official community page for plans, availability, and community details.</p>
+                <div className="rounded-lg overflow-hidden shadow-xl">
+                  <iframe
+                    src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
+                    title="Homestead West — Live MLS and community listings"
+                    width="100%"
+                    height="800"
+                    frameBorder="0"
+                    loading="lazy"
+                    className="w-full border-0 block"
+                  />
+                </div>
+              </div>
+
+              <div id="search-homes" className="max-w-4xl mx-auto text-center pt-12 mt-8 border-t border-gray-200">
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">
+                  Filter new construction across Northwest Las Vegas
+                </h2>
+                <p className="text-gray-700 mb-8 text-lg">
+                  Narrow by price, beds, baths, and square footage — opens results in a new tab.
+                </p>
+
+                <div className="flex justify-center">
+                  <div id="widget-box" className="w-full max-w-2xl">
+                    <form
+                      action="https://www.showingnew.com/skyecanyon/home/redirecttoresultspage"
+                      className="pro-search-box"
+                      encType="multipart/form-data"
+                      id="pro-search-box-widget"
+                      method="post"
+                      name="pro-search-box"
+                      target="_blank"
+                    >
+                      <div id="home-search-form" className="clearfix home-search-form">
+                        <p className="text-lg font-semibold text-gray-900 mb-2" id="titleText">Search New Construction Home Listings</p>
+                        <fieldset id="widget-home-search-location" style={{ border: 0, padding: 0 }}>
+                          <p id="HomesTypeField" className="flex m-0 homes-type-field">
+                            <input
+                              className="homes-type-field--input"
+                              id="AllNew"
+                              name="QuickMoveIn"
+                              type="radio"
+                              value="0"
+                              defaultChecked
+                            />
+                            <label className="homes-type-field--label" htmlFor="AllNew">All New Homes</label>
+                            <input
+                              className="homes-type-field--input"
+                              id="QMIOnly"
+                              name="QuickMoveIn"
+                              type="radio"
+                              value="1"
+                            />
+                            <label className="homes-type-field--label" htmlFor="QMIOnly">Inventory Homes</label>
+                            <a
+                              className="homes-type-field--link"
+                              href="https://www.showingnew.com/skyecanyon/new-homes-today"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <b>See What&apos;s New Today</b>
+                              <svg
+                                className="homes-type-field--link--svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 492.004 492.004"
+                                fill="#c9a227"
+                              >
+                                <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04s2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836a26.74 26.74 0 0 0 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
+                              </svg>
+                            </a>
+                          </p>
+                          <p className="flex ac search-field" style={{ display: 'flex', alignItems: 'center' }}>
+                            <label htmlFor="SearchTextWidget"></label>
+                            <input
+                              autoComplete="off"
+                              id="SearchTextWidget"
+                              aria-label="SearchTextWidget"
+                              maxLength={100}
+                              name="SearchText"
+                              placeholder="Enter City, Zip Code, School District or Community Name"
+                              type="text"
+                              defaultValue="Homestead West, Las Vegas, NV"
+                              style={{ fontSize: '16px', flex: 1, padding: '14px 16px', borderRadius: '4px 0 0 4px', border: '1px solid #ccdbe4' }}
+                            />
+                            <input
+                              type="submit"
+                              className="btn HomeSearchBtn"
+                              id="HomeSearchBtnWidget"
+                              value="Find Homes"
+                              style={{ backgroundColor: '#142d47', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600 }}
+                            />
+                          </p>
+                        </fieldset>
+                        <p
+                          id="WidgetSearchValidationError"
+                          className="field-validation-error SearchValidationError text-red-600 font-semibold mt-2"
+                          style={{ display: 'none' }}
+                        >
+                          <strong>Oops!</strong> Please enter a valid location.
+                        </p>
+                        <div id="home-search-options" className="flex flex-wrap gap-2 mt-4" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
+                          <select
+                            aria-label="PriceLow"
+                            id="PriceLow"
+                            name="PriceLow"
+                            style={{ flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333' }}
+                          >
+                            <option value="">Min Price</option>
+                            <option value="500000">$500,000</option>
+                            <option value="600000">$600,000</option>
+                            <option value="700000">$700,000</option>
+                            <option value="800000">$800,000</option>
+                            <option value="850000">$850,000</option>
+                            <option value="900000">$900,000</option>
+                            <option value="950000">$950,000</option>
+                            <option value="999000">$999,000</option>
+                            <option value="1000000">$1,000,000</option>
+                            <option value="1200000">$1,200,000</option>
+                          </select>
+                          <select
+                            aria-label="PriceHigh"
+                            id="PriceHigh"
+                            name="PriceHigh"
+                            style={{ flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333' }}
+                          >
+                            <option value="">Max Price</option>
+                            <option value="850000">$850,000</option>
+                            <option value="900000">$900,000</option>
+                            <option value="950000">$950,000</option>
+                            <option value="999000">$999,000</option>
+                            <option value="1000000">$1,000,000</option>
+                            <option value="1200000">$1,200,000</option>
+                            <option value="1500000">$1,500,000</option>
+                            <option value="2000000">$2,000,000</option>
+                          </select>
+                          <select
+                            aria-label="BedRooms"
+                            id="BedRooms"
+                            name="BedRooms"
+                            style={{ flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333' }}
+                          >
+                            <option value="-1">Beds</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                          </select>
+                          <select
+                            aria-label="Bathrooms"
+                            id="Bathrooms"
+                            name="Bathrooms"
+                            style={{ flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333' }}
+                          >
+                            <option value="-1">Baths</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                          </select>
+                          <select
+                            aria-label="SqFtLow"
+                            id="SqFtLow"
+                            name="SqFtLow"
+                            style={{ flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333' }}
+                          >
+                            <option value="0">Square Feet</option>
+                            <option value="3000">3000+</option>
+                            <option value="3500">3500+</option>
+                            <option value="4000">4000+</option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -453,240 +692,6 @@ export default function HomePage() {
                     <data value="98" className="text-3xl font-bold text-yellow-400 mb-2 block">98%</data>
                     <p className="text-sm">Client satisfaction rate</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Available Homes Section - AEO: Question-based */}
-        <section id="available-homes" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold mb-4 text-gray-900">How Much Do Homes Cost in Homestead West?</h2>
-                <p className="text-xl text-gray-700 mb-4">
-                  Homes in Homestead West start at $910,000 for single-story ranch designs ranging from 3,336 to 3,704 square feet. Prices vary based on lot premiums, floor plan selection, and design center upgrades.
-                </p>
-                <p className="text-lg text-gray-600 mb-8">Live MLS listings updated daily — Northwest Las Vegas, NV 89149</p>
-              </div>
-              
-              {/* AEO: Citable Quick Facts */}
-              <aside className="bg-white p-6 rounded-lg shadow-sm mb-8 max-w-4xl mx-auto" itemScope itemType="https://schema.org/ItemList">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">Homestead West Quick Facts</h3>
-                <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
-                  <li><strong>Location:</strong> Northwest Las Vegas, NV 89149 (W. Ann Road and N. Fort Apache Road)</li>
-                  <li><strong>Price Range:</strong> Starting at $910,000</li>
-                  <li><strong>Home Sizes:</strong> 3,336 - 3,704 square feet</li>
-                  <li><strong>Configuration:</strong> 4 bedrooms, 4+ bathrooms</li>
-                  <li><strong>Style:</strong> Single-story ranch homes</li>
-                  <li><strong>Features:</strong> Pool-sized lots, optional detached casitas</li>
-                  <li><strong>Nearby:</strong> Red Rock Canyon (9 miles), Mount Charleston (23 miles)</li>
-                  <li><strong>Schools:</strong> Centennial Hills area schools</li>
-                </ul>
-                <p className="mt-4 text-sm text-gray-600">
-                  <time dateTime="2026-01-19">Last verified: January 19, 2026</time>. Prices and availability subject to change. Contact Dr. Jan for current information.
-                </p>
-              </aside>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">$910K+</span>
-                  <span className="text-sm">Starting Price</span>
-                </div>
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">3,336–3,704</span>
-                  <span className="text-sm">Sq Ft</span>
-                </div>
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">4 Bed / 4+ Bath</span>
-                  <span className="text-sm">Bed & Bath</span>
-                </div>
-                <div className="bg-[#001D31] text-white p-4 rounded-lg text-center">
-                  <span className="block text-2xl font-bold text-[#f58220]">89149</span>
-                  <span className="text-sm">Zip Code</span>
-                </div>
-              </div>
-              
-              <div className="max-w-7xl mx-auto mb-8">
-                <RealScoutListings />
-              </div>
-              
-              <div className="rounded-lg overflow-hidden shadow-xl">
-                <iframe 
-                  src="https://www.showingnew.com/skyecanyon/community/nevada/las-vegas/homestead-west/194163"
-                  title="Las Vegas - Live MLS Listings"
-                  width="100%"
-                  height="800"
-                  frameBorder="0"
-                  loading="lazy"
-                  className="w-full border-0 block"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* MLS Search Widget Section */}
-        <section id="search-homes" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                Search Available Homes and New Construction Listings
-              </h2>
-              <p className="text-gray-700 mb-8 text-lg">
-                Explore new construction listings in Northwest Las Vegas
-              </p>
-              
-              <div className="flex justify-center">
-                {/* ShowingNew Widget */}
-                <div id="widget-box" className="w-full max-w-2xl">
-                  <form 
-                    action="https://www.showingnew.com/skyecanyon/home/redirecttoresultspage" 
-                    className="pro-search-box" 
-                    encType="multipart/form-data" 
-                    id="pro-search-box-widget" 
-                    method="post" 
-                    name="pro-search-box" 
-                    target="_blank"
-                  >
-                    <div id="home-search-form" className="clearfix home-search-form">
-                      <h2 id="titleText">Search New Construction Home Listings</h2>
-                      <fieldset id="widget-home-search-location" style={{border:0,padding:0}}>
-                        <p id="HomesTypeField" className="flex m-0 homes-type-field">
-                          <input 
-                            className="homes-type-field--input" 
-                            id="AllNew" 
-                            name="QuickMoveIn" 
-                            type="radio" 
-                            value="0" 
-                            defaultChecked
-                          /> 
-                          <label className="homes-type-field--label" htmlFor="AllNew">All New Homes</label> 
-                          <input 
-                            className="homes-type-field--input" 
-                            id="QMIOnly" 
-                            name="QuickMoveIn" 
-                            type="radio" 
-                            value="1"
-                          /> 
-                          <label className="homes-type-field--label" htmlFor="QMIOnly">Inventory Homes</label> 
-                          <a 
-                            className="homes-type-field--link" 
-                            href="https://www.showingnew.com/skyecanyon/new-homes-today" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                          > 
-                            <b>See What&apos;s New Today</b> 
-                            <svg 
-                              className="homes-type-field--link--svg" 
-                              xmlns="http://www.w3.org/2000/svg" 
-                              viewBox="0 0 492.004 492.004" 
-                              fill="#c9a227"
-                            >
-                              <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04s2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836a26.74 26.74 0 0 0 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
-                            </svg>
-                          </a>
-                        </p>
-                        <p className="flex ac search-field" style={{display: 'flex', alignItems: 'center'}}>
-                          <label htmlFor="SearchTextWidget"></label> 
-                          <input 
-                            autoComplete="off" 
-                            id="SearchTextWidget" 
-                            aria-label="SearchTextWidget" 
-                            maxLength={100} 
-                            name="SearchText" 
-                            placeholder="Enter City, Zip Code, School District or Community Name" 
-                            type="text" 
-                            defaultValue="Homestead West, Las Vegas, NV" 
-                            style={{fontSize:'16px', flex: 1, padding: '14px 16px', borderRadius: '4px 0 0 4px', border: '1px solid #ccdbe4'}}
-                          /> 
-                          <input 
-                            type="submit" 
-                            className="btn HomeSearchBtn" 
-                            id="HomeSearchBtnWidget" 
-                            value="Find Homes"
-                            style={{backgroundColor: '#142d47', color: 'white', border: 'none', padding: '14px 20px', borderRadius: '0 4px 4px 0', cursor: 'pointer', fontWeight: 600}}
-                          />
-                        </p>
-                      </fieldset>
-                      <p 
-                        id="WidgetSearchValidationError" 
-                        className="field-validation-error SearchValidationError text-red-600 font-semibold mt-2" 
-                        style={{display:'none'}}
-                      >
-                        <strong>Oops!</strong> Please enter a valid location.
-                      </p>
-                      <div id="home-search-options" className="flex flex-wrap gap-2 mt-4" style={{display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px'}}>
-                        <select 
-                          aria-label="PriceLow" 
-                          id="PriceLow" 
-                          name="PriceLow"
-                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
-                        >
-                          <option value="">Min Price</option>
-                          <option value="500000">$500,000</option>
-                          <option value="600000">$600,000</option>
-                          <option value="700000">$700,000</option>
-                          <option value="800000">$800,000</option>
-                          <option value="850000">$850,000</option>
-                          <option value="900000">$900,000</option>
-                          <option value="950000">$950,000</option>
-                          <option value="999000">$999,000</option>
-                          <option value="1000000">$1,000,000</option>
-                          <option value="1200000">$1,200,000</option>
-                        </select> 
-                        <select 
-                          aria-label="PriceHigh" 
-                          id="PriceHigh" 
-                          name="PriceHigh"
-                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
-                        >
-                          <option value="">Max Price</option>
-                          <option value="850000">$850,000</option>
-                          <option value="900000">$900,000</option>
-                          <option value="950000">$950,000</option>
-                          <option value="999000">$999,000</option>
-                          <option value="1000000">$1,000,000</option>
-                          <option value="1200000">$1,200,000</option>
-                          <option value="1500000">$1,500,000</option>
-                          <option value="2000000">$2,000,000</option>
-                        </select> 
-                        <select 
-                          aria-label="BedRooms" 
-                          id="BedRooms" 
-                          name="BedRooms"
-                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
-                        >
-                          <option value="-1">Beds</option>
-                          <option value="3">3+</option>
-                          <option value="4">4+</option>
-                          <option value="5">5+</option>
-                        </select> 
-                        <select 
-                          aria-label="Bathrooms" 
-                          id="Bathrooms" 
-                          name="Bathrooms"
-                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
-                        >
-                          <option value="-1">Baths</option>
-                          <option value="3">3+</option>
-                          <option value="4">4+</option>
-                        </select> 
-                        <select 
-                          aria-label="SqFtLow" 
-                          id="SqFtLow" 
-                          name="SqFtLow"
-                          style={{flex: 1, minWidth: '100px', padding: '8px', borderRadius: '4px', border: '1px solid #ccdbe4', background: '#fff', color: '#333'}}
-                        >
-                          <option value="0">Square Feet</option>
-                          <option value="3000">3000+</option>
-                          <option value="3500">3500+</option>
-                          <option value="4000">4000+</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>
                 </div>
               </div>
             </div>

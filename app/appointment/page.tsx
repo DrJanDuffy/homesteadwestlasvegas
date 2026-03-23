@@ -114,6 +114,21 @@ export default function AppointmentPage() {
           </div>
         </section>
 
+        {/* MLS listings — after booking (secondary engagement) */}
+        <section className="py-16 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+              Available Homestead West Homes and Las Vegas MLS Listings
+            </h2>
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+              Browse current listings from the Las Vegas MLS — updated daily with the latest properties
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
         {/* Related Pages Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -289,22 +304,6 @@ export default function AppointmentPage() {
               don't hesitate to call or email. Dr. Jan Duffy is available to discuss your Homestead West real estate needs 
               and answer any questions about the Homestead West community, available properties, or the VIP buyer program.
             </p>
-          </div>
-        </section>
-
-        {/* RealScout Office Listings Carousel */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homestead West Homes and Las Vegas MLS Listings
-            </h2>
-            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
-            </p>
-            
-            <div className="max-w-7xl mx-auto">
-              <RealScoutListings />
-            </div>
           </div>
         </section>
       </div>

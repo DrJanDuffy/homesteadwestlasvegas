@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { fetchKCMPosts, fetchKCMPostBySlug } from '@/lib/rss-fetcher';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import RealScoutListings from '@/components/RealScoutListings';
 import type { Metadata } from 'next';
 
 // ISR: Revalidate every hour
@@ -162,6 +163,17 @@ export default async function BlogPostPage({
               className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600 prose-img:rounded-lg prose-p:text-gray-700 prose-strong:text-gray-900 prose-ul:text-gray-700 prose-ol:text-gray-700 prose-li:text-gray-700"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+
+            {/* Browse listings — after article body (article-first layout) */}
+            <section className="my-12 not-prose max-w-7xl mx-auto" aria-label="Homestead West MLS listings">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+                Browse Homestead West &amp; Northwest Las Vegas listings
+              </h2>
+              <p className="text-center text-gray-600 mb-6 text-sm">
+                Live MLS inventory — see what matches your timeline and budget.
+              </p>
+              <RealScoutListings />
+            </section>
             
             {/* CTA Section */}
             <div className="mt-12 p-8 bg-gradient-to-r from-[#1a365d] to-[#0f2439] rounded-xl text-white">

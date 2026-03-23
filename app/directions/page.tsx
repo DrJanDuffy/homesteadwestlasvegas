@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import RealScoutListings from '@/components/RealScoutListings';
 import {
   PRESET_ORIGINS,
   DESTINATION_DISPLAY,
@@ -98,7 +99,21 @@ export default function DirectionsPage() {
           </div>
         </header>
 
-        <section className="py-8 bg-gray-50">
+        <section className="py-12 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-gray-900">
+              See homes before you visit
+            </h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-sm md:text-base">
+              Current Homestead West and Northwest Las Vegas MLS listings — updated regularly.
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-8 bg-white">
           <div className="container mx-auto px-4">
             <p className="text-center text-gray-700 max-w-2xl mx-auto">
               Get directions and see estimated travel time by car, transit, walking, or bike. Click any link below to open Google Maps — you can change your starting point or mode there.

@@ -39,6 +39,8 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 mb-4">
+              <li><a href="/#available-homes" className="hover:text-yellow-400 transition-colors">Browse Listings (Homestead West)</a></li>
+              <li><a href="/#search-homes" className="hover:text-yellow-400 transition-colors">Search New Construction</a></li>
               <li><a href="/about" className="hover:text-yellow-400 transition-colors">About Dr. Jan</a></li>
               <li><a href="/services" className="hover:text-yellow-400 transition-colors">Real Estate Services</a></li>
               <li><a href="/floor-plans" className="hover:text-yellow-400 transition-colors">Available Homes</a></li>

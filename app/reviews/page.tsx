@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 const GOOGLE_REVIEW_URL = 'https://g.page/r/CVC1EMaenLJ3EBI/review';
@@ -137,6 +138,18 @@ export default function ReviewsPage() {
               Google Business Profile: Get more reviews
               <span aria-hidden>→</span>
             </a>
+          </div>
+        </section>
+
+        <section className="py-12 bg-gray-50 border-t border-gray-100" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold text-center mb-2 text-gray-900">Looking for a home in Homestead West?</h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-sm md:text-base">
+              Browse current MLS listings — separate from leaving a review above.
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
           </div>
         </section>
 

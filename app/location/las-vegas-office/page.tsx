@@ -172,6 +172,21 @@ export default function LasVegasOfficePage() {
           </div>
         </section>
 
+        {/* MLS listings — after NAP / office details */}
+        <section className="py-16 bg-white" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+              Available Homestead West Homes and Las Vegas MLS Listings
+            </h2>
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+              Browse current listings from the Las Vegas MLS — updated daily with the latest properties
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
         {/* Services Offered */}
         <section className="py-16">
           <div className="container mx-auto px-4">
@@ -309,22 +324,6 @@ export default function LasVegasOfficePage() {
             <p className="text-blue-200 mt-6 max-w-2xl mx-auto">
               Our Homestead West office is open Sunday 10:00 AM–3:00 PM, Monday through Friday 10:00 AM–6:00 PM, and Saturday 10:00 AM–4:00 PM. For Homestead West inquiries or to schedule a consultation, please call, email, or visit our office.
             </p>
-          </div>
-        </section>
-
-        {/* RealScout Office Listings Carousel */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homestead West Homes and Las Vegas MLS Listings
-            </h2>
-            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
-            </p>
-            
-            <div className="max-w-7xl mx-auto">
-              <RealScoutListings />
-            </div>
           </div>
         </section>
       </div>

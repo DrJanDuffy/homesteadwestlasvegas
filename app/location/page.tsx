@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import RealScoutListings from '@/components/RealScoutListings';
 import {
   STORE_LOCATIONS,
   formatAddress,
@@ -114,8 +115,20 @@ export default function LocationIndexPage() {
           </div>
         </section>
 
+        <section className="py-12 bg-white border-t border-gray-100" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold mb-2 text-gray-900">Browse listings while you plan your visit</h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Live MLS inventory for Homestead West and Northwest Las Vegas — see what matches your timeline before you stop by the office.
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
         {/* List of locations */}
-        <section className="py-12 bg-white" aria-label="Office locations list">
+        <section className="py-12 bg-gray-50" aria-label="Office locations list">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold mb-8 text-gray-900">Choose Your Location</h2>
             <div className="grid gap-8 md:grid-cols-1 max-w-4xl">

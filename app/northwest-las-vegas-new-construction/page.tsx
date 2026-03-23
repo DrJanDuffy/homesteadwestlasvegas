@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 import { SITE_URL, ADDRESS, PHONE_DISPLAY, PHONE_TEL_HREF, BROKERAGE_NAME, LICENSE_ID } from '@/lib/site-contact';
 import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
@@ -75,6 +76,18 @@ export default function NorthwestLasVegasNewConstructionPage() {
           </div>
         </header>
 
+        <section className="py-14 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Browse 89149 &amp; Northwest Las Vegas listings</h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+              Live MLS inventory — updated as new homes and phases come online.
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
         <section className="py-14 bg-white">
           <div className="container mx-auto px-4 max-w-4xl prose prose-lg">
             <h2 className="text-3xl font-bold text-gray-900 not-prose mb-4">
@@ -90,6 +103,14 @@ export default function NorthwestLasVegasNewConstructionPage() {
               New construction here is not one-size-fits-all: communities differ by builder, price band, lot size, and HOA
               structure. A local buyer&apos;s agent helps you compare incentives, lot premiums, and timeline—not just floor
               plans on a brochure.
+            </p>
+            <p className="text-gray-700 text-lg mt-4">
+              If you are also researching the broader Northwest foothills sometimes labeled{' '}
+              <strong>La Madre Foothills</strong> (often associated with zip codes 89124, 89149, and 89166), see our{' '}
+              <Link href="/la-madre-foothills" className="text-[#1a365d] font-semibold underline">
+                La Madre Foothills buyer guide
+              </Link>
+              .
             </p>
           </div>
         </section>

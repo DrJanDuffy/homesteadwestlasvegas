@@ -81,6 +81,21 @@ export default function CommunityMapPage() {
           </div>
         </header>
 
+        {/* MLS listings — early for buyer engagement */}
+        <section className="py-16 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+              Available Homes in Las Vegas
+            </h2>
+            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+              Browse current listings from the Las Vegas MLS — updated daily with the latest properties
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
         {/* Interactive Map Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
@@ -381,22 +396,6 @@ export default function CommunityMapPage() {
                   📧 Email Dr. Jan
                 </a>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* RealScout Office Listings Carousel */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-              Available Homes in Las Vegas
-            </h2>
-            <p className="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-              Browse current listings from the Las Vegas MLS - Updated daily with the latest properties
-            </p>
-            
-            <div className="max-w-7xl mx-auto">
-              <RealScoutListings />
             </div>
           </div>
         </section>

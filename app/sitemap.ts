@@ -76,6 +76,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.82,
     },
     {
+      url: `${baseUrl}/la-madre-foothills`,
+      lastModified: lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/community-map`,
       lastModified: lastModified,
       changeFrequency: 'weekly',

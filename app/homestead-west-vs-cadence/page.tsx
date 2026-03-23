@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
 import { SITE_URL } from '@/lib/site-contact';
 import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
@@ -59,6 +60,18 @@ export default function HomesteadWestVsCadencePage() {
             </p>
           </div>
         </header>
+
+        <section className="py-14 bg-gray-50" id="available-homes">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Browse live MLS listings</h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+              See current Las Vegas Valley inventory while you compare Homestead West and Cadence.
+            </p>
+            <div className="max-w-7xl mx-auto">
+              <RealScoutListings />
+            </div>
+          </div>
+        </section>
 
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
