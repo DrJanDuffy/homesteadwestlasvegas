@@ -4,6 +4,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
 import { SITE_URL } from '@/lib/site-contact';
+import { ASSET_BHHS_LOGO_PATH, ASSET_HEADSHOT_PATH, headshotAbsoluteUrl } from '@/lib/site-assets';
 import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
 
 // Lazy load RealScoutListings to reduce initial bundle size
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Homestead West Las Vegas',
     images: [
       {
-        url: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+        url: headshotAbsoluteUrl,
         width: 750,
         height: 752,
         alt: 'Dr. Jan Duffy - VIP New Construction Homes Specialist | Homestead West Las Vegas',
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Homestead West Las Vegas — Luxury Single-Story Ranch Homes from $910K',
     description: 'Get VIP access to Northwest Las Vegas\'s newest luxury community. Independent buyer\'s agent with Berkshire Hathaway HomeServices Nevada.',
-    images: [`${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`],
+    images: [headshotAbsoluteUrl],
   },
 };
 
@@ -100,7 +101,7 @@ export default function HomePage() {
       name: 'Dr. Jan Duffy',
       telephone: '+17022996607',
       email: 'DrJanSells@HomesteadWestLasVegas.com',
-      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+      image: headshotAbsoluteUrl,
       priceRange: '$850,000-$990,000',
       address: {
         '@type': 'PostalAddress',
@@ -514,7 +515,7 @@ export default function HomePage() {
               <div className="flex justify-center mb-8">
                 <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20" style={{ aspectRatio: '1/1' }}>
                   <Image
-                    src="/images/Dr. Duffy Blue_Headshot.jpg"
+                    src={ASSET_HEADSHOT_PATH}
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                     fill
                     className="object-cover object-center"
@@ -595,7 +596,7 @@ export default function HomePage() {
               {/* BHHS Logo */}
               <div className="flex justify-center mb-8">
                 <Image 
-                  src="/images/bhhs-logo.svg" 
+                  src={ASSET_BHHS_LOGO_PATH} 
                   alt="Berkshire Hathaway HomeServices Nevada Properties" 
                   width={250}
                   height={80}

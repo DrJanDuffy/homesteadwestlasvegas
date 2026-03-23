@@ -1,4 +1,5 @@
 import CalendlyLink from '@/components/CalendlyLink';
+import { ASSET_BHHS_LOGO_PATH } from '@/lib/site-assets';
 
 export default function Footer() {
   return (
@@ -67,7 +68,7 @@ export default function Footer() {
         {/* Logos */}
         <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
           <img 
-            src="/images/bhhs-logo.svg" 
+            src={ASSET_BHHS_LOGO_PATH} 
             alt="Berkshire Hathaway HomeServices Nevada" 
             width={200}
             height={48}

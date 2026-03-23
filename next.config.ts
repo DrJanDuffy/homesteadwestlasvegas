@@ -103,6 +103,24 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: '/brand/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/photos/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
         source: '/_next/image(.*)',
         headers: [
           {
@@ -158,6 +176,17 @@ const nextConfig: NextConfig = {
       // GSC reported 404 for /$ (typo/bot URL) — redirect to homepage
       { source: '/%24', destination: '/', permanent: true },
       { source: '/\\$', destination: '/', permanent: true },
+      // Legacy flat /public/images paths → organized brand + photos
+      {
+        source: '/images/bhhs-logo.svg',
+        destination: '/brand/bhhs-logo.svg',
+        permanent: true,
+      },
+      {
+        source: '/images/Dr.%20Duffy%20Blue_Headshot.jpg',
+        destination: '/photos/team/dr-jan-duffy-headshot.jpg',
+        permanent: true,
+      },
     ];
   },
   

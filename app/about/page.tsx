@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ASSET_HEADSHOT_PATH } from '@/lib/site-assets';
 import Image from 'next/image';
 import RealScoutListings from '@/components/RealScoutListings';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
@@ -95,7 +96,7 @@ export default function AboutPage() {
               <div className="mb-6 flex justify-center">
                 <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-white/20" style={{ aspectRatio: '1/1' }}>
                   <Image
-                    src="/images/Dr. Duffy Blue_Headshot.jpg"
+                    src={ASSET_HEADSHOT_PATH}
                     alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                     fill
                     className="object-cover object-center"
@@ -185,7 +186,7 @@ export default function AboutPage() {
                   <div className="mb-6 lg:hidden">
                     <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20" style={{ aspectRatio: '1/1' }}>
                       <Image
-                        src="/images/Dr. Duffy Blue_Headshot.jpg"
+                        src={ASSET_HEADSHOT_PATH}
                         alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                         fill
                         className="object-cover object-center"
@@ -220,7 +221,7 @@ export default function AboutPage() {
                   <div className="hidden lg:block mb-6">
                     <div className="relative w-full aspect-square max-w-md mx-auto rounded-xl overflow-hidden border-4 border-blue-600 shadow-xl ring-2 ring-blue-600/20">
                       <Image
-                        src="/images/Dr. Duffy Blue_Headshot.jpg"
+                        src={ASSET_HEADSHOT_PATH}
                         alt="Dr. Jan Duffy - VIP New Construction Homes Specialist"
                         fill
                         className="object-cover object-center"

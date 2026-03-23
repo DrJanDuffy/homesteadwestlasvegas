@@ -6,6 +6,13 @@ export function middleware(request: NextRequest) {
   const pathname = url.pathname;
   const hostname = request.headers.get('host') || '';
 
+  // Legacy headshot URL with spaces (some crawlers / bookmarks) → canonical asset path
+  if (pathname === '/images/Dr. Duffy Blue_Headshot.jpg') {
+    url.pathname = '/photos/team/dr-jan-duffy-headshot.jpg';
+    url.search = '';
+    return NextResponse.redirect(url, 308);
+  }
+
   // GSC: junk URLs like /$ or /%24 (bot typo / encoding) → canonical homepage
   if (pathname === '/$' || pathname === '/%24') {
     url.pathname = '/';

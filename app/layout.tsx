@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { SITE_URL, AGENT_JSONLD_DESCRIPTION } from "@/lib/site-contact";
+import { bhhsLogoAbsoluteUrl, headshotAbsoluteUrl } from "@/lib/site-assets";
 import { metadataBaseUrl } from "@/lib/metadata";
 
 const inter = Inter({ 
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
     description: '$910K+ luxury ranch homes on pool-sized lots in Northwest Las Vegas. 3,336-3,704 sq ft. Expert guidance from Dr. Jan Duffy. Call (702) 299-6607.',
     images: [
       {
-        url: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+        url: headshotAbsoluteUrl,
         width: 750,
         height: 752,
         alt: 'Dr. Jan Duffy - VIP New Construction Homes Specialist | Homestead West Las Vegas',
@@ -83,7 +84,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Homestead West Las Vegas | $910K+ Ranch Homes',
     description: 'Luxury ranch homes on pool-sized lots in Northwest Las Vegas. Expert real estate guidance from Dr. Jan Duffy.',
-    images: [`${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`],
+    images: [headshotAbsoluteUrl],
   },
 
   ...(process.env.GOOGLE_SITE_VERIFICATION
@@ -158,7 +159,7 @@ export default function RootLayout({
           name: 'Dr. Jan Duffy',
           telephone: '+17022996607',
           email: 'DrJanSells@HomesteadWestLasVegas.com',
-          image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+          image: headshotAbsoluteUrl,
           priceRange: '$850,000-$990,000',
           address: {
             '@type': 'PostalAddress',
@@ -470,7 +471,7 @@ export default function RootLayout({
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: SITE_URL,
-                      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+                      image: headshotAbsoluteUrl,
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
@@ -511,8 +512,8 @@ export default function RootLayout({
                       telephone: '+17022996607',
                       email: 'DrJanSells@HomesteadWestLasVegas.com',
                       url: SITE_URL,
-                      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
-                      logo: `${SITE_URL}/images/bhhs-logo.svg`,
+                      image: headshotAbsoluteUrl,
+                      logo: bhhsLogoAbsoluteUrl,
                       priceRange: '$850,000-$990,000',
                       address: {
                         '@type': 'PostalAddress',
@@ -571,8 +572,8 @@ export default function RootLayout({
                       name: 'Dr. Jan Duffy Real Estate',
                       alternateName: 'Homestead West Las Vegas Real Estate',
                       url: SITE_URL,
-                      logo: `${SITE_URL}/images/bhhs-logo.svg`,
-                      image: `${SITE_URL}/images/Dr. Duffy Blue_Headshot.jpg`,
+                      logo: bhhsLogoAbsoluteUrl,
+                      image: headshotAbsoluteUrl,
                       address: {
                         '@type': 'PostalAddress',
                         streetAddress: '5592 Dapple Gray Rd',

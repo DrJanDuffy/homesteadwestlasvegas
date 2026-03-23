@@ -29,7 +29,7 @@ Summary of changes made to address Lighthouse / PageSpeed Insights findings (cac
 
 ## 4. First-party cache (already in place)
 
-- `next.config.ts` sets long-lived `Cache-Control` for `/_next/static/*`, `/_next/image*`, `/images/*`, etc. (e.g. `max-age=31536000, immutable`).
+- `next.config.ts` sets long-lived `Cache-Control` for `/_next/static/*`, `/_next/image*`, `/images/*`, `/brand/*`, `/photos/*`, etc. (e.g. `max-age=31536000, immutable`).
 - Calendly’s 5m TTL is set by `assets.calendly.com`; we cannot change it. Loading Calendly on-demand reduces its impact on initial load.
 
 ## After deploy
