@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import SearchWidgetScript from '@/components/SearchWidgetScript';
 import { SITE_URL } from '@/lib/site-contact';
@@ -770,6 +771,18 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
+
+              <p className="text-center text-gray-600 text-sm mb-8 max-w-2xl mx-auto leading-relaxed">
+                Researching the wider{' '}
+                <Link href="/la-madre-foothills" className="text-[#1a365d] font-semibold underline">
+                  La Madre Foothills
+                </Link>{' '}
+                area or other Northwest Las Vegas zip codes? See our{' '}
+                <Link href="/northwest-las-vegas-new-construction" className="text-[#1a365d] font-semibold underline">
+                  Northwest Las Vegas new construction guide
+                </Link>
+                .
+              </p>
               
               <div className="text-center">
                 <a

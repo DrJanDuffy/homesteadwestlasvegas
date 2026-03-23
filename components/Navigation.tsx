@@ -13,6 +13,7 @@ export default function Navigation() {
   const communityItems = [
     { href: '/community', label: 'Community Guide' },
     { href: '/northwest-las-vegas-new-construction', label: 'NW Las Vegas & 89149' },
+    { href: '/la-madre-foothills', label: 'La Madre Foothills' },
     { href: '/community-map', label: 'Community Map' },
     { href: '/amenities', label: 'Nearby Amenities' },
     { href: '/directions', label: 'Directions' },

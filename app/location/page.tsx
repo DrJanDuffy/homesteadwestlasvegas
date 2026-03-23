@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import LocatorPlusEmbed from '@/components/LocatorPlusEmbed';
 import RealScoutListings from '@/components/RealScoutListings';
 import {
   STORE_LOCATIONS,
@@ -10,6 +11,11 @@ import {
   viewOnMapsUrl,
 } from '@/lib/locations';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
+
+/** Google Maps Platform — Locator Plus embed. */
+const LOCATOR_PLUS_EMBED_URL =
+  'https://storage.googleapis.com/maps-solutions-v9iuebxrqf/locator-plus/stmd/locator-plus.html' as const;
 
 export const metadata: Metadata = {
   title: 'Find Our Office | Store Locations | Homestead West Las Vegas | Dr. Jan Duffy',
@@ -17,11 +23,12 @@ export const metadata: Metadata = {
     'Find our Homestead West Las Vegas real estate office. Visit Dr. Jan Duffy at 5592 Dapple Gray Rd. Map, directions, hours, and contact for Northwest Las Vegas.',
   keywords:
     'Homestead West office location, Dr. Jan Duffy office, Las Vegas real estate office, find our store, Northwest Las Vegas',
+  ...canonicalMetadata('/location'),
   openGraph: {
     title: 'Find Our Office | Homestead West Las Vegas',
     description: 'Map and directions to our Las Vegas real estate office. Visit Dr. Jan Duffy at Homestead West.',
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/location',
+    url: absoluteUrl('/location'),
   },
 };
 
@@ -97,7 +104,11 @@ export default function LocationIndexPage() {
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Office Locations Map</h2>
             <p className="text-gray-700 mb-6">
-              Use the map below to see where we’re located. Click Call, Directions, or View on Google for each office.
+              Use the map below to see where we’re located. Click Call, Directions, or View on Google for each office.{' '}
+              <a href="#available-homes" className="text-[#1a365d] font-semibold underline">
+                Browse MLS listings
+              </a>{' '}
+              below when you are ready to shop before you visit.
             </p>
             <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white">
               <iframe
@@ -106,7 +117,7 @@ export default function LocationIndexPage() {
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
-                loading="lazy"
+                loading="eager"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Homestead West office locations - map"
                 className="w-full block"
@@ -127,8 +138,22 @@ export default function LocationIndexPage() {
           </div>
         </section>
 
+        <section className="py-10 bg-gray-50 border-t border-gray-100" aria-label="Interactive office locator map">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold mb-2 text-gray-900">Interactive office locator</h2>
+            <p className="text-gray-700 mb-6 max-w-2xl">
+              Search and browse locations with Google Maps Platform Locator Plus. Tap <strong>Load interactive map</strong> when
+              you are ready—the map loads on demand so the listings and office map above stay fast.
+            </p>
+            <LocatorPlusEmbed
+              src={LOCATOR_PLUS_EMBED_URL}
+              title="Homestead West — interactive office locator map"
+            />
+          </div>
+        </section>
+
         {/* List of locations */}
-        <section className="py-12 bg-gray-50" aria-label="Office locations list">
+        <section className="py-12 bg-white border-t border-gray-100" aria-label="Office locations list">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold mb-8 text-gray-900">Choose Your Location</h2>
             <div className="grid gap-8 md:grid-cols-1 max-w-4xl">

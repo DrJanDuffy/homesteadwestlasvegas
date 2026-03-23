@@ -46,6 +46,7 @@ export default function Footer() {
               <li><a href="/floor-plans" className="hover:text-yellow-400 transition-colors">Available Homes</a></li>
               <li><a href="/community" className="hover:text-yellow-400 transition-colors">Community</a></li>
               <li><a href="/northwest-las-vegas-new-construction" className="hover:text-yellow-400 transition-colors">NW Las Vegas &amp; 89149</a></li>
+              <li><a href="/la-madre-foothills" className="hover:text-yellow-400 transition-colors">La Madre Foothills area guide</a></li>
               <li><a href="/homestead-west-vs-skye-canyon" className="hover:text-yellow-400 transition-colors">Homestead West vs Skye Canyon</a></li>
               <li><a href="/homestead-west-vs-cadence" className="hover:text-yellow-400 transition-colors">Homestead West vs Cadence</a></li>
               <li><a href="/location" className="hover:text-yellow-400 transition-colors">Find Our Office</a></li>

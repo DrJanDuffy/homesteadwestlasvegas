@@ -50,7 +50,7 @@ const CITY_PLANNING_ZONING_URL = 'https://www.lasvegasnevada.gov/Business/Planni
 export const metadata: Metadata = {
   title: 'La Madre Foothills Las Vegas | Homes & Area Guide | Homestead West',
   description:
-    'La Madre Foothills area guide for Northwest Las Vegas buyers: zips 89124–89166, foothills lifestyle, parks, and commute context—plus live MLS search. Dr. Jan Duffy, Nevada license S.0197614, Berkshire Hathaway HomeServices Nevada Properties.',
+    'La Madre Foothills homes and area guide: zips 89124–89166, live MLS search, Northwest Las Vegas foothills context, and buyer representation. Call (702) 299-6607. Dr. Jan Duffy, Nevada license S.0197614, Berkshire Hathaway HomeServices Nevada Properties.',
   keywords: [
     'La Madre Foothills Las Vegas',
     'Homestead West Northwest Las Vegas',
@@ -133,6 +133,26 @@ export default function LaMadreFoothillsPage() {
               </a>
               .
             </p>
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+              <a
+                href={PHONE_TEL_HREF}
+                className="inline-flex justify-center items-center rounded-lg bg-yellow-400 px-5 py-3 font-semibold text-[#0f2439] hover:bg-yellow-300 transition-colors"
+              >
+                Call {PHONE_DISPLAY}
+              </a>
+              <a
+                href="#available-homes"
+                className="inline-flex justify-center items-center rounded-lg border-2 border-white/85 px-5 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
+              >
+                Browse MLS listings
+              </a>
+              <Link
+                href="/vip-buyer-program"
+                className="inline-flex justify-center items-center rounded-lg border-2 border-white/85 px-5 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
+              >
+                VIP buyer program
+              </Link>
+            </div>
           </div>
         </header>
 
@@ -145,6 +165,44 @@ export default function LaMadreFoothillsPage() {
             </p>
             <div className="max-w-7xl mx-auto">
               <RealScoutListings />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 bg-slate-50 border-y border-slate-200" id="next-steps" aria-labelledby="next-steps-heading">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 id="next-steps-heading" className="text-2xl font-bold text-gray-900 mb-3">
+              Next steps
+            </h2>
+            <p className="text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
+              Start with live listings above. When you are ready to compare Homestead West with other La Madre Foothills and
+              Northwest Las Vegas options, call or reach out—Dr. Jan represents buyers, not the builder&apos;s sales office.
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+              <a
+                href={PHONE_TEL_HREF}
+                className="inline-flex justify-center items-center rounded-lg bg-[#1a365d] px-5 py-3 font-semibold text-white hover:bg-[#2d4a7c] transition-colors"
+              >
+                Call {PHONE_DISPLAY}
+              </a>
+              <Link
+                href="/vip-buyer-program"
+                className="inline-flex justify-center items-center rounded-lg border-2 border-[#1a365d] bg-white px-5 py-3 font-semibold text-[#1a365d] hover:bg-blue-50 transition-colors"
+              >
+                VIP buyer program
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex justify-center items-center rounded-lg border-2 border-gray-300 bg-white px-5 py-3 font-semibold text-gray-800 hover:border-[#1a365d] hover:text-[#1a365d] transition-colors"
+              >
+                Contact
+              </Link>
+              <Link
+                href="/appointment"
+                className="inline-flex justify-center items-center rounded-lg border-2 border-gray-300 bg-white px-5 py-3 font-semibold text-gray-800 hover:border-[#1a365d] hover:text-[#1a365d] transition-colors"
+              >
+                Book appointment
+              </Link>
             </div>
           </div>
         </section>
@@ -294,7 +352,29 @@ export default function LaMadreFoothillsPage() {
 
         <section className="py-14 bg-white border-t border-gray-200">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Local business &amp; license (GEO)</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+              Talk with Dr. Jan about Northwest Las Vegas homes
+            </h2>
+            <p className="text-gray-700 mb-6 max-w-2xl">
+              What happens next: share your price range and timeline. You&apos;ll get straight answers on new construction
+              incentives, lot strategy, and how Homestead West compares to other foothills communities—before you tour or write
+              an offer.
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
+              <a
+                href={PHONE_TEL_HREF}
+                className="inline-flex justify-center items-center rounded-lg bg-[#1a365d] px-6 py-3 font-semibold text-white hover:bg-[#2d4a7c] transition-colors"
+              >
+                Call {PHONE_DISPLAY}
+              </a>
+              <Link
+                href="/contact"
+                className="inline-flex justify-center items-center rounded-lg border-2 border-[#1a365d] px-6 py-3 font-semibold text-[#1a365d] hover:bg-blue-50 transition-colors"
+              >
+                Contact form
+              </Link>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3">Local business &amp; license (GEO)</h3>
             <p className="text-gray-800 mb-2">
               <strong>Dr. Jan Duffy</strong> · {BROKERAGE_NAME}
             </p>

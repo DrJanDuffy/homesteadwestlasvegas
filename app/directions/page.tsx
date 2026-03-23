@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import DeferredIframeEmbed from '@/components/DeferredIframeEmbed';
 import RealScoutListings from '@/components/RealScoutListings';
 import {
   PRESET_ORIGINS,
@@ -9,6 +10,11 @@ import {
   directionsEmbedUrl,
 } from '@/lib/directions';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { absoluteUrl, canonicalMetadata } from '@/lib/metadata';
+
+/** Google Maps Platform — Commutes Solution embed (Maps JavaScript API). */
+const COMMUTES_MAP_EMBED_URL =
+  'https://storage.googleapis.com/maps-solutions-v9iuebxrqf/commutes/hq3p/commutes.html' as const;
 
 export const metadata: Metadata = {
   title: 'Directions to Our Office | Homestead West Las Vegas | Dr. Jan Duffy',
@@ -20,11 +26,12 @@ export const metadata: Metadata = {
     '5592 Dapple Gray Rd directions',
     'Centennial Hills directions',
   ],
+  ...canonicalMetadata('/directions'),
   openGraph: {
     title: 'Directions to Our Office | Homestead West Las Vegas',
     description: `Plan your visit: directions to ${DESTINATION_DISPLAY}. From airport, downtown, Henderson. Drive, transit, or walk.`,
     type: 'website',
-    url: 'https://www.homesteadwestlasvegas.com/directions',
+    url: absoluteUrl('/directions'),
   },
 };
 
@@ -164,6 +171,24 @@ export default function DirectionsPage() {
                 🚗 Get directions (enter your address in Maps)
               </a>
             </div>
+          </div>
+        </section>
+
+        <section className="py-12 bg-white" aria-labelledby="commute-map-heading">
+          <div className="container mx-auto px-4">
+            <h2 id="commute-map-heading" className="text-2xl font-bold text-gray-900 mb-2 text-center">
+              Explore commute times
+            </h2>
+            <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto text-sm md:text-base">
+              Commute explorer powered by Google Maps Platform. Tap <strong>Load commute map</strong> when you are ready—the
+              embed loads on demand so directions and listing sections above stay responsive.
+            </p>
+            <DeferredIframeEmbed
+              src={COMMUTES_MAP_EMBED_URL}
+              title="Commute times map — Northwest Las Vegas and Homestead West area"
+              description="The commute map uses Google Maps (third-party). Load it when you want to explore routes and travel times—this avoids heavy scripts until you need them."
+              buttonLabel="Load commute map"
+            />
           </div>
         </section>
 
