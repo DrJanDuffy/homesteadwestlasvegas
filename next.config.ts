@@ -149,6 +149,12 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Legacy slug (GSC "crawled not indexed" / 404) → current VIP program
+      {
+        source: '/century-communities-vip',
+        destination: '/vip-buyer-program',
+        permanent: true,
+      },
       // GSC reported 404 for /$ (typo/bot URL) — redirect to homepage
       { source: '/%24', destination: '/', permanent: true },
       { source: '/\\$', destination: '/', permanent: true },

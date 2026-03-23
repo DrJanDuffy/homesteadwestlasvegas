@@ -3,8 +3,19 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
+  const pathname = url.pathname;
   const hostname = request.headers.get('host') || '';
-  const needsRedirect = 
+
+  // GSC: junk URLs like /$ or /%24 (bot typo / encoding) → canonical homepage
+  if (pathname === '/$' || pathname === '/%24') {
+    url.pathname = '/';
+    url.search = '';
+    url.hostname = 'www.homesteadwestlasvegas.com';
+    url.protocol = 'https:';
+    return NextResponse.redirect(url, 308);
+  }
+
+  const needsRedirect =
     hostname === 'homesteadwestlasvegas.com' || // non-www
     url.protocol === 'http:'; // HTTP
 
